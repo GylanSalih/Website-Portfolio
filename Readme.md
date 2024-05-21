@@ -10,3 +10,4 @@
 ## Misc:
 
 * Follow Gylan: [Twitter](https://www.gylansalih.com), [GitHub](https://github.com/gylansalih)
+* https://gylansalih.github.io/Portfolio/ 
