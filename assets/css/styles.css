@@ -1,6 +1,14 @@
+/* Benutzerdefinierte Farbvariablen */
+:root {
+  --thistle: #bab4d0;
+  --background-blue: #130f24;
+  --hover-purple: #9f8cf0;
+  --white: white;
+  --black: black;
+}
+
 /* Globale Stile */
 body {
-  font-family: Open Sans, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -15,20 +23,35 @@ body {
   margin: 0;
 }
 
-/* Benutzerdefinierte Farbvariablen */
-:root {
-  --thistle: #bab4d0;
-  --background-blue: #130f24;
-  --hover-purple: #9f8cf0;
-  --white: white;
-  --black: black;
+/* Links */
+a {
+  text-decoration: underline;
 }
+
+
+/* Heading-2 Styles */
+.heading-2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 42px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
 
 /* Responsive Container */
 .container {
   z-index: 2;
   width: 100%;
-  max-width: 1080px;
+  max-width: 80%;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -47,12 +70,12 @@ body {
 }
 
 
-/* Inhaltscontainer */
+/* Inhaltscontainer Grid-System 4x1 Row/Col*/
 .projects_menu_container {
   display: grid;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 2fr));
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin-top: 24px;
 }
@@ -69,6 +92,7 @@ body {
   }
 }
 
+/* Mobile-Ansicht */
 @media screen and (max-width: 767px) {
   .projects_menu_container {
     grid-template-columns: repeat(2, 2fr);
@@ -81,25 +105,6 @@ body {
     padding: 0 0px;
     height: 994px;
   }
-}
-
-/* Heading-2 Styles */
-.heading-2 {
-  margin-top: 24px;
-  margin-bottom: 24px;
-  color: white;
-  font-size: 50px;
-  padding-bottom: 24px;
-  padding-top: 24px;
-  text-align: center;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  font-weight: 400;
-}
-
-
-/* Links */
-a {
-  text-decoration: underline;
 }
 
 /* Projektmenü-Container */
@@ -127,7 +132,9 @@ a {
 }
 
 /* ------------------------------------------------- */
-/* Projekt-Hover-Block */
+
+
+/* Projekt-Hover-Block TEXT VIEW PROJEKT*/
 .project-hover-block {
   z-index: 2;
   color: #fff;
@@ -135,11 +142,12 @@ a {
   letter-spacing: 5px;
   text-transform: uppercase;
   justify-content: center;
-  align-items: flex-end;
-  padding-bottom: 23px;
+  align-items: center;
+  padding-bottom: 24px;
   font-family: Quicksand, sans-serif;
   font-weight: 500;
   line-height: 14px;
+  font-size: 13px; /* Default font size */
   display: flex;
   position: absolute;
   top: 0;
@@ -148,6 +156,32 @@ a {
   bottom: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+/* Mobile-Ansicht TEXT VIEW PROJEKT*/
+@media screen and (max-width: 767px) {
+  .project-hover-block {
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 700;
+    line-height: 14px;
+    font-size: 13px; /* Default font size */
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 }
 
 /* Pseudo-Element für Hover-Effekt */
