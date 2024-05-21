@@ -38,7 +38,7 @@ a {
   padding-bottom: 24px;
   padding-top: 24px;
   text-align: center;
-  font-family: 'Poppins';
+  font-family: 'Bebas_Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -56,6 +56,31 @@ a {
   display: block;
   position: relative;
 }
+
+/* Tablet-Ansicht */
+@media screen and (max-width: 991px) {
+  .container {
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+}
+
+/* Mobile-Ansicht */
+@media screen and (max-width: 767px) {
+  .container {
+    z-index: 2;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+  }
+}
+
 
 /* Projektposter */
 .projects_project_menu_poster {

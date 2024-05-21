@@ -2,10 +2,14 @@
 
 ### GylanSalih.com Portfolio
 
+
+Updates / Fixes:
 - 0.1 Portfolio/Home Bereich angefangen / Website Struktur aufgebaut und versucht klarzukommen
 - 0.2 Github Install
 - 0.3 Responsive Card Design Mobile=2Rows, Tablet=3Rows, Pc=4Rows
 - 0.4 Vanilla js / PopUp and Glare Effect
+- 0.5 Fonts Lokal eingebunden
+- 0.6 Portfolio Card Design ausgebessert
 
 ## Misc:
 
