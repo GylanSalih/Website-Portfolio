@@ -69,20 +69,19 @@ body {
   }
 }
 
-/* Mobile Ansicht */
 @media screen and (max-width: 767px) {
   .projects_menu_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     grid-auto-rows: auto;
     grid-gap: 24px;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
-    width: 100%; /* Setze die Breite auf 100% */
-    padding: 0 12px; /* Fügt Innenabstände hinzu, um den Inhalt vom Rand abzusetzen */
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 0px;
+    height: 994px;
   }
 }
-
 
 /* Heading-2 Styles */
 .heading-2 {
