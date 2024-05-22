@@ -10,6 +10,7 @@ Updates / Fixes:
 - 0.4 Vanilla js / PopUp and Glare Effect
 - 0.5 Fonts Lokal eingebunden
 - 0.6 Portfolio Card Design ausgebessert
+- 0.7 Header aufbau / Menu Aufbau
 
 ## Misc:
 
