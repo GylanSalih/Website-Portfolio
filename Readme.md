@@ -5,6 +5,7 @@
 <img alt="Image" title="Image" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 
 <p align="center" width="300px">
+<img alt="Image" title="Image" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 <img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
 </p>
 
