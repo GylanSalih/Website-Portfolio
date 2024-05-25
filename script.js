@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Menu Slider JS Script
+// Menu Slide effect JS Script
 
 var tl = gsap.timeline({ paused: true });
 
@@ -68,4 +68,4 @@ document.querySelector(".menu-open").addEventListener("click", function() {
     tl.reversed(!tl.reversed()); // Toggle the reversed state of the timeline
 });
 
-
+// New JS Scripts here---
