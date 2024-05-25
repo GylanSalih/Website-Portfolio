@@ -1,6 +1,6 @@
-# First Website Projekt beginn 18.05.2024 03:00 Uhr
+# Personal Website Made by Gylan Salih
 
-### GylanSalih.com Portfolio
+### Don´t forget to Follow for more Updates
 
 <img alt="Repos" title="Repos" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 
