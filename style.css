@@ -23,6 +23,13 @@ body {
 }
 
 
+/* Easter-Egg */
+#ascii-art {
+  display: none;
+  white-space: pre;
+  font-family: monospace;
+}
+
 
   * {
     padding: 0;
