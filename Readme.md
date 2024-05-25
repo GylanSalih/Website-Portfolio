@@ -4,6 +4,7 @@
 
 <img alt="Repos" title="Repos" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 
+[![Made With](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 Updates / Fixes:
 
