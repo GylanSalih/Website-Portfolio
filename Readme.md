@@ -10,7 +10,10 @@
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/white_menu.jpeg"/>
 </p>
 
+<p align="center">
 <img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
+</p>
+
 
 Updates / Fixes:
 
