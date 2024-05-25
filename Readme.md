@@ -1,6 +1,6 @@
-# Personal Website Made by Gylan Salih
+# Personal Website is Under Construction, Follow for more Updates
 
-### Don´t forget to Follow for more Updates
+### Made by Gylan Salih / Open-Source for Everybody
 
 <img alt="Repos" title="Repos" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 
