@@ -5,8 +5,12 @@
 
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
-<img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
+<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_menu.jpeg"/>
+<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/white_home.jpeg"/>
+<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/white_menu.jpeg"/>
 </p>
+
+<img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
 
 Updates / Fixes:
 
