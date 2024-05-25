@@ -2,9 +2,11 @@
 
 ### Made by Gylan Salih / Open-Source for Everybody
 
-<img alt="Repos" title="Repos" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
+<img alt="Image" title="Image" src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/black_home.jpeg"/>
 
-[![Made With](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
+<p align="center" width="300px">
+<img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
+</p>
 
 Updates / Fixes:
 
