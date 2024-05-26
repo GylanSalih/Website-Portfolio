@@ -519,9 +519,6 @@ body.menu-open {
   transition: opacity 0.3s ease;
 }
 
-
-
-
 /* Pseudo-Element for Hover Effect */
 .project-hover-block::before {
   content: '';
