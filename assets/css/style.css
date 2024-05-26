@@ -1,0 +1,545 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Bridge Head Con Medium", sans-serif;
+}
+
+/* Easter-Egg */
+#ascii-art {
+display: none;
+white-space: pre;
+font-family: monospace;
+}
+
+a {
+  text-decoration: underline;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
+
+/* Dark Mode Toggle Position */
+.dark-mode-toggle {
+  cursor: pointer;
+  text-align: center;
+  position: fixed;
+  right: -12px;
+  top: 43px;
+  padding: 2rem;
+  transform: translateY(-50%);
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 999;
+}
+
+.dark-mode-toggle i.fa-sun {
+  color: rgb(0, 0, 0);
+}
+
+/* Navbar */
+.navbar {
+  background: #00000000;
+  padding: 20px 0;
+}
+
+/* Header */
+.top_navigation_container,
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 85px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 142px;
+  height: auto;
+  position: absolute;
+  padding-top: 42px;
+}
+
+.logo img {
+  max-height: 18px;
+}
+
+a {
+  font-family: 'Arial', serif;
+  font-size: 12px;
+  color: #8c8c8e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  margin: 0 0px;
+}
+
+/* Menu */
+.menu_nav_links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.menu_nav_links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s;
+  position: relative;
+}
+
+.menu_nav_links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.menu_nav_links a:hover {
+  color: #000000;
+}
+
+.menu_nav_links a:hover::after {
+  background-color: #000000;
+}
+
+/* Hamburger Icon */
+.menu_control {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+}
+
+.menu_control::before {
+  content: "\2630"; /* Unicode for hamburger icon */
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+
+/* Dark Mode Styles for Hamburger Icon */
+.dark-mode .menu_control::before {
+  color: rgb(255, 255, 255);
+}
+
+/* Animation */
+.fade-zoom {
+  animation: fadeZoom 0.4s ease-in-out;
+}
+
+@keyframes fadeZoom {
+  0% {
+      opacity: 0;
+      transform: scale(0.8);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1.2);
+  }
+}
+
+/* 2 Themes Install Styles */
+.menu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.menu-left {
+  position: fixed;
+  width: 100%;
+  height: 200vh;
+  background: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -100%;
+  transition: left 0.5s ease;
+  z-index: 999;
+}
+
+/* Dark Mode Styles for Menu */
+.dark-mode .menu-left {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Open Menu Styles */
+.menu-left.open {
+  left: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 30px;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Dark mode state for menu-open */
+.dark-mode .menu-open {
+  color: #ffffff;
+}
+
+/* Menu Links Font PC*/
+.menu-link a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 60px;
+  z-index: 999;
+  position: relative;
+  font-family: 'Montserrat';
+}
+
+/* Hover effect for menu-links */
+.menu-links a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 4px;
+  background-color: currentColor;
+  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+}
+
+.menu-links a:hover::after {
+  width: 60%; /* Adjust the width to be shorter */
+  left: 15%;  /* Center the shorter line */
+  right: 15%; /* Center the shorter line */
+}
+
+/* Dark mode state for menu-links */
+.dark-mode .menu-links a {
+  color: #ffffff;
+}
+
+.menu-link a span {
+  font-family: 'Montserrat';
+  font-size: 24px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu-left {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -100%;
+      transition: left 0.5s ease;
+      z-index: 999;
+  }
+
+  .menu-left.open {
+      left: 0;
+  }
+
+  .menu-open {
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      right: 30px;
+      padding: 2rem;
+      cursor: pointer;
+      font-size: 20px;
+      color: #000000;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .menu-left {
+      position: fixed;
+      width: 100%;
+      height: 200vh;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -100%;
+      transition: left 0.5s ease;
+      z-index: 999;
+  }
+
+  .menu-left.open {
+      left: 0;
+  }
+
+  .menu-open {
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      right: 30px;
+      padding: 2rem;
+      cursor: pointer;
+      font-size: 20px;
+      color: #000000;
+  }
+}
+
+/* Menu text size for mobile responsiveness */
+@media screen and (max-width: 901px) {
+  .menu-link a {
+      text-decoration: none;
+      font-size: 42px;
+      z-index: 999;
+      position: relative;
+      text-align: center;
+      font-family: 'Montserrat';
+      line-height: 34px;
+  }
+    
+  .menu-link a span {
+      font-family: "Montserrat";
+      font-size: 12px;
+  }
+}
+
+/* Menu text size for tablet responsiveness */
+@media screen and (max-width: 701px) {
+  .menu-link a {
+      text-decoration: none;
+      font-size: 38px;
+      z-index: 999;
+      position: relative;
+      text-align: center;
+      font-family: 'Montserrat';
+      line-height: 40px;
+  }
+
+  .menu-link a span {
+      font-family: "Montserrat";
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+      z-index: 1; /* Lowered z-index value */
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+      z-index: 3; /* Lowered z-index value */
+  }
+}
+
+
+/* Custom color variables */
+:root {
+  --thistle: #bab4d0;
+  --background-blue: #130f24;
+  --hover-purple: #9f8cf0;
+  --white: white;
+  --black: black;
+}
+
+/* Heading-2 Styles */
+.heading-2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  color: white;
+  font-size: 42px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  text-align: center;
+  font-family: 'Bebas_Neue', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Responsive Container */
+.container-cards {
+  z-index: 2;
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+
+/* Tablet view */
+@media screen and (max-width: 991px) {
+  .container-cards {
+      z-index: 1;
+      width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .container-cards {
+      z-index: 1;
+      width: 95%;
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+  }
+}
+
+/* Project Poster */
+.projects_project_menu_poster {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Grid system for content container (4x1 row/col) */
+.projects_menu_container {
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Tablet view */
+@media screen and (max-width: 991px) {
+  .projects_menu_container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      grid-gap: 24px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 24px;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .projects_menu_container {
+      grid-template-columns: repeat(2, 1fr); /* Changed to 2fr for consistent grid */
+      grid-auto-rows: auto;
+      grid-gap: 24px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      padding: 0 10px; /* Adjusted padding for better alignment */
+      height: auto; /* Changed height to auto */
+  }
+}
+
+/* Project Menu Container */
+.container.project-menu {
+  margin-bottom: 16px;
+}
+
+/* Project Menu Section */
+.projects_menu_section {
+  margin-bottom: 16px;
+  padding-top: 12px;
+  position: relative;
+}
+
+/* Project Poster Image */
+.poster_image {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  border-radius: 7px;
+  position: relative;
+  transform: none;
+}
+
+/* Project Hover Block TEXT VIEW PROJECT */
+.project-hover-block {
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+  font-family: Quicksand, sans-serif;
+  font-weight: 500;
+  line-height: 14px;
+  font-size: 13px; /* Default font size */
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+/* Pseudo-Element for Hover Effect */
+.project-hover-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.13s ease;
+}
+
+/* Hover effect for Project Hover Block */
+.projects_project_menu_poster:hover .project-hover-block {
+  opacity: 1;
+}
+
+/* Hover effect for Pseudo-Element */
+.projects_project_menu_poster:hover .project-hover-block::before {
+  opacity: 1;
+}
