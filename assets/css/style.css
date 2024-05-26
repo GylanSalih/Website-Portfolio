@@ -43,10 +43,18 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   z-index: 999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-top: -15px;
+  margin-bottom: 0px;
+  margin-right: 65px;
 }
 
 
-@media screen and (max-width: 701px) {
+@media screen and (max-width: 771px) {
   .dark-mode-toggle {
     cursor: pointer;
     text-align: center;
@@ -69,10 +77,40 @@ a {
     padding-left: 0px;
     padding-bottom: 0px;
     padding-right: 0px;
-    margin-top: 0px;
-    margin-right: 30px;
+    margin-top: -1px;
+    margin-right: 35px;
+    top: 27px;
   }
 }
+
+@media screen and (max-width: 991px) {
+  .dark-mode-toggle {
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    transform: translateY(-50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 999;
+    margin: 0 5px;
+    margin-top: 2px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    margin-right: 35px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    top: 27px;
+  }
+}
+
 
 
 .dark-mode-toggle i.fa-sun {
@@ -85,17 +123,74 @@ a {
   padding: 20px 0;
 }
 
-/* Header */
+/* Header Container Menu */
 .top_navigation_container,
 .container {
   width: 100%;
   margin: 0 auto;
   display: flex;
-  height: 85px;
   align-items: center;
   justify-content: space-between;
-  position: relative;
   padding: 0 20px;
+  background: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  position: fixed;
+  z-index: 999;
+  height: 56px;
+  padding: 0 16px;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Header Container Mobile */
+@media screen and (max-width: 771px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    position: fixed;
+    z-index: 999;
+    height: 56px;
+    padding: 0 16px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Header Container tablet  */
+@media screen and (max-width: 991px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    position: fixed;
+    z-index: 999;
+    height: 56px;
+    padding: 0 16px;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Header Container Mobile / darkmode funktion */
+.dark-mode .container {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
 }
 
 .logo {
@@ -103,6 +198,25 @@ a {
   padding-bottom: 0px;
   z-index: 999;
 }
+
+@media screen and (max-width: 701px) {
+  .logo {
+    position: fixed;
+    padding-bottom: 0px;
+    z-index: 999;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    position: fixed;
+    padding-bottom: 0px;
+    z-index: 999;
+    margin-left: 0px;
+  }
+}
+
 
 .logo img {
   max-height: 18px;
@@ -190,14 +304,15 @@ a {
 /* 2 Themes Install Styles */
 .menu {
   width: 100%;
-  height: 100vh;
+  height: 0vh;
   display: flex;
+  margin-top: -660px;
 }
 
 .menu-left {
   position: fixed;
   width: 100%;
-  height: 200vh;
+  height: 165vh;
   background: #ffffff; /* Light mode background */
   color: #000000; /* Light mode text color */
   display: flex;
@@ -233,6 +348,13 @@ body.menu-open {
   cursor: pointer;
   font-size: 20px;
   color: #000000;
+  margin-left: 0px;
+  margin-right: 61px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 18px;
 }
 
 /* Dark mode state for menu-open */
@@ -283,7 +405,7 @@ body.menu-open {
   .menu-left {
       position: fixed;
       width: 100%;
-      height: 200vh;
+      height: 150vh;
       background: #ffffff; /* Light mode background */
       color: #000000; /* Light mode text color */
       display: flex;
@@ -299,14 +421,24 @@ body.menu-open {
   }
 
   .menu-open {
-      position: fixed;
-      z-index: 999;
-      top: 0;
-      right: 30px;
-      padding: 2rem;
-      cursor: pointer;
-      font-size: 20px;
-      color: #000000;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 5px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 16px;
+    margin-right: 49px;
+    margin-left: 0px;
+    margin-top: 17px;
   }
 }
 
@@ -314,7 +446,7 @@ body.menu-open {
   .menu-left {
       position: fixed;
       width: 100%;
-      height: 200vh;
+      height: 180vh;
       background: #ffffff; /* Light mode background */
       color: #000000; /* Light mode text color */
       display: flex;
@@ -331,23 +463,24 @@ body.menu-open {
 
 
   .menu-open {
-      position: fixed;
-      z-index: 999;
-      cursor: pointer;
-      font-size: 20px;
-      color: #000000;
-      margin: 0 5px;
-      padding-top: 0px;
-      border-left-width: 0px;
-      border-left-style: solid;
-      border-right-width: 0px;
-      border-right-style: solid;
-      padding-right: 0px;
-      padding-left: 0px;
-      padding-bottom: 0px;
-      margin-top: 32px;
-      margin-right: 34px;
-      margin-left: 0px;
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 5px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 16px;
+    margin-right: 34px;
+    margin-left: 0px;
+    right: 24px;
   }
 }
 
@@ -461,6 +594,8 @@ body.menu-open {
   }
 }
 
+
+/* Hoover effect für den text */
 /* Project Poster */
 .projects_project_menu_poster {
   width: 100%;
@@ -503,7 +638,6 @@ body.menu-open {
       grid-gap: 24px;
       justify-content: center;
       align-items: center;
-      margin-top: 20px;
       width: 100%;
       padding: 0 10px; /* Adjusted padding for better alignment */
       height: auto; /* Changed height to auto */
@@ -555,7 +689,10 @@ body.menu-open {
   bottom: 0;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none; /* Ensures hover events pass through */
 }
+
+
 
 /* Pseudo-Element for Hover Effect */
 .project-hover-block::before {
@@ -567,6 +704,7 @@ body.menu-open {
   height: 100%;
   opacity: 0;
   transition: opacity 0.13s ease;
+  pointer-events: none; /* Ensures hover events pass through */
 }
 
 /* Hover effect for Project Hover Block */

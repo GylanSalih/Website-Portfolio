@@ -50,6 +50,11 @@ Updates / Fixes:
     0.0.9 - Header Icon Enhancement
         Refined icon positioning for enhanced usability + New Logo
 
+    0.0.95 - Spacing/Margin/Padding Bugs
+            -Fixed
+
+    0.0.95 Fixed Menu bar with Toggle Responsive
+
 ## Misc:
 
 * Follow Gylan: [Twitter](https://www.gylansalih.com), [GitHub](https://github.com/gylansalih)
