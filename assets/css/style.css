@@ -326,7 +326,7 @@ body.menu-open {
   }
     
   .menu-link a span {
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-size: 12px;
   }
 }
@@ -344,7 +344,7 @@ body.menu-open {
   }
 
   .menu-link a span {
-      font-family: "Montserrat";
+      font-family: 'Montserrat';
       font-size: 14px;
   }
 }
