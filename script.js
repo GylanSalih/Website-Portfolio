@@ -57,8 +57,13 @@ tl.to(".menu-left", {
 
 tl.reverse();
 
-document.querySelector(".menu-open").addEventListener("click", function() {
+document.querySelector(".hamburger").addEventListener("click", function() {
     tl.reversed(!tl.reversed()); // Toggle the reversed state of the timeline
 });
 
-// New JS Scripts here---
+// Hamburger Effect---
+var btn = $('.btn');
+
+btn.on('click', function() {
+  $(this).toggleClass('active not-active');
+});

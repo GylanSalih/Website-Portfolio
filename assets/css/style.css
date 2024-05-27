@@ -23,95 +23,19 @@ a {
   text-decoration: underline;
 }
 
+/* Custom color variables // Muss verbessert werden */
+:root {
+  --white: white;
+  --black: black;
+  --background-blue: #000000;
+  --Red: rgb(255, 8, 0);
+}
+
 /* Dark Mode Styles */
 .dark-mode {
   background-color: #000000;
   color: #fff;
 }
-
-/* Dark Mode Toggle Position */
-.dark-mode-toggle {
-  cursor: pointer;
-  text-align: center;
-  position: fixed;
-  right: -12px;
-  top: 43px;
-  padding: 2rem;
-  transform: translateY(-50%);
-  font-family: 'Arial', sans-serif;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-decoration: none;
-  z-index: 999;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-left: 0px;
-  margin-top: -15px;
-  margin-bottom: 0px;
-  margin-right: 65px;
-}
-
-
-@media screen and (max-width: 771px) {
-  .dark-mode-toggle {
-    cursor: pointer;
-    text-align: center;
-    position: fixed;
-    transform: translateY(-50%);
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    z-index: 999;
-    margin: 0 5px;
-    margin-top: 0px;
-    margin-right: 5px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    margin-right: 32px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    margin-top: -1px;
-    margin-right: 35px;
-    top: 27px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .dark-mode-toggle {
-    cursor: pointer;
-    text-align: center;
-    position: fixed;
-    transform: translateY(-50%);
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    z-index: 999;
-    margin: 0 5px;
-    margin-top: 2px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    margin-right: 35px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    top: 27px;
-  }
-}
-
-
 
 .dark-mode-toggle i.fa-sun {
   color: rgb(0, 0, 0);
@@ -140,7 +64,6 @@ a {
   padding: 0 16px;
   left: 0px;
   top: 0px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -162,7 +85,6 @@ a {
     padding: 0 16px;
     left: 0px;
     top: 0px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -183,9 +105,70 @@ a {
     padding: 0 16px;
     left: 0px;
     top: 0px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   }
 }
+
+
+
+/* Beispiel Globales CSS */
+.dark-mode-toggle {
+  /* Standardstile */
+  cursor: auto;
+  text-align: left;
+  position: static;
+  transform: none;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 22px;
+  text-transform: none;
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.3s ease; /* Smooth transition */
+  margin-left: 0px;
+  margin-right: 150px;
+  margin-top: -5px;
+}
+
+
+.dark-mode-toggle:hover {
+  transform: scale(1.2); /* Scale up the element */
+}
+
+@media screen and (max-width: 991px) {
+  .dark-mode-toggle {
+    /* Stile für max-width: 991px */
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    transform: translateY(-50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 999;
+    right: 19px;
+    top: 28px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .dark-mode-toggle {
+    /* Stile für max-width: 771px */
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    transform: translateY(-50%);
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 999;
+    right: -69px;
+    top: 28px;
+  }
+}
+
+
 
 /* Header Container Mobile / darkmode funktion */
 .dark-mode .container {
@@ -197,6 +180,11 @@ a {
   position: fixed;
   padding-bottom: 0px;
   z-index: 999;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+  transform: scale(1.2); /* Scale up the element */
 }
 
 @media screen and (max-width: 701px) {
@@ -338,29 +326,7 @@ body.menu-open {
   overflow: hidden;
 }
 
-/* Default state for menu-open (light mode) */
-.menu-open {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 30px;
-  padding: 2rem;
-  cursor: pointer;
-  font-size: 20px;
-  color: #000000;
-  margin-left: 0px;
-  margin-right: 61px;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  margin-top: 18px;
-}
 
-/* Dark mode state for menu-open */
-.dark-mode .menu-open {
-  color: #ffffff;
-}
 
 /* Menu Links Font PC*/
 .menu-link a {
@@ -401,88 +367,8 @@ body.menu-open {
   font-size: 24px;
 }
 
-@media screen and (max-width: 991px) {
-  .menu-left {
-      position: fixed;
-      width: 100%;
-      height: 150vh;
-      background: #ffffff; /* Light mode background */
-      color: #000000; /* Light mode text color */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left: -100%;
-      transition: left 0.5s ease;
-      z-index: 999;
-  }
-
-  .menu-left.open {
-      left: 0;
-  }
-
-  .menu-open {
-    position: fixed;
-    z-index: 999;
-    cursor: pointer;
-    font-size: 20px;
-    color: #000000;
-    margin: 0 5px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-top: 16px;
-    margin-right: 49px;
-    margin-left: 0px;
-    margin-top: 17px;
-  }
-}
-
-@media screen and (max-width: 701px) {
-  .menu-left {
-      position: fixed;
-      width: 100%;
-      height: 180vh;
-      background: #ffffff; /* Light mode background */
-      color: #000000; /* Light mode text color */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      left: -100%;
-      transition: left 0.5s ease;
-      z-index: 999;
-  }
-
-  .menu-left.open {
-      left: 0;
-  }
 
 
-  .menu-open {
-    position: fixed;
-    z-index: 999;
-    cursor: pointer;
-    font-size: 20px;
-    color: #000000;
-    margin: 0 5px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-top: 16px;
-    margin-right: 34px;
-    margin-left: 0px;
-    right: 24px;
-  }
-}
 
 /* Menu text size for mobile responsiveness */
 @media screen and (max-width: 901px) {
@@ -534,16 +420,6 @@ body.menu-open {
   .projects_menu_section {
       z-index: 3; /* Lowered z-index value */
   }
-}
-
-
-/* Custom color variables */
-:root {
-  --thistle: #bab4d0;
-  --background-blue: #130f24;
-  --hover-purple: #9f8cf0;
-  --white: white;
-  --black: black;
 }
 
 /* Heading-2 Styles */
@@ -716,3 +592,285 @@ body.menu-open {
 .projects_project_menu_poster:hover .project-hover-block::before {
   opacity: 1;
 }
+
+
+/* vorherige menu einstellungen */
+
+@media screen and (max-width: 991px) {
+  .menu-left {
+      position: fixed;
+      width: 100%;
+      height: 150vh;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -100%;
+      transition: left 0.5s ease;
+      z-index: 999;
+  }
+
+  .menu-left.open {
+      left: 0;
+  }
+
+  .menu-open {
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 5px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 16px;
+    margin-right: 49px;
+    margin-left: 0px;
+    margin-top: 17px;
+  }
+}
+
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 30px;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 0px;
+  margin-right: 61px;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 18px;
+}
+
+/* Dark mode state for menu-open */
+.dark-mode .menu-open {
+  color: #ffffff;
+}
+
+
+@media screen and (max-width: 701px) {
+  .menu-left {
+      position: fixed;
+      width: 100%;
+      height: 180vh;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -100%;
+      transition: left 0.5s ease;
+      z-index: 999;
+  }
+
+  .menu-left.open {
+      left: 0;
+  }
+
+
+  .menu-open {
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    font-size: 20px;
+    color: #000000;
+    margin: 0 5px;
+    padding-top: 0px;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-right-width: 0px;
+    border-right-style: solid;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    margin-top: 16px;
+    margin-right: 34px;
+    margin-left: 0px;
+    right: 24px;
+  }
+}
+
+/*------------------------------------Hamburger icon BEGIN----------- */
+/* Dark mode state for Hamburger */
+.dark-mode .hamburger {
+  color: #ffffff;
+}
+
+.dark-mode .spanmenu {
+  background-color: #ffffff;
+}
+
+.hamburger {
+  border-radius: 2px;
+  position: absolute;
+  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
+  right: 10px; /* Abstand vom rechten Rand des Headers */
+  transform: translate(50%, -50%);
+  z-index: 999;
+  color: #000000;
+  transition: transform 0.3s; /* Füge die Transition hier hinzu */
+}
+
+.btn {
+  position: absolute;
+  top: 50%; /* Platziere den Button vertikal in der Mitte */
+  right: 117px; /* Abstand vom rechten Rand des Headers */
+  transform: translate(50%, -50%);
+  width: 40px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 771px) {
+  .btn {
+    position: absolute;
+    top: 50%; /* Platziere den Button vertikal in der Mitte */
+    right: 30px;
+    transform: translate(50%, -50%);
+    width: 40px;
+    cursor: pointer;
+  }
+}
+
+.spanmenu {
+  display: block;
+  width: 85%;
+  border-radius: 3px;
+  height: 3px;
+  background-color: #000000;
+  transition: all 0.3s;
+  position: relative;
+  height: 3px;
+}
+
+.spanmenu + .spanmenu {
+  margin-top: 3px;
+}
+
+.active .spanmenu:nth-child(1) {
+  animation: top 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(1) {
+  animation: top-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(2) {
+  animation: scaled 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(2) {
+  animation: scaled-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(3) {
+  animation: bottom 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(3) {
+  animation: bottom-2 0.7s ease forwards;
+}
+
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  }
+  100% {
+    top: 5px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(45deg);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  }
+  100% {
+    bottom: 8px;
+    transform: rotate(135deg);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*------------------------------------Hamburger icon ENDE----------- */
+
+/*------------------------------------Portfolio Page BEGIN----------- */
