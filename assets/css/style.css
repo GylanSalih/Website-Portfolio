@@ -890,7 +890,7 @@ body.menu-open {
 }
 
 /* Project Hero Background */
-.project-hero {
+.project-hero1 {
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
   background-position: center;
