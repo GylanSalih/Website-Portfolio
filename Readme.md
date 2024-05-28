@@ -4,6 +4,12 @@
 
 **`Please Note its in the Beta-Phase`**
 
+<details open>
+    <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
+<p align="center">
+<img alt="Image" title="Image" width="300px height="300px src="assets/img/Github_showcasee/Single_Card.jpeg>
+</p>
+</details>
 
 <details open>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
