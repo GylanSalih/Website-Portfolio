@@ -3,6 +3,8 @@
 ### Made by Gylan Salih / Open-Source for Everybody
 
 
+
+<details>
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile_Responsive.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile.jpeg"/>
@@ -10,6 +12,8 @@
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Landing_Page-white.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Single_Card.jpeg"/>
 </p>
+</details>
+
 
 <p align="center">
 <img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
