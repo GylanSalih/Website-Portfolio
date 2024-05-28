@@ -5,7 +5,7 @@
 **`Please Note its in the Beta-Phase`**
 
 
-<details>
+<details open>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile_Responsive.jpeg"/>
