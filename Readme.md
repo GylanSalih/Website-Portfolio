@@ -54,6 +54,7 @@ Updates / Fixes:
         - Animated Menu
         - Logo Click-> Home
         - Scale Animation
+        - Added Favicon
 
     0.0.9 - New Pages
         - /Pages/Cards/Card1.html by Clicking on Single Cards.
