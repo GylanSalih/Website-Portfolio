@@ -2,9 +2,11 @@
 ## Mission Award Wining Design
 ### Made by Gylan Salih / Open-Source for Everybody
 
+**`Please Note its in the Beta-Phase`**
 
 
 <details>
+    <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile_Responsive.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile.jpeg"/>
@@ -13,7 +15,6 @@
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Single_Card.jpeg"/>
 </p>
 </details>
-
 
 <p align="center">
 <img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
