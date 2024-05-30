@@ -68,7 +68,7 @@ btn.on('click', function() {
   $(this).toggleClass('active not-active');
 });
 
-
+// Loading Animation---
 gsap.fromTo(
     ".loading-page",
     { opacity: 1 },
@@ -94,3 +94,4 @@ gsap.fromTo(
     }
   );
   
+  // Smoother Page Opening---

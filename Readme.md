@@ -32,9 +32,15 @@
 <img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
 </p>
 
+Beta / Release = 1.0 (After 100 Updates)
+Lookbook:
 
-Lookbook: Beta / Release = 1.0
+// Problems: 
+1. I would like to install a Pokemon holo effect instead of normal glare, unfortunately I'm not experienced enough yet.
+2. the visualization of single card text information (/Pages/portfolio.html) with black and white Toggle (Dont know yet what to do xD)..
+
 Updates / Fixes:
+
 
     0.0.1 - Portfolio and Personal Website
         - Began the development of the Portfolio/Home section.
@@ -81,7 +87,7 @@ Updates / Fixes:
     0.0.10 - Updates 30.05.2024
         - New Footer
         - Simple About Me Page for the beginning
-        - Home Loading Animation (SVG Code with gsap.min.js)
+        - Loading Animation (gsap.min.js with SVG -> Code)
 
 ## Misc:
 
