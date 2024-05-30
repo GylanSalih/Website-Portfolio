@@ -62,10 +62,12 @@ Updates / Fixes:
         - Added Favicon
         - Sticky Header
 
-    0.0.9 - New Pages
-        - /Pages/Cards/Card1.html by Clicking on Single Cards.
+    0.0.9 - New Page Single Portfolio Information
+        - By Clicking on Cards /Pages/Cards/Card1.html Information
 
-
+    0.0.10 - Updates 30.05.2024
+        - New Footer
+        - Simple About Me Page for the beginning
 
 ## Misc:
 

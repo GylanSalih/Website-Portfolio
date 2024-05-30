@@ -31,6 +31,7 @@ a {
   --Red: rgb(255, 8, 0);
 }
 
+
 /* Dark Mode Styles */
 .dark-mode {
   background-color: #000000;
@@ -1053,3 +1054,382 @@ p {
   position: relative;
   transform: none;
 }
+
+
+
+
+
+
+
+h5 {
+  color: white; /* Hier fehlte das Semikolon */
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+
+.section_project_cast {
+  margin-bottom: 40px;
+  padding-top: 12px;
+}
+
+
+.cast_includes_div {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center; /* Hier hinzufügen */
+}
+
+.cast_block {
+  flex: 0 auto;
+  margin-right: 80px;
+}
+
+.cast_names {
+  font-weight: 600;
+}
+
+.Descriptioncontainer {
+  z-index: 2;
+  width: 100%;
+  max-width: 1080px;
+  min-height: 50px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 20px;
+  display: block;
+  position: relative;
+}
+
+h2 {
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------- About Section HOME BEGIN----------------- */
+/* home section styling */
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("/assets/img/about-me.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  color: #ffffff;
+}
+.home .text-two{
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .text-three{
+  font-size: 40px;
+  margin: 5px 0;
+  color: #ffffff;
+}
+.home .text-four{
+  font-size: 23px;
+  margin: 5px 0;
+  color: #ffffff;
+}
+.home .button{
+  margin: 14px 0;
+  margin-top: 28px;
+}
+.home .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button button:hover{
+  border-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*-------------------- About Section HOME END----------------- */
+/*-------------------- About Section Styling BEGIN----------------- */
+section{
+  padding-top: 40px;
+  background-color: #000000;
+}
+section .content{
+  width: 75%;
+  margin: 0px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 59px;
+}
+section .title span{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+}
+
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+  margin-bottom: 80px;
+}
+section  .topic{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #ffffff;
+}
+section .button{
+  margin: 16px 0;
+}
+
+
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+
+/*-------------------- About Section Styling END----------------- */
+
+ 
+ /*--------------------------------- Footer CSS BEGIN-----------------*/
+footer{
+  background: #000000;
+  padding: 15px 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 40px;
+  padding-bottom: 54px;
+}
+footer .text span{
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .text span a{
+  font-weight: 500;
+  color: #FFF;
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+/*--------------------------------- Footer CSS END-----------------*/
+
+/*-------------------Responsive About Me Page BEGIN------------------------- */
+@media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+}
+
+/*-------------------Responsive About Me Page END------------------------- */
+/*-------------------Animated Text Typewriting Effekt BEGIN------------------ */
+
+
+/*-------------------Animated Text Typewriting Effekt END------------------ */
+
+/*-------------------Social Icons About Me Page BEGIN------------------ */
+
+
+.media-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+}
+
+.media-icons a {
+  margin-top: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 0.7;
+  color: #e2e2e2be;
+  transition: all 0.3s ease;
+}
+
+
+.media-icons a:hover{
+ opacity: 1;
+}
+
+/*-------------------Social Icons About Me Page END------------------ */
+
+
+
+
+
