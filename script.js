@@ -69,7 +69,20 @@ btn.on('click', function() {
 });
 
 // Loading Animation---
-gsap.fromTo(
+
+
+// Regel, um das Scrollen zu verstecken
+document.documentElement.style.overflow = 'hidden';
+
+// Funktion zum Wiederherstellen des Scrollens
+function enableScroll() {
+  // Regel, um das Scrollen wieder anzuzeigen
+  document.documentElement.style.overflow = 'auto';
+}
+
+// Animation der Lade-Seite mit einer Verzögerung von 4 Sekunden starten
+setTimeout(function() {
+  gsap.fromTo(
     ".loading-page",
     { opacity: 1 },
     {
@@ -77,9 +90,10 @@ gsap.fromTo(
       display: "none",
       duration: 1.5,
       delay: 2.5,
+      onComplete: enableScroll // Nach Abschluss der Animation das Scrollen aktivieren
     }
   );
-  
+
   gsap.fromTo(
     ".logo-name",
     {
@@ -90,8 +104,10 @@ gsap.fromTo(
       y: 0,
       opacity: 1,
       duration: 2,
-      delay: 0.3,
+      delay: 0.5,
     }
   );
+}, 4000); // Wartezeit in Millisekunden, bevor die Animation gestartet wird
+
   
   // Smoother Page Opening---

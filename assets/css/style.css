@@ -64,11 +64,33 @@ a {
   z-index: 999;
   height: 56px;
   padding: 0 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
   left: 0px;
   top: 0px;
 }
 
+/*--Light Effect Header Border Bottom Container --*/
+.special_span {
+  /* Deine speziellen Stile für dieses span-Element hier */
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: linear-gradient(90deg , transparent , #fff);
+  animation: animate 5s infinite linear;
+}
 
+
+@keyframes animate {
+  0%{
+      left: 0;
+      transform: translate(-100%);
+  }
+  100%{
+      left: 100%;
+      transform: translate(0%);
+  }
+}
 
 /* Header Container Mobile */
 @media screen and (max-width: 771px) {
@@ -309,6 +331,7 @@ a {
   z-index: 999;
 }
 
+
 /* Dark Mode Styles for Menu */
 .dark-mode .menu-left {
   background: #000000; /* Dark mode background */
@@ -422,7 +445,7 @@ body.menu-open {
 
 /* Heading-2 Styles */
 .heading-2 {
-  margin-top: 24px;
+  margin-top: 64px;
   margin-bottom: 24px;
   color: white;
   font-size: 42px;
@@ -1333,8 +1356,8 @@ footer{
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  padding-top: 40px;
-  padding-bottom: 54px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 footer .text span{
   font-size: 17px;
@@ -1435,7 +1458,6 @@ footer .text span a:hover{
 
 
 
-
 .loading-page {
   position: absolute;
   top: 0;
@@ -1463,6 +1485,20 @@ footer .text span a:hover{
   animation: draw 10s ease;
 }
 
+
+@media (max-width: 771px) {
+  #svg {
+    height: 250px;
+    width: 250px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 10s ease;
+  }
+}
+
+
 @keyframes draw {
   0% {
     stroke-dashoffset: 4500;
@@ -1489,3 +1525,32 @@ footer .text span a:hover{
 
 /* SVG Image Convert to Code and Paste it in HTML */
 /*-------------------Loading Animation Start------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
