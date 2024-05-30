@@ -68,6 +68,7 @@ Updates / Fixes:
     0.0.10 - Updates 30.05.2024
         - New Footer
         - Simple About Me Page for the beginning
+        - Home Loading Animation (SVG Code with gsap.min.js)
 
 ## Misc:
 

@@ -1430,6 +1430,61 @@ footer .text span a:hover{
 /*-------------------Social Icons About Me Page END------------------ */
 
 
+/*-------------------Loading Animation Start------------------ */
 
 
 
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #000000, #000000, #000000);
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+  z-index: 999;
+}
+
+#svg {
+  height: 450px;
+  width: 450px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 10s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+/* SVG Image Convert to Code and Paste it in HTML */
+/*-------------------Loading Animation Start------------------ */
