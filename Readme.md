@@ -3,7 +3,9 @@
 ### Made by Gylan Salih / Open-Source for Everybody
 
 **`Please Note its in the Beta-Phase`**
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open-Source-black?logo=package&logoColor=white&style=for-the-badge"/>
+
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
+
 <details open>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
