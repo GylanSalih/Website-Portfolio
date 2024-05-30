@@ -8,9 +8,15 @@
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg"/>
-<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Landing_Page-black.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Landing_Page-white.jpeg"/>
+<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile.jpeg"/>
+</p>
+</details>
+
+<details>
+    <summary><h2>⚡ SHOWCASE - MOBILE VERSION ⚡</h2></summary>
+<p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/6a77faf68d81ab4b6a42a36b1a4dc40132abfcd4/assets/img/Github_showcasee/Single_Card.jpeg"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Mobile_Responsive.jpeg"/>
 </p>
