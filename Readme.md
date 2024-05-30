@@ -6,6 +6,9 @@
 
 <img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
 
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
+
+
 <details open>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
