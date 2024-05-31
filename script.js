@@ -107,7 +107,25 @@ setTimeout(function() {
       delay: 0.5,
     }
   );
-}, 4000); // Wartezeit in Millisekunden, bevor die Animation gestartet wird
+}, 0); // Wartezeit in Millisekunden, bevor die Animation gestartet wird
 
   
-  // Smoother Page Opening---
+  // Lightbox Start---
+
+  $(document).ready(function() {
+    $('.img-box').click(function() {
+      var imgSrc = $(this).find('img').attr('src');
+      var imgAlt = $(this).find('img').attr('alt');
+      var caption = $(this).find('.caption p:first-child').text();
+  
+      $('.lightbox img').attr('src', imgSrc);
+      $('.lightbox img').attr('alt', imgAlt);
+      $('.lightbox .caption').text(caption);
+      $('.lightbox').fadeIn();
+    });
+  
+    $('.close, .lightbox').click(function() {
+      $('.lightbox').fadeOut(300); // Hier wird eine Verzögerung von 300 Millisekunden hinzugefügt
+    });
+  });
+  

@@ -84,10 +84,14 @@ Updates / Fixes:
     0.0.9 - New Page Single Portfolio Information
         - By Clicking on Cards /Pages/Cards/Card1.html Information
 
-    0.0.10 - Updates 30.05.2024
+    0.0.10 - Updates
         - New Footer
         - Simple About Me Page for the beginning
         - Loading Animation (gsap.min.js with SVG -> Code)
+        - Single Card New Gallery
+        - Header Icons Position
+        - Some Bug Fixing
+        - Layout Fix Single Card
 
 ## Misc:
 

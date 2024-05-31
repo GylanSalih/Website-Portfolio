@@ -136,7 +136,6 @@ a {
 
 /* Beispiel Globales CSS */
 .dark-mode-toggle {
-  /* Standardstile */
   cursor: auto;
   text-align: left;
   position: static;
@@ -147,9 +146,9 @@ a {
   text-transform: none;
   text-decoration: none;
   z-index: 999;
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
   margin-left: 0px;
-  margin-right: 150px;
+  margin-right: 75px;
   margin-top: -5px;
 }
 
@@ -173,7 +172,6 @@ a {
 
 @media screen and (max-width: 771px) {
   .dark-mode-toggle {
-    /* Stile für max-width: 771px */
     cursor: pointer;
     text-align: center;
     position: fixed;
@@ -183,11 +181,10 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     z-index: 999;
-    right: -69px;
+    right: 0px;
     top: 28px;
   }
 }
-
 
 
 /* Header Container Mobile / darkmode funktion */
@@ -445,9 +442,8 @@ body.menu-open {
 
 /* Heading-2 Styles */
 .heading-2 {
-  margin-top: 64px;
-  margin-bottom: 24px;
-  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
   font-size: 42px;
   padding-bottom: 24px;
   padding-top: 24px;
@@ -455,6 +451,20 @@ body.menu-open {
   font-family: 'Bebas_Neue', sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (max-width: 771px) {
+  .heading-2 {
+    margin-top: 15px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: center;
+    font-family: 'Bebas_Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 /* Responsive Container */
@@ -749,8 +759,8 @@ body.menu-open {
 
 .btn {
   position: absolute;
-  top: 50%; /* Platziere den Button vertikal in der Mitte */
-  right: 117px; /* Abstand vom rechten Rand des Headers */
+  top: 50%;
+  right: 35px;
   transform: translate(50%, -50%);
   width: 40px;
   cursor: pointer;
@@ -914,7 +924,7 @@ body.menu-open {
   }
 }
 
-/* Project Hero Background */
+/* Project Hero Background Card Hintergrund */
 .project-hero1 {
   z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
@@ -1083,37 +1093,73 @@ p {
 
 
 
-
-
 h5 {
-  color: white; /* Hier fehlte das Semikolon */
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 16px;
+  font-family: 'Poppins';
 }
-
 
 .section_project_cast {
   margin-bottom: 40px;
   padding-top: 12px;
 }
 
-
 .cast_includes_div {
-  flex-wrap: wrap;
   display: flex;
-  justify-content: center; /* Hier hinzufügen */
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .cast_block {
-  flex: 0 auto;
-  margin-right: 80px;
+  flex: 0 0 auto;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.cast_names {
+.smalldescription {
+  flex: 1 1 100%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.Cast Names {
   font-weight: 600;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .cast_includes_div {
+    justify-content: space-between;
+  }
+
+  .cast_block {
+    
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cast_block {
+    margin-right: 41px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .cast_block {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .cast_includes_div {
+    flex-direction: column;
+  }
 }
 
 .Descriptioncontainer {
@@ -1124,8 +1170,6 @@ h5 {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 20px;
   display: block;
   position: relative;
 }
@@ -1352,7 +1396,7 @@ section .button button:hover{
  
  /*--------------------------------- Footer CSS BEGIN-----------------*/
 footer{
-  background: #000000;
+  background: #00000000;
   padding: 15px 0;
   text-align: center;
   font-family: 'Poppins', sans-serif;
@@ -1362,8 +1406,14 @@ footer{
 footer .text span{
   font-size: 17px;
   font-weight: 400;
-  color: #fff;
 }
+
+.dark-mode .footer .text span {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+
 footer .text span a{
   font-weight: 500;
   color: #FFF;
@@ -1553,4 +1603,152 @@ footer .text span a:hover{
 
 
 
+/*-------------------Gallery Single Card Gallery Start------------------ */
+
+
+.gallery-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 4px;
+  height: 100%;
+  width: 13%;
+  overflow: hidden;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+@media (max-width: 771px) {
+  .img-box {
+    box-sizing: content-box;
+    margin: 8px;
+    height: 100%;
+    width: 28%;
+    overflow: hidden;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px;
+  }
+}
+
+  
+@media (max-width: 771px) {
+  .transparent-box {
+    height: 400px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+    display: none;
+  }
+}
+
+
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 400px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+  font-family: 'Poppins';
+}
+
+/*-------------------Lightbox Single Card Gallery Start------------------ */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.83);
+  top: 0;
+  left: 0;
+}
+
+.lightbox-content {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+@media (max-width: 771px) {
+  .lightbox-content {
+    position: relative;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 155px;
+  }
+}
+
+.lightbox img {
+  width: 100%;
+  height: auto;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  cursor: pointer;
+}
+/*-------------------Lightbox Single Card Gallery ENG------------------ */
 
