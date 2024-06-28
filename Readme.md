@@ -37,7 +37,7 @@ Lookbook:
 
 // Problems: 
 1. I would like to install a Pokemon holo effect instead of normal glare, unfortunately I'm not experienced enough yet.
-2. the visualization of single card text information (/Pages/portfolio.html) with black and white Toggle (Dont know yet what to do xD)..
+2. Too Much Static, need more effects and Ambience xD
 
 Updates / Fixes:
 
@@ -93,6 +93,12 @@ Updates / Fixes:
         - Some Bug Fixing
         - Layout Fix Single Card
 
+   0.0.11 - Updates
+        - Quicksand font Local
+        - Skills Page
+        - Bootstrap/FontAwesome Icons
+        - Fixed Dark-Mode in Single Card Information on Portfolio Page
+        -
 ## Misc:
 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)

@@ -29,6 +29,14 @@ a {
   --black: black;
   --background-blue: #000000;
   --Red: rgb(255, 8, 0);
+  --primary2: #111821;
+  --primary-dark: #223247;
+  --primary-light: #2e4a6f;
+  --secondary: #e31b6d;
+  --tertiary: #fff;
+  --tertiary-dark: #a9bbd3;
+  --card-bg: #223247;
+  --card-text: #e31b6d;
 }
 
 
@@ -927,6 +935,17 @@ body.menu-open {
 /* Project Hero Background Card Hintergrund */
 .project-hero1 {
   z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #ffffff), url("/assets/img/poster/poster_7.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+}
+
+/* Project Hero Background Card Hintergrund in Dark-modus Weißer Gradient*/
+.dark-mode .project-hero1 {
+  z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
   background-position: center;
   background-size: cover;
@@ -934,6 +953,7 @@ body.menu-open {
   height: 500px;
   position: absolute;
 }
+
 
 /* Project Hero Container */
 .project-hero_container {
@@ -1404,7 +1424,7 @@ footer{
   padding-bottom: 30px;
 }
 footer .text span{
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 400;
 }
 
@@ -1421,6 +1441,16 @@ footer .text span a{
 footer .text span a:hover{
   text-decoration: underline;
 }
+
+.custom-github-icon {
+  font-size: 1.05rem; /* Github Icon */
+  color: #000000;
+}
+
+.dark-mode .custom-github-icon {
+  color: #ffffff;
+}
+
 /*--------------------------------- Footer CSS END-----------------*/
 
 /*-------------------Responsive About Me Page BEGIN------------------------- */
@@ -1752,3 +1782,115 @@ footer .text span a:hover{
 }
 /*-------------------Lightbox Single Card Gallery ENG------------------ */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------Skill Page BEGIN----------- */
+
+
+.skills {
+  max-width: 1500px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 0 3rem;
+  margin-top: 105px;
+  font-size: 28px;
+  padding-left: 7rem;
+}
+
+@media (max-width: 771px) {
+  .skills {
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    margin-top: 105px;
+    font-size: 24px;  
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.category h3 {
+  font-size: 3.5rem;
+  font-weight: var(--tertiary-dark);
+  color: var(--tertiary);
+  margin-bottom: 18px;
+  font-family: 'Quicksand';
+  font-weight: 300;
+  color: #000;
+}
+
+.dark-mode .custom-github-icon {
+  color: #ffffff;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Quicksand';
+}
+
+.skill {
+  background-color: var(--primary-light);
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill i {
+  font-size: 1.2em;
+}
+
+.skill:hover {
+  background-color: var(--card-text);
+  color: #FFF;
+}
+/*------------------------------------Skill Page END----------- */
+
+
+
+
+
+/*------------------------------------Footer Github----------- */
