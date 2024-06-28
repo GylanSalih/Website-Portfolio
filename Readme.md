@@ -92,6 +92,8 @@ Updates / Fixes:
         - Header Icons Position
         - Some Bug Fixing
         - Layout Fix Single Card
+        - JS.Scripts Local Integration
+        - Simple Lightbox For Gallery (Single Card)
 
    0.0.11 - Updates
         - Quicksand font Local
