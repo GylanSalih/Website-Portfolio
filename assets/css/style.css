@@ -81,6 +81,18 @@ p {
   font-family: 'Poppins';
 }
 
+
+a {
+  color: #8c8c8e;
+  font-family: 'Arial', serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
 @media screen and (max-width: 991px) {
   h1 {
     margin-top: 0;
@@ -180,62 +192,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes animate {
   0% {
     left: 0;
@@ -244,6 +200,36 @@ p {
   100% {
     left: 100%;
     transform: translate(0%);
+  }
+}
+
+
+/* Header Container Mobile / darkmode funktion */
+.dark-mode .container {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Header Container tablet */
+@media screen and (max-width: 991px) {
+  .container {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
   }
 }
 
@@ -267,25 +253,6 @@ p {
   }
 }
 
-/* Header Container tablet */
-@media screen and (max-width: 991px) {
-  .container {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    height: 56px;
-    justify-content: space-between;
-    left: 0px;
-    margin: 0 auto;
-    padding: 0 16px;
-    padding: 0 20px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
-  }
-}
 /* Beispiel Globales CSS */
 .dark-mode-toggle {
   cursor: crosshair;
@@ -335,11 +302,7 @@ p {
   }
 }
 
-/* Header Container Mobile / darkmode funktion */
-.dark-mode .container {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
+
 
 .logo {
   cursor: crosshair;
@@ -354,14 +317,12 @@ p {
   transform: scale(1.2); /* Scale up the element */
 }
 
-@media screen and (max-width: 701px) {
-  .logo {
-    margin-left: 12px;
-    padding-bottom: 0px;
-    position: fixed;
-    z-index: 999;
-  }
+
+.logo img {
+  cursor: crosshair;
+  max-height: 18px;
 }
+
 
 @media screen and (max-width: 991px) {
   .logo {
@@ -372,20 +333,14 @@ p {
   }
 }
 
-.logo img {
-  cursor: crosshair;
-  max-height: 18px;
+@media screen and (max-width: 701px) {
+  .logo {
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
 }
 
-a {
-  color: #8c8c8e;
-  font-family: 'Arial', serif;
-  font-size: 12px;
-  letter-spacing: 3px;
-  margin: 0 0px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
 
 
 
@@ -538,18 +493,6 @@ a {
   margin-top: 24px;
 }
 
-/* Tablet view */
-@media screen and (max-width: 991px) {
-  .container {
-      align-items: center; /* Hier war der Fehler */
-      grid-auto-rows: auto;
-      grid-gap: 24px;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      margin-top: 24px;
-  }
-}
-
 
 
 /* Mobile view */
@@ -639,6 +582,26 @@ a {
 
 /* Previous menu settings */
 
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+  color: #000000;
+  cursor: crosshair;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 61px;
+  margin-top: 18px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding: 2rem;
+  position: fixed;
+  right: 30px;
+  top: 0;
+  z-index: 999;
+}
+
 @media screen and (max-width: 991px) {
   .menu-left {
     align-items: center;
@@ -680,24 +643,6 @@ a {
   }
 }
 
-/* Default state for menu-open (light mode) */
-.menu-open {
-  color: #000000;
-  cursor: crosshair;
-  font-size: 20px;
-  margin-left: 0px;
-  margin-right: 61px;
-  margin-top: 18px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding: 2rem;
-  position: fixed;
-  right: 30px;
-  top: 0;
-  z-index: 999;
-}
 
 /* Dark mode state for menu-open */
 .dark-mode .menu-open {
@@ -1164,9 +1109,10 @@ a {
   transition: color 0.3s;
 }
 
-/* Project Poster Image */
+/* Single Card Projects Poster Image (EinzelBild beim öffnen vom Portfolio) */
 .poster_single {
   border-radius: 8px;
+  cursor: crosshair;
   height: 100%;
   max-width: none;
   object-fit: cover;
