@@ -100,7 +100,7 @@ Updates / Fixes:
         - Skills Page
         - Bootstrap/FontAwesome Icons
         - Fixed Dark-Mode in Single Card Information on Portfolio Page
-        -
+        - Menu Text
 ## Misc:
 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
