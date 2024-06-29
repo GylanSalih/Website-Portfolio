@@ -95,7 +95,7 @@ Updates / Fixes:
         - JS.Scripts Local Integration
         - Simple Lightbox For Gallery (Single Card)
 
-   0.0.11 - Updates
+    0.0.11 - Updates
         - Quicksand font Local
         - Skills Page
         - Bootstrap/FontAwesome Icons
