@@ -95,23 +95,13 @@ Updates / Fixes:
         - JS.Scripts Local Integration
         - Simple Lightbox For Gallery (Single Card)
 
-    0.0.10 - Updates
-        - New Footer
-        - Simple About Me Page for the beginning
-        - Loading Animation (gsap.min.js with SVG -> Code)
-        - Single Card New Gallery
-        - Header Icons Position
-        - Some Bug Fixing
-        - Layout Fix Single Card
-        - JS.Scripts Local Integration
-        - Simple Lightbox For Gallery (Single Card)
-        
    0.0.11 - Updates
         - Quicksand font Local
         - Skills Page
         - Bootstrap/FontAwesome Icons
         - Fixed Dark-Mode in Single Card Information on Portfolio Page
         - Menu Text
+
 ## Misc:
 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
