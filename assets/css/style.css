@@ -1842,8 +1842,7 @@ footer .text span a:hover {
 
 /*------------------------------------Background Blocks START----------- */
 
-/*------------------------------------Background Blocks Ende----------- */
-
+/*------------------------------------Menu Geöffnet CSS START----------- */
 
 .menu-left {
   position: fixed;
@@ -2028,3 +2027,5 @@ footer .text span a:hover {
 	}
 }
 
+
+/*------------------------------------Menu Geöffnet CSS ENDE----------- */

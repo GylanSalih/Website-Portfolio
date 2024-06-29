@@ -146,7 +146,7 @@ setTimeout(function() {
 
 
 
-
+// Lokomotiv text scroll in Menu Text effekt
 
   const scroll = new LocomotiveScroll({
     el: document.querySelector("#js-scroll"),
