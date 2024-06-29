@@ -1,4 +1,4 @@
-// DarkMode Toggle JS Script
+// DarkMode Toggle JS Script Start
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.querySelector('body');
 const toggleIcon = document.querySelector('.bi');
@@ -31,6 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.add('dark-mode'); // Dark-Mode beim Start aktivieren
     updateLogoAndIcon();
 });
+// DarkMode Toggle JS Script Ende
+
+
+
+//
+//
+//
+//
+//
+//
 
 
 
@@ -61,12 +71,33 @@ document.querySelector(".hamburger").addEventListener("click", function() {
     tl.reversed(!tl.reversed()); // Toggle the reversed state of the timeline
 });
 
+
+
+//
+//
+//
+//
+//
+//
+
+
+
 // Hamburger Effect---
 var btn = $('.btn');
 
 btn.on('click', function() {
   $(this).toggleClass('active not-active');
 });
+
+
+//
+//
+//
+//
+//
+//
+
+
 
 // Loading Animation---
 
@@ -109,8 +140,17 @@ setTimeout(function() {
   );
 }, 0); // Wartezeit in Millisekunden, bevor die Animation gestartet wird
 
+
+//
+//
+//
+//
+//
+//
+
+
   
-  // Lightbox Start---
+  // Lightbox Funktion Start Gallery vom Single card portfolio
 
   $(document).ready(function() {
     $('.img-box').click(function() {
@@ -130,6 +170,12 @@ setTimeout(function() {
   });
   
 
+//
+//
+//
+//
+//
+//
 
 
 

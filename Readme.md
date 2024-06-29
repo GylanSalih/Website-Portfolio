@@ -101,6 +101,8 @@ Updates / Fixes:
         - Bootstrap/FontAwesome Icons
         - Fixed Dark-Mode in Single Card Information on Portfolio Page
         - Menu Text
+        - CSS Ascending Ordering 
+        - Code Organisation
 
 ## Misc:
 

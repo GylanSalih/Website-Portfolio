@@ -1,7 +1,26 @@
+/*------- Global CSS root,*,html,body,title,paragraph,title,text -------START */
+
+/* Custom color Root css */
+:root {
+  --white: white;
+  --tertiary: #fff;
+  --tertiary-dark: #a9bbd3;
+  --secondary: #e31b6d;
+  --Red: rgb(255, 8, 0);
+  --primary2: #111821;
+  --primary-light: #2e4a6f;
+  --primary-dark: #223247;
+  --card-text: #e31b6d;
+  --card-bg: #223247;
+  --black: black;
+  --background-blue: #000000;
+}
+
+
 /* Global Styles */
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -12,32 +31,113 @@ body {
   font-family: "Bridge Head Con Medium", sans-serif;
 }
 
-/* Easter-Egg */
+a {
+  text-decoration: underline;
+}
+
+
+h5 {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Bebas_Neue';
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-top: 56px;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Poppins';
+}
+
+@media screen and (max-width: 991px) {
+  h1 {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+/*------- Global CSS root,*,html,body,title,paragraph,title,text -------Ende */
+
+
+
+
+/* -------------  Funktionen Easter-Eggs Start ------------- */
+/* Easter-Egg / Nicht Sichtbar auf der Website*/
 #ascii-art {
   display: none;
   white-space: pre;
   font-family: monospace;
 }
 
-a {
-  text-decoration: underline;
+/*--Licht Effekt am Header Border--*/
+.special_span {
+  animation: animate 5s infinite linear;
+  background: linear-gradient(90deg, transparent, #fff);
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  width: 50px;
 }
 
-/* Custom color variables // Muss verbessert werden */
-:root {
-  --white: white;
-  --black: black;
-  --background-blue: #000000;
-  --Red: rgb(255, 8, 0);
-  --primary2: #111821;
-  --primary-dark: #223247;
-  --primary-light: #2e4a6f;
-  --secondary: #e31b6d;
-  --tertiary: #fff;
-  --tertiary-dark: #a9bbd3;
-  --card-bg: #223247;
-  --card-text: #e31b6d;
-}
+/* -------------  Funktionen Easter-Eggs Ende ------------- */
+
+
+
+
+
+
+
+
+
+/* -------------  Dark Mode CSS Start ------------- */
+
+
 
 /* Dark Mode Styles */
 .dark-mode {
@@ -49,6 +149,8 @@ a {
   color: rgb(0, 0, 0);
 }
 
+/* -------------  Dark Mode CSS ENDE ------------- */
+
 /* Navbar */
 .navbar {
   background: #00000000;
@@ -58,31 +160,81 @@ a {
 /* Header Container Menu */
 .top_navigation_container,
 .container {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
   background: #ffffff; /* Light mode background */
-  color: #000000; /* Light mode text color */
-  position: fixed;
-  z-index: 999;
-  height: 56px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
   left: 0px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
   top: 0px;
+  width: 100%;
+  z-index: 999;
 }
 
-/*--Light Effect Header Border Bottom Container --*/
-.special_span {
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 50px;
-  background: linear-gradient(90deg, transparent, #fff);
-  animation: animate 5s infinite linear;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes animate {
   0% {
@@ -98,88 +250,88 @@ a {
 /* Header Container Mobile */
 @media screen and (max-width: 771px) {
   .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
     background: #ffffff; /* Light mode background */
     color: #000000; /* Light mode text color */
-    position: fixed;
-    z-index: 999;
+    display: flex;
     height: 56px;
-    padding: 0 16px;
+    justify-content: space-between;
     left: 0px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 20px;
+    position: fixed;
     top: 0px;
+    width: 100%;
+    z-index: 999;
   }
 }
 
 /* Header Container tablet */
 @media screen and (max-width: 991px) {
   .container {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
     background: #ffffff; /* Light mode background */
     color: #000000; /* Light mode text color */
-    position: fixed;
-    z-index: 999;
+    display: flex;
     height: 56px;
-    padding: 0 16px;
+    justify-content: space-between;
     left: 0px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 20px;
+    position: fixed;
     top: 0px;
+    width: 100%;
+    z-index: 999;
   }
 }
 /* Beispiel Globales CSS */
 .dark-mode-toggle {
-  text-align: left;
-  position: static;
-  transform: none;
   cursor: crosshair;
   font-family: 'Arial', sans-serif;
   font-size: 22px;
-  text-transform: none;
-  text-decoration: none;
-  z-index: 999;
-  transition: transform 0.3s ease;
   margin-left: 0px;
   margin-right: 75px;
   margin-top: -5px;
+  position: static;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  transform: none;
+  transition: transform 0.3s ease;
+  z-index: 999;
 }
 
 @media screen and (max-width: 991px) {
   .dark-mode-toggle {
     cursor: crosshair;
-    text-align: center;
-    position: fixed;
-    transform: translateY(-50%);
     font-family: 'Arial', sans-serif;
     font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    z-index: 999;
+    position: fixed;
     right: 19px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
     top: 28px;
+    transform: translateY(-50%);
+    z-index: 999;
   }
 }
 
 @media screen and (max-width: 771px) {
   .dark-mode-toggle {
     cursor: crosshair;
-    text-align: center;
-    position: fixed;
-    transform: translateY(-50%);
     font-family: 'Arial', sans-serif;
     font-size: 25px;
-    text-transform: uppercase;
-    text-decoration: none;
-    z-index: 999;
+    position: fixed;
     right: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
     top: 28px;
+    transform: translateY(-50%);
+    z-index: 999;
   }
 }
 
@@ -190,224 +342,95 @@ a {
 }
 
 .logo {
-  position: fixed;
-  padding-bottom: 0px;
-  z-index: 999;
-  transition: transform 0.3s ease; /* Smooth transition */
   cursor: crosshair;
+  padding-bottom: 0px;
+  position: fixed;
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 999;
 }
 
 .logo:hover {
-  transform: scale(1.2); /* Scale up the element */
   cursor: crosshair;
+  transform: scale(1.2); /* Scale up the element */
 }
 
 @media screen and (max-width: 701px) {
   .logo {
-    position: fixed;
-    padding-bottom: 0px;
-    z-index: 999;
     margin-left: 12px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
   }
 }
 
 @media screen and (max-width: 991px) {
   .logo {
-    position: fixed;
-    padding-bottom: 0px;
-    z-index: 999;
     margin-left: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
   }
 }
 
 .logo img {
-  max-height: 18px;
   cursor: crosshair;
+  max-height: 18px;
 }
 
 a {
+  color: #8c8c8e;
   font-family: 'Arial', serif;
   font-size: 12px;
-  color: #8c8c8e;
-  text-transform: uppercase;
   letter-spacing: 3px;
-  text-decoration: none;
   margin: 0 0px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Menu */
-.menu_nav_links {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-}
-
-.menu_nav_links a {
-  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  transition: color 0.3s;
-  position: relative;
-}
-
-.menu_nav_links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  height: 2px;
-  background-color: transparent;
-  transition: background-color 0.3s;
-}
-
-.menu_nav_links a:hover {
-  color: #000000;
-}
-
-.menu_nav_links a:hover::after {
-  background-color: #000000;
-}
-
-/* Hamburger Icon */
-.menu_control {
-  position: relative;
-  top: 0;
-  cursor: crosshair;
-}
-
-.menu_control::before {
-  content: "\2630"; /* Unicode for hamburger icon */
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-}
-
-/* Dark Mode Styles for Hamburger Icon */
-.dark-mode .menu_control::before {
-  color: rgb(255, 255, 255);
-}
-
-/* Animation */
-.fade-zoom {
-  animation: fadeZoom 0.4s ease-in-out;
-}
-
-@keyframes fadeZoom {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
+  text-transform: uppercase;
 }
 
 
-/* Dark Mode Styles for Menu */
-.dark-mode .menu-left {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
 
-/* Open Menu Styles */
-.menu-left.open {
-  left: 0;
-}
 
-body.menu-open {
-  overflow: hidden;
-}
 
-/* Menu Links Font PC */
-.menu-link a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 60px;
-  z-index: 999;
-  position: relative;
-  font-family: 'Montserrat';
-  cursor: crosshair;
-}
 
-/* Hover effect for menu-links */
-.menu-link a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  bottom: -2px;
-  width: 0;
-  height: 4px;
-  background-color: currentColor;
-  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-}
 
-.menu-link a:hover::after {
-  width: 60%; /* Adjust the width to be shorter */
-  left: 15%;  /* Center the shorter line */
-  right: 15%; /* Center the shorter line */
-}
 
-/* Dark mode state for menu-links */
-.dark-mode .menu-link a {
-  color: #ffffff;
-}
 
-.menu-link a span {
-  font-family: 'Montserrat';
-  font-size: 24px;
-}
 
-/* Menu text size for mobile responsiveness */
-@media screen and (max-width: 901px) {
-  .menu-link a {
-    text-decoration: none;
-    font-size: 42px;
-    z-index: 999;
-    position: relative;
-    text-align: center;
-    font-family: 'Montserrat';
-    line-height: 34px;
-  }
-  
-  .menu-link a span {
-    font-family: 'Montserrat';
-    font-size: 12px;
-  }
-}
 
-/* Menu text size for tablet responsiveness */
-@media screen and (max-width: 701px) {
-  .menu-link a {
-    text-decoration: none;
-    font-size: 38px;
-    z-index: 999;
-    position: relative;
-    text-align: center;
-    font-family: 'Montserrat';
-    line-height: 40px;
-  }
 
-  .menu-link a span {
-    font-family: 'Montserrat';
-    font-size: 14px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 991px) {
   .projects_menu_container,
@@ -425,30 +448,32 @@ body.menu-open {
   }
 }
 
+
+
 /* Heading-2 Styles */
 .heading-2 {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  font-family: 'Bebas_Neue', sans-serif;
   font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 50px;
+  margin-top: 50px;
   padding-bottom: 24px;
   padding-top: 24px;
   text-align: center;
-  font-family: 'Bebas_Neue', sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 @media screen and (max-width: 771px) {
   .heading-2 {
-    margin-top: 70px;
-    margin-bottom: 50px;
+    font-family: 'Bebas_Neue', sans-serif;
     font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 70px;
     padding-bottom: 24px;
     padding-top: 24px;
     text-align: center;
-    font-family: 'Bebas_Neue', sans-serif;
-    font-weight: 400;
-    font-style: normal;
   }
 }
 
@@ -457,50 +482,50 @@ body.menu-open {
 
 /* Responsive Container */
 .container-cards {
-  z-index: 2;
-  width: 100%;
-  max-width: 80%;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  max-width: 80%;
   position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 /* Tablet view */
 @media screen and (max-width: 991px) {
   .container-cards {
-    z-index: 1;
-    width: 100%;
-    max-width: 80%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    max-width: 80%;
     position: relative;
+    width: 100%;
+    z-index: 1;
   }
 }
 
 /* Mobile view */
 @media screen and (max-width: 767px) {
   .container-cards {
-    z-index: 1;
-    width: 95%;
-    max-width: 100%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    max-width: 100%;
     position: relative;
+    width: 95%;
+    z-index: 1;
   }
 }
 
 /* Hover effect für den text */
-/* Project Poster */
+/*---------------------- Project Poster Card Grids Style ----------------------------------*/
 .projects_project_menu_poster {
-  width: 100%;
-  height: 100%;
   background-color: #000000;
   border-radius: 8px;
-  margin-bottom: 24px;
-  position: relative;
-  overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
   cursor: crosshair;
+  height: 100%;
+  margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 /* Grid system for content container (4x1 row/col) */
@@ -515,27 +540,29 @@ body.menu-open {
 
 /* Tablet view */
 @media screen and (max-width: 991px) {
-  .projects_menu_container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    grid-gap: 24px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 24px;
+  .container {
+      align-items: center; /* Hier war der Fehler */
+      grid-auto-rows: auto;
+      grid-gap: 24px;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      margin-top: 24px;
   }
 }
+
+
 
 /* Mobile view */
 @media screen and (max-width: 767px) {
   .projects_menu_container {
-    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     grid-auto-rows: auto;
     grid-gap: 24px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 0 10px;
+    grid-template-columns: repeat(2, 1fr);
     height: auto;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
   }
 }
 
@@ -553,51 +580,51 @@ body.menu-open {
 
 /* Project Poster Image */
 .poster_image {
-  width: 100%;
+  border-radius: 7px;
   height: 100%;
   max-width: none;
   object-fit: cover;
-  border-radius: 7px;
   position: relative;
   transform: none;
+  width: 100%;
 }
 
 /* Project Hover Block TEXT VIEW PROJECT */
 .project-hover-block {
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 24px;
-  font-family: Quicksand, sans-serif;
-  font-weight: 500;
-  line-height: 14px;
-  font-size: 13px; /* Default font size */
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: Quicksand, sans-serif;
+  font-size: 13px; /* Default font size */
+  font-weight: 500;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 14px;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  padding-bottom: 24px;
   pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
 }
 
 /* Pseudo-Element for Hover Effect */
 .project-hover-block::before {
   content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none; /* Ensures hover events pass through */
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
   transition: opacity 0.13s ease;
-  pointer-events: none; /* Ensures hover events pass through */
+  width: 100%;
 }
 
 /* Hover effect for Project Hover Block */
@@ -614,16 +641,16 @@ body.menu-open {
 
 @media screen and (max-width: 991px) {
   .menu-left {
-    position: fixed;
-    width: 100%;
-    height: 150vh;
+    align-items: center;
     background: #ffffff; /* Light mode background */
     color: #000000; /* Light mode text color */
     display: flex;
+    height: 150vh;
     justify-content: center;
-    align-items: center;
     left: -100%;
+    position: fixed;
     transition: left 0.5s ease;
+    width: 100%;
     z-index: 999;
   }
 
@@ -632,44 +659,44 @@ body.menu-open {
   }
 
   .menu-open {
-    position: fixed;
-    z-index: 999;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
     cursor: crosshair;
     font-size: 20px;
-    color: #000000;
-    margin: 0 5px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-top: 16px;
-    margin-right: 49px;
     margin-left: 0px;
+    margin-right: 49px;
+    margin-top: 16px;
     margin-top: 17px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 999;
   }
 }
 
 /* Default state for menu-open (light mode) */
 .menu-open {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 30px;
-  padding: 2rem;
+  color: #000000;
   cursor: crosshair;
   font-size: 20px;
-  color: #000000;
   margin-left: 0px;
   margin-right: 61px;
-  padding-right: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   margin-top: 18px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding: 2rem;
+  position: fixed;
+  right: 30px;
+  top: 0;
+  z-index: 999;
 }
 
 /* Dark mode state for menu-open */
@@ -679,16 +706,16 @@ body.menu-open {
 
 @media screen and (max-width: 701px) {
   .menu-left {
-    position: fixed;
-    width: 100%;
-    height: 180vh;
+    align-items: center;
     background: #ffffff; /* Light mode background */
     color: #000000; /* Light mode text color */
     display: flex;
+    height: 180vh;
     justify-content: center;
-    align-items: center;
     left: -100%;
+    position: fixed;
     transition: left 0.5s ease;
+    width: 100%;
     z-index: 999;
   }
 
@@ -697,26 +724,105 @@ body.menu-open {
   }
 
   .menu-open {
-    position: fixed;
-    z-index: 999;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
     cursor: crosshair;
     font-size: 20px;
-    color: #000000;
-    margin: 0 5px;
-    padding-top: 0px;
-    border-left-width: 0px;
-    border-left-style: solid;
-    border-right-width: 0px;
-    border-right-style: solid;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    margin-top: 16px;
-    margin-right: 34px;
     margin-left: 0px;
+    margin-right: 34px;
+    margin-top: 16px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
     right: 24px;
+    z-index: 999;
   }
 }
+
+
+
+/*---------------------- Project Poster Card Grids Style ----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------Headings Root settings & Responsive BEGIN----------- */
+
+
+
+
+/*------------------------------------Headings Root settings & Responsive END----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------Hamburger Icon BEGIN----------- */
 
@@ -731,22 +837,22 @@ body.menu-open {
 
 .hamburger {
   border-radius: 2px;
-  position: absolute;
-  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
-  right: 10px; /* Abstand vom rechten Rand des Headers */
-  transform: translate(50%, -50%);
-  z-index: 999;
   color: #000000;
+  position: absolute;
+  right: 10px; /* Abstand vom rechten Rand des Headers */
+  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
+  transform: translate(50%, -50%);
   transition: transform 0.3s; /* Füge die Transition hier hinzu */
+  z-index: 999;
 }
 
 .btn {
+  cursor: crosshair;
   position: absolute;
-  top: 50%; /* Platziere den Button vertikal in der Mitte */
   right: 35px;
+  top: 50%; /* Platziere den Button vertikal in der Mitte */
   transform: translate(50%, -50%);
   width: 40px;
-  cursor: crosshair;
 }
 
 @media screen and (max-width: 771px) {
@@ -756,13 +862,13 @@ body.menu-open {
 }
 
 .spanmenu {
-  display: block;
-  width: 85%;
-  border-radius: 3px;
-  height: 3px;
   background-color: #000000;
-  transition: all 0.3s;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
   position: relative;
+  transition: all 0.3s;
+  width: 85%;
 }
 
 .spanmenu + .spanmenu {
@@ -880,6 +986,45 @@ body.menu-open {
 
 /*------------------------------------Hamburger icon ENDE----------- */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------Card Single Page BEGIN----------- */
 
 /* Section Project Header */
@@ -902,49 +1047,49 @@ body.menu-open {
 
 /* Project Hero Background Card Hintergrund */
 .project-hero1 {
-  z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #ffffff), url("/assets/img/poster/poster_7.jpg");
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 500px;
   position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 /* Project Hero Background Card Hintergrund in Dark-modus Weißer Gradient*/
 .dark-mode .project-hero1 {
-  z-index: 1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
   background-position: center;
   background-size: cover;
-  width: 100%;
   height: 500px;
   position: absolute;
+  width: 100%;
+  z-index: 1;
 }
 
 
 /* Project Hero Container */
 .project-hero_container {
-  z-index: 2;
-  perspective: 1500px;
+  display: flex;
   justify-content: flex-start;
-  width: 100%;
-  max-width: 1080px;
-  min-height: 50px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12vw;
+  max-width: 1080px;
+  min-height: 50px;
   padding-left: 24px;
   padding-right: 24px;
-  display: flex;
+  padding-top: 12vw;
+  perspective: 1500px;
   position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 @media screen and (max-width: 991px) {
   .project-hero_container {
-    padding-top: 20vw;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    padding-top: 20vw;
     text-align: center;
   }
 }
@@ -958,13 +1103,13 @@ body.menu-open {
 /* Project Hero Poster */
 .project_hero_poster {
   border-radius: 8px;
-  width: 100%;
-  max-width: 452px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
   height: auto;
   margin-right: 33px;
-  position: relative;
+  max-width: 452px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -1006,85 +1151,35 @@ body.menu-open {
   }
 }
 
-h4 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-family: 'Montserrat';
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 30px;
-}
-
-h1 {
-  margin-top: 56px;
-  margin-bottom: 10px;
-  font-family: 'Bebas_Neue';
-  font-size: 45px;
-  font-weight: 300;
-  line-height: 50px;
-}
-
-@media screen and (max-width: 991px) {
-  h1 {
-    margin-top: 0;
-    font-size: 36px;
-    line-height: 40px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  h1 {
-    font-size: 32px;
-    line-height: 36px;
-  }
-}
-
-/* Paragraphs */
-p {
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: 'Poppins';
-}
-
-@media screen and (max-width: 479px) {
-  p {
-    font-size: 14px;
-    line-height: 24px;
-  }
-}
 
 /* Text Links */
 .text-link {
   color: #fff;
   cursor: crosshair;
+  display: inline-block;
+  font-family: 'Bebas_Neue';
   font-weight: 600;
   line-height: 14px;
-  font-family: 'Bebas_Neue';
   text-decoration: none;
   transition: color 0.3s;
-  display: inline-block;
 }
 
 /* Project Poster Image */
 .poster_single {
-  width: 100%;
+  border-radius: 8px;
   height: 100%;
   max-width: none;
   object-fit: cover;
-  border-radius: 8px;
   position: relative;
   transform: none;
+  width: 100%;
 }
 
-h5 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16px;
-  font-family: 'Poppins';
-}
+
+
+
+
+
 
 .section_project_cast {
   margin-bottom: 40px;
@@ -1099,17 +1194,17 @@ h5 {
 }
 
 .cast_block {
+  border-radius: 8px;
   flex: 0 0 auto;
   margin: 10px;
   padding: 10px;
-  border-radius: 8px;
 }
 
 .smalldescription {
+  border-radius: 8px;
   flex: 1 1 100%;
   margin: 10px;
   padding: 10px;
-  border-radius: 8px;
 }
 
 .Cast-Names {
@@ -1120,10 +1215,6 @@ h5 {
 @media screen and (min-width: 992px) {
   .cast_includes_div {
     justify-content: space-between;
-  }
-
-  .cast_block {
-    
   }
 }
 
@@ -1147,26 +1238,15 @@ h5 {
 }
 
 .Descriptioncontainer {
-  z-index: 2;
-  width: 100%;
-  max-width: 1080px;
-  min-height: 50px;
+  display: block;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  max-width: 1080px;
+  min-height: 50px;
   position: relative;
-}
-
-h2 {
-  letter-spacing: 7px;
-  text-transform: uppercase;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-family: Quicksand, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 14px;
+  width: 100%;
+  z-index: 2;
 }
 
 
@@ -1226,27 +1306,29 @@ h2 {
 
 
 
-/*-------------------- About Section HOME BEGIN----------------- */
+
+
+/*-------------------- About.html Page BEGIN----------------- */
 
 /* Home section styling */
 .home {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background: url("/assets/img/about-me.png") no-repeat;
+  font-family: 'Ubuntu', sans-serif;
   height: 100vh;
   width: 100%;
-  background: url("/assets/img/about-me.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 /* Home content */
 .home .home-content {
-  width: 90%;
-  height: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
+  margin: auto;
+  width: 90%;
 }
 
 /* Home text styles */
@@ -1281,15 +1363,15 @@ h2 {
 }
 
 .home .button button {
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  font-size: 25px;
-  font-weight: 400;
   background: #ffffff;
+  border-radius: 6px;
+  border: 2px solid transparent;
   color: #000000;
   cursor: pointer;
-  border: 2px solid transparent;
+  font-size: 25px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 16px;
   transition: all 0.4s ease;
 }
 
@@ -1299,7 +1381,11 @@ h2 {
   color: #ffffff;
 }
 
-/*-------------------- About Section HOME END----------------- */
+/*-------------------- About.html Page END----------------- */
+
+
+
+
 
 /*-------------------- About Section Styling BEGIN----------------- */
 
@@ -1318,9 +1404,9 @@ section .content {
 
 /* About section */
 .about .about-details {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 /* Section title */
@@ -1334,18 +1420,18 @@ section .title span {
   color: #ffffff;
   font-size: 30px;
   font-weight: 600;
-  position: relative;
   padding-bottom: 8px;
+  position: relative;
 }
 
 section .title span::before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 100%;
   background: #ffffff;
-  left: 0;
   bottom: 0;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
 }
 
 /* About details */
@@ -1354,10 +1440,10 @@ section .title span::before {
 }
 
 .about .left img {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
   border-radius: 12px;
+  height: 400px;
+  object-fit: cover;
+  width: 400px;
 }
 
 .about-details .right {
@@ -1384,71 +1470,28 @@ section .button {
 }
 
 section .button button {
-  outline: none;
-  padding: 8px 16px;
+  background: #ffffff;
   border-radius: 4px;
+  border: 2px solid transparent;
+  color: #000000;
+  cursor: pointer;
   font-size: 25px;
   font-weight: 400;
-  background: #ffffff;
-  color: #000000;
-  border: 2px solid transparent;
-  cursor: pointer;
+  outline: none;
+  padding: 8px 16px;
   transition: all 0.4s ease;
 }
 
 section .button button:hover {
-  border-color: #ffffff;
   background-color: #000000;
+  border-color: #ffffff;
   color: #ffffff;
 }
 
 /*-------------------- About Section Styling END----------------- */
 
-/*--------------------------------- Footer CSS BEGIN-----------------*/
 
-/* Footer section */
-footer {
-  background: #00000000;
-  padding: 15px 0;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
-/* Footer text */
-footer .text span {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.dark-mode .footer .text span {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
-
-footer .text span a {
-  font-weight: 500;
-  color: #FFF;
-}
-
-footer .text span a:hover {
-  text-decoration: underline;
-}
-
-/* Custom GitHub icon */
-.custom-github-icon {
-  font-size: 1.05rem; /* GitHub Icon */
-  color: #000000;
-}
-
-.dark-mode .custom-github-icon {
-  color: #ffffff;
-}
-
-/*--------------------------------- Footer CSS END-----------------*/
-
-/*-------------------Responsive About Me Page BEGIN------------------------- */
+/*-------------------Responsive About.html Page BEGIN------------------------- */
 
 /* Responsive section content */
 @media (max-width: 1190px) {
@@ -1502,33 +1545,28 @@ footer .text span a:hover {
   }
 }
 
-/*-------------------Responsive About Me Page END------------------------- */
+/*-------------------Responsive About.html Page END------------------------- */
 
-/*-------------------Animated Text Typewriting Effect BEGIN------------------ */
 
-/* No specific styling provided in the CSS */
-
-/*-------------------Animated Text Typewriting Effect END------------------ */
-
-/*-------------------Social Icons About Me Page BEGIN------------------ */
+/*-------------------Social Icons About.html Page BEGIN------------------ */
 
 /* Social icons container */
 .media-icons {
+  bottom: 40px;
   display: flex;
   flex-direction: column;
   position: fixed;
   right: 40px;
-  bottom: 40px;
 }
 
 /* Social icon links */
 .media-icons a {
-  margin-top: 8px;
+  color: #e2e2e2be;
   font-size: 24px;
   font-weight: 500;
-  text-decoration: none;
+  margin-top: 8px;
   opacity: 0.7;
-  color: #e2e2e2be;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
@@ -1538,45 +1576,187 @@ footer .text span a:hover {
 
 /*-------------------Social Icons About Me Page END------------------ */
 
-/*-------------------Loading Animation Start------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------- Footer CSS BEGIN-----------------*/
+
+/* Footer section */
+footer {
+  background: #00000000;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Footer text */
+footer .text span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dark-mode .footer .text span {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Custom GitHub icon */
+.custom-github-icon {
+  font-size: 1.05rem; /* GitHub Icon */
+  color: #000000;
+}
+
+.dark-mode .custom-github-icon {
+  color: #ffffff;
+}
+
+/*--------------------------------- Footer CSS END-----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------Loading Animation Logo Effekt Start------------------ */
 
 /* Loading animation container */
 .loading-page {
-  position: absolute;
-  top: 0;
-  left: 0;
+  align-items: center;
   background: linear-gradient(to right, #000000, #000000, #000000);
-  height: 100%;
-  width: 100%;
+  color: #191654;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  align-items: center;
+  height: 100%;
   justify-content: center;
-  color: #191654;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 999;
 }
 
 /* Loading animation SVG */
 #svg {
-  height: 450px;
-  width: 450px;
-  stroke: white;
-  fill-opacity: 0;
-  stroke-width: 3px;
-  stroke-dasharray: 4500;
   animation: draw 10s ease;
+  fill-opacity: 0;
+  height: 450px;
+  stroke-dasharray: 4500;
+  stroke-width: 3px;
+  stroke: white;
+  width: 450px;
 }
 
 @media (max-width: 771px) {
   #svg {
-    height: 250px;
-    width: 250px;
-    stroke: white;
-    fill-opacity: 0;
-    stroke-width: 3px;
-    stroke-dasharray: 4500;
     animation: draw 10s ease;
+    fill-opacity: 0;
+    height: 250px;
+    stroke-dasharray: 4500;
+    stroke-width: 3px;
+    stroke: white;
+    width: 250px;
   }
 }
 
@@ -1600,10 +1780,10 @@ footer .text span a:hover {
 .logo-name {
   color: #fff;
   font-size: 20px;
-  letter-spacing: 12px;
-  text-transform: uppercase;
-  margin-left: 20px;
   font-weight: bolder;
+  letter-spacing: 12px;
+  margin-left: 20px;
+  text-transform: uppercase;
 }
 
 /*-------------------Loading Animation End------------------ */
@@ -1630,7 +1810,7 @@ footer .text span a:hover {
 
 
 
-/*-------------------Gallery Single Card Gallery Start------------------ */
+/*-------------------Single Card Gallery Settings Start------------------ */
 
 /* Gallery section */
 .gallery-image {
@@ -1642,23 +1822,23 @@ footer .text span a:hover {
 /* Gallery images */
 .gallery-image img {
   height: 100%;
-  width: 100%;
   transform: scale(1.0);
   transition: transform 0.4s ease;
+  width: 100%;
 }
 
 /* Image box container */
 .img-box {
-  box-sizing: content-box;
-  margin: 4px;
-  height: 100%;
-  width: 13%;
-  overflow: hidden;
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  position: relative;
   background-color: rgb(0, 0, 0);
   border-radius: 8px;
+  box-sizing: content-box;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  height: 100%;
+  margin: 4px;
+  overflow: hidden;
+  position: relative;
+  width: 13%;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -1671,14 +1851,14 @@ footer .text span a:hover {
 
 /* Transparent box overlay */
 .transparent-box {
-  height: 450px;
-  width: 350px;
   background-color: rgba(0, 0, 0, 0);
+  display: none;
+  height: 450px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   transition: background-color 0.3s ease;
-  display: none;
+  width: 350px;
 }
 
 /* Hover effects */
@@ -1701,10 +1881,10 @@ footer .text span a:hover {
 
 /* Caption text styles */
 .caption {
-  position: absolute;
   bottom: 5px;
   left: 20px;
   opacity: 0.0;
+  position: absolute;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -1717,26 +1897,29 @@ footer .text span a:hover {
   font-family: 'Poppins';
 }
 
+/*-------------------Single Card Gallery Settings Start------------------ */
+
+
 /*-------------------Lightbox Single Card Gallery Start------------------ */
 
 /* Lightbox container */
 .lightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.83);
-  top: 0;
+  display: none;
+  height: 100%;
   left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 /* Lightbox content */
 .lightbox-content {
-  position: relative;
   margin: auto;
-  width: 80%;
   max-width: 700px;
+  position: relative;
+  width: 80%;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -1753,50 +1936,76 @@ footer .text span a:hover {
 
 .close {
   color: white;
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  font-size: 40px;
   cursor: crosshair;
+  font-size: 40px;
+  position: absolute;
+  right: 35px;
+  top: 15px;
 }
 
 /*-------------------Lightbox Single Card Gallery ENG------------------ */
 
-/*------------------------------------Skill Page BEGIN----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------Skills.html Page BEGIN----------- */
 
 /* Skills section */
 .skills {
-  max-width: 1500px;
-  width: auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 0 3rem;
-  margin-top: 105px;
   font-size: 28px;
+  gap: 3rem;
+  margin-top: 105px;
+  max-width: 1500px;
   padding-left: 7rem;
+  padding: 0 3rem;
+  width: auto;
 }
 
 /* Responsive adjustments for smaller screens */
 @media (max-width: 771px) {
   .skills {
-    max-width: 100%;
-    width: auto;
-    padding: 0 1.5rem;
-    margin-top: 105px;
     font-size: 24px;
+    margin-top: 105px;
+    max-width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    padding: 0 1.5rem;
+    width: auto;
   }
 }
 
 /* Skill category */
 .category h3 {
-  font-size: 3.5rem;
   color: #000;
-  margin-bottom: 18px;
   font-family: 'Quicksand';
+  font-size: 3.5rem;
   font-weight: 300;
+  margin-bottom: 18px;
 }
 
 .dark-mode .category h3 {
@@ -1807,23 +2016,23 @@ footer .text span a:hover {
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   font-family: 'Quicksand';
+  gap: 10px;
 }
 
 /* Individual skill */
 .skill {
+  align-items: center;
   background-color: var(--primary-light);
-  color: #FFF;
-  padding: 10px 20px;
   border-radius: 5px;
-  font-size: 1em;
-  text-align: center;
-  transition: background-color 0.3s ease;
+  color: #FFF;
   cursor: crosshair;
   display: flex;
-  align-items: center;
+  font-size: 1em;
   gap: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .skill i {
@@ -1836,34 +2045,66 @@ footer .text span a:hover {
 
 /*------------------------------------Skill Page END----------- */
 
-/*------------------------------------Lottie Start----------- */
 
-/*------------------------------------Lottie Ende----------- */
 
-/*------------------------------------Background Blocks START----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*------------------------------------Menu Geöffnet CSS START----------- */
 
 .menu-left {
-  position: fixed;
-  width: 100%;
-  height: 165vh;
+  align-items: center;
   background: #ffffff; /* Light mode background */
   color: #000000; /* Light mode text color */
   display: flex;
+  height: 165vh;
   justify-content: center;
-  align-items: center;
   left: -100%;
+  position: fixed;
   transition: left 0.5s ease;
+  width: 100%;
   z-index: 999;
 }
 
 
 
 .menu__item {
-	position: relative;
-	padding: 1.6vw 0 0 0;
 	margin: -50px;
+	padding: 1.6vw 0 0 0;
+	position: relative;
   text-align: center;
   width: 100%;
 }
@@ -1871,131 +2112,131 @@ footer .text span a:hover {
 
 @media screen and (max-width: 771px) {
   .menu__item {
-    position: relative;
-    padding: 1.6vw 0 0 0;
     margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
     text-align: center;
     width: 100%;
   }
 }
 
 .menu__item-link {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-	color: #000000;
 	-webkit-transition: opacity 0.4s;
-	transition: opacity 0.4s;
+	color: #000000;
+	cursor: pointer;
+	display: inline-block;
 	font-family: "Bigilla";
-	text-transform: uppercase;
+	position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
 }
 
 .dark-mode .menu__item-link {
-	display: inline-block;
-	cursor: crosshair;
-	position: relative;
-	color: #ffffff;
 	-webkit-transition: opacity 0.4s;
-	transition: opacity 0.4s;
+	color: #ffffff;
+	cursor: crosshair;
+	display: inline-block;
 	font-family: "Bigilla";
-	text-transform: uppercase;
+	position: relative;
 	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
 }
 
 
 .marquee {
-  width: 100%;
+	color: #ffffff;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
 	position: absolute;
 	top: 0;
-	left: 0;
-	overflow: hidden;
-	color: #ffffff;
-	pointer-events: none;
-	mix-blend-mode: difference;
+  width: 100%;
 }
 
 .dark-mode .marquee {
+	color: #ff0000;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
 	position: absolute;
 	top: 0;
-	left: 0;
-	overflow: hidden;
-	color: #ff0000;
-	pointer-events: none;
-	mix-blend-mode: difference;
 }
 
 
 .menu__item-link:hover {
 	-webkit-transition-duration: 0.1s;
-	transition-duration: 0.1s;
 	opacity: 0;
+	transition-duration: 0.1s;
 }
 
 .menu__item-link::before {
 	all: initial;
-	text-transform: uppercase;
-	counter-increment: menu;
-	position: absolute;
 	bottom: 60%;
+	counter-increment: menu;
 	left: 0;
 	pointer-events: none;
+	position: absolute;
+	text-transform: uppercase;
 }
 
 
 
 .menu {
-	padding: 0vh 0 0 0vh;
-	--offset: 20vw;
-	--move-initial: calc(-25% + var(--offset));
 	--move-final: calc(-50% + var(--offset));
+	--move-initial: calc(-25% + var(--offset));
+	--offset: 20vw;
 	font-size: 8px;
+	padding: 0vh 0 0 0vh;
   padding-bottom: 390px;
 }
 
 
 .marquee__inner {
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
-	width: fit-content;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	position: relative;
-	-webkit-animation: marquee 5s linear infinite;
-	animation: marquee 5s linear infinite;
 	-webkit-animation-play-state: paused;
-	animation-play-state: paused;
-	opacity: 0;
+	-webkit-animation: marquee 5s linear infinite;
 	-webkit-transition: opacity 0.1s;
-	transition: opacity 0.1s;
+	animation-play-state: paused;
+	animation: marquee 5s linear infinite;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	opacity: 0;
 	padding: 2vw 0;
+	position: relative;
+	transition: opacity 0.1s;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
 }
 
 .menu__item-link:hover ~ .marquee .marquee__inner {
 	-webkit-animation-play-state: running;
+	-webkit-transition-duration: 0.4s;
 	animation-play-state: running;
 	opacity: 1;
-	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
 
 .menu__item-link,
 .marquee span {
-	white-space: nowrap;
 	font-size: 8vw;
-	padding: 1.6vw 1vw;
 	font-weight: 900;
+	padding: 1.6vw 1vw;
+	white-space: nowrap;
 }
 
 @media screen and (max-width: 771px) {
   .menu__item-link,
   .marquee span {
-    white-space: nowrap;
     font-size: 11vw;
-    padding: 1.6vw 1vw;
     font-weight: 900;
+    padding: 1.6vw 1vw;
     text-align: center;
+    white-space: nowrap;
     width: 100%;
   }
 }
@@ -2029,3 +2270,171 @@ footer .text span a:hover {
 
 
 /*------------------------------------Menu Geöffnet CSS ENDE----------- */
+
+/*-------------------------Wohlmöglich altes CSS für den alten Menu Links START----------- */
+
+
+/* Menu */
+.menu_nav_links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_nav_links a {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu_nav_links a::after {
+  background-color: transparent;
+  bottom: -2px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.menu_nav_links a:hover {
+  color: #000000;
+}
+
+.menu_nav_links a:hover::after {
+  background-color: #000000;
+}
+
+/* Hamburger Icon */
+.menu_control {
+  cursor: crosshair;
+  position: relative;
+  top: 0;
+}
+
+.menu_control::before {
+  color: rgb(0, 0, 0);
+  content: "\2630"; /* Unicode for hamburger icon */
+  font-size: 30px;
+}
+
+/* Dark Mode Styles for Hamburger Icon */
+.dark-mode .menu_control::before {
+  color: rgb(255, 255, 255);
+}
+
+/* Animation */
+.fade-zoom {
+  animation: fadeZoom 0.4s ease-in-out;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+
+/* Dark Mode Styles for Menu */
+.dark-mode .menu-left {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Open Menu Styles */
+.menu-left.open {
+  left: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+
+/* Menu Links Font PC */
+.menu-link a {
+  color: #000000;
+  cursor: crosshair;
+  font-family: 'Montserrat';
+  font-size: 60px;
+  position: relative;
+  text-decoration: none;
+  z-index: 999;
+}
+
+/* Hover effect for menu-links */
+.menu-link a::after {
+  background-color: currentColor;
+  bottom: -2px;
+  content: '';
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+  width: 0;
+}
+
+.menu-link a:hover::after {
+  width: 60%; /* Adjust the width to be shorter */
+  left: 15%;  /* Center the shorter line */
+  right: 15%; /* Center the shorter line */
+}
+
+/* Dark mode state for menu-links */
+.dark-mode .menu-link a {
+  color: #ffffff;
+}
+
+.menu-link a span {
+  font-family: 'Montserrat';
+  font-size: 24px;
+}
+
+/* Menu text size for mobile responsiveness */
+@media screen and (max-width: 901px) {
+  .menu-link a {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+  }
+  
+  .menu-link a span {
+    font-family: 'Montserrat';
+    font-size: 12px;
+  }
+}
+
+/* Menu text size for tablet responsiveness */
+@media screen and (max-width: 701px) {
+  .menu-link a {
+    font-family: 'Montserrat';
+    font-size: 38px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  .menu-link a span {
+    font-family: 'Montserrat';
+    font-size: 14px;
+  }
+}
+
+/*------------------------------------Wohlmöglich altes CSS für den alten Menu Links ENDE----------- */
