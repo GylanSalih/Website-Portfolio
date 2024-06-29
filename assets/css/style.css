@@ -127,7 +127,7 @@ a {
   font-family: monospace;
 }
 
-/*--Licht Effekt am Header Border--*/
+/*--Licht Effekt am Header Border Start--*/
 .special_span {
   animation: animate 5s infinite linear;
   background: linear-gradient(90deg, transparent, #fff);
@@ -136,6 +136,19 @@ a {
   position: absolute;
   width: 50px;
 }
+
+@keyframes animate {
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(0%);
+  }
+}
+/*--Licht Effekt am Header Border END--*/
+
 
 /* -------------  Funktionen Easter-Eggs Ende ------------- */
 
@@ -150,110 +163,6 @@ a {
 /* -------------  Dark Mode CSS Start ------------- */
 
 
-
-/* Dark Mode Styles */
-.dark-mode {
-  background-color: #000000;
-  color: #fff;
-}
-
-.dark-mode-toggle i.fa-sun {
-  color: rgb(0, 0, 0);
-}
-
-/* -------------  Dark Mode CSS ENDE ------------- */
-
-/* Navbar */
-.navbar {
-  background: #00000000;
-  padding: 20px 0;
-}
-
-/* Header Container Menu */
-.top_navigation_container,
-.container {
-  align-items: center;
-  background: #ffffff; /* Light mode background */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  color: #000000; /* Light mode text color */
-  display: flex;
-  height: 56px;
-  justify-content: space-between;
-  left: 0px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 999;
-}
-
-
-
-
-
-@keyframes animate {
-  0% {
-    left: 0;
-    transform: translate(-100%);
-  }
-  100% {
-    left: 100%;
-    transform: translate(0%);
-  }
-}
-
-
-/* Header Container Mobile / darkmode funktion */
-.dark-mode .container {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
-
-/* Header Container tablet */
-@media screen and (max-width: 991px) {
-  .container {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    grid-auto-rows: auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(3, 1fr);
-    height: 56px;
-    justify-content: space-between;
-    left: 0px;
-    margin: 0 auto;
-    padding: 0 16px;
-    padding: 0 20px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
-  }
-}
-
-/* Header Container Mobile */
-@media screen and (max-width: 771px) {
-  .container {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    height: 56px;
-    justify-content: space-between;
-    left: 0px;
-    margin: 0 auto;
-    padding: 0 16px;
-    padding: 0 20px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
-  }
-}
-
-/* Beispiel Globales CSS */
 .dark-mode-toggle {
   cursor: crosshair;
   font-family: 'Arial', sans-serif;
@@ -303,7 +212,110 @@ a {
 }
 
 
+.dark-mode {
+  background-color: #000000;
+  color: #fff;
+}
 
+.dark-mode-toggle i.fa-sun {
+  color: rgb(0, 0, 0);
+}
+
+/* -------------  Dark Mode CSS ENDE ------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------  Header Container Start ------------- */
+
+
+/* Navbar ???????????????*/
+.navbar {
+  background: #ff0000;
+  padding: 20px 0;
+}
+
+/* Header Container */
+.top_navigation_container,
+.container {
+  align-items: center;
+  background: #ffffff; /* Light mode background */
+ /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  left: 0px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Header Container darkmode funktion */
+.dark-mode .container {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Header Container tablet */
+@media screen and (max-width: 991px) {
+  .container {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+/* Header Container Mobile */
+@media screen and (max-width: 771px) {
+  .container {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 16px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+  }
+}
+
+
+
+/* -----  Header Logo ----- */
 .logo {
   cursor: crosshair;
   padding-bottom: 0px;
@@ -312,17 +324,15 @@ a {
   z-index: 999;
 }
 
-.logo:hover {
-  cursor: crosshair;
-  transform: scale(1.2); /* Scale up the element */
-}
-
-
 .logo img {
   cursor: crosshair;
   max-height: 18px;
 }
 
+.logo:hover {
+  cursor: crosshair;
+  transform: scale(1.2); /* Scale up the element */
+}
 
 @media screen and (max-width: 991px) {
   .logo {
@@ -343,6 +353,7 @@ a {
 
 
 
+/* -------------  Header Container ENDE ------------- */
 
 
 
@@ -381,6 +392,9 @@ a {
 
 
 
+
+
+/* --------?????-----  Projects Style Grid-System / Portfolio Showcase Start ------------- */
 
 
 
@@ -405,14 +419,14 @@ a {
 
 
 
-/* Heading-2 Styles */
+/* Heading-2 Portfolio Text in Portfolio Area */
 .heading-2 {
   font-family: 'Bebas_Neue', sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 50px;
-  margin-top: 50px;
+  margin-top: 100px;
   padding-bottom: 24px;
   padding-top: 24px;
   text-align: center;
@@ -469,7 +483,6 @@ a {
   }
 }
 
-/* Hover effect für den text */
 /*---------------------- Project Poster Card Grids Style ----------------------------------*/
 .projects_project_menu_poster {
   background-color: #000000;
@@ -579,8 +592,35 @@ a {
 .projects_project_menu_poster:hover .project-hover-block::before {
   opacity: 1;
 }
+/*---------------------- Project Poster Card Grids Style ENDE----------------------------------*/
 
-/* Previous menu settings */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- Menu Left Opening Effekt START----------------------------------*/
 
 
 /* Default state for menu-open (light mode) */
@@ -602,6 +642,14 @@ a {
   z-index: 999;
 }
 
+
+/* Dark mode Function for menu-open */
+.dark-mode .menu-open {
+  color: #ffffff;
+}
+
+
+/* Media-Query for Responsive Menu left opening effect */
 @media screen and (max-width: 991px) {
   .menu-left {
     align-items: center;
@@ -641,12 +689,6 @@ a {
     position: fixed;
     z-index: 999;
   }
-}
-
-
-/* Dark mode state for menu-open */
-.dark-mode .menu-open {
-  color: #ffffff;
 }
 
 @media screen and (max-width: 701px) {
@@ -690,57 +732,7 @@ a {
   }
 }
 
-
-
-/*---------------------- Project Poster Card Grids Style ----------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------Headings Root settings & Responsive BEGIN----------- */
-
-
-
-
-/*------------------------------------Headings Root settings & Responsive END----------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*---------------------- Menu Left Opening Effekt ENDE----------------------------------*/
 
 
 
@@ -775,7 +767,7 @@ a {
 .dark-mode .hamburger {
   color: #ffffff;
 }
-
+/* Dark mode state for Hamburger Balken*/
 .dark-mode .spanmenu {
   background-color: #ffffff;
 }
@@ -820,6 +812,7 @@ a {
   margin-top: 3px;
 }
 
+/* Hamburger Animation Setting */
 .active .spanmenu:nth-child(1) {
   animation: top 0.7s ease forwards;
 }
@@ -844,6 +837,7 @@ a {
   animation: bottom-2 0.7s ease forwards;
 }
 
+/* Hamburger Animation Keyframes Setting */
 @keyframes top {
   0% {
     top: 0;
@@ -970,7 +964,7 @@ a {
 
 
 
-/*------------------------------------Card Single Page BEGIN----------- */
+/* ------------------- Card.html Portfolio Einzel page settings START ---------- */
 
 /* Section Project Header */
 .section_project_header {
@@ -1001,15 +995,9 @@ a {
   z-index: 1;
 }
 
-/* Project Hero Background Card Hintergrund in Dark-modus Weißer Gradient*/
+/* Project Hero Background Card Hintergrund Dark-Mode State*/
 .dark-mode .project-hero1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
 }
 
 
@@ -1083,11 +1071,11 @@ a {
   }
 }
 
-/* Headings */
 .heading-4 {
   margin-top: 14px;
   margin-bottom: 31px;
 }
+
 
 @media screen and (max-width: 479px) {
   .heading-1 {
@@ -1109,6 +1097,9 @@ a {
   transition: color 0.3s;
 }
 
+
+
+/* ---------Card.html Portfolio Einzel page settings START---------- */
 /* Single Card Projects Poster Image (EinzelBild beim öffnen vom Portfolio) */
 .poster_single {
   border-radius: 8px;
@@ -1120,10 +1111,6 @@ a {
   transform: none;
   width: 100%;
 }
-
-
-
-
 
 
 
@@ -1157,6 +1144,19 @@ a {
   font-weight: 600;
 }
 
+
+.Descriptioncontainer {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
 /* Media Queries */
 @media screen and (min-width: 992px) {
   .cast_includes_div {
@@ -1183,23 +1183,7 @@ a {
   }
 }
 
-.Descriptioncontainer {
-  display: block;
-  margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1080px;
-  min-height: 50px;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-
-
-
-
-
-
+/* ---------Card.html Portfolio Einzel page settings ENDE---------- */
 
 
 
@@ -1878,6 +1862,7 @@ footer .text span a:hover {
 .lightbox img {
   width: 100%;
   height: auto;
+  cursor: crosshair;
 }
 
 .close {
@@ -2029,7 +2014,7 @@ footer .text span a:hover {
 
 
 
-/*------------------------------------Menu Geöffnet CSS START----------- */
+/*-----------------Menu Inside marquee, Lokomotiv Effekt Style START----------- */
 
 .menu-left {
   align-items: center;
@@ -2046,7 +2031,6 @@ footer .text span a:hover {
 }
 
 
-
 .menu__item {
 	margin: -50px;
 	padding: 1.6vw 0 0 0;
@@ -2055,7 +2039,18 @@ footer .text span a:hover {
   width: 100%;
 }
 
+/* Media-Query Tablet */
+@media screen and (max-width: 991px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
 
+/* Media-Query Phone */
 @media screen and (max-width: 771px) {
   .menu__item {
     margin: 0px;
@@ -2065,6 +2060,7 @@ footer .text span a:hover {
     width: 100%;
   }
 }
+
 
 .menu__item-link {
 	-webkit-transition: opacity 0.4s;
@@ -2175,10 +2171,12 @@ footer .text span a:hover {
 	white-space: nowrap;
 }
 
+
+
 @media screen and (max-width: 771px) {
   .menu__item-link,
   .marquee span {
-    font-size: 11vw;
+    font-size: 12vw;
     font-weight: 900;
     padding: 1.6vw 1vw;
     text-align: center;
@@ -2215,7 +2213,20 @@ footer .text span a:hover {
 }
 
 
-/*------------------------------------Menu Geöffnet CSS ENDE----------- */
+/*-----------------Menu Inside marquee, Lokomotiv Effekt Style ENDE----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------Wohlmöglich altes CSS für den alten Menu Links START----------- */
 
