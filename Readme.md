@@ -103,6 +103,7 @@ Updates / Fixes:
         - Menu Text
         - CSS Ascending Ordering 
         - Code Organisation
+        - Custom Cursor
 
 ## Misc:
 

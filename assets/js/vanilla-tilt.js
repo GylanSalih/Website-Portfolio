@@ -523,3 +523,6 @@ destroyTilt();
 
 // Event-Listener für Fenstergrößenänderung
 window.addEventListener('resize', destroyTilt);
+
+
+

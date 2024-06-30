@@ -1,4 +1,75 @@
-// DarkMode Toggle JS Script Start
+// --------------------------------- //
+// Custom Cursor Dot+ Follower START //
+// --------------------------------- //
+
+var cursor = $(".cursor"),
+    follower = $(".cursor-follower");
+
+var posX = 0,
+    posY = 0;
+
+var mouseX = 0,
+    mouseY = 0;
+
+// Funktion zur Aktualisierung der Cursorposition mit GSAP-Animation
+function moveCursor() {
+  // Berechnung der neuen Cursor-Position (posX, posY) für sanfte Bewegung
+  posX += (mouseX - posX) / 9;
+  posY += (mouseY - posY) / 9;
+  
+  // Setzen der Positionen für Cursor und Cursor-Follower
+  follower.css({
+    left: posX - 1,
+    top: posY - 1
+  });
+  
+  cursor.css({
+    left: mouseX,
+    top: mouseY
+  });
+
+  // Anforderung einer neuen Animationsschleife
+  requestAnimationFrame(moveCursor);
+}
+
+// Eventlistener für Mausbewegung, um Cursor zu bewegen
+$(document).on("mousemove", function(e) {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+// Starten der Animationsschleife
+requestAnimationFrame(moveCursor);
+
+// Eventlistener für Hover-Effekte auf Links
+$(".link").on("mouseenter", function() {
+  cursor.addClass("active");
+  follower.addClass("active");
+});
+
+$(".link").on("mouseleave", function() {
+  cursor.removeClass("active");
+  follower.removeClass("active");
+});
+
+// --------------------------------- //
+// Custom Cursor Dot+ Follower ENDE //
+// --------------------------------- //
+
+
+
+//
+//
+//
+//
+//
+//
+
+
+// -------------------------------- //
+// DarkMode Toggle JS Script Start //
+// ------------------------------ //
+
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.querySelector('body');
 const toggleIcon = document.querySelector('.bi');
@@ -31,7 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.add('dark-mode'); // Dark-Mode beim Start aktivieren
     updateLogoAndIcon();
 });
-// DarkMode Toggle JS Script Ende
+
+// --------------------------------//
+// DarkMode Toggle JS Script ENDE //
+// ------------------------------//
 
 
 
@@ -43,8 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //
 
 
-
-// Menu Slide effect JS Script
+// -----------------------------------//
+// Menu Slide effect JS Script START //
+// ---------------------------------//
 
 var tl = gsap.timeline({ paused: true });
 
@@ -71,36 +146,47 @@ document.querySelector(".hamburger").addEventListener("click", function() {
     tl.reversed(!tl.reversed()); // Toggle the reversed state of the timeline
 });
 
-
-
-//
-//
-//
-//
-//
-//
+// ----------------------------------//
+// Menu Slide effect JS Script ENDE //
+// --------------------------------//
 
 
 
-// Hamburger Effect---
+//
+//
+//
+//
+//
+//
+
+
+// ------------------------//
+// Hamburger Effect START //
+// ----------------------//
+
 var btn = $('.btn');
 
 btn.on('click', function() {
   $(this).toggleClass('active not-active');
 });
 
-
-//
-//
-//
-//
-//
-//
+// -----------------------//
+// Hamburger Effect ENDE //
+// ---------------------//
 
 
 
-// Loading Animation---
+//
+//
+//
+//
+//
+//
 
+
+// ----------------------------------------//
+// Loading Animation LOGO + Landing START //
+// ---------------------------------------//
 
 // Regel, um das Scrollen zu verstecken
 document.documentElement.style.overflow = 'hidden';
@@ -140,6 +226,11 @@ setTimeout(function() {
   );
 }, 0); // Wartezeit in Millisekunden, bevor die Animation gestartet wird
 
+// --------------------------------------//
+// Loading Animation LOGO + Landing ENDE //
+// -------------------------------------//
+
+
 
 //
 //
@@ -149,8 +240,9 @@ setTimeout(function() {
 //
 
 
-  
-  // Lightbox Funktion Start Gallery vom Single card portfolio
+// -----------------------------------------------------------------//
+// Lightbox Funktion Start Gallery vom Single card portfolio START //
+// ---------------------------------------------------------------//
 
   $(document).ready(function() {
     $('.img-box').click(function() {
@@ -169,6 +261,11 @@ setTimeout(function() {
     });
   });
   
+// ----------------------------------------------------------------//
+// Lightbox Funktion Start Gallery vom Single card portfolio ENDE //
+// --------------------------------------------------------------//
+
+
 
 //
 //
@@ -178,21 +275,9 @@ setTimeout(function() {
 //
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Lokomotiv text scroll in Menu Text effekt
+// -------------------------------------------//
+// Lokomotiv text scroll in Menu Text effekt //
+// -----------------------------------------//
 
   const scroll = new LocomotiveScroll({
     el: document.querySelector("#js-scroll"),
@@ -200,3 +285,20 @@ setTimeout(function() {
     smoothMobile: true,
     inertia: 0.75,
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

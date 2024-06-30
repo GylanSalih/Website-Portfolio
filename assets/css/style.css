@@ -359,9 +359,553 @@ a {
 
 
 
+/*--------------------------------- Footer CSS BEGIN-----------------*/
+
+/* Footer section */
+footer {
+  background: #00000000;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Footer text */
+footer .text span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dark-mode .footer .text span {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Custom GitHub icon */
+.custom-github-icon {
+  font-size: 1.05rem; /* GitHub Icon */
+  color: #000000;
+}
+
+.dark-mode .custom-github-icon {
+  color: #ffffff;
+}
+
+/*--------------------------------- Footer CSS END-----------------*/
 
 
 
+
+
+
+
+
+/*---------------------- Menu Left Opening Effekt START----------------------------------*/
+
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+  color: #000000;
+  cursor: crosshair;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 61px;
+  margin-top: 18px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding: 2rem;
+  position: fixed;
+  right: 30px;
+  top: 0;
+  z-index: 999;
+}
+
+
+/* Dark mode Function for menu-open */
+.dark-mode .menu-open {
+  color: #ffffff;
+}
+
+
+/* Media-Query for Responsive Menu left opening effect */
+@media screen and (max-width: 991px) {
+  .menu-left {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-left.open {
+    left: 0;
+  }
+
+  .menu-open {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
+    cursor: crosshair;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 49px;
+    margin-top: 16px;
+    margin-top: 17px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .menu-left {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 180vh;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-left.open {
+    left: 0;
+  }
+
+  .menu-open {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
+    cursor: crosshair;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 34px;
+    margin-top: 16px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
+    right: 24px;
+    z-index: 999;
+  }
+}
+
+/*---------------------- Menu Left Opening Effekt ENDE----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------Menu Inside marquee, Lokomotiv Effekt Style START----------- */
+
+
+.menu-left {
+  align-items: center;
+  background: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 165vh;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  transition: left 0.5s ease;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.menu__item {
+	margin: -50px;
+	padding: 1.6vw 0 0 0;
+	position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media-Query Tablet */
+@media screen and (max-width: 991px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Media-Query Phone */
+@media screen and (max-width: 771px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+.menu__item-link {
+	-webkit-transition: opacity 0.4s;
+	color: #000000;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Bigilla";
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
+}
+
+.dark-mode .menu__item-link {
+	-webkit-transition: opacity 0.4s;
+	color: #ffffff;
+	cursor: crosshair;
+	display: inline-block;
+	font-family: "Bigilla";
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
+}
+
+
+.marquee {
+	color: #ffffff;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+  width: 100%;
+}
+
+.dark-mode .marquee {
+	color: #ff0000;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+}
+
+
+.menu__item-link:hover {
+	-webkit-transition-duration: 0.1s;
+	opacity: 0;
+	transition-duration: 0.1s;
+}
+
+.menu__item-link::before {
+	all: initial;
+	bottom: 60%;
+	counter-increment: menu;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+
+
+.menu {
+	--move-final: calc(-50% + var(--offset));
+	--move-initial: calc(-25% + var(--offset));
+	--offset: 20vw;
+	font-size: 8px;
+	padding: 0vh 0 0 0vh;
+  padding-bottom: 390px;
+}
+
+
+.marquee__inner {
+	-webkit-animation-play-state: paused;
+	-webkit-animation: marquee 5s linear infinite;
+	-webkit-transition: opacity 0.1s;
+	animation-play-state: paused;
+	animation: marquee 5s linear infinite;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	opacity: 0;
+	padding: 2vw 0;
+	position: relative;
+	transition: opacity 0.1s;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+	-webkit-animation-play-state: running;
+	-webkit-transition-duration: 0.4s;
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.menu__item-link,
+.marquee span {
+	font-size: 8vw;
+	font-weight: 900;
+	padding: 1.6vw 1vw;
+	white-space: nowrap;
+}
+
+
+
+@media screen and (max-width: 771px) {
+  .menu__item-link,
+  .marquee span {
+    font-size: 12vw;
+    font-weight: 900;
+    padding: 1.6vw 1vw;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+.marquee span {
+	font-family: "Bigilla" !important;
+	text-transform: uppercase;
+}
+
+@-webkit-keyframes marquee {
+	0% {
+		-webkit-transform: translate3d(var(--move-initial), 0, 0);
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(var(--move-final), 0, 0);
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+@keyframes marquee {
+	0% {
+		-webkit-transform: translate3d(var(--move-initial), 0, 0);
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(var(--move-final), 0, 0);
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+
+/*-----------------Menu Inside marquee, Lokomotiv Effekt Style ENDE----------- */
+
+
+
+
+
+
+
+/*------------------------------------Hamburger Icon BEGIN----------- */
+
+/* Dark mode state for Hamburger */
+.dark-mode .hamburger {
+  color: #ffffff;
+}
+/* Dark mode state for Hamburger Balken*/
+.dark-mode .spanmenu {
+  background-color: #ffffff;
+}
+
+.hamburger {
+  border-radius: 2px;
+  color: #000000;
+  position: absolute;
+  right: 10px; /* Abstand vom rechten Rand des Headers */
+  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
+  transform: translate(50%, -50%);
+  transition: transform 0.3s; /* Füge die Transition hier hinzu */
+  z-index: 999;
+}
+
+.btn {
+  cursor: crosshair;
+  position: absolute;
+  right: 35px;
+  top: 50%; /* Platziere den Button vertikal in der Mitte */
+  transform: translate(50%, -50%);
+  width: 40px;
+}
+
+@media screen and (max-width: 771px) {
+  .btn {
+    right: 30px;
+  }
+}
+
+.spanmenu {
+  background-color: #000000;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: all 0.3s;
+  width: 85%;
+}
+
+.spanmenu + .spanmenu {
+  margin-top: 3px;
+}
+
+/* Hamburger Animation Setting */
+.active .spanmenu:nth-child(1) {
+  animation: top 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(1) {
+  animation: top-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(2) {
+  animation: scaled 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(2) {
+  animation: scaled-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(3) {
+  animation: bottom 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(3) {
+  animation: bottom-2 0.7s ease forwards;
+}
+
+/* Hamburger Animation Keyframes Setting */
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+  100% {
+    top: 5px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(45deg);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+  100% {
+    bottom: 8px;
+    transform: rotate(135deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*------------------------------------Hamburger icon ENDE----------- */
 
 
 
@@ -593,361 +1137,6 @@ a {
   opacity: 1;
 }
 /*---------------------- Project Poster Card Grids Style ENDE----------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------- Menu Left Opening Effekt START----------------------------------*/
-
-
-/* Default state for menu-open (light mode) */
-.menu-open {
-  color: #000000;
-  cursor: crosshair;
-  font-size: 20px;
-  margin-left: 0px;
-  margin-right: 61px;
-  margin-top: 18px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-  padding: 2rem;
-  position: fixed;
-  right: 30px;
-  top: 0;
-  z-index: 999;
-}
-
-
-/* Dark mode Function for menu-open */
-.dark-mode .menu-open {
-  color: #ffffff;
-}
-
-
-/* Media-Query for Responsive Menu left opening effect */
-@media screen and (max-width: 991px) {
-  .menu-left {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    height: 150vh;
-    justify-content: center;
-    left: -100%;
-    position: fixed;
-    transition: left 0.5s ease;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .menu-left.open {
-    left: 0;
-  }
-
-  .menu-open {
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-style: solid;
-    border-right-width: 0px;
-    color: #000000;
-    cursor: crosshair;
-    font-size: 20px;
-    margin-left: 0px;
-    margin-right: 49px;
-    margin-top: 16px;
-    margin-top: 17px;
-    margin: 0 5px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    position: fixed;
-    z-index: 999;
-  }
-}
-
-@media screen and (max-width: 701px) {
-  .menu-left {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    height: 180vh;
-    justify-content: center;
-    left: -100%;
-    position: fixed;
-    transition: left 0.5s ease;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .menu-left.open {
-    left: 0;
-  }
-
-  .menu-open {
-    border-left-style: solid;
-    border-left-width: 0px;
-    border-right-style: solid;
-    border-right-width: 0px;
-    color: #000000;
-    cursor: crosshair;
-    font-size: 20px;
-    margin-left: 0px;
-    margin-right: 34px;
-    margin-top: 16px;
-    margin: 0 5px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    position: fixed;
-    right: 24px;
-    z-index: 999;
-  }
-}
-
-/*---------------------- Menu Left Opening Effekt ENDE----------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------Hamburger Icon BEGIN----------- */
-
-/* Dark mode state for Hamburger */
-.dark-mode .hamburger {
-  color: #ffffff;
-}
-/* Dark mode state for Hamburger Balken*/
-.dark-mode .spanmenu {
-  background-color: #ffffff;
-}
-
-.hamburger {
-  border-radius: 2px;
-  color: #000000;
-  position: absolute;
-  right: 10px; /* Abstand vom rechten Rand des Headers */
-  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
-  transform: translate(50%, -50%);
-  transition: transform 0.3s; /* Füge die Transition hier hinzu */
-  z-index: 999;
-}
-
-.btn {
-  cursor: crosshair;
-  position: absolute;
-  right: 35px;
-  top: 50%; /* Platziere den Button vertikal in der Mitte */
-  transform: translate(50%, -50%);
-  width: 40px;
-}
-
-@media screen and (max-width: 771px) {
-  .btn {
-    right: 30px;
-  }
-}
-
-.spanmenu {
-  background-color: #000000;
-  border-radius: 3px;
-  display: block;
-  height: 3px;
-  position: relative;
-  transition: all 0.3s;
-  width: 85%;
-}
-
-.spanmenu + .spanmenu {
-  margin-top: 3px;
-}
-
-/* Hamburger Animation Setting */
-.active .spanmenu:nth-child(1) {
-  animation: top 0.7s ease forwards;
-}
-
-.not-active .spanmenu:nth-child(1) {
-  animation: top-2 0.7s ease forwards;
-}
-
-.active .spanmenu:nth-child(2) {
-  animation: scaled 0.7s ease forwards;
-}
-
-.not-active .spanmenu:nth-child(2) {
-  animation: scaled-2 0.7s ease forwards;
-}
-
-.active .spanmenu:nth-child(3) {
-  animation: bottom 0.7s ease forwards;
-}
-
-.not-active .spanmenu:nth-child(3) {
-  animation: bottom-2 0.7s ease forwards;
-}
-
-/* Hamburger Animation Keyframes Setting */
-@keyframes top {
-  0% {
-    top: 0;
-    transform: rotate(0);
-  }
-  50% {
-    top: -4px; /* Adjusted value for smoother animation */
-    transform: rotate(0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
-  }
-  100% {
-    top: 5px;
-    transform: rotate(45deg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
-  }
-}
-
-@keyframes top-2 {
-  0% {
-    top: -4px; /* Adjusted value for smoother animation */
-    transform: rotate(45deg);
-  }
-  50% {
-    top: -4px; /* Adjusted value for smoother animation */
-    transform: rotate(0deg);
-  }
-  100% {
-    top: 0;
-    transform: rotate(0deg);
-  }
-}
-
-@keyframes bottom {
-  0% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-  50% {
-    bottom: 1px; /* Adjusted value for smoother animation */
-    transform: rotate(0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
-  }
-  100% {
-    bottom: 8px;
-    transform: rotate(135deg);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
-  }
-}
-
-@keyframes bottom-2 {
-  0% {
-    bottom: 1px; /* Adjusted value for smoother animation */
-    transform: rotate(135deg);
-  }
-  50% {
-    bottom: 1px; /* Adjusted value for smoother animation */
-    transform: rotate(0);
-  }
-  100% {
-    bottom: 0;
-    transform: rotate(0);
-  }
-}
-
-@keyframes scaled {
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(0);
-  }
-}
-
-@keyframes scaled-2 {
-  0% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/*------------------------------------Hamburger icon ENDE----------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1222,6 +1411,81 @@ a {
 
 
 
+
+
+/*------------------------------------Skills.html Page BEGIN----------- */
+
+/* Skills section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  gap: 3rem;
+  margin-top: 105px;
+  max-width: 1500px;
+  padding-left: 7rem;
+  padding: 0 3rem;
+  width: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 771px) {
+  .skills {
+    font-size: 24px;
+    margin-top: 105px;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding: 0 1.5rem;
+    width: auto;
+  }
+}
+
+/* Skill category */
+.category h3 {
+  color: #000;
+  font-family: 'Quicksand';
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.dark-mode .category h3 {
+  color: #ffffff;
+}
+
+/* Skills container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Quicksand';
+  gap: 10px;
+}
+
+/* Individual skill */
+.skill {
+  align-items: center;
+  background-color: var(--primary-light);
+  border-radius: 5px;
+  color: #FFF;
+  cursor: crosshair;
+  display: flex;
+  font-size: 1em;
+  gap: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.skill i {
+  font-size: 1.2em;
+}
+
+.skill:hover {
+  background-color: var(--card-text);
+}
+
+/*------------------------------------Skill Page END----------- */
 
 
 
@@ -1525,129 +1789,6 @@ section .button button:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------------------- Footer CSS BEGIN-----------------*/
-
-/* Footer section */
-footer {
-  background: #00000000;
-  font-family: 'Poppins', sans-serif;
-  padding-bottom: 30px;
-  padding-top: 15px;
-  padding: 15px 0;
-  text-align: center;
-}
-
-/* Footer text */
-footer .text span {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.dark-mode .footer .text span {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
-}
-
-footer .text span a {
-  font-weight: 500;
-  color: #FFF;
-}
-
-footer .text span a:hover {
-  text-decoration: underline;
-}
-
-/* Custom GitHub icon */
-.custom-github-icon {
-  font-size: 1.05rem; /* GitHub Icon */
-  color: #000000;
-}
-
-.dark-mode .custom-github-icon {
-  color: #ffffff;
-}
-
-/*--------------------------------- Footer CSS END-----------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-------------------Loading Animation Logo Effekt Start------------------ */
 
 /* Loading animation container */
@@ -1902,318 +2043,8 @@ footer .text span a:hover {
 
 
 
-/*------------------------------------Skills.html Page BEGIN----------- */
 
-/* Skills section */
-.skills {
-  display: flex;
-  flex-direction: column;
-  font-size: 28px;
-  gap: 3rem;
-  margin-top: 105px;
-  max-width: 1500px;
-  padding-left: 7rem;
-  padding: 0 3rem;
-  width: auto;
-}
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 771px) {
-  .skills {
-    font-size: 24px;
-    margin-top: 105px;
-    max-width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding: 0 1.5rem;
-    width: auto;
-  }
-}
-
-/* Skill category */
-.category h3 {
-  color: #000;
-  font-family: 'Quicksand';
-  font-size: 3.5rem;
-  font-weight: 300;
-  margin-bottom: 18px;
-}
-
-.dark-mode .category h3 {
-  color: #ffffff;
-}
-
-/* Skills container */
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  font-family: 'Quicksand';
-  gap: 10px;
-}
-
-/* Individual skill */
-.skill {
-  align-items: center;
-  background-color: var(--primary-light);
-  border-radius: 5px;
-  color: #FFF;
-  cursor: crosshair;
-  display: flex;
-  font-size: 1em;
-  gap: 10px;
-  padding: 10px 20px;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.skill i {
-  font-size: 1.2em;
-}
-
-.skill:hover {
-  background-color: var(--card-text);
-}
-
-/*------------------------------------Skill Page END----------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*-----------------Menu Inside marquee, Lokomotiv Effekt Style START----------- */
-
-.menu-left {
-  align-items: center;
-  background: #ffffff; /* Light mode background */
-  color: #000000; /* Light mode text color */
-  display: flex;
-  height: 165vh;
-  justify-content: center;
-  left: -100%;
-  position: fixed;
-  transition: left 0.5s ease;
-  width: 100%;
-  z-index: 999;
-}
-
-
-.menu__item {
-	margin: -50px;
-	padding: 1.6vw 0 0 0;
-	position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-/* Media-Query Tablet */
-@media screen and (max-width: 991px) {
-  .menu__item {
-    margin: 0px;
-    padding: 1.6vw 0 0 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-/* Media-Query Phone */
-@media screen and (max-width: 771px) {
-  .menu__item {
-    margin: 0px;
-    padding: 1.6vw 0 0 0;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-}
-
-
-.menu__item-link {
-	-webkit-transition: opacity 0.4s;
-	color: #000000;
-	cursor: pointer;
-	display: inline-block;
-	font-family: "Bigilla";
-	position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: opacity 0.4s;
-}
-
-.dark-mode .menu__item-link {
-	-webkit-transition: opacity 0.4s;
-	color: #ffffff;
-	cursor: crosshair;
-	display: inline-block;
-	font-family: "Bigilla";
-	position: relative;
-	text-decoration: none;
-	text-transform: uppercase;
-	transition: opacity 0.4s;
-}
-
-
-.marquee {
-	color: #ffffff;
-	left: 0;
-	mix-blend-mode: difference;
-	overflow: hidden;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-  width: 100%;
-}
-
-.dark-mode .marquee {
-	color: #ff0000;
-	left: 0;
-	mix-blend-mode: difference;
-	overflow: hidden;
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-}
-
-
-.menu__item-link:hover {
-	-webkit-transition-duration: 0.1s;
-	opacity: 0;
-	transition-duration: 0.1s;
-}
-
-.menu__item-link::before {
-	all: initial;
-	bottom: 60%;
-	counter-increment: menu;
-	left: 0;
-	pointer-events: none;
-	position: absolute;
-	text-transform: uppercase;
-}
-
-
-
-.menu {
-	--move-final: calc(-50% + var(--offset));
-	--move-initial: calc(-25% + var(--offset));
-	--offset: 20vw;
-	font-size: 8px;
-	padding: 0vh 0 0 0vh;
-  padding-bottom: 390px;
-}
-
-
-.marquee__inner {
-	-webkit-animation-play-state: paused;
-	-webkit-animation: marquee 5s linear infinite;
-	-webkit-transition: opacity 0.1s;
-	animation-play-state: paused;
-	animation: marquee 5s linear infinite;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display: flex;
-	opacity: 0;
-	padding: 2vw 0;
-	position: relative;
-	transition: opacity 0.1s;
-	width: -moz-fit-content;
-	width: -webkit-fit-content;
-	width: fit-content;
-}
-
-.menu__item-link:hover ~ .marquee .marquee__inner {
-	-webkit-animation-play-state: running;
-	-webkit-transition-duration: 0.4s;
-	animation-play-state: running;
-	opacity: 1;
-	transition-duration: 0.4s;
-}
-
-.menu__item-link,
-.marquee span {
-	font-size: 8vw;
-	font-weight: 900;
-	padding: 1.6vw 1vw;
-	white-space: nowrap;
-}
-
-
-
-@media screen and (max-width: 771px) {
-  .menu__item-link,
-  .marquee span {
-    font-size: 12vw;
-    font-weight: 900;
-    padding: 1.6vw 1vw;
-    text-align: center;
-    white-space: nowrap;
-    width: 100%;
-  }
-}
-
-.marquee span {
-	font-family: "Bigilla" !important;
-	text-transform: uppercase;
-}
-
-@-webkit-keyframes marquee {
-	0% {
-		-webkit-transform: translate3d(var(--move-initial), 0, 0);
-		transform: translate3d(var(--move-initial), 0, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(var(--move-final), 0, 0);
-		transform: translate3d(var(--move-final), 0, 0);
-	}
-}
-
-@keyframes marquee {
-	0% {
-		-webkit-transform: translate3d(var(--move-initial), 0, 0);
-		transform: translate3d(var(--move-initial), 0, 0);
-	}
-	100% {
-		-webkit-transform: translate3d(var(--move-final), 0, 0);
-		transform: translate3d(var(--move-final), 0, 0);
-	}
-}
-
-
-/*-----------------Menu Inside marquee, Lokomotiv Effekt Style ENDE----------- */
 
 
 
@@ -2395,3 +2226,122 @@ body.menu-open {
 }
 
 /*------------------------------------Wohlmöglich altes CSS für den alten Menu Links ENDE----------- */
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------*/
+/* Global Custom Cursor                                       */
+/*-----------------------------------------------------------*/
+@media (hover: none) or (pointer: coarse) {
+  .custom-cursor {
+      display: none;
+  }
+}
+
+.cursor {
+  position: fixed;
+  background-color: #000000;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Zentriere den Cursor horizontal und vertikal */
+}
+
+.dark-mode .cursor {
+  position: fixed;
+  background-color: #fff;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Zentriere den Cursor horizontal und vertikal */
+}
+
+.cursor.active {
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(0); /* Skaliere den Cursor auf 0 für den Aktivzustand */
+}
+
+.cursor.hovered {
+  opacity: 0.08;
+}
+
+.cursor-follower {
+  position: fixed;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Zentriere den Follower horizontal und vertikal */
+}
+
+.dark-mode .cursor-follower {
+  position: fixed;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Zentriere den Follower horizontal und vertikal */
+}
+
+.cursor-follower.active {
+  opacity: 0.7;
+  transform: translate(-50%, -50%) scale(1.5); /* Skaliere den Follower für den Aktivzustand */
+}
+
+.cursor-follower.hovered {
+  opacity: 0.08;
+}
+
+
+body:hover .custom-cursor {
+  opacity: 1;
+}
+
+body.link-hover .custom-cursor {
+  width: 90px;
+  height: 90px;
+}
+
+body.active .custom-cursor {
+  width: 40px;
+  height: 40px;
+}
+
+body.jobs-hover .custom-cursor {
+  opacity: 1;
+  transform: scale(1);
+}
+
+body.transitioning .custom-cursor {
+  width: 60px;
+  height: 60px;
+}
+
+
