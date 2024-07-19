@@ -6,14 +6,13 @@
   --tertiary: #fff;
   --tertiary-dark: #a9bbd3;
   --secondary: #e31b6d;
-  --Red: rgb(255, 8, 0);
+  --Red: #ff0800;
   --primary2: #111821;
   --primary-light: #2e4a6f;
   --primary-dark: #223247;
   --card-text: #e31b6d;
   --card-bg: #223247;
   --black: black;
-  --background-blue: #000000;
 }
 
 
@@ -29,6 +28,7 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Bridge Head Con Medium", sans-serif;
+  cursor: none;
 }
 
 a {
@@ -119,7 +119,9 @@ a {
 
 
 
-/* -------------  Funktionen Easter-Eggs Start ------------- */
+/*------------------------------------------------------------*/
+/* Funktionen Easter-Eggs Start                              */
+/*-----------------------------------------------------------*/
 /* Easter-Egg / Nicht Sichtbar auf der Website*/
 #ascii-art {
   display: none;
@@ -149,19 +151,20 @@ a {
 }
 /*--Licht Effekt am Header Border END--*/
 
-
-/* -------------  Funktionen Easter-Eggs Ende ------------- */
-
-
-
+/*------------------------------------------------------------*/
+/* Funktionen Easter-Eggs ENDE                               */
+/*-----------------------------------------------------------*/
 
 
 
 
 
 
-/* -------------  Dark Mode CSS Start ------------- */
 
+
+/*------------------------------------------------------------*/
+/* Dark Mode CSS Start                                       */
+/*-----------------------------------------------------------*/
 
 .dark-mode-toggle {
   cursor: crosshair;
@@ -221,7 +224,9 @@ a {
   color: rgb(0, 0, 0);
 }
 
-/* -------------  Dark Mode CSS ENDE ------------- */
+/*------------------------------------------------------------*/
+/* Dark Mode CSS ENDE                                       */
+/*-----------------------------------------------------------*/
 
 
 
@@ -233,11 +238,9 @@ a {
 
 
 
-
-
-
-/* -------------  Header Container Start ------------- */
-
+/*------------------------------------------------------------*/
+/* Header Container Start                                     */
+/*-----------------------------------------------------------*/
 
 /* Navbar ???????????????*/
 .navbar {
@@ -352,14 +355,18 @@ a {
 }
 
 
-
-/* -------------  Header Container ENDE ------------- */
-
-
-
+/*------------------------------------------------------------*/
+/* Header Container ENDE                                     */
+/*-----------------------------------------------------------*/
 
 
-/*--------------------------------- Footer CSS BEGIN-----------------*/
+
+
+
+
+/*------------------------------------------------------------*/
+/* Footer CSS START                                           */
+/*-----------------------------------------------------------*/
 
 /* Footer section */
 footer {
@@ -401,17 +408,18 @@ footer .text span a:hover {
   color: #ffffff;
 }
 
-/*--------------------------------- Footer CSS END-----------------*/
+/*------------------------------------------------------------*/
+/* Footer CSS ENDE                                            */
+/*-----------------------------------------------------------*/
 
 
 
 
 
 
-
-
-/*---------------------- Menu Left Opening Effekt START----------------------------------*/
-
+/*------------------------------------------------------------*/
+/* Menu Left Opening Effekt START                             */
+/*-----------------------------------------------------------*/
 
 /* Default state for menu-open (light mode) */
 .menu-open {
@@ -522,7 +530,9 @@ footer .text span a:hover {
   }
 }
 
-/*---------------------- Menu Left Opening Effekt ENDE----------------------------------*/
+/*------------------------------------------------------------*/
+/* Menu Left Opening Effekt ENDE                              */
+/*-----------------------------------------------------------*/
 
 
 
@@ -533,10 +543,9 @@ footer .text span a:hover {
 
 
 
-
-
-/*-----------------Menu Inside marquee, Lokomotiv Effekt Style START----------- */
-
+/*------------------------------------------------------------*/
+/* Menu Inside marquee, Lokomotiv Effekt Style START          */
+/*-----------------------------------------------------------*/
 
 .menu-left {
   align-items: center;
@@ -735,15 +744,16 @@ footer .text span a:hover {
 }
 
 
-/*-----------------Menu Inside marquee, Lokomotiv Effekt Style ENDE----------- */
+/*------------------------------------------------------------*/
+/* Menu Inside marquee, Lokomotiv Effekt Style ENDE          */
+/*-----------------------------------------------------------*/
 
 
 
 
-
-
-
-/*------------------------------------Hamburger Icon BEGIN----------- */
+/*------------------------------------------------------------*/
+/* Hamburger Icon START                                       */
+/*-----------------------------------------------------------*/
 
 /* Dark mode state for Hamburger */
 .dark-mode .hamburger {
@@ -905,8 +915,9 @@ footer .text span a:hover {
   }
 }
 
-/*------------------------------------Hamburger icon ENDE----------- */
-
+/*------------------------------------------------------------*/
+/* Hamburger Icon ENDE                                       */
+/*-----------------------------------------------------------*/
 
 
 
@@ -1048,6 +1059,7 @@ footer .text span a:hover {
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   margin-top: 24px;
+  height: 1250px;
 }
 
 
@@ -1073,10 +1085,11 @@ footer .text span a:hover {
 
 /* Project Menu Section */
 .projects_menu_section {
-  margin-bottom: 16px;
-  padding-top: 12px;
+  margin-bottom: 35px;
+  padding-top: 391px;
   position: relative;
 }
+
 
 /* Project Poster Image */
 .poster_image {
@@ -1151,9 +1164,9 @@ footer .text span a:hover {
 
 
 
-
-
-/* ------------------- Card.html Portfolio Einzel page settings START ---------- */
+/*-------------------------------------------------------------*/
+/* Card.html Portfolio Einzel page settings START             */
+/*-----------------------------------------------------------*/
 
 /* Section Project Header */
 .section_project_header {
@@ -1372,48 +1385,17 @@ footer .text span a:hover {
   }
 }
 
-/* ---------Card.html Portfolio Einzel page settings ENDE---------- */
+/*------------------------------------------------------------*/
+/* Card.html Portfolio Einzel page settings ENDE             */
+/*-----------------------------------------------------------*/
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*------------------------------------Skills.html Page BEGIN----------- */
+/*------------------------------------------------------------*/
+/* Skills.html Page START                                    */
+/*-----------------------------------------------------------*/
 
 /* Skills section */
 .skills {
@@ -1485,7 +1467,9 @@ footer .text span a:hover {
   background-color: var(--card-text);
 }
 
-/*------------------------------------Skill Page END----------- */
+/*------------------------------------------------------------*/
+/* Skills.html Page ENDE                                     */
+/*-----------------------------------------------------------*/
 
 
 
@@ -1500,9 +1484,9 @@ footer .text span a:hover {
 
 
 
-
-
-/*-------------------- About.html Page BEGIN----------------- */
+/*------------------------------------------------------------*/
+/* About.html Page START                                     */
+/*-----------------------------------------------------------*/
 
 /* Home section styling */
 .home {
@@ -1575,7 +1559,9 @@ footer .text span a:hover {
   color: #ffffff;
 }
 
-/*-------------------- About.html Page END----------------- */
+/*------------------------------------------------------------*/
+/* About.html Page ENDE                                      */
+/*-----------------------------------------------------------*/
 
 
 
@@ -1682,10 +1668,15 @@ section .button button:hover {
   color: #ffffff;
 }
 
-/*-------------------- About Section Styling END----------------- */
+/*------------------------------------------------------------*/
+/* About Section Styling END                                 */
+/*-----------------------------------------------------------*/
 
 
-/*-------------------Responsive About.html Page BEGIN------------------------- */
+
+/*------------------------------------------------------------*/
+/* Responsive About.html Page BEGIN                          */
+/*-----------------------------------------------------------*/
 
 /* Responsive section content */
 @media (max-width: 1190px) {
@@ -1739,10 +1730,15 @@ section .button button:hover {
   }
 }
 
-/*-------------------Responsive About.html Page END------------------------- */
+/*------------------------------------------------------------*/
+/* Responsive About.html Page END                            */
+/*----------------------------------------------------------*/
 
 
-/*-------------------Social Icons About.html Page BEGIN------------------ */
+
+/*------------------------------------------------------------*/
+/* Social Icons About.html Page BEGIN                        */
+/*----------------------------------------------------------*/
 
 /* Social icons container */
 .media-icons {
@@ -1768,7 +1764,9 @@ section .button button:hover {
   opacity: 1;
 }
 
-/*-------------------Social Icons About Me Page END------------------ */
+/*------------------------------------------------------------*/
+/* Social Icons About Me Page END                            */
+/*----------------------------------------------------------*/
 
 
 
@@ -1785,11 +1783,9 @@ section .button button:hover {
 
 
 
-
-
-
-
-/*-------------------Loading Animation Logo Effekt Start------------------ */
+/*------------------------------------------------------------*/
+/* Loading Animation Logo Effekt Start                       */
+/*-----------------------------------------------------------*/
 
 /* Loading animation container */
 .loading-page {
@@ -1857,7 +1853,9 @@ section .button button:hover {
   text-transform: uppercase;
 }
 
-/*-------------------Loading Animation End------------------ */
+/*------------------------------------------------------------*/
+/* Loading Animation Logo Effekt Ende                        */
+/*----------------------------------------------------------*/
 
 
 
@@ -1879,9 +1877,9 @@ section .button button:hover {
 
 
 
-
-
-/*-------------------Single Card Gallery Settings Start------------------ */
+/*------------------------------------------------------------*/
+/* Single Card Gallery Settings Start                        */
+/*----------------------------------------------------------*/
 
 /* Gallery section */
 .gallery-image {
@@ -1968,7 +1966,10 @@ section .button button:hover {
   font-family: 'Poppins';
 }
 
-/*-------------------Single Card Gallery Settings Start------------------ */
+/*-----------------------------------------------------------*/
+/* Single Card Gallery Settings Ende                        */
+/*---------------------------------------------------------*/
+
 
 
 /*-------------------Lightbox Single Card Gallery Start------------------ */
@@ -2015,37 +2016,9 @@ section .button button:hover {
   top: 15px;
 }
 
-/*-------------------Lightbox Single Card Gallery ENG------------------ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------------------------------------*/
+/* Lightbox Single Card Gallery ENG                           */
+/*-----------------------------------------------------------*/
 
 
 
@@ -2236,9 +2209,9 @@ body.menu-open {
 
 
 
-/*-----------------------------------------------------------*/
+/*------------------------------------------------------------*/
 /* Global Custom Cursor                                       */
-/*-----------------------------------------------------------*/
+/*------------------------------------------------------------*/
 @media (hover: none) or (pointer: coarse) {
   .custom-cursor {
       display: none;
@@ -2343,5 +2316,300 @@ body.transitioning .custom-cursor {
   width: 60px;
   height: 60px;
 }
+
+
+/*------------------------------------------------------------*/
+/* Global Custom Cursor Ende                                  */
+/*------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider Start                                  */
+/*------------------------------------------------------------*/
+
+
+
+/* Slide Container */
+.carousel-wrapper {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Styles for each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1; /* Sichtbar */
+  z-index: 1; /* Sicherstellen, dass die aktive Slide oben ist */
+}
+
+/* Slide content */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Overlay */
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%); /* Höhe des Gradient-Overlays bis zur Mitte des Sliders */
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+  pointer-events: none; /* Damit es keine Interaktionen blockiert */
+}
+
+
+
+
+.dark-mode .text-overlay::after {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Text content */
+.text-content-slider {
+  text-align: left;
+  width: 55%;
+  padding: 20px;
+  position: relative; /* Für Pseudo-Elemente erforderlich */
+  color: var(--white);
+  z-index: 5;
+}
+
+.dark-mode .text-content-slider {
+  color: var(--black);
+}
+
+
+/* Positionierung der Textinhalte */
+.subtitle-slider {
+  font-size: 12px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--black);
+  z-index: 5;
+}
+
+.dark-mode .subtitle-slider {
+  color: var(--white);
+}
+
+.title-slider {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: var(--black);
+  z-index: 5;
+}
+
+.dark-mode .title-slider {
+  color: var(--white);
+}
+
+.description-slider {
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 28.6px;
+  z-index: 5;
+}
+
+.dark-mode .description-slider {
+  color: var(--white);
+}
+
+.background-text-slider {
+  bottom: 146px;
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  font-size: 170px;
+  font-weight: 700;
+  left: 78%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.dark-mode .background-text-slider {
+  color: var(--white);
+}
+
+/* Navigation styling */
+.navigation {
+  align-items: center;
+  bottom: 685px; /* Abstand vom unteren Rand des Containers */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+  left: 50%; /* Horizontale Zentrierung */
+  position: absolute;
+  transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+  z-index: 5;
+}
+
+.nav-dot {
+  background: #ffffff80;
+  border-radius: 0.25rem;
+  cursor: crosshair;
+  display: block;
+  height: 8px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  text-indent: -9999px;
+  transition: width 0.3s ease, opacity 1s ease;
+  width: 24px;
+  will-change: transform;
+}
+
+.nav-dot.active {
+  background: #ffffff80;
+  width: 100px;
+}
+
+.nav-dot.loading::before {
+  animation: progressBar 10s linear forwards;
+  background: var(--Red);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  width: 100%;
+  will-change: transform;
+}
+
+@keyframes progressBar {
+  0% {
+      transform: scaleX(0) translateZ(0);
+  }
+  100% {
+      transform: scaleX(1) translateZ(0);
+  }
+}
+
+.nav-dot:hover {
+  background: var(--Red);
+}
+
+
+
+
 
 

@@ -1,3 +1,74 @@
+// -------------------------------------------//
+// Landing Page Slider / Carousel            //
+// -----------------------------------------//
+
+$(document).ready(function() {
+  var autoplayInterval = 10000; // Zeit in Millisekunden zwischen den Slides
+  var autoplayTimer;
+
+  function changeSlide(next) {
+      var $current = $('.slide.active');
+      var current = $current.data('slide');
+      
+      if (current === next) {
+          return;
+      }
+      
+      $('.slide').removeClass('active');
+      $('.slide[data-slide=' + next + ']').addClass('active');
+      
+      $('.nav-dot').removeClass('active loading');
+      $('.nav-dot[data-slide=' + next + ']').addClass('active loading');
+  }
+
+  function startAutoplay() {
+      autoplayTimer = setInterval(function() {
+          var $current = $('.slide.active');
+          var current = $current.data('slide');
+          var next = $current.next('.slide').length ? 
+                      $current.next('.slide').data('slide') : 
+                      $('.slide').first().data('slide');
+          
+          changeSlide(next);
+      }, autoplayInterval);
+  }
+
+  function stopAutoplay() {
+      clearInterval(autoplayTimer);
+  }
+
+  $('.nav-dot').on('click', function(e) {
+      e.preventDefault();
+      
+      var next = $(this).data('slide');
+      changeSlide(next);
+      
+      stopAutoplay();  // Stoppe Autoplay beim manuellen Wechsel
+      startAutoplay(); // Starte Autoplay erneut
+  });
+
+  // Optional: Starte mit dem ersten Slide aktiv
+  changeSlide($('.nav-dot.active').data('slide'));
+
+  // Füge die 'loading' Klasse sofort zum ersten Dot hinzu
+  $('.nav-dot.active').addClass('loading');
+
+  // Starte Autoplay, wenn das Dokument bereit ist
+  startAutoplay();
+});
+
+
+
+
+//
+//
+//
+//
+//
+//
+
+
+
 // --------------------------------- //
 // Custom Cursor Dot+ Follower START //
 // --------------------------------- //
@@ -301,4 +372,5 @@ setTimeout(function() {
 
 
 
-  
+
+

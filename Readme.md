@@ -105,6 +105,13 @@ Updates / Fixes:
         - Code Organisation
         - Custom Cursor
 
+     0.0.12 - Updates
+        - Better CSS Commentary
+        - new landing page slider with darkmode responsive and dots function
+        - Cursor Hide because custom Cursor
+        - New Gifs for the landing page
+        - 
+
 ## Misc:
 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
