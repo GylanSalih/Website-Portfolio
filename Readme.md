@@ -1,8 +1,8 @@
-# Website is Under Construction, Follow for more Updates
-## Mission Award Wining Design
-### Made by Gylan Salih / Open-Source for Everybody
+# Exciting Updates Coming Soon - Follow for the Latest!
+## Mission: Award-Winning Design
+### Crafted by Gylan Salih / Open-Source for All
 
-**`Please Note its in the Beta-Phase`**
+**Please Note: Currently in Beta Phase**
 
 
 <p align="left">
