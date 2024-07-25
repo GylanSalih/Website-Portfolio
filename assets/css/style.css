@@ -54,6 +54,10 @@ h4 {
   margin-top: 10px;
 }
 
+h3 {
+
+}
+
 h2 {
   font-family: Quicksand, sans-serif;
   font-size: 14px;
@@ -1802,7 +1806,17 @@ section .button button:hover {
   top: 0;
   width: 100%;
   z-index: 999;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
 }
+
+/* Klasse, um die Ladeanimation zu verbergen */
+.loading-page.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Die Animation des SVG und des Namens bleibt unverändert */
+
 
 /* Loading animation SVG */
 #svg {
@@ -2445,6 +2459,16 @@ body.transitioning .custom-cursor {
   left: 0;
 }
 
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
 .text-overlay {
   align-items: center;
   background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Overlay */
@@ -2515,6 +2539,18 @@ body.transitioning .custom-cursor {
   z-index: 5;
 }
 
+@media screen and (max-width: 901px) {
+  .title-slider {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--black);
+    z-index: 5;
+    line-height: 62.5px;
+  }
+}
+
 .dark-mode .title-slider {
   color: var(--white);
 }
@@ -2549,7 +2585,7 @@ body.transitioning .custom-cursor {
 /* Navigation styling */
 .navigation {
   align-items: center;
-  bottom: 685px; /* Abstand vom unteren Rand des Containers */
+  bottom: 766px; /* Abstand vom unteren Rand des Containers */
   display: flex;
   flex-direction: row;
   justify-content: center; /* Zentriert die Navigation innerhalb des Containers */

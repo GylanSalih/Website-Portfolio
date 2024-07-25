@@ -1,10 +1,13 @@
+
+
 // -------------------------------------------//
 // Landing Page Slider / Carousel            //
 // -----------------------------------------//
 
 $(document).ready(function() {
-  var autoplayInterval = 10000; // Zeit in Millisekunden zwischen den Slides
+  var autoplayInterval = 10000; // Time in milliseconds between slides
   var autoplayTimer;
+  var startX, startY, endX, endY;
 
   function changeSlide(next) {
       var $current = $('.slide.active');
@@ -43,19 +46,66 @@ $(document).ready(function() {
       var next = $(this).data('slide');
       changeSlide(next);
       
-      stopAutoplay();  // Stoppe Autoplay beim manuellen Wechsel
-      startAutoplay(); // Starte Autoplay erneut
+      stopAutoplay();  // Stop autoplay on manual change
+      startAutoplay(); // Restart autoplay
   });
 
-  // Optional: Starte mit dem ersten Slide aktiv
+  // Swipe event handling
+  $('.carousel-wrapper').on('touchstart mousedown', function(e) {
+      if(e.type === 'touchstart') {
+          startX = e.originalEvent.touches[0].pageX;
+          startY = e.originalEvent.touches[0].pageY;
+      } else {
+          startX = e.pageX;
+          startY = e.pageY;
+          e.preventDefault();
+      }
+      stopAutoplay();  // Stop autoplay on swipe start
+  });
+
+  $('.carousel-wrapper').on('touchend mouseup', function(e) {
+      if(e.type === 'touchend') {
+          endX = e.originalEvent.changedTouches[0].pageX;
+          endY = e.originalEvent.changedTouches[0].pageY;
+      } else {
+          endX = e.pageX;
+          endY = e.pageY;
+      }
+      
+      var diffX = endX - startX;
+      var diffY = endY - startY;
+
+      if(Math.abs(diffX) > Math.abs(diffY)) {
+          if(diffX > 50) {
+              // Swipe right
+              var $current = $('.slide.active');
+              var prev = $current.prev('.slide').length ? 
+                         $current.prev('.slide').data('slide') : 
+                         $('.slide').last().data('slide');
+              changeSlide(prev);
+          } else if(diffX < -50) {
+              // Swipe left
+              var $current = $('.slide.active');
+              var next = $current.next('.slide').length ? 
+                         $current.next('.slide').data('slide') : 
+                         $('.slide').first().data('slide');
+              changeSlide(next);
+          }
+      }
+
+      startAutoplay(); // Restart autoplay after swipe end
+  });
+
+  // Optional: Start with the first slide active
   changeSlide($('.nav-dot.active').data('slide'));
 
-  // Füge die 'loading' Klasse sofort zum ersten Dot hinzu
+  // Add 'loading' class to the first dot immediately
   $('.nav-dot.active').addClass('loading');
 
-  // Starte Autoplay, wenn das Dokument bereit ist
+  // Start autoplay when the document is ready
   startAutoplay();
 });
+
 
 
 
