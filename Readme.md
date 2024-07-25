@@ -15,9 +15,6 @@
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png"/>
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Single_Card.png"/>
-<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg"/>
-<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Landing_Page-black.jpeg"/>
-<img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Landing_Page-white.jpeg"/>
 </p>
 </details>
 
