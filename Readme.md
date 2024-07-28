@@ -120,16 +120,9 @@ Lookbook:
 - Established the foundational structure of the website and navigated through initial challenges.
 - Defined Readme.md as Updates & Logs.
 
----
-
-## Misc:
-
-* Follow Gylan: [GitHub](https://github.com/gylansalih)
-* [Website Portfolio](https://gylansalih.github.io/Website-Portfolio/)
 
 ---
-
-
+---
 
 <!-- PROJECT LOGO -->
 <div align="center">
@@ -373,3 +366,12 @@ Use this space to list resources you find helpful and would like to give credit 
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+---
+
+## Misc:
+
+* Follow Gylan: [GitHub](https://github.com/gylansalih)
+* [Website Portfolio](https://gylansalih.github.io/Website-Portfolio/)
+
+---
