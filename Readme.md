@@ -1,4 +1,4 @@
-# Exciting Updates Coming Soon - Follow for the Latest!
+# Readme.md file is under Construction! :) 
 ## Mission: Award-Winning Design
 ### Crafted by Gylan Salih / Open-Source for All
 
