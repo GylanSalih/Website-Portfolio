@@ -184,9 +184,13 @@ Lookbook:
 
 <h1>About The Project</h1>
 
-<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page" width="300" height="300">
+<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page">
 
 <p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
+
+<p align="center">
+<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
+</p>
 
 <h2>Project Overview</h2>
 <p>This project is a personal portfolio website designed to showcase my skills, projects, and professional background. It serves as a digital resume and a platform for potential employers and collaborators to learn more about me.</p>
