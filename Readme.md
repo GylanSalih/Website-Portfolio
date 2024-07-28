@@ -10,7 +10,7 @@
 <img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
 <p/>
 
-<details open>
+<details>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
 <p align="center">
 <img alt="Image" title="Image" width="300px height="300px src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png"/>
