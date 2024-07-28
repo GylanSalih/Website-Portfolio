@@ -134,7 +134,7 @@ Lookbook:
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
