@@ -182,19 +182,19 @@ Lookbook:
 </details>
 
 
+
 <h1>About The Project</h1>
 
 <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page">
 
 <p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
 
-<p align="center">
-<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
-</p>
 
 <h2>Project Overview</h2>
 <p>This project is a personal portfolio website designed to showcase my skills, projects, and professional background. It serves as a digital resume and a platform for potential employers and collaborators to learn more about me.</p>
 
+<!-- TABLE OF CONTENTS -->
+<details>
 <h2>Key Features</h2>
 <ul>
     <li><strong>Responsive Design</strong>: Ensures the website looks great on all devices, from desktops to smartphones.</li>
@@ -217,7 +217,9 @@ Lookbook:
 
 <h2>Contact Information</h2>
 <p>Feel free to reach out via the contact form on the website or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.</p>
+</details>
 
+<details>
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -234,6 +236,8 @@ Here's why:
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
 Use the `BLANK_README.md` to get started.
+</details>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -345,14 +349,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -374,7 +370,8 @@ Use this space to list resources you find helpful and would like to give credit 
 
 ---
 
-## Misc:
+<!-- CONTACT -->
+## Contact:
 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
 * [Website Portfolio](https://gylansalih.github.io/Website-Portfolio/)
