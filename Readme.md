@@ -26,9 +26,7 @@
 </p>
 </details>
 
-<p align="center">
-<img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
-</p>
+
 
 
 
@@ -244,6 +242,10 @@ Use the `BLANK_README.md` to get started.
 
 
 ### Built With
+
+<p align="center">
+<img alt="Views" title="Views" src="https://skillicons.dev/icons?i=js,html,css"/>
+</p>
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
