@@ -1,4 +1,20 @@
 
+// -----------------------------------------------------------------//
+// Lightbox Funktion Start Gallery vom Single card portfolio START //
+// ---------------------------------------------------------------//
+
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  //
+});  
+
+
+
+// ----------------------------------------------------------------//
+// Lightbox Funktion Start Gallery vom Single card portfolio ENDE //
+// --------------------------------------------------------------//
+
+
 // -------------------------------------------//
 // Landing Page Slider / Carousel            //
 // -----------------------------------------//
@@ -525,30 +541,6 @@ if (isHomePage()) {
 //
 
 
-// -----------------------------------------------------------------//
-// Lightbox Funktion Start Gallery vom Single card portfolio START //
-// ---------------------------------------------------------------//
-
-  $(document).ready(function() {
-    $('.img-box').click(function() {
-      var imgSrc = $(this).find('img').attr('src');
-      var imgAlt = $(this).find('img').attr('alt');
-      var caption = $(this).find('.caption p:first-child').text();
-  
-      $('.lightbox img').attr('src', imgSrc);
-      $('.lightbox img').attr('alt', imgAlt);
-      $('.lightbox .caption').text(caption);
-      $('.lightbox').fadeIn();
-    });
-  
-    $('.close, .lightbox').click(function() {
-      $('.lightbox').fadeOut(300); // Hier wird eine Verzögerung von 300 Millisekunden hinzugefügt
-    });
-  });
-  
-// ----------------------------------------------------------------//
-// Lightbox Funktion Start Gallery vom Single card portfolio ENDE //
-// --------------------------------------------------------------//
 
 
 
@@ -576,15 +568,4 @@ if (isHomePage()) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+ 
