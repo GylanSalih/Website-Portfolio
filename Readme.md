@@ -182,6 +182,37 @@ Lookbook:
 </details>
 
 
+<h1>About The Project</h1>
+
+<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page" width="300" height="300">
+
+<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
+
+<h2>Project Overview</h2>
+<p>This project is a personal portfolio website designed to showcase my skills, projects, and professional background. It serves as a digital resume and a platform for potential employers and collaborators to learn more about me.</p>
+
+<h2>Key Features</h2>
+<ul>
+    <li><strong>Responsive Design</strong>: Ensures the website looks great on all devices, from desktops to smartphones.</li>
+    <li><strong>Project Showcases</strong>: Detailed pages for each of my major projects, including descriptions, images, and links to live demos or repositories.</li>
+    <li><strong>About Me</strong>: A section that provides a brief biography and my professional background.</li>
+    <li><strong>Contact Form</strong>: Allows visitors to get in touch with me directly through the website.</li>
+    <li><strong>Blog</strong>: (Optional) A place where I share my thoughts on industry trends, personal projects, and other topics of interest.</li>
+</ul>
+
+<h2>Technologies Used</h2>
+<ul>
+    <li><strong>HTML5 & CSS3</strong>: For structuring and styling the website.</li>
+    <li><strong>JavaScript</strong>: To add interactivity and enhance user experience.</li>
+    <li><strong>Frameworks/Libraries</strong>: (Specify any frameworks or libraries you used, such as React, Bootstrap, etc.)</li>
+    <li><strong>Version Control</strong>: Git for version control, with the repository hosted on GitHub.</li>
+</ul>
+
+<h2>How to View the Project</h2>
+<p>You can view the live portfolio website <a href="https://www.gylansalih.com/">here</a>.</p>
+
+<h2>Contact Information</h2>
+<p>Feel free to reach out via the contact form on the website or connect with me on <a href="https://www.linkedin.com/">LinkedIn</a>.</p>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
