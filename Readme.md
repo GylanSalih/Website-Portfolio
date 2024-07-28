@@ -34,6 +34,9 @@
 
 ---
 
+<details>
+    <summary><h2>⚡ Updates / Fixes ⚡</h2></summary>
+
 ## Beta / Release = 1.0 (After 100 Updates)
 
 Lookbook:
@@ -119,6 +122,10 @@ Lookbook:
 - Began the development of the Portfolio/Home section.
 - Established the foundational structure of the website and navigated through initial challenges.
 - Defined Readme.md as Updates & Logs.
+
+
+
+</details>
 
 
 ---
@@ -327,8 +334,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -374,4 +379,5 @@ Use this space to list resources you find helpful and would like to give credit 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
 * [Website Portfolio](https://gylansalih.github.io/Website-Portfolio/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ---
