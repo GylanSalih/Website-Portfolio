@@ -48,6 +48,12 @@ Lookbook:
 ### Updates / Fixes:
 
 **0.0.12 - Latest Updates**
+- Cursor Update / Clicking, Following, Circle Function
+- Dark-Mode Json Lottie file by switching
+- working currently on holographic cards / updating soon
+- transparent header with smooth transition
+
+**0.0.12 - Latest Updates**
 - Improved CSS commentary.
 - New landing page slider with dark mode, responsive design, and dots functionality.
 - Custom cursor implementation (cursor hide feature).

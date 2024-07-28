@@ -170,20 +170,18 @@ a {
 /* Dark Mode CSS Start                                       */
 /*-----------------------------------------------------------*/
 
+
 .dark-mode-toggle {
   cursor: crosshair;
   font-family: 'Arial', sans-serif;
-  font-size: 22px;
-  margin-left: 0px;
-  margin-right: 75px;
-  margin-top: -5px;
-  position: static;
-  text-align: left;
+  position: fixed;
+  right: 125px;
+  text-align: center;
   text-decoration: none;
-  text-transform: none;
-  transform: none;
-  transition: transform 0.3s ease;
+  text-transform: uppercase;
+  transform: translateY(-50%);
   z-index: 999;
+  top: 6px;
 }
 
 @media screen and (max-width: 991px) {
@@ -192,11 +190,11 @@ a {
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     position: fixed;
-    right: 19px;
+    right: 119px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    top: 28px;
+    top: 1px;
     transform: translateY(-50%);
     z-index: 999;
   }
@@ -208,24 +206,66 @@ a {
     font-family: 'Arial', sans-serif;
     font-size: 25px;
     position: fixed;
-    right: 0px;
+    right: 103px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    top: 28px;
+    top: 3px;
     transform: translateY(-50%);
     z-index: 999;
   }
 }
 
-
 .dark-mode {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   color: #fff;
+ /* transition: background-color 0.3s ease, color 0.3s ease; */
 }
 
-.dark-mode-toggle i.fa-sun {
-  color: rgb(0, 0, 0);
+
+#lottieLight {
+  width: 38px;
+  height: 43px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+
+#lottieDark {
+  width: 38px;
+  height: 43px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 771px) {
+  #lottieLight {
+    width: 36px;
+    height: 48px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+}
+
+#lottieDark {
+  width: 28px;
+  height: 48px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+}
+
+@media screen and (max-width: 991px) {
+  #lottieLight, #lottieDark {
+    width: 37px;
+    height: 54px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
 }
 
 /*------------------------------------------------------------*/
@@ -246,17 +286,13 @@ a {
 /* Header Container Start                                     */
 /*-----------------------------------------------------------*/
 
-/* Navbar ???????????????*/
-.navbar {
-  background: #ff0000;
-  padding: 20px 0;
-}
+
 
 /* Header Container */
 .top_navigation_container,
 .container {
   align-items: center;
-  background: #ffffff; /* Light mode background */
+  background: #ffffff00; /* Light mode background */
  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
   color: #000000; /* Light mode text color */
   display: flex;
@@ -269,34 +305,37 @@ a {
   top: 0px;
   width: 100%;
   z-index: 999;
+  transition: background-color 0.7s ease; /* Smooth transition */
 }
 
-/* Header Container darkmode funktion */
-.dark-mode .container {
-  background: #000000; /* Dark mode background */
-  color: #ffffff; /* Dark mode text color */
+.top_navigation_container.scrolled {
+  background-color: rgb(255, 255, 255);
 }
+
+.dark-mode .top_navigation_container.scrolled {
+  background-color: rgb(0, 0, 0);
+}
+
+
 
 /* Header Container tablet */
 @media screen and (max-width: 991px) {
   .container {
     align-items: center;
-    background: #ffffff; /* Light mode background */
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
     color: #000000; /* Light mode text color */
     display: flex;
-    grid-auto-rows: auto;
-    grid-gap: 24px;
-    grid-template-columns: repeat(3, 1fr);
     height: 56px;
     justify-content: space-between;
     left: 0px;
     margin: 0 auto;
-    padding: 0 16px;
     padding: 0 20px;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
   }
 }
 
@@ -304,19 +343,20 @@ a {
 @media screen and (max-width: 771px) {
   .container {
     align-items: center;
-    background: #ffffff; /* Light mode background */
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
     color: #000000; /* Light mode text color */
     display: flex;
     height: 56px;
     justify-content: space-between;
     left: 0px;
     margin: 0 auto;
-    padding: 0 16px;
     padding: 0 20px;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
   }
 }
 
@@ -330,6 +370,12 @@ a {
   transition: transform 0.3s ease; /* Smooth transition */
   z-index: 999;
 }
+
+/* Dark mode Function for menu-open */
+.dark-mode .logo {
+  color: #ffffff;
+}
+
 
 .logo img {
   cursor: crosshair;
@@ -494,12 +540,12 @@ footer .text span a:hover {
 }
 
 @media screen and (max-width: 701px) {
-  .menu-left {
+  .dark-mode .menu-left {
     align-items: center;
     background: #ffffff; /* Light mode background */
     color: #000000; /* Light mode text color */
     display: flex;
-    height: 180vh;
+    height: 175vh;
     justify-content: center;
     left: -100%;
     position: fixed;
@@ -556,7 +602,7 @@ footer .text span a:hover {
   background: #ffffff; /* Light mode background */
   color: #000000; /* Light mode text color */
   display: flex;
-  height: 165vh;
+  height: 175vh;
   justify-content: center;
   left: -100%;
   position: fixed;
@@ -981,7 +1027,8 @@ footer .text span a:hover {
 /* Heading-2 Portfolio Text in Portfolio Area */
 .heading-2 {
   font-family: 'Bebas_Neue', sans-serif;
-  font-size: 42px;
+  font-size: 101px;
+ /* -webkit-text-stroke: 2px rgb(0, 0, 0); apply a white stroke around the text */
   font-style: normal;
   font-weight: 400;
   margin-bottom: 50px;
@@ -2046,6 +2093,46 @@ section .button button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------Wohlmöglich altes CSS für den alten Menu Links START----------- */
 
 
@@ -2223,6 +2310,47 @@ body.menu-open {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------------------------------------*/
 /* Global Custom Cursor                                       */
 /*------------------------------------------------------------*/
@@ -2243,12 +2371,13 @@ body.menu-open {
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
   user-select: none;
   pointer-events: none;
-  transform: translate(-50%, -50%); /* Zentriere den Cursor horizontal und vertikal */
+  transform: translate(-50%, -50%);
 }
+
 
 .dark-mode .cursor {
   position: fixed;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 6px;
   height: 6px;
   border-radius: 100%;
@@ -2257,7 +2386,7 @@ body.menu-open {
     0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
   user-select: none;
   pointer-events: none;
-  transform: translate(-50%, -50%); /* Zentriere den Cursor horizontal und vertikal */
+  transform: translate(-50%, -50%);
 }
 
 .cursor.active {
@@ -2276,11 +2405,13 @@ body.menu-open {
   height: 50px;
   border-radius: 100%;
   z-index: 10000;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+              0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+              0.1s ease width, 0.1s ease height,
+              0.1s ease left, 0.1s ease top;
   user-select: none;
   pointer-events: none;
-  transform: translate(-50%, -50%); /* Zentriere den Follower horizontal und vertikal */
+  transform: translate(-50%, -50%);
 }
 
 .dark-mode .cursor-follower {
@@ -2290,11 +2421,13 @@ body.menu-open {
   height: 50px;
   border-radius: 100%;
   z-index: 10000;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+              0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+              0.1s ease width, 0.1s ease height,
+              0.1s ease left, 0.1s ease top;
   user-select: none;
   pointer-events: none;
-  transform: translate(-50%, -50%); /* Zentriere den Follower horizontal und vertikal */
+  transform: translate(-50%, -50%);
 }
 
 .cursor-follower.active {
@@ -2504,17 +2637,41 @@ body.transitioning .custom-cursor {
 /* Text content */
 .text-content-slider {
   text-align: left;
-  width: 55%;
-  padding: 20px;
-  position: relative; /* Für Pseudo-Elemente erforderlich */
+  width: 68%;
+  padding: 191px;
+  position: relative;
   color: var(--white);
   z-index: 5;
+  top: -85px;
+}
+
+@media screen and (max-width: 771px) {
+  .title-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
 }
 
 .dark-mode .text-content-slider {
   color: var(--black);
 }
 
+@media screen and (max-width: 771px) {
+  .dark-mode .text-content-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
 
 /* Positionierung der Textinhalte */
 .subtitle-slider {
@@ -2567,25 +2724,38 @@ body.transitioning .custom-cursor {
 }
 
 .background-text-slider {
-  bottom: 146px;
-  color: var(--black);
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
   font-family: 'Poppins', sans-serif;
-  font-size: 170px;
+  font-size: 195px;
   font-weight: 700;
-  left: 78%;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
   position: absolute;
   transform: translateX(-50%);
   z-index: 2;
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Apply a white stroke around the text */
 }
 
+
 .dark-mode .background-text-slider {
-  color: var(--white);
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px white; /* Apply a white stroke around the text */
 }
 
 /* Navigation styling */
 .navigation {
   align-items: center;
-  bottom: 766px; /* Abstand vom unteren Rand des Containers */
+  bottom: 678px; /* Abstand vom unteren Rand des Containers */
   display: flex;
   flex-direction: row;
   justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
@@ -2593,6 +2763,20 @@ body.transitioning .custom-cursor {
   position: absolute;
   transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
   z-index: 5;
+}
+
+@media screen and (max-width: 771px) {
+  .navigation {
+    align-items: center;
+    bottom: 496px; /* Abstand vom unteren Rand des Containers */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+    left: 50%; /* Horizontale Zentrierung */
+    position: absolute;
+    transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+    z-index: 5;
+  }
 }
 
 .nav-dot {

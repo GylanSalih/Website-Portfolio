@@ -56,8 +56,9 @@
         <span class="special_span"></span> <!--Light Effect Header-->
         <div class="logo">
             <a href="/index.html">
-            <img src="/assets/img/logo/logo_black.png" alt="Light Logo" id="logoLight" class="logo-img">
-            <img src="/assets/img/logo/logo_white.png" alt="Dark Logo" id="logoDark" class="logo-img" style="display: none;"></a>
+                <img src="/assets/img/logo/logo_black.png" alt="Light Logo" id="logoLight" class="logo-img">
+                <img src="/assets/img/logo/logo_white.png" alt="Dark Logo" id="logoDark" class="logo-img">
+            </a>
         </div>
 
 
@@ -65,7 +66,7 @@
             <div class="menu-left">
                 <nav class="menu">
 					<div class="menu__item">
-						<a class="menu__item-link" href="index.html">Portfolio</a>
+						<a class="menu__item-link" href="Pages/portfolio.html">Portfolio</a>
 						<div class="marquee">
 							<div class="marquee__inner">
 								<span>Portfolio</span>
@@ -77,7 +78,7 @@
 					</div>
 				
 					<div class="menu__item">
-						<a class="menu__item-link" href="index.html">Skills</a>
+						<a class="menu__item-link" href="Pages/skills.html">Skills</a>
 						<div class="marquee">
 							<div class="marquee__inner">
 								<span>Skills</span>
@@ -89,7 +90,7 @@
 					</div>
 				
 					<div class="menu__item">
-						<a class="menu__item-link" href="index.html">About</a>
+						<a class="menu__item-link" href="Pages/about.html">About</a>
 						<div class="marquee">
 							<div class="marquee__inner">
 								<span>About</span>
@@ -101,7 +102,7 @@
 					</div>
 				
 					<div class="menu__item">
-						<a class="menu__item-link" href="index.html">Contact</a>
+						<a class="menu__item-link" href="Pages/about.html">Contact</a>
 						<div class="marquee">
 							<div class="marquee__inner">
 								<span>Contact</span>
@@ -130,8 +131,11 @@
 
         
         <div class="dark-mode-toggle" id="darkModeToggle">
-            <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+            <div id="lottieLight" style="display: none;"></div>
+            <div id="lottieDark" style="display: block;"></div>
         </div>
+    
+        
     </div>
     </nav>
 
@@ -145,7 +149,7 @@
             <div class="text-overlay">
                 <div class="text-content-slider">
                     <p class="subtitle-slider">GYLAN SALIH</p>
-                    <h1 class="title-slider">ONI</h1>
+                    <h1 class="title-slider" href="ww.">ONI</h1>
                     <p class="description-slider">Curious about how AI can transform your content strategy? Discover our innovative project that uses artificial intelligence to deliver highly personalized user experiences. Uncover the details here.</p>
                 </div>
                 <p class="background-text-slider">ONI</p>
@@ -324,6 +328,7 @@
         <div class="cursor-follower"></div>
       </div>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/gsap.min.js"></script> 
 <script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
