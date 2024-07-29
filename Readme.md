@@ -138,15 +138,15 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/GylanSalih/Website-Portfolio
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd Website-Portfolio
 
 # Install dependencies
 $ npm install
 
-# Run the app
+# Run the Website with Liver-Server (More Updates soon)
 $ npm start
 ```
 
@@ -171,20 +171,20 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
+- [x] Started the Idea of an Open-Source Project to share & learn
 - [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Wireframe with Branding style
+- [ ] Animations
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <details closed>
-    <summary><h2>⚡ Updates / Fixes ⚡</h2></summary>
+    <summary><h2>⚡ Changelog ⚡</h2></summary>
 
 ## Beta / Release = 1.0 (After 100 Updates)
 
