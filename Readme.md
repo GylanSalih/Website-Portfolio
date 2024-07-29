@@ -310,8 +310,8 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- CONTACT -->
 ## Contact:
 
-* ❤️ Follow Gylan: [GitHub](https://github.com/gylansalih)
-* ❤️ [Website](www.gylansalih.com)
+* ❤ Follow Gylan: [GitHub](https://github.com/gylansalih)
+* ❤ [Website](www.gylansalih.com)
 
 
 <p align="right">
