@@ -1,14 +1,5 @@
 <a id="readme-top"></a>
 
-<p align="left">
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<p/>
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -17,12 +8,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- Badges Shields -->
-[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
-[forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
-[stars-shield]: https://img.shields.io/github/stars/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
-[issues-shield]: https://img.shields.io/github/issues/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
-[license-shield]: https://img.shields.io/github/license/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorA=black&colorB=8B0000
+[contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/Website-Portfolio?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
+[forks-shield]: https://custom-icon-badges.demolab.com/github/forks/GylanSalih/Website-Portfolio?color=FF0000&logo=repo-forked&label=Forks&logoColor=white&style=for-the-badge&labelColor=000000
+[stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/Website-Portfolio?color=FF0000&logo=star&label=Stars&logoColor=white&style=for-the-badge&labelColor=000000
+[issues-shield]: https://custom-icon-badges.demolab.com/github/issues/GylanSalih/Website-Portfolio?color=FF0000&logo=issue-opened&label=Issues&logoColor=white&style=for-the-badge&labelColor=000000
+[license-shield]: https://custom-icon-badges.demolab.com/github/license/GylanSalih/Website-Portfolio?color=FF0000&logo=law&label=License&logoColor=white&style=for-the-badge&labelColor=000000
+[linkedin-shield]: https://custom-icon-badges.demolab.com/badge/-LinkedIn-black?style=for-the-badge&logo=linkedin&labelColor=000000&color=FF0000
 
 <!-- Badges Links -->
 [contributors-url]: https://github.com/GylanSalih/Website-Portfolio/graphs/contributors
@@ -31,6 +22,7 @@
 [issues-url]: https://github.com/GylanSalih/Website-Portfolio/issues
 [license-url]: https://github.com/GylanSalih/Website-Portfolio/blob/main/LICENSE
 [linkedin-url]: https://linkedin.com/in/yourprofile
+
 
 
 <!-- PROJECT LOGO -->
