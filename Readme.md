@@ -100,7 +100,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ## Getting Started with the Installation
-<h2>Getting Started with the Installation</h2>
 
 <p>To clone and run this application, you'll need <a href="https://git-scm.com">Git</a> and <a href="https://nodejs.org/en/download/">Node.js</a> (which includes <a href="http://npmjs.com">npm</a>) installed on your computer. Follow these steps:</p>
 
