@@ -81,13 +81,12 @@ Here's why:
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/-Back%20to%20top-brightgreen?style=for-the-badge&logo=github">
+    <img src="https://img.shields.io/badge/-Back%20to%20top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 ### Built With
