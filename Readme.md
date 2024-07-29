@@ -92,7 +92,7 @@ Use the `BLANK_README.md` to get started.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![HTML5][HTML5]][HTML5-url]
+* [![forthebadge](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDcuNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDE0Ny41IDM1Ij48cmVjdCB3aWR0aD0iMTEwIiBoZWlnaHQ9IjM1IiBmaWxsPSIjMDAwMDAwIi8+PHJlY3QgeD0iMTEwIiB3aWR0aD0iMzcuNSIgaGVpZ2h0PSIzNSIgZmlsbD0iI2QwMDIxYiIvPjx0ZXh0IHg9IjU1IiB5PSIyMS41IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iJ1JvYm90bycsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5NQURFIFdJVEg8L3RleHQ+PHRleHQgeD0iMTI4Ljc1IiB5PSIyMS41IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iJ01vbnRzZXJyYXQnLCBzYW5zLXNlcmlmIiBmaWxsPSIjRkZGRkZGIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXdlaWdodD0iOTAwIiBsZXR0ZXItc3BhY2luZz0iMiI+SlM8L3RleHQ+PC9zdmc+)](https://forthebadge.com)
 * [![CSS3][CSS3]][CSS3-url]
 * [![JavaScript][JavaScript.js]][JavaScript-url]
 * [![Node.js][nodedotjs]][Node.js-url]
