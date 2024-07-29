@@ -1,5 +1,7 @@
 <a id="readme-top"></a>
 
+
+<div align="center">
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -19,6 +21,8 @@
 [stars-url]: https://github.com/GylanSalih/Website-Portfolio/stargazers
 [issues-url]: https://github.com/GylanSalih/Website-Portfolio/issues
 [license-url]: https://github.com/GylanSalih/Website-Portfolio/blob/main/LICENSE
+  </a>
+
 
 <!-- PROJECT LOGO -->
 <br />
