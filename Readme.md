@@ -323,8 +323,6 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Website Portfolio](www.gylansalih.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
----
-
 
 
 
