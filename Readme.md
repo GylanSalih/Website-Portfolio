@@ -20,6 +20,11 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
+  
+  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page">
+
+<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
+
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
@@ -418,9 +423,7 @@ Lookbook:
 
 <h1>About The Project</h1>
 
-<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Showcase Landing Page">
 
-<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
 
 
 <h2>Project Overview</h2>
