@@ -42,6 +42,8 @@
     <br />
     <a href="https://www.gylansalih.com/">View Demo</a>
     ·
+    <a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog.md</a>
+    .
     <a href="https://github.com/GylanSalih/Website-Portfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/GylanSalih/Website-Portfolio/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
@@ -57,7 +59,7 @@
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started-with-the-installation">Getting Started with the Installation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#changelog">Changelog</a></li>
+    <li><a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -172,110 +174,14 @@ Here are the key technologies, languages, and tools used in this project:
 
 See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
 
-<p align="right">
-  <a href="#readme-top">
-    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
-  </a>
-</p>
-
-<!-- Changelog -->
-## Changelog
-
-<details closed>
-    <summary><h2>⚡ Open It ⚡</h2></summary>
-
-## Beta / Release = 1.0 (After 100 Updates)
-
-Lookbook:
-
-### Current Challenges:
-1. Looking to install a Pokémon holo effect instead of normal glare but need more experience.
-2. Too static—needs more effects and ambiance.
-
-### Updates / Fixes:
-
-**0.0.12 - Latest Updates**
-- Cursor Update / Clicking, Following, Circle Function
-- Dark-Mode Json Lottie file by switching
-- working currently on holographic cards / updating soon
-- transparent header with smooth transition
-
-**0.0.12 - Latest Updates**
-- Improved CSS commentary.
-- New landing page slider with dark mode, responsive design, and dots functionality.
-- Custom cursor implementation (cursor hide feature).
-- New GIFs for the landing page.
-
-**0.0.11 - Previous Updates**
-- Integrated Quicksand font locally.
-- Added Skills page.
-- Included Bootstrap/FontAwesome icons.
-- Fixed dark mode on the single card information on the Portfolio page.
-- Updated menu text.
-- CSS ascending ordering.
-- Code organization improvements.
-- Custom cursor implementation.
-
-**0.0.10 - Previous Updates**
-- New footer design.
-- Simple "About Me" page added.
-- Loading animation (gsap.min.js with SVG code).
-- Single card new gallery.
-- Improved header icons position.
-- Various bug fixes.
-- Layout fixes for single card.
-- Local integration of JS scripts.
-- Simple lightbox for gallery (single card).
-
-**0.0.9 - New Single Portfolio Page**
-- Clicking on cards opens /Pages/Cards/Card1.html for detailed information.
-
-**0.0.8 - Header Enhancements**
-- Improved header design and functionality.
-- Refined icon positioning.
-- New logo.
-- Fixed spacing/margin/padding issues.
-- Responsive toggle for menu bar.
-- Animated menu.
-- Logo click navigates to home.
-- Scale animation added.
-- Added favicon.
-- Sticky header implementation.
-
-**0.0.7 - Header Structure / Menu Organization**
-- Established header structure.
-- Organized the menu for intuitive navigation.
-
-**0.0.6 - Portfolio Card Design Refinement**
-- Enhanced the design of portfolio cards for aesthetics and usability.
-
-**0.0.5 - Local Font Integration**
-- Integrated fonts locally for improved performance and design consistency.
-
-**0.0.4 - Vanilla JavaScript / Pop-Up and Glare Effect**
-- Incorporated Vanilla JavaScript for functionality.
-- Added pop-up feature and glare effect for enhanced user experience.
-
-**0.0.3 - Responsive Card Design**
-- Implemented responsive design for cards:
-  - Mobile: 2 rows
-  - Tablet: 3 rows
-  - PC: 4 rows
-
-**0.0.2 - GitHub Integration**
-- Installed GitHub and connected repository.
-
-**0.0.1 - Portfolio and Personal Website**
-- Began the development of the Portfolio/Home section.
-- Established the foundational structure of the website and navigated through initial challenges.
-- Defined Readme.md as Updates & Logs.
-</details>
+For a comprehensive list of changes and updates, please refer to the [CHANGELOG.md](https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md) file.
 
 <p align="right">
   <a href="#readme-top">
     <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 <!-- CONTRIBUTING -->
 ## Contributing
