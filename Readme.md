@@ -95,7 +95,7 @@ Here are some images showcasing the project:
 </p>
 
 <!-- BUILT WITH -->
-### Built With
+## Built With
 
 Here are the key technologies, languages, and tools used in this project:
 
