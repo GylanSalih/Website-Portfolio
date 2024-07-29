@@ -1,13 +1,14 @@
 <a id="readme-top"></a>
 
 
-<div align="center">
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+<div align="center">
 <!-- Badges Shields -->
 [contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/Website-Portfolio?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
 [forks-shield]: https://custom-icon-badges.demolab.com/github/forks/GylanSalih/Website-Portfolio?color=FF0000&logo=repo-forked&label=Forks&logoColor=white&style=for-the-badge&labelColor=000000
