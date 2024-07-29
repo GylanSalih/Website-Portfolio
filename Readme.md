@@ -95,7 +95,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![HTML5][HTML5]][HTML5-url]
 * [![CSS3][CSS3]][CSS3-url]
 * [![JavaScript][JavaScript.js]][JavaScript-url]
-* [![Node.js][Node.js]][Node.js-url]
+* [![Node.js][nodedotjs]][Node.js-url]
 * [![Svelte][Svelte.dev]][Svelte-url]
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
