@@ -10,6 +10,13 @@
 <p/>
 
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 <!-- Badges Shields -->
 [contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge
 [forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge
