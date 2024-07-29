@@ -56,17 +56,9 @@
 
 <p align="right">
   <a href="#readme-top">
-    <img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+VXBwdGltZTwvdGl0bGU+PHBhdGggZD0iTTEuODYgMTUuNjhjMS45MjYgMCAzLjQ4OSAxLjUyNiAzLjQ4OSAzLjQwNiAwIDEuODgtMS41NjMgMy40MDctMy40ODggMy40MDctMS45MjYgMC0zLjQ4OS0xLjUyNi0zLjQ4OS0zLjQwNyAwLTEuODggMS41NjMtMy40MDcgMy40ODktMy40MDdaTTI0IDE0Ljg4NCAxMiAxLjUwNyAwIDE0Ljg4NWwzLjE1OCAzLjUyTDEyIDguNTQ4bDguODQyIDkuODU3TDI0IDE0Ljg4NVoiLz48L3N2Zz4=" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
-
-
-<p align="right">
-  <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
-  </a>
-</p>
-
 
 
 
@@ -113,9 +105,10 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -144,9 +137,10 @@ $ npm start
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -165,9 +159,10 @@ See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) fo
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 <details closed>
@@ -277,9 +272,10 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -291,9 +287,10 @@ Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -313,9 +310,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -328,9 +326,10 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
