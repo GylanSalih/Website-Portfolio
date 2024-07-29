@@ -18,7 +18,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- Badges Shields -->
-[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?logo=love&logoColor=white&style=for-the-badge
 [forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge
 [stars-shield]: https://img.shields.io/github/stars/GylanSalih/Website-Portfolio.svg?style=for-the-badge
 [issues-shield]: https://img.shields.io/github/issues/GylanSalih/Website-Portfolio.svg?style=for-the-badge
