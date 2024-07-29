@@ -17,9 +17,6 @@
   </a>
 
 
-
-<p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
-
   <h3 align="center">Website Portfolio, Gallery & More</h3>
 
   <p align="center">
