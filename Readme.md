@@ -5,7 +5,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- Badges Shields -->
 [contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/Website-Portfolio?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
@@ -13,7 +12,6 @@
 [stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/Website-Portfolio?color=FF0000&logo=star&label=Stars&logoColor=white&style=for-the-badge&labelColor=000000
 [issues-shield]: https://custom-icon-badges.demolab.com/github/issues/GylanSalih/Website-Portfolio?color=FF0000&logo=issue-opened&label=Issues&logoColor=white&style=for-the-badge&labelColor=000000
 [license-shield]: https://custom-icon-badges.demolab.com/github/license/GylanSalih/Website-Portfolio?color=FF0000&logo=law&label=License&logoColor=white&style=for-the-badge&labelColor=000000
-[linkedin-shield]: https://custom-icon-badges.demolab.com/badge/-LinkedIn-black?style=for-the-badge&logo=linkedin&labelColor=000000&color=FF0000
 
 <!-- Badges Links -->
 [contributors-url]: https://github.com/GylanSalih/Website-Portfolio/graphs/contributors
@@ -21,9 +19,6 @@
 [stars-url]: https://github.com/GylanSalih/Website-Portfolio/stargazers
 [issues-url]: https://github.com/GylanSalih/Website-Portfolio/issues
 [license-url]: https://github.com/GylanSalih/Website-Portfolio/blob/main/LICENSE
-[linkedin-url]: https://linkedin.com/in/yourprofile
-
-
 
 <!-- PROJECT LOGO -->
 <br />
