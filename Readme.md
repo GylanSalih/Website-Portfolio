@@ -72,21 +72,18 @@
 🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
 
 Here's why:
-* Card Design Projects
-  - In Diffrent Perspectives and Ways.
-* Sync Scrolling
-  - While you type, LivePreview will automatically scroll to the current location you're editing. 
-* Syntax highlighting
+* Innovative Card Design Projects
+  - Showcases your work with visually striking card designs, each offering a unique perspective and style.
+* Dynamic Header & Navigation Menu
+  - Features an animated header and menu for a modern, engaging user experience.
+* Integrated Gallery & Lightbox
 * Dark/Light mode
-* Animated Header & Menu
-* Gallery & Lightbox
 * Holographic Card Design
-* Full screen mode
-  - Write distraction free.
-* Responsive for Mobile, Tablet and PC
-  - Windows, macOS and Linux ready.
+  - Utilizes holographic effects to create a visually appealing and futuristic look for your project cards.
+* Responsive Design
+  - Fully optimized for various devices, including mobile, tablet, and PC, ensuring a consistent experience across Windows, macOS, and Linux.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue (Enhancement Tag).
 
 <p align="right">
   <a href="#readme-top">
