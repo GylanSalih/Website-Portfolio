@@ -1,12 +1,5 @@
 <a id="readme-top"></a>
 
-
-<p align="right">
-  <a href="#readme-top">
-    <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/up.svg" alt="Back to top" width="30" height="30" style="background-color:#1ABC9C;padding:5px;border-radius:5px;">
-  </a>
-</p>
-
 <div align="center">
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -63,9 +56,17 @@
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-1ABC9C?style=for-the-badge" alt="Back to top">
+    <img src="data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+VXBwdGltZTwvdGl0bGU+PHBhdGggZD0iTTEuODYgMTUuNjhjMS45MjYgMCAzLjQ4OSAxLjUyNiAzLjQ4OSAzLjQwNiAwIDEuODgtMS41NjMgMy40MDctMy40ODggMy40MDctMS45MjYgMC0zLjQ4OS0xLjUyNi0zLjQ4OS0zLjQwNyAwLTEuODggMS41NjMtMy40MDcgMy40ODktMy40MDdaTTI0IDE0Ljg4NCAxMiAxLjUwNyAwIDE0Ljg4NWwzLjE1OCAzLjUyTDEyIDguNTQ4bDguODQyIDkuODU3TDI0IDE0Ljg4NVoiLz48L3N2Zz4=" alt="Back to top" style="background-color:#000000;padding:5px;border-radius:5px;">
   </a>
 </p>
+
+
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 
