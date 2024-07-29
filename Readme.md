@@ -99,6 +99,26 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 
+<h2>Getting Started with the Installation</h2>
+
+<p>To clone and run this application, you'll need <a href="https://git-scm.com">Git</a> and <a href="https://nodejs.org/en/download/">Node.js</a> (which includes <a href="http://npmjs.com">npm</a>) installed on your computer. Follow these steps:</p>
+
+<ol>
+  <li><strong>Clone the repository:</strong>
+    <pre><code>git clone https://github.com/GylanSalih/Website-Portfolio</code></pre>
+  </li>
+  <li><strong>Navigate into the repository:</strong>
+    <pre><code>cd Website-Portfolio</code></pre>
+  </li>
+  <li><strong>Install dependencies:</strong>
+    <pre><code>npm install</code></pre>
+  </li>
+  <li><strong>Run the website with Live Server (More updates soon):</strong>
+    <pre><code>npm start</code></pre>
+  </li>
+</ol>
+
+<p><strong>Note:</strong> If you're using Linux Bash on Windows, <a href="https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/">see this guide</a> or use <code>node</code> from the command prompt.</p>
 
 
 <!-- GETTING STARTED -->
@@ -140,8 +160,8 @@ $ npm start
 - [ ] Wireframe with Branding style
 - [ ] Animations
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+    - [x] English
+    - [ ] German
 
 See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
 
@@ -155,7 +175,7 @@ See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) fo
 ## Changelog
 
 <details closed>
-    <summary><h2>⚡ Changelog ⚡</h2></summary>
+    <summary><h2>⚡ Open It ⚡</h2></summary>
 
 ## Beta / Release = 1.0 (After 100 Updates)
 
