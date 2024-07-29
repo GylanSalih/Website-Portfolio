@@ -97,7 +97,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * <img alt="Static Badge" src="https://img.shields.io/badge/-HTML5-brightgreen?style=for-the-badge&logo=html5&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black" width="92.5" height="28">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-CSS3-brightgreen?style=for-the-badge&logo=css3&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black" width="92.5" height="28">
-* <img alt="Static Badge" src="https://img.shields.io/badge/-JavaScript-brightgreen?style=for-the-badge&logo=javascript&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black" width="92.5" height="28">
+* <img alt="Static Badge" src="https://img.shields.io/badge/-JavaScript-brightgreen?style=for-the-badge&logo=javascript&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black" width="96" height="28">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-nodedotjs-brightgreen?style=for-the-badge&logo=nodedotjs&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
