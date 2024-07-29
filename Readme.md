@@ -53,15 +53,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
-<p align="right">
-  <a href="#readme-top">
-    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
-  </a>
-</p>
-
-
-
 🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
 
 Here's why:
@@ -88,10 +79,7 @@ Of course, no one template will serve all projects since your needs may be diffe
 </p>
 
 
-
-
-
-
+<!-- BUILT WITH -->
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
@@ -163,7 +151,8 @@ See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) fo
   </a>
 </p>
 
-
+<!-- Changelog -->
+## Changelog
 
 <details closed>
     <summary><h2>⚡ Changelog ⚡</h2></summary>
@@ -255,6 +244,12 @@ Lookbook:
 - Defined Readme.md as Updates & Logs.
 </details>
 
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
+  </a>
+</p>
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
@@ -299,14 +294,10 @@ Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+* [Simeydotme Pokemon Card CSS](https://github.com/simeydotme/pokemon-cards-css)
+* [CodeGrid Youtube Channel](https://www.youtube.com/@codegrid)
+
 
 <p align="right">
   <a href="#readme-top">
