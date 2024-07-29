@@ -17,7 +17,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/GylanSalih/Website-Portfolio/">
-    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Logo" width="300" height="300">
+    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Logo" width="500" height="500">
   </a>
 
   
