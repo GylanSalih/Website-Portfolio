@@ -9,6 +9,31 @@
 <img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
 <p/>
 
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+<!-- Badges Shields -->
+[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/GylanSalih/Website-Portfolio.svg?style=for-the-badge
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+
+<!-- Badges Links -->
+[contributors-url]: https://github.com/GylanSalih/Website-Portfolio/graphs/contributors
+[forks-url]: https://github.com/GylanSalih/Website-Portfolio/network/members
+[stars-url]: https://github.com/GylanSalih/Website-Portfolio/stargazers
+[issues-url]: https://github.com/GylanSalih/Website-Portfolio/issues
+[license-url]: https://github.com/GylanSalih/Website-Portfolio/blob/main/LICENSE
+[linkedin-url]: https://linkedin.com/in/yourprofile
+
+
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
