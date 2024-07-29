@@ -42,7 +42,7 @@
     <br />
     <a href="https://www.gylansalih.com/">View Demo</a>
     ·
-    <a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog.md</a>
+    <a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog.md & Roadmap</a>
     .
     <a href="https://github.com/GylanSalih/Website-Portfolio/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -58,8 +58,7 @@
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="#built-with">Built With</a></li>
     <li><a href="#getting-started-with-the-installation">Getting Started with the Installation</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog</a></li>
+    <li><a href="https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md">Changelog.md & Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -161,16 +160,8 @@ Here are the key technologies, languages, and tools used in this project:
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Started the Idea of an Open-Source Project to share & learn
-- [x] Add Changelog
-- [ ] Wireframe with Branding style
-- [ ] Animations
-- [ ] Multi-language Support
-    - [x] English
-    - [ ] German
+<!-- Changelog.md & Roadmap -->
+## Changelog.md & Roadmap
 
 See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
 
