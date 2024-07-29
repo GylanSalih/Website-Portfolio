@@ -1,12 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
 
 
@@ -25,7 +17,13 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+**Please Note: Currently in Beta Phase**
 
+
+<p align="left">
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
+<p/>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -207,18 +205,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
@@ -270,17 +256,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [JQuery-url]: https://jquery.com 
 
 
-# Readme.md file is under Construction! :) 
-## Mission: Award-Winning Design
-### Crafted by Gylan Salih / Open-Source for All
-
-**Please Note: Currently in Beta Phase**
-
-
-<p align="left">
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
-<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
-<p/>
 
 <details>
     <summary><h2>⚡ SHOWCASE - Images ⚡</h2></summary>
