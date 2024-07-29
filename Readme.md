@@ -91,9 +91,10 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
   </a>
 </p>
+
 
 
 
