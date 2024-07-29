@@ -1,15 +1,11 @@
 <a id="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 <p align="left">
 <img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Open--Source-black?logo=package&logoColor=white&style=for-the-badge"/>
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
+<img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
 <img alt="Repos" title="Repos" src="https://custom-icon-badges.demolab.com/badge/-Made--With--Love-black?logo=love&logoColor=white&style=for-the-badge"/>
 <p/>
 
