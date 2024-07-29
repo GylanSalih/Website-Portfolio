@@ -19,10 +19,10 @@
   
 <p><a href="https://www.gylansalih.com/">Portfolio Website</a></p>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Website Portfolio, Gallery & More</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+   Welcome! i Would appreciate if you Star my Repository <3
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -56,6 +56,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Logbook</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -68,7 +69,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
+[![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
