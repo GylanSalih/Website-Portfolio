@@ -69,6 +69,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+
+![Logo](https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png)
+
 [![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
 [![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
 
