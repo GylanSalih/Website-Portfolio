@@ -98,7 +98,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 </p>
 
 
-
+<!-- GETTING STARTED -->
+## Getting Started with the Installation
 <h2>Getting Started with the Installation</h2>
 
 <p>To clone and run this application, you'll need <a href="https://git-scm.com">Git</a> and <a href="https://nodejs.org/en/download/">Node.js</a> (which includes <a href="http://npmjs.com">npm</a>) installed on your computer. Follow these steps:</p>
@@ -118,30 +119,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
   </li>
 </ol>
 
-<p><strong>Note:</strong> If you're using Linux Bash on Windows, <a href="https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/">see this guide</a> or use <code>node</code> from the command prompt.</p>
-
-
-<!-- GETTING STARTED -->
-## Getting Started with the Installation
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/GylanSalih/Website-Portfolio
-
-# Go into the repository
-$ cd Website-Portfolio
-
-# Install dependencies
-$ npm install
-
-# Run the Website with Liver-Server (More Updates soon)
-$ npm start
-```
-
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
+
 
 <p align="right">
   <a href="#readme-top">
