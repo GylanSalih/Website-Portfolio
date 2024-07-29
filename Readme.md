@@ -17,21 +17,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- Badges Shields -->
-[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&color=blue
-[forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&color=blueviolet
-[stars-shield]: https://img.shields.io/github/stars/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&color=brightgreen
-[issues-shield]: https://img.shields.io/github/issues/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&color=red
-[license-shield]: https://img.shields.io/github/license/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&color=yellow
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=0077B5
-
-<!-- Badges Links -->
-[contributors-url]: https://github.com/GylanSalih/Website-Portfolio/graphs/contributors
-[forks-url]: https://github.com/GylanSalih/Website-Portfolio/network/members
-[stars-url]: https://github.com/GylanSalih/Website-Portfolio/stargazers
-[issues-url]: https://github.com/GylanSalih/Website-Portfolio/issues
-[license-url]: https://github.com/GylanSalih/Website-Portfolio/blob/main/LICENSE
-[linkedin-url]: https://linkedin.com/in/yourprofile
-
+[contributors-shield]: https://img.shields.io/github/contributors/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
+[forks-shield]: https://img.shields.io/github/forks/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
+[stars-shield]: https://img.shields.io/github/stars/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
+[issues-shield]: https://img.shields.io/github/issues/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
+[license-shield]: https://img.shields.io/github/license/GylanSalih/Website-Portfolio.svg?style=for-the-badge&logo=github&colorA=black&colorB=8B0000
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorA=black&colorB=8B0000
 
 <!-- Badges Links -->
 [contributors-url]: https://github.com/GylanSalih/Website-Portfolio/graphs/contributors
