@@ -71,11 +71,9 @@
 
 
 ![Logo](https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png)
+![Logo](https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg)
 
-[![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
-[![Product Name Screen Shot][https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png]](www.gylansalih.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
 
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
