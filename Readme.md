@@ -56,10 +56,12 @@
 ## About The Project
 
 
-<p align="center">
-    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" width="738">
-    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg" width="738">
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-1ABC9C?style=for-the-badge" alt="Back to top">
+  </a>
 </p>
+
 
 
 🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
