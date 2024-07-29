@@ -47,6 +47,10 @@ Lookbook:
 **0.0.13 - Latest Updates**
 - Fancybox2 Lightbox Gallery
 - Cursor active hoover by Id / Element (Verbessern)
+- Vanilla.tilt gyroscope bug console -> Switching soon to custom Holographic grid
+- I researched node_modules, package.json, and Vite to integrate them into the project. (newbie)
+I focused on understanding their basic functions and usage
+- installed gsap & jquery via npm install (node_modules)
 
 **0.0.12 - Previous Updates**
 - Cursor Update / Clicking, Following, Circle Function

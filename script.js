@@ -1,12 +1,16 @@
 
+
 // -----------------------------------------------------------------//
 // Lightbox Funktion Start Gallery vom Single card portfolio START //
 // ---------------------------------------------------------------//
 
+document.addEventListener('DOMContentLoaded', function() {
+  Fancybox.bind('[data-fancybox="gallery"]', {
+    // Hier kannst du Optionen für Fancybox hinzufügen, wenn gewünscht
+  });
+});
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-  //
-});  
+
 
 
 
@@ -253,6 +257,7 @@ requestAnimationFrame(moveCursor);
 // Initial check for cursor visibility
 handleCursorVisibility();
 
+
 // --------------------------------- //
 // Custom Cursor Dot+ Follower ENDE //
 // --------------------------------- //
@@ -406,31 +411,32 @@ document.addEventListener('DOMContentLoaded', () => {
 // Menu Slide effect JS Script START //
 // ---------------------------------//
 
-var tl = gsap.timeline({ paused: true });
+document.addEventListener("DOMContentLoaded", function() {
+  var tl = gsap.timeline({ paused: true });
 
-tl.to(".menu-left", {
-    duration: 0.8, // Slightly reduced duration for a faster slide-in
-    left: 0,
-    ease: "power4.out", // Using a stronger easing function for a smoother transition
-})
-.staggerFrom(
-    ".menu-links > .menu-link",
-    0.6, // Reduced duration for stagger effect
-    {
-        y: 30, // Slightly reduced y value for more subtle appearance
-        opacity: 0,
-        ease: "power4.out", // Consistent easing function
-    },
-    0.1, // Reduced stagger delay
-    "-=0.5" // Overlap the stagger animation with the initial slide-in
-);
+  tl.to(".menu-left", {
+      duration: 0.8,
+      left: 0,
+      ease: "power4.out",
+  })
+  .staggerFrom(
+      ".menu__item",
+      0.6,
+      {
+          y: 30,
+          opacity: 0,
+          ease: "power4.out",
+      },
+      0.1,
+      "-=0.5"
+  );
 
-tl.reverse();
+  tl.reverse();
 
-document.querySelector(".hamburger").addEventListener("click", function() {
-    tl.reversed(!tl.reversed()); // Toggle the reversed state of the timeline
+  document.querySelector(".hamburger").addEventListener("click", function() {
+      tl.reversed(!tl.reversed());
+  });
 });
-
 // ----------------------------------//
 // Menu Slide effect JS Script ENDE //
 // --------------------------------//

@@ -26,7 +26,6 @@
 html,
 body {
   width: 100%;
-  height: 100vh;
   font-family: "Bridge Head Con Medium", sans-serif;
   cursor: none;
 }
@@ -256,7 +255,7 @@ a {
   position: absolute;
   z-index: 9999;
 }
-}
+
 
 @media screen and (max-width: 991px) {
   #lottieLight, #lottieDark {
@@ -305,8 +304,10 @@ a {
   top: 0px;
   width: 100%;
   z-index: 999;
-  transition: background-color 0.7s ease; /* Smooth transition */
+  transition: background-color 0.6s ease; /* Smooth transition */
 }
+
+
 
 .top_navigation_container.scrolled {
   background-color: rgb(255, 255, 255);
@@ -1032,9 +1033,8 @@ footer .text span a:hover {
   font-style: normal;
   font-weight: 400;
   margin-bottom: 50px;
-  margin-top: 100px;
+  padding-top: 336px;
   padding-bottom: 24px;
-  padding-top: 24px;
   text-align: center;
 }
 
@@ -2072,13 +2072,17 @@ section .button button:hover {
   --f-button-svg-fill: none;
   --f-button-svg-disabled-opacity: 0.65;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif;
-  color: var(--fancybox-color, currentColor);
-  text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.5));
+  color: #000000;
+  text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.171));
   pointer-events: none;
 }
 
 
-
+.dark-mode .fancybox__toolbar {
+  color: #ffffff;
+  text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(255, 255, 255, 0.192));
+  pointer-events: none;
+}
 
 
 
@@ -2324,43 +2328,32 @@ body.menu-open {
 /* Global Custom Cursor                                       */
 /*------------------------------------------------------------*/
 @media (hover: none) or (pointer: coarse) {
-  .custom-cursor {
+  .cursor, .cursor-follower {
       display: none;
   }
 }
 
 .cursor {
   position: fixed;
-  background-color: #000000;
+  background-color: #000;
   width: 6px;
   height: 6px;
   border-radius: 100%;
   z-index: 10000;
   transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+              0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
   user-select: none;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
 
-
 .dark-mode .cursor {
-  position: fixed;
-  background-color: #ffffff;
-  width: 6px;
-  height: 6px;
-  border-radius: 100%;
-  z-index: 10000;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-    0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
-  user-select: none;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .cursor.active {
   opacity: 0.5;
-  transform: translate(-50%, -50%) scale(0); /* Skaliere den Cursor auf 0 für den Aktivzustand */
+  transform: translate(-50%, -50%) scale(2);
 }
 
 .cursor.hovered {
@@ -2376,62 +2369,25 @@ body.menu-open {
   z-index: 10000;
   transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
               0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-              0.1s ease width, 0.1s ease height,
-              0.1s ease left, 0.1s ease top;
+              0.1s ease width, 0.1s ease height;
   user-select: none;
   pointer-events: none;
   transform: translate(-50%, -50%);
 }
 
 .dark-mode .cursor-follower {
-  position: fixed;
   border: 2px solid rgba(255, 255, 255, 0.8);
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  z-index: 10000;
-  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-              0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-              0.1s ease width, 0.1s ease height,
-              0.1s ease left, 0.1s ease top;
-  user-select: none;
-  pointer-events: none;
-  transform: translate(-50%, -50%);
 }
 
 .cursor-follower.active {
   opacity: 0.7;
-  transform: translate(-50%, -50%) scale(1.5); /* Skaliere den Follower für den Aktivzustand */
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .cursor-follower.hovered {
   opacity: 0.08;
 }
 
-
-body:hover .custom-cursor {
-  opacity: 1;
-}
-
-body.link-hover .custom-cursor {
-  width: 90px;
-  height: 90px;
-}
-
-body.active .custom-cursor {
-  width: 40px;
-  height: 40px;
-}
-
-body.jobs-hover .custom-cursor {
-  opacity: 1;
-  transform: scale(1);
-}
-
-body.transitioning .custom-cursor {
-  width: 60px;
-  height: 60px;
-}
 
 
 /*------------------------------------------------------------*/

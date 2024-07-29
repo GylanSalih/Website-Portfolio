@@ -1,0 +1,23 @@
+{
+  "name": "private-website-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GylanSalih/Website-Portfolio"
+  },
+  "keywords": [
+    "website",
+    "portfolio"
+  ],
+  "author": "Gylan Salih",
+  "license": "ISC",
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1"
+  }
+}
