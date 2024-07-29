@@ -68,8 +68,9 @@
 ## About The Project
 
 
-![Logo](https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png)
-![Logo](https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg)
+<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" width="738">
+<img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg" width="738">
+
 
 🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
 
@@ -114,9 +115,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 <!-- GETTING STARTED -->
-## Getting Started > Installation
-
-## How To Use
+## Getting Started with the Installation
 
 To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
