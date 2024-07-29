@@ -79,6 +79,21 @@ Of course, no one template will serve all projects since your needs may be diffe
 </p>
 
 
+## Gallery
+
+Here are some images showcasing the project:
+
+<p align="center">
+  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Description of Image 1" width="300" style="margin: 5px;">
+  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png" alt="Description of Image 2" width="300" style="margin: 5px;">
+</p>
+
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/Back%20to%20top-000000?style=for-the-badge&logo=upptime&logoColor=white" alt="Back to top">
+  </a>
+</p>
+
 <!-- BUILT WITH -->
 ### Built With
 
