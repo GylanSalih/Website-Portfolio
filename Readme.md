@@ -68,10 +68,10 @@
 ## About The Project
 
 
-<div style="text-align: center;">
+<p align="center">
     <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" width="738">
     <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/About_Me.jpeg" width="738">
-</div>
+</p>
 
 
 🏆 Award-Winning Responsive Portfolio. My Self-coded and crafted website, made with passion for the #OpenSource community. Free to use and customize. 🍀❤️ Mission: AWRP 
