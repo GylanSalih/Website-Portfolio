@@ -83,9 +83,10 @@ Of course, no one template will serve all projects since your needs may be diffe
 
 <p align="right">
   <a href="#readme-top">
-    <img src="https://img.shields.io/badge/-Back%20to%20top-000000?style=for-the-badge&logo=github&logoColor=white" alt="Back to top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
   </a>
 </p>
+
 
 
 
@@ -100,7 +101,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * <img alt="Static Badge" src="https://img.shields.io/badge/-JavaScript-brightgreen?style=for-the-badge&logo=javascript&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-nodedotjs-brightgreen?style=for-the-badge&logo=nodedotjs&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 
@@ -126,7 +132,12 @@ $ npm start
 > **Note**
 > If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 <!-- ROADMAP -->
@@ -142,7 +153,12 @@ $ npm start
 
 See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 <details closed>
     <summary><h2>⚡ Changelog ⚡</h2></summary>
@@ -248,7 +264,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 
@@ -257,7 +279,12 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -274,7 +301,12 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 <!-- CONTACT -->
@@ -283,7 +315,13 @@ Use this space to list resources you find helpful and would like to give credit 
 * Follow Gylan: [GitHub](https://github.com/gylansalih)
 * [Website Portfolio](www.gylansalih.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<p align="right">
+  <a href="#readme-top">
+    <img src="https://img.shields.io/badge/↑%20Back%20to%20top-000000?style=for-the-badge" alt="Back to top">
+  </a>
+</p>
+
 
 
 
