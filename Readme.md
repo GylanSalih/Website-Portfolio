@@ -67,7 +67,7 @@ Here's why:
 * Holographic Card Design
 * Full screen mode
   - Write distraction free.
-* Cross platform
+* Responsive for Mobile, Tablet and PC
   - Windows, macOS and Linux ready.
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
@@ -82,7 +82,7 @@ Of course, no one template will serve all projects since your needs may be diffe
 <!-- BUILT WITH -->
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Here are the key technologies, languages, and tools used in this project:
 
 
 
@@ -291,7 +291,7 @@ Distributed under the GPL-3.0 license. See `LICENSE.txt` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+We would like to acknowledge and give credit to the following resources that have been instrumental in the development of this project. Special thanks to the creators of these tools and libraries:
 
 * [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
 * [Simeydotme Pokemon Card CSS](https://github.com/simeydotme/pokemon-cards-css)
@@ -310,8 +310,8 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- CONTACT -->
 ## Contact:
 
-* ❤ Follow Gylan: [GitHub](https://github.com/gylansalih)
-* ❤ [Website](www.gylansalih.com)
+*  Follow Gylan: [GitHub](https://github.com/gylansalih)
+*  [Website](www.gylansalih.com)
 
 
 <p align="right">
