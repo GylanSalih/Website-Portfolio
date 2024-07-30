@@ -97,14 +97,11 @@ I'll be adding more in the near future. You may also suggest changes by forking 
 
 Here are some images showcasing the project:
 
-<p align="center">
-  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Description of Image 1" width="300" style="margin: 5px;">
-  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png" alt="Description of Image 2" width="300" style="margin: 5px;">
-</p>
 
-| Event Processing                                             | Stateful Architecture                                        | Advanced Web Service                                         |
+
+| Landing Page                                                 | In Progress                                                  | In Progress                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![event processing](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![stateful architecture](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![advanced web service with on-premise](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) |
+| ![Landing Page](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![stateful architecture](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![advanced web service with on-premise](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) |
 
 <p align="right">
   <a href="#readme-top">
