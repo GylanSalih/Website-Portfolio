@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/GylanSalih/Website-Portfolio/">
-    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/logo.png" alt="Logo">
+    <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/logo.png" alt="Logo">
   </a>
 
 
@@ -97,10 +97,11 @@ I'll be adding more in the near future. You may also suggest changes by forking 
 
 Here are some images showcasing the project:
 
-<p align="center">
-  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Showcase_Landing_Page.png" alt="Description of Image 1" width="300" style="margin: 5px;">
-  <img src="https://github.com/GylanSalih/Website-Portfolio/blob/main/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png" alt="Description of Image 2" width="300" style="margin: 5px;">
-</p>
+
+
+| Landing Page                                                 | In Progress                                                  | In Progress                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/About_Me.jpeg) |
 
 <p align="right">
   <a href="#readme-top">
