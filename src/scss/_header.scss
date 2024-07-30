@@ -1,0 +1,978 @@
+/*-----------------------------------------------------------*/
+// src/scss/_header.scss
+/*-----------------------------------------------------------*/
+
+
+/*------------------------------------------------------------*/
+/* Header Container Start                                     */
+/*-----------------------------------------------------------*/
+
+
+
+/* Header Container */
+.top_navigation_container,
+.container {
+  align-items: center;
+  background: #ffffff00; /* Light mode background */
+ /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  left: 0px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.6s ease; /* Smooth transition */
+}
+
+
+
+.top_navigation_container.scrolled {
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .top_navigation_container.scrolled {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+/* Header Container tablet */
+@media screen and (max-width: 991px) {
+  .container {
+    align-items: center;
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
+  }
+}
+
+/* Header Container Mobile */
+@media screen and (max-width: 771px) {
+  .container {
+    align-items: center;
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
+  }
+}
+
+
+
+/* -----  Header Logo ----- */
+.logo {
+  cursor: crosshair;
+  padding-bottom: 0px;
+  position: fixed;
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 999;
+}
+
+/* Dark mode Function for menu-open */
+.dark-mode .logo {
+  color: #ffffff;
+}
+
+
+.logo img {
+  cursor: crosshair;
+  max-height: 18px;
+}
+
+.logo:hover {
+  cursor: crosshair;
+  transform: scale(1.2); /* Scale up the element */
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .logo {
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+
+/*------------------------------------------------------------*/
+/* Header Container ENDE                                     */
+/*-----------------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+/* Menu Left Opening Effekt START                             */
+/*-----------------------------------------------------------*/
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+    color: #000000;
+    cursor: crosshair;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 61px;
+    margin-top: 18px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding: 2rem;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    z-index: 999;
+  }
+  
+  
+  /* Dark mode Function for menu-open */
+  .dark-mode .menu-open {
+    color: #ffffff;
+  }
+  
+  
+  /* Media-Query for Responsive Menu left opening effect */
+  @media screen and (max-width: 991px) {
+    .menu-left {
+      align-items: center;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      height: 150vh;
+      justify-content: center;
+      left: -100%;
+      position: fixed;
+      transition: left 0.5s ease;
+      width: 100%;
+      z-index: 999;
+    }
+  
+    .menu-left.open {
+      left: 0;
+    }
+  
+    .menu-open {
+      border-left-style: solid;
+      border-left-width: 0px;
+      border-right-style: solid;
+      border-right-width: 0px;
+      color: #000000;
+      cursor: crosshair;
+      font-size: 20px;
+      margin-left: 0px;
+      margin-right: 49px;
+      margin-top: 16px;
+      margin-top: 17px;
+      margin: 0 5px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      position: fixed;
+      z-index: 999;
+    }
+  }
+  
+  @media screen and (max-width: 701px) {
+    .dark-mode .menu-left {
+      align-items: center;
+      background: #ffffff; /* Light mode background */
+      color: #000000; /* Light mode text color */
+      display: flex;
+      height: 175vh;
+      justify-content: center;
+      left: -100%;
+      position: fixed;
+      transition: left 0.5s ease;
+      width: 100%;
+      z-index: 999;
+    }
+  
+    .menu-left.open {
+      left: 0;
+    }
+  
+    .menu-open {
+      border-left-style: solid;
+      border-left-width: 0px;
+      border-right-style: solid;
+      border-right-width: 0px;
+      color: #000000;
+      cursor: crosshair;
+      font-size: 20px;
+      margin-left: 0px;
+      margin-right: 34px;
+      margin-top: 16px;
+      margin: 0 5px;
+      padding-bottom: 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+      position: fixed;
+      right: 24px;
+      z-index: 999;
+    }
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Menu Left Opening Effekt ENDE                              */
+  /*-----------------------------------------------------------*/
+
+
+
+  /*------------------------------------------------------------*/
+/* Menu Inside marquee, Lokomotiv Effekt Style START          */
+/*-----------------------------------------------------------*/
+
+.menu-left {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 175vh;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  
+  .menu__item {
+      margin: -50px;
+      padding: 1.6vw 0 0 0;
+      position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Media-Query Tablet */
+  @media screen and (max-width: 991px) {
+    .menu__item {
+      margin: 0px;
+      padding: 1.6vw 0 0 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  /* Media-Query Phone */
+  @media screen and (max-width: 771px) {
+    .menu__item {
+      margin: 0px;
+      padding: 1.6vw 0 0 0;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  
+  .menu__item-link {
+      -webkit-transition: opacity 0.4s;
+      color: #000000;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Bigilla";
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 0.4s;
+  }
+  
+  .dark-mode .menu__item-link {
+      -webkit-transition: opacity 0.4s;
+      color: #ffffff;
+      cursor: crosshair;
+      display: inline-block;
+      font-family: "Bigilla";
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: opacity 0.4s;
+  }
+  
+  
+  .marquee {
+      color: #ffffff;
+      left: 0;
+      mix-blend-mode: difference;
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+    width: 100%;
+  }
+  
+  .dark-mode .marquee {
+      color: #ff0000;
+      left: 0;
+      mix-blend-mode: difference;
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+  }
+  
+  
+  .menu__item-link:hover {
+      -webkit-transition-duration: 0.1s;
+      opacity: 0;
+      transition-duration: 0.1s;
+  }
+  
+  .menu__item-link::before {
+      all: initial;
+      bottom: 60%;
+      counter-increment: menu;
+      left: 0;
+      pointer-events: none;
+      position: absolute;
+      text-transform: uppercase;
+  }
+  
+  
+  
+  .menu {
+      --move-final: calc(-50% + var(--offset));
+      --move-initial: calc(-25% + var(--offset));
+      --offset: 20vw;
+      font-size: 8px;
+      padding: 0vh 0 0 0vh;
+    padding-bottom: 390px;
+  }
+  
+  
+  .marquee__inner {
+      -webkit-animation-play-state: paused;
+      -webkit-animation: marquee 5s linear infinite;
+      -webkit-transition: opacity 0.1s;
+      animation-play-state: paused;
+      animation: marquee 5s linear infinite;
+      display: -ms-flexbox;
+      display: -webkit-box;
+      display: flex;
+      opacity: 0;
+      padding: 2vw 0;
+      position: relative;
+      transition: opacity 0.1s;
+      width: -moz-fit-content;
+      width: -webkit-fit-content;
+      width: fit-content;
+  }
+  
+  .menu__item-link:hover ~ .marquee .marquee__inner {
+      -webkit-animation-play-state: running;
+      -webkit-transition-duration: 0.4s;
+      animation-play-state: running;
+      opacity: 1;
+      transition-duration: 0.4s;
+  }
+  
+  .menu__item-link,
+  .marquee span {
+      font-size: 8vw;
+      font-weight: 900;
+      padding: 1.6vw 1vw;
+      white-space: nowrap;
+  }
+  
+  
+  
+  @media screen and (max-width: 771px) {
+    .menu__item-link,
+    .marquee span {
+      font-size: 12vw;
+      font-weight: 900;
+      padding: 1.6vw 1vw;
+      text-align: center;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+  
+  .marquee span {
+      font-family: "Bigilla" !important;
+      text-transform: uppercase;
+  }
+  
+  @-webkit-keyframes marquee {
+      0% {
+          -webkit-transform: translate3d(var(--move-initial), 0, 0);
+          transform: translate3d(var(--move-initial), 0, 0);
+      }
+      100% {
+          -webkit-transform: translate3d(var(--move-final), 0, 0);
+          transform: translate3d(var(--move-final), 0, 0);
+      }
+  }
+  
+  @keyframes marquee {
+      0% {
+          -webkit-transform: translate3d(var(--move-initial), 0, 0);
+          transform: translate3d(var(--move-initial), 0, 0);
+      }
+      100% {
+          -webkit-transform: translate3d(var(--move-final), 0, 0);
+          transform: translate3d(var(--move-final), 0, 0);
+      }
+  }
+  
+  
+  /*------------------------------------------------------------*/
+  /* Menu Inside marquee, Lokomotiv Effekt Style ENDE          */
+  /*-----------------------------------------------------------*/
+  
+  
+  
+  
+  /*------------------------------------------------------------*/
+  /* Hamburger Icon START                                       */
+  /*-----------------------------------------------------------*/
+  
+  /* Dark mode state for Hamburger */
+  .dark-mode .hamburger {
+    color: #ffffff;
+  }
+  /* Dark mode state for Hamburger Balken*/
+  .dark-mode .spanmenu {
+    background-color: #ffffff;
+  }
+  
+  .hamburger {
+    border-radius: 2px;
+    color: #000000;
+    position: absolute;
+    right: 10px; /* Abstand vom rechten Rand des Headers */
+    top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
+    transform: translate(50%, -50%);
+    transition: transform 0.3s; /* Füge die Transition hier hinzu */
+    z-index: 999;
+  }
+  
+  .btn {
+    cursor: crosshair;
+    position: absolute;
+    right: 35px;
+    top: 50%; /* Platziere den Button vertikal in der Mitte */
+    transform: translate(50%, -50%);
+    width: 40px;
+  }
+  
+  @media screen and (max-width: 771px) {
+    .btn {
+      right: 30px;
+    }
+  }
+  
+  .spanmenu {
+    background-color: #000000;
+    border-radius: 3px;
+    display: block;
+    height: 3px;
+    position: relative;
+    transition: all 0.3s;
+    width: 85%;
+  }
+  
+  .spanmenu + .spanmenu {
+    margin-top: 3px;
+  }
+  
+  /* Hamburger Animation Setting */
+  .active .spanmenu:nth-child(1) {
+    animation: top 0.7s ease forwards;
+  }
+  
+  .not-active .spanmenu:nth-child(1) {
+    animation: top-2 0.7s ease forwards;
+  }
+  
+  .active .spanmenu:nth-child(2) {
+    animation: scaled 0.7s ease forwards;
+  }
+  
+  .not-active .spanmenu:nth-child(2) {
+    animation: scaled-2 0.7s ease forwards;
+  }
+  
+  .active .spanmenu:nth-child(3) {
+    animation: bottom 0.7s ease forwards;
+  }
+  
+  .not-active .spanmenu:nth-child(3) {
+    animation: bottom-2 0.7s ease forwards;
+  }
+  
+  /* Hamburger Animation Keyframes Setting */
+  @keyframes top {
+    0% {
+      top: 0;
+      transform: rotate(0);
+    }
+    50% {
+      top: -4px; /* Adjusted value for smoother animation */
+      transform: rotate(0);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+    }
+    100% {
+      top: 5px;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+    }
+  }
+  
+  @keyframes top-2 {
+    0% {
+      top: -4px; /* Adjusted value for smoother animation */
+      transform: rotate(45deg);
+    }
+    50% {
+      top: -4px; /* Adjusted value for smoother animation */
+      transform: rotate(0deg);
+    }
+    100% {
+      top: 0;
+      transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes bottom {
+    0% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+    50% {
+      bottom: 1px; /* Adjusted value for smoother animation */
+      transform: rotate(0);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+    }
+    100% {
+      bottom: 8px;
+      transform: rotate(135deg);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+    }
+  }
+  
+  @keyframes bottom-2 {
+    0% {
+      bottom: 1px; /* Adjusted value for smoother animation */
+      transform: rotate(135deg);
+    }
+    50% {
+      bottom: 1px; /* Adjusted value for smoother animation */
+      transform: rotate(0);
+    }
+    100% {
+      bottom: 0;
+      transform: rotate(0);
+    }
+  }
+  
+  @keyframes scaled {
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
+  @keyframes scaled-2 {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Hamburger Icon ENDE                                       */
+  /*-----------------------------------------------------------*/
+  
+  
+
+
+
+/*------------------------------------------------------------*/
+/* Dark Mode CSS Start                                       */
+/*-----------------------------------------------------------*/
+
+
+.dark-mode-toggle {
+    cursor: crosshair;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    right: 125px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: translateY(-50%);
+    z-index: 999;
+    top: 6px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .dark-mode-toggle {
+      cursor: crosshair;
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      position: fixed;
+      right: 119px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      top: 1px;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+  }
+  
+  @media screen and (max-width: 771px) {
+    .dark-mode-toggle {
+      cursor: crosshair;
+      font-family: 'Arial', sans-serif;
+      font-size: 25px;
+      position: fixed;
+      right: 103px;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      top: 3px;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+  }
+  
+  .dark-mode {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+   /* transition: background-color 0.3s ease, color 0.3s ease; */
+  }
+  
+  
+  #lottieLight {
+    width: 38px;
+    height: 43px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  #lottieDark {
+    width: 38px;
+    height: 43px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  @media screen and (max-width: 771px) {
+    #lottieLight {
+      width: 36px;
+      height: 48px;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      z-index: 9999;
+    }
+  }
+  
+  #lottieDark {
+    width: 28px;
+    height: 48px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+  
+  
+  @media screen and (max-width: 991px) {
+    #lottieLight, #lottieDark {
+      width: 37px;
+      height: 54px;
+      transition: opacity 0.3s ease;
+      position: absolute;
+      z-index: 9999;
+    }
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Dark Mode CSS ENDE                                       */
+  /*-----------------------------------------------------------*/
+  
+  
+  /*--Licht Effekt am Header Border Start--*/
+.special_span {
+    animation: animate 5s infinite linear;
+    background: linear-gradient(90deg, transparent, #fff);
+    bottom: 0;
+    height: 2px;
+    position: absolute;
+    width: 50px;
+  }
+  
+  @keyframes animate {
+    0% {
+      left: 0;
+      transform: translate(-100%);
+    }
+    100% {
+      left: 100%;
+      transform: translate(0%);
+    }
+  }
+  /*--Licht Effekt am Header Border END--*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/*-------------------------Wohlmöglich altes CSS für den alten Menu Links START----------- */
+
+
+/* Menu */
+.menu_nav_links {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu_nav_links a {
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .menu_nav_links a::after {
+    background-color: transparent;
+    bottom: -2px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .menu_nav_links a:hover {
+    color: #000000;
+  }
+  
+  .menu_nav_links a:hover::after {
+    background-color: #000000;
+  }
+  
+  /* Hamburger Icon */
+  .menu_control {
+    cursor: crosshair;
+    position: relative;
+    top: 0;
+  }
+  
+  .menu_control::before {
+    color: rgb(0, 0, 0);
+    content: "\2630"; /* Unicode for hamburger icon */
+    font-size: 30px;
+  }
+  
+  /* Dark Mode Styles for Hamburger Icon */
+  .dark-mode .menu_control::before {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Animation */
+  .fade-zoom {
+    animation: fadeZoom 0.4s ease-in-out;
+  }
+  
+  @keyframes fadeZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+  
+  
+  /* Dark Mode Styles for Menu */
+  .dark-mode .menu-left {
+    background: #000000; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+  }
+  
+  /* Open Menu Styles */
+  .menu-left.open {
+    left: 0;
+  }
+  
+  body.menu-open {
+    overflow: hidden;
+  }
+  
+  
+  /* Menu Links Font PC */
+  .menu-link a {
+    color: #000000;
+    cursor: crosshair;
+    font-family: 'Montserrat';
+    font-size: 60px;
+    position: relative;
+    text-decoration: none;
+    z-index: 999;
+  }
+  
+  /* Hover effect for menu-links */
+  .menu-link a::after {
+    background-color: currentColor;
+    bottom: -2px;
+    content: '';
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    right: 50%;
+    transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+    width: 0;
+  }
+  
+  .menu-link a:hover::after {
+    width: 60%; /* Adjust the width to be shorter */
+    left: 15%;  /* Center the shorter line */
+    right: 15%; /* Center the shorter line */
+  }
+  
+  /* Dark mode state for menu-links */
+  .dark-mode .menu-link a {
+    color: #ffffff;
+  }
+  
+  .menu-link a span {
+    font-family: 'Montserrat';
+    font-size: 24px;
+  }
+  
+  /* Menu text size for mobile responsiveness */
+  @media screen and (max-width: 901px) {
+    .menu-link a {
+      font-family: 'Montserrat';
+      font-size: 42px;
+      line-height: 34px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      z-index: 999;
+    }
+    
+    .menu-link a span {
+      font-family: 'Montserrat';
+      font-size: 12px;
+    }
+  }
+  
+  /* Menu text size for tablet responsiveness */
+  @media screen and (max-width: 701px) {
+    .menu-link a {
+      font-family: 'Montserrat';
+      font-size: 38px;
+      line-height: 40px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      z-index: 999;
+    }
+  
+    .menu-link a span {
+      font-family: 'Montserrat';
+      font-size: 14px;
+    }
+  }
+  
+  /*------------------------------------Wohlmöglich altes CSS für den alten Menu Links ENDE----------- */
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

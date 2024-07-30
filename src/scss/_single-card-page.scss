@@ -1,0 +1,391 @@
+/*-----------------------------------------------------------*/
+// src/scss/_single-card-page.scss
+/*-----------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------*/
+/* Card.html Portfolio Einzel page settings START             */
+/*-----------------------------------------------------------*/
+
+/* Section Project Header */
+.section_project_header {
+    margin-bottom: 38px;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .section_project_header {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .section_project_header {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Project Hero Background Card Hintergrund */
+  .project-hero1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #ffffff), url("/assets/img/poster/poster_7.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  /* Project Hero Background Card Hintergrund Dark-Mode State*/
+  .dark-mode .project-hero1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
+  }
+  
+  
+  /* Project Hero Container */
+  .project-hero_container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    min-height: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12vw;
+    perspective: 1500px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .project-hero_container {
+      align-items: center;
+      flex-direction: column;
+      padding-top: 20vw;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .project-hero_container {
+      padding-top: 30vw;
+    }
+  }
+  
+  /* Project Hero Poster */
+  .project_hero_poster {
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    height: auto;
+    margin-right: 33px;
+    max-width: 452px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .project_hero_poster {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  
+  /* Project Hero Blurb Container */
+  .project_hero_blurb_container {
+    width: 100%;
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .project_hero_blurb_container {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 701px) {
+    .project_hero_blurb_container {
+      width: 87%;
+    }
+  }
+  
+  .heading-4 {
+    margin-top: 14px;
+    margin-bottom: 31px;
+  }
+  
+  
+  @media screen and (max-width: 479px) {
+    .heading-1 {
+      font-size: 28px;
+      line-height: 30px;
+    }
+  }
+  
+  
+  /* Text Links */
+  .text-link {
+    color: #fff;
+    cursor: crosshair;
+    display: inline-block;
+    font-family: 'Bebas_Neue';
+    font-weight: 600;
+    line-height: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  
+  
+  /* ---------Card.html Portfolio Einzel page settings START---------- */
+  /* Single Card Projects Poster Image (EinzelBild beim öffnen vom Portfolio) */
+  .poster_single {
+    border-radius: 8px;
+    cursor: crosshair;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    position: relative;
+    transform: none;
+    width: 100%;
+  }
+  
+  
+  
+  .section_project_cast {
+    margin-bottom: 40px;
+    padding-top: 12px;
+  }
+  
+  .cast_includes_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .cast_block {
+    border-radius: 8px;
+    flex: 0 0 auto;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .smalldescription {
+    border-radius: 8px;
+    flex: 1 1 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .Cast-Names {
+    font-weight: 600;
+  }
+  
+  
+  .Descriptioncontainer {
+    display: block;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    min-height: 50px;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  /* Media Queries */
+  @media screen and (min-width: 992px) {
+    .cast_includes_div {
+      justify-content: space-between;
+    }
+  }
+  
+  @media screen and (max-width: 991px) {
+    .cast_block {
+      margin-right: 41px;
+      margin-left: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 771px) {
+    .cast_block {
+      margin-left: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  
+    .cast_includes_div {
+      flex-direction: column;
+    }
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Card.html Portfolio Einzel page settings ENDE             */
+  /*-----------------------------------------------------------*/
+  
+
+
+
+
+
+
+
+
+  /*------------------------------------------------------------*/
+/* Lightbox Fancybox2 Settings      START                    */
+/*----------------------------------------------------------*/
+
+
+/* Stil für die Galerie */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Zentriert die Galerie horizontal */
+    align-items: center; /* Zentriert die Galerie vertikal */
+    gap: 15px; /* Abstand zwischen den Bildern */
+    margin: 0 auto; /* Zentriert die Galerie in Bezug auf den übergeordneten Container */
+    max-width: 90%; /* Maximale Breite der Galerie */
+    padding: 20px; /* Innenabstand um die Galerie herum */
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+  }
+  
+  /* Stil für die Bilder in der Galerie, Größe der Bilder */
+  .gallery a {
+    display: block;
+    width: 300px; /* Neue Breite der Thumbnails */
+    height: 300px; /* Neue Höhe der Thumbnails */
+    overflow: hidden;
+  }
+  
+  @media (max-width: 771px) {
+    .gallery {
+      gap: 10px; /* Optional: Reduziere den Abstand zwischen den Bildern */
+      align-items: unset; /* Zentriert die Galerie vertikal */
+      max-width: 100%;
+    padding: 10px;
+    }
+  
+    .gallery a {
+      width: calc(50% - 10px); /* Breite der Thumbnails auf 50% der Containerbreite minus Abstand */
+      height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
+    }
+  
+    .gallery img {
+      width: 100%;
+      height: auto; /* Höhe automatisch anpassen */
+    }
+  }
+  
+  .gallery img {
+    display: block; /* Ändert die Anzeige von flex zu block */
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  
+  
+  .fancybox-image {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    user-select: none;
+    filter: blur(0px);
+    border: 91px black;
+    border-radius: 15px;
+  }
+  
+  .fancybox__thumbs.is-modern {
+    --f-thumb-gap: 3px;
+    --f-thumb-extra-gap: 0px;
+    --f-thumb-clip-width: 46px;
+    --f-thumb-opacity: 1;
+    --f-thumb-hover-opacity: 1;
+  }
+  
+  .fancybox__thumbs {
+    --f-thumb-width: 97px;
+    --f-thumb-height: 68px;
+    --f-thumb-border-radius: 15px;
+  }
+  
+  
+  .fancybox__container {
+    --fancybox-bg: rgb(255, 255, 255);
+  }
+  
+  .dark-mode .fancybox__container {
+    --fancybox-bg: rgb(0, 0, 0);
+  }
+  
+  /* Button Lightbox */
+  .fancybox__nav {
+    --f-button-width: 50px;
+    --f-button-height: 50px;
+    --f-button-border: 0;
+    --f-button-border-radius: 50%;
+    --f-button-color: var(--fancybox-color);
+    --f-button-hover-color: var(--fancybox-hover-color);
+    --f-button-bg: rgba(24, 24, 27, 0.65);
+    --f-button-hover-bg: #464649a6;
+    --f-button-active-bg: rgba(24, 24, 27, 0.5);
+    --f-button-shadow: none;
+    --f-button-transition: all 0.15s ease;
+    --f-button-transform: none;
+    --f-button-svg-width: 26px;
+    --f-button-svg-height: 26px;
+    --f-button-svg-stroke-width: 2.5;
+    --f-button-svg-fill: none;
+    --f-button-svg-filter: drop-shadow(1px 1px 1px rgba(24, 24, 27, 0.5));
+    --f-button-svg-disabled-opacity: 0.65;
+    --f-button-next-pos: 1rem;
+    --f-button-prev-pos: 1rem;
+  }
+  
+  /* Toolbar Lightbox */
+  .fancybox__toolbar {
+    --f-progress-color: var(--fancybox-color, rgba(255, 255, 255, 0.94));
+    --f-button-width: 46px;
+    --f-button-height: 46px;
+    --f-button-color: var(--fancybox-color);
+    --f-button-hover-color: var(--fancybox-hover-color);
+    --f-button-bg: rgba(24, 24, 27, 0.65);
+    --f-button-hover-bg: #464649a6;
+    --f-button-active-bg: rgba(90, 90, 93, 0.65);
+    --f-button-border-radius: 0;
+    --f-button-svg-width: 24px;
+    --f-button-svg-height: 24px;
+    --f-button-svg-stroke-width: 1.5;
+    --f-button-svg-filter: drop-shadow(1px 1px 1px rgba(24, 24, 27, 0.15));
+    --f-button-svg-fill: none;
+    --f-button-svg-disabled-opacity: 0.65;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif;
+    color: #000000;
+    text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.171));
+    pointer-events: none;
+  }
+  
+  
+  .dark-mode .fancybox__toolbar {
+    color: #ffffff;
+    text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(255, 255, 255, 0.192));
+    pointer-events: none;
+  }
+  
+  
+  
+  
+  /*------------------------------------------------------------*/
+  /* Lightbox Fancybox2 Settings      ENDE                     */
+  /*----------------------------------------------------------*/
+  

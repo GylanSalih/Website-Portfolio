@@ -5,6 +5,10 @@
 @import 'fonts';
 
 // Importiere andere Partials
+@import 'header';
 @import 'portfolio-page';
-@import 'contact';
-@import 'skills';
+@import 'single-card-page';
+@import 'skills-page';
+@import '_contact-page';
+@import 'about-page';
+@import 'footer';

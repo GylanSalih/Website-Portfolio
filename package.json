@@ -5,8 +5,9 @@
   "main": "script.js",
   "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "sass": "sass --watch src/scss:dist/css",
-  "build": "npm run sass && echo 'Build complete!'"
+  "sass:build": "sass src/scss/main.scss dist/css/style.css",
+  "sass:minify": "sass src/scss/main.scss dist/css/style.min.css --style compressed",
+  "build": "npm run sass:build && npm run sass:minify && echo 'Build complete!'"
   },
   "repository": {
     "type": "git",
@@ -26,4 +27,3 @@
     "sass": "^1.77.8"
   }
 }
-

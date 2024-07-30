@@ -1,0 +1,42 @@
+/*------------------------------------------------------------*/
+// src/scss/_footer.scss
+/*-----------------------------------------------------------*/
+
+footer {
+    background: #00000000;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  /* Footer text */
+  footer .text span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .dark-mode .footer .text span {
+    background: #000000; /* Dark mode background */
+    color: #ffffff; /* Dark mode text color */
+  }
+  
+  footer .text span a {
+    font-weight: 500;
+    color: #FFF;
+  }
+  
+  footer .text span a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Custom GitHub icon */
+  .custom-github-icon {
+    font-size: 1.05rem; /* GitHub Icon */
+    color: #000000;
+  }
+  
+  .dark-mode .custom-github-icon {
+    color: #ffffff;
+  }

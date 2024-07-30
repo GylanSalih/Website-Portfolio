@@ -1,0 +1,290 @@
+/*-----------------------------------------------------------*/
+// src/scss/_about-page.scss
+/*-----------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------*/
+/* About.html Page START                                     */
+/*-----------------------------------------------------------*/
+
+/* Home section styling */
+.home {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background: url("/assets/img/about-me.png") no-repeat;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  /* Home content */
+  .home .home-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+  }
+  
+  /* Home text styles */
+  .home .text-one {
+    font-size: 25px;
+    color: #ffffff;
+  }
+  
+  .home .text-two {
+    color: #ffffff;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  
+  .home .text-three {
+    font-size: 40px;
+    margin: 5px 0;
+    color: #ffffff;
+  }
+  
+  .home .text-four {
+    font-size: 23px;
+    margin: 5px 0;
+    color: #ffffff;
+  }
+  
+  /* Home button styles */
+  .home .button {
+    margin: 14px 0;
+    margin-top: 28px;
+  }
+  
+  .home .button button {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    color: #000000;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    outline: none;
+    padding: 8px 16px;
+    transition: all 0.4s ease;
+  }
+  
+  .home .button button:hover {
+    border-color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  /*------------------------------------------------------------*/
+  /* About.html Page ENDE                                      */
+  /*-----------------------------------------------------------*/
+  
+  
+  
+  
+  
+  /*-------------------- About Section Styling BEGIN----------------- */
+  
+  /* Section styling */
+  section {
+    padding-top: 40px;
+    background-color: #000000;
+  }
+  
+  /* Section content */
+  section .content {
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* About section */
+  .about .about-details {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Section title */
+  section .title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 59px;
+  }
+  
+  section .title span {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    position: relative;
+  }
+  
+  section .title span::before {
+    background: #ffffff;
+    bottom: 0;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* About details */
+  .about .about-details .left {
+    width: 45%;
+  }
+  
+  .about .left img {
+    border-radius: 12px;
+    height: 400px;
+    object-fit: cover;
+    width: 400px;
+  }
+  
+  .about-details .right {
+    width: 55%;
+    margin-bottom: 80px;
+  }
+  
+  /* Section topic */
+  section .topic {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .about-details .right p {
+    text-align: justify;
+    color: #ffffff;
+  }
+  
+  /* Section button */
+  section .button {
+    margin: 16px 0;
+  }
+  
+  section .button button {
+    background: #ffffff;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    color: #000000;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 400;
+    outline: none;
+    padding: 8px 16px;
+    transition: all 0.4s ease;
+  }
+  
+  section .button button:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  
+  /*------------------------------------------------------------*/
+  /* About Section Styling END                                 */
+  /*-----------------------------------------------------------*/
+  
+  
+  
+  /*------------------------------------------------------------*/
+  /* Responsive About.html Page BEGIN                          */
+  /*-----------------------------------------------------------*/
+  
+  /* Responsive section content */
+  @media (max-width: 1190px) {
+    section .content {
+      width: 85%;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .about .about-details {
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .about .about-details .left {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .about-details .right {
+      width: 90%;
+      margin: 40px 0;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .about .left img {
+      height: 350px;
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .home .text-two {
+      font-size: 65px;
+    }
+  
+    .home .text-three {
+      font-size: 35px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .home .text-two {
+      font-size: 55px;
+    }
+  
+    .home .text-three {
+      font-size: 33px;
+    }
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Responsive About.html Page END                            */
+  /*----------------------------------------------------------*/
+  
+  
+  
+  /*------------------------------------------------------------*/
+  /* Social Icons About.html Page BEGIN                        */
+  /*----------------------------------------------------------*/
+  
+  /* Social icons container */
+  .media-icons {
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 40px;
+  }
+  
+  /* Social icon links */
+  .media-icons a {
+    color: #e2e2e2be;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 8px;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .media-icons a:hover {
+    opacity: 1;
+  }
+  
+  /*------------------------------------------------------------*/
+  /* Social Icons About Me Page END                            */
+  /*----------------------------------------------------------*/
+  

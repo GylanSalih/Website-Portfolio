@@ -18,7 +18,6 @@
     - [ ] 
 
 
-
 <!-- Changelog -->
 ## Changelog
 
@@ -32,6 +31,7 @@ Lookbook:
 - File management for better / cleaner Organisation
 - Style.css in multiple Parts
 - implementation of sass (learned something new #Newbie)
+- transition to another page
 
 **0.0.12 - Previous Updates**
 - Cursor Update / Clicking, Following, Circle Function

@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
           renderer: 'svg',
           loop: false,
           autoplay: false,
-          path: '/assets/Animations/lottiewhite.json' // Your JSON file for light mode
+          path: '/src/assets/Animations/lottiewhite.json' // Your JSON file for light mode
       });
 
       lottieDark = lottie.loadAnimation({
@@ -305,7 +305,7 @@ document.addEventListener('DOMContentLoaded', () => {
           renderer: 'svg',
           loop: false,
           autoplay: false,
-          path: '/assets/Animations/lottieblack.json' // Your JSON file for dark mode
+          path: '/src/assets/Animations/lottieblack.json' // Your JSON file for dark mode
       });
 
       // Set the initial frame to the last frame for lottieLight
@@ -561,15 +561,15 @@ if (isHomePage()) {
 // -------------------------------------------//
 // Lokomotiv text scroll in Menu Text effekt //
 // -----------------------------------------//
-
-  const scroll = new LocomotiveScroll({
+// keine ahnung für was? lösch wenn nichts verdächtiges ist
+ /* const scroll = new LocomotiveScroll({
     el: document.querySelector("#js-scroll"),
     smooth: true,
     smoothMobile: true,
     inertia: 0.75,
   });
 
-
+*/
 
 
 
