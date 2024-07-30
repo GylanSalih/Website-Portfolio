@@ -101,7 +101,7 @@ Here are some images showcasing the project:
 
 | Landing Page                                                 | In Progress                                                  | In Progress                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Landing Page](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![stateful architecture](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![advanced web service with on-premise](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) |
+| ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/About_Me.jpeg) |
 
 <p align="right">
   <a href="#readme-top">
