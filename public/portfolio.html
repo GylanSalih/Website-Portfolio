@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <meta name="description" content="Made by Gylan">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Gylan Salih">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Portfolio and more">
+    <link rel="icon" href="assets/img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  <script src="/assets/js/jquery-3.3.1.js"></script>
+    <script src="/assets/js/gsap.min.js"></script>
+ </head>
+ <body>
+    
+
+
+<!-- Hey If you can Read this, dont forget to Follow me on Github -->
+<div id="ascii-art">
+                                                                                                              
+    * ***                 ***                                   *******             ***             *       
+    *  ****  *               ***                                *       ***            ***    *     **        
+   *  *  ****                 **                               *         **             **   ***    **        
+  *  **   **                  **                               **        *              **    *     **        
+ *  ***         **   ****     **                                ***                     **          **        
+**   **          **    ***  * **      ****   ***  ****         ** ***           ****    **  ***     **  ***   
+**   **   ***    **     ****  **     * ***  * **** **** *       *** ***        * ***  * **   ***    ** * ***  
+**   **  ****  * **      **   **    *   ****   **   ****          *** ***     *   ****  **    **    ***   *** 
+**   ** *  ****  **      **   **   **    **    **    **             *** ***  **    **   **    **    **     ** 
+**   ***    **   **      **   **   **    **    **    **               ** *** **    **   **    **    **     ** 
+ **  **     *    **      **   **   **    **    **    **                ** ** **    **   **    **    **     ** 
+  ** *      *    **      **   **   **    **    **    **                 * *  **    **   **    **    **     ** 
+   ***     *      *********   **   **    **    **    **       ***        *   **    **   **    **    **     ** 
+    *******         **** ***  *** * ***** **   ***   ***     *  *********     ***** **  *** * *** * **     ** 
+      ***                 ***  ***   ***   **   ***   ***   *     *****        ***   **  ***   ***   **    ** 
+                   *****   ***                              *                                              *  
+                 ********  **                                **                                           *   
+                *      ****                                                                              *    
+                                                                                                        *     
+                                                                                                              
+
+
+</div>
+
+
+
+    <!-- Menu Design -->
+    <nav class="top_navigation_container">
+    <div class="container">
+        <span class="special_span"></span> <!--Light Effect Header-->
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/assets/img/logo/logo_black.png" alt="Light Logo" id="logoLight" class="logo-img">
+                <img src="/assets/img/logo/logo_white.png" alt="Dark Logo" id="logoDark" class="logo-img">
+            </a>
+        </div>
+
+
+        <div class="menu">
+            <div class="menu-left">
+                <nav class="menu">
+          <div class="menu__item">
+            <a class="menu__item-link" href="portfolio.html">Portfolio</a>
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Portfolio</span>
+                <span>Portfolio</span>
+                <span>Portfolio</span>
+                <span>Portfolio</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="menu__item">
+            <a class="menu__item-link" href="skills.html">Skills</a>
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Skills</span>
+                <span>Skills</span>
+                <span>Skills</span>
+                <span>Skills</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="menu__item">
+            <a class="menu__item-link" href="about.html">About</a>
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+                <span>About</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="menu__item">
+            <a class="menu__item-link" href="about.html">Contact</a>
+            <div class="marquee">
+              <div class="marquee__inner">
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+                <span>Contact</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+  
+  
+            </div>
+        </div>
+
+
+        
+        <div class="hamburger">
+            <div class="btn not-active">
+                <span class="spanmenu"></span>
+                <span class="spanmenu"></span>
+                <span class="spanmenu"></span>
+            </div>
+        </div>
+
+
+        
+        <div class="dark-mode-toggle" id="darkModeToggle">
+            <div id="lottieLight" style="display: none;"></div>
+            <div id="lottieDark" style="display: block;"></div>
+        </div>
+    
+        
+    </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ <!-- Landing Page Slider -->
+ <div class="carousel-wrapper">
+    <div class="slide active" data-slide="1">
+        <div class="slide-content">
+            <img class="slide-image" src="/assets/img/slider-landing-page/Slider-Image1.png" alt="Image 1" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider" href="ww.">ONI</h1>
+                    <p class="description-slider">Curious about how AI can transform your content strategy? Discover our innovative project that uses artificial intelligence to deliver highly personalized user experiences. Uncover the details here.</p>
+                </div>
+                <p class="background-text-slider">ONI</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="2">
+        <div class="slide-content">
+            <img class="slide-image" src="/assets/img/slider-landing-page/Slider-Image2.png" alt="Image 2" />
+            <video class="slide-video" src="" alt="Image 2" autoplay muted></video>
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">NEW</h1>
+                    <p class="description-slider">Ever wondered how interactive storytelling can elevate user engagement? Explore our latest project that blends narrative with cutting-edge web technology to create immersive experiences. Click to dive deeper.</p>
+                </div>
+                <p class="background-text-slider">NEW</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="3">
+        <div class="slide-content">
+            <img class="slide-image" src="/assets/img/slider-landing-page/Slider-Image3.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Struggling with outdated e-commerce platforms? Check out our groundbreaking solution that redefines online shopping with intuitive design and seamless functionality. Learn more about our approach.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="4">
+        <div class="slide-content">
+            <img class="slide-image" src="/assets/img/slider-landing-page/Slider-Image2.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Need better ways to collaborate online? Explore our latest tool designed for real-time, interactive teamwork, making remote projects smoother than ever. Find out how it works.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="5">
+        <div class="slide-content">
+            <img class="slide-image" src="/assets/img/slider-landing-page/Slider-Image1.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Want your website to be more sustainable? Discover our eco-friendly web design project focused on reducing carbon footprints and optimizing performance. See how we're making a difference.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat similar structure for other slides -->
+
+    <div class="navigation">
+        <a href="#" class="nav-dot active" data-slide="1"></a>
+        <a href="#" class="nav-dot" data-slide="2"></a>
+        <a href="#" class="nav-dot" data-slide="3"></a>
+        <a href="#" class="nav-dot" data-slide="4"></a>
+        <a href="#" class="nav-dot" data-slide="5"></a>
+        <!-- Add more navigation dots as needed -->
+    </div>
+    
+</div>
+
+
+
+    <!-- Projects Design -->
+    <div class="projects_menu_section">
+        <div class="container-cards project-menu">
+            <h2 class="heading-2">PORTFOLIO</h2>
+            <div class="projects_menu_container">
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                    <img src="/assets/img/Gifs/anime2.gif" alt="Ghost Red Poster" class="poster_image">
+                    <div class="project-hover-block">
+                        <div>View Project</div>
+                    </div>
+                </a>
+
+
+                <a class="projects_project_menu_poster" href="/Pages/Cards/Card1.html" data-tilt data-tilt-glare data-tilt-max-glare="0.9" data-tilt-scale="1.05" data-tilt-max="6" data-tilt-speed="200">
+                    <img src="/assets/img/Gifs/pain-gif.gif" alt="Poster 1" class="poster_image">
+                    <div class="project-hover-block">
+                        <div>View Project</div>
+                    </div>
+                </a>
+
+
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                    <img src="/assets/img/Gifs/gundam.gif" alt="Poster 2" class="poster_image">
+                    <div class="project-hover-block">
+                        <div>View Project</div>
+                    </div>
+                </a>
+
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                    <img src="/assets/img/Gifs/Ringsblack.gif" alt="Poster 3" class="poster_image">
+                    <div class="project-hover-block">
+                        <div>View Project</div>
+                    </div>
+                </a>
+                
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                    <img src="/assets/img/Gifs/gundam2.gif" alt="Poster 4" class="poster_image">
+                    <div class="project-hover-block">
+                        <div>View Project</div>
+                    </div>
+                </a>
+
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                        <img src="/assets/img/Gifs/anime-gif.gif" alt="Ghost Red Poster" class="poster_image">
+                        <div class="project-hover-block">
+                            <div>View Project</div>
+                        </div>
+                    </a>
+    
+    
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                        <img src="/assets/img/Gifs/anime-red-eyes-girl.gif" alt="Poster 6" class="poster_image">
+                        <div class="project-hover-block">
+                            <div>View Project</div>
+                        </div>
+                    </a>
+                 
+                <a class="projects_project_menu_poster" data-tilt data-tilt-glare data-tilt-max-glare="0.7" data-tilt-scale="1.05" data-tilt-max="8" data-tilt-speed="200">
+                        <img src="/assets/img/Gifs/anime-girl.gif" alt="Poster 7" class="poster_image">
+                        <div class="project-hover-block">
+                            <div>View Project</div>
+                        </div>
+                    </a>
+    
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Start -->      
+    <footer>
+        <div class="text">
+            <span>Designed & built by Gylan Salih with ❤️ 
+                <a href="https://github.com/gylansalih" target="_blank">
+                    <i class="fa-brands fa-github custom-github-icon"></i>
+                </a>
+            </span>
+        </div>
+    </footer>
+    
+  
+
+     <!-- Custom Cursor -->
+     <div class="Custom-Cursor">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/gsap.min.js"></script> 
+<script type="text/javascript" src="assets/js/vanilla-tilt.js"></script>
+ </body>
+</html>
+
+
+
+

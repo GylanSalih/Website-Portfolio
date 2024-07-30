@@ -1,17 +1,22 @@
 <!-- ROADMAP -->
-## Roadmap
+## Achievements
 
-- [x] Started the Idea of an Open-Source Project to share & learn
-- [x] Add Changelog
-- [ ] Wireframe with Branding style
-- [ ] Animations
-- [ ] Multi-language Support
-    - [x] English
-    - [ ] German
+- [x] Understood the Pokémon repository from simeydotme
+- [x] implementation of sass 
+- [ ] 
+- [ ] 
+    - [ ] 
+    - [ ] 
 
-See the [open issues](https://github.com/GylanSalih/Website-Portfolio/issues) for a full list of proposed features (and known issues).
+<!-- Current Challenges -->
+## Current Problems
 
-For a comprehensive list of changes and updates, please refer to the [CHANGELOG.md](https://github.com/GylanSalih/Website-Portfolio/blob/main/CHANGELOG.md) file.
+- [x] Looking to install a Pokémon holo effect instead of the normal glare but need more experience.
+- [ ] Too static—needs more effects and ambiance.
+- [ ] 
+    - [ ] 
+    - [ ] 
+
 
 
 <!-- Changelog -->
@@ -21,19 +26,20 @@ For a comprehensive list of changes and updates, please refer to the [CHANGELOG.
 
 Lookbook:
 
-### Current Challenges:
-1. Looking to install a Pokémon holo effect instead of normal glare but need more experience.
-2. Too static—needs more effects and ambiance.
-
 ### Updates / Fixes:
 
 **0.0.12 - Latest Updates**
+- File management for better / cleaner Organisation
+- Style.css in multiple Parts
+- implementation of sass (learned something new #Newbie)
+
+**0.0.12 - Previous Updates**
 - Cursor Update / Clicking, Following, Circle Function
 - Dark-Mode Json Lottie file by switching
 - working currently on holographic cards / updating soon
 - transparent header with smooth transition
 
-**0.0.12 - Latest Updates**
+**0.0.12 - Previous Updates**
 - Improved CSS commentary.
 - New landing page slider with dark mode, responsive design, and dots functionality.
 - Custom cursor implementation (cursor hide feature).

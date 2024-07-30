@@ -1,0 +1,2763 @@
+/*------- Global CSS root,*,html,body,title,paragraph,title,text -------START */
+
+/* Custom color Root css */
+:root {
+  --white: white;
+  --tertiary: #fff;
+  --tertiary-dark: #a9bbd3;
+  --secondary: #e31b6d;
+  --Red: #ff0800;
+  --primary2: #111821;
+  --primary-light: #2e4a6f;
+  --primary-dark: #223247;
+  --card-text: #e31b6d;
+  --card-bg: #223247;
+  --black: black;
+}
+
+
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Bridge Head Con Medium", sans-serif;
+  cursor: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+
+h5 {
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h3 {
+
+}
+
+h2 {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Bebas_Neue';
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 10px;
+  margin-top: 56px;
+}
+
+p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Poppins';
+}
+
+
+a {
+  color: #8c8c8e;
+  font-family: 'Arial', serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: 0 0px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 991px) {
+  h1 {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+/*------- Global CSS root,*,html,body,title,paragraph,title,text -------Ende */
+
+
+
+
+/*------------------------------------------------------------*/
+/* Funktionen Easter-Eggs Start                              */
+/*-----------------------------------------------------------*/
+/* Easter-Egg / Nicht Sichtbar auf der Website*/
+#ascii-art {
+  display: none;
+  white-space: pre;
+  font-family: monospace;
+}
+
+/*--Licht Effekt am Header Border Start--*/
+.special_span {
+  animation: animate 5s infinite linear;
+  background: linear-gradient(90deg, transparent, #fff);
+  bottom: 0;
+  height: 2px;
+  position: absolute;
+  width: 50px;
+}
+
+@keyframes animate {
+  0% {
+    left: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    left: 100%;
+    transform: translate(0%);
+  }
+}
+/*--Licht Effekt am Header Border END--*/
+
+/*------------------------------------------------------------*/
+/* Funktionen Easter-Eggs ENDE                               */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Dark Mode CSS Start                                       */
+/*-----------------------------------------------------------*/
+
+
+.dark-mode-toggle {
+  cursor: crosshair;
+  font-family: 'Arial', sans-serif;
+  position: fixed;
+  right: 125px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  z-index: 999;
+  top: 6px;
+}
+
+@media screen and (max-width: 991px) {
+  .dark-mode-toggle {
+    cursor: crosshair;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    position: fixed;
+    right: 119px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 1px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .dark-mode-toggle {
+    cursor: crosshair;
+    font-family: 'Arial', sans-serif;
+    font-size: 25px;
+    position: fixed;
+    right: 103px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 3px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+}
+
+.dark-mode {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+ /* transition: background-color 0.3s ease, color 0.3s ease; */
+}
+
+
+#lottieLight {
+  width: 38px;
+  height: 43px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+
+#lottieDark {
+  width: 38px;
+  height: 43px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 771px) {
+  #lottieLight {
+    width: 36px;
+    height: 48px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+}
+
+#lottieDark {
+  width: 28px;
+  height: 48px;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: 9999;
+}
+
+
+@media screen and (max-width: 991px) {
+  #lottieLight, #lottieDark {
+    width: 37px;
+    height: 54px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    z-index: 9999;
+  }
+}
+
+/*------------------------------------------------------------*/
+/* Dark Mode CSS ENDE                                       */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Header Container Start                                     */
+/*-----------------------------------------------------------*/
+
+
+
+/* Header Container */
+.top_navigation_container,
+.container {
+  align-items: center;
+  background: #ffffff00; /* Light mode background */
+ /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 56px;
+  justify-content: space-between;
+  left: 0px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+  transition: background-color 0.6s ease; /* Smooth transition */
+}
+
+
+
+.top_navigation_container.scrolled {
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .top_navigation_container.scrolled {
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+/* Header Container tablet */
+@media screen and (max-width: 991px) {
+  .container {
+    align-items: center;
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
+  }
+}
+
+/* Header Container Mobile */
+@media screen and (max-width: 771px) {
+  .container {
+    align-items: center;
+    background: #ffffff00; /* Light mode background */
+   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    left: 0px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    transition: background-color 0.7s ease; /* Smooth transition */
+  }
+}
+
+
+
+/* -----  Header Logo ----- */
+.logo {
+  cursor: crosshair;
+  padding-bottom: 0px;
+  position: fixed;
+  transition: transform 0.3s ease; /* Smooth transition */
+  z-index: 999;
+}
+
+/* Dark mode Function for menu-open */
+.dark-mode .logo {
+  color: #ffffff;
+}
+
+
+.logo img {
+  cursor: crosshair;
+  max-height: 18px;
+}
+
+.logo:hover {
+  cursor: crosshair;
+  transform: scale(1.2); /* Scale up the element */
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+    margin-left: 0px;
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .logo {
+    padding-bottom: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+
+/*------------------------------------------------------------*/
+/* Header Container ENDE                                     */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Footer CSS START                                           */
+/*-----------------------------------------------------------*/
+
+/* Footer section */
+footer {
+  background: #00000000;
+  font-family: 'Poppins', sans-serif;
+  padding-bottom: 30px;
+  padding-top: 15px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Footer text */
+footer .text span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.dark-mode .footer .text span {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+/* Custom GitHub icon */
+.custom-github-icon {
+  font-size: 1.05rem; /* GitHub Icon */
+  color: #000000;
+}
+
+.dark-mode .custom-github-icon {
+  color: #ffffff;
+}
+
+/*------------------------------------------------------------*/
+/* Footer CSS ENDE                                            */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Menu Left Opening Effekt START                             */
+/*-----------------------------------------------------------*/
+
+/* Default state for menu-open (light mode) */
+.menu-open {
+  color: #000000;
+  cursor: crosshair;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-right: 61px;
+  margin-top: 18px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding: 2rem;
+  position: fixed;
+  right: 30px;
+  top: 0;
+  z-index: 999;
+}
+
+
+/* Dark mode Function for menu-open */
+.dark-mode .menu-open {
+  color: #ffffff;
+}
+
+
+/* Media-Query for Responsive Menu left opening effect */
+@media screen and (max-width: 991px) {
+  .menu-left {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 150vh;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-left.open {
+    left: 0;
+  }
+
+  .menu-open {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
+    cursor: crosshair;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 49px;
+    margin-top: 16px;
+    margin-top: 17px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .dark-mode .menu-left {
+    align-items: center;
+    background: #ffffff; /* Light mode background */
+    color: #000000; /* Light mode text color */
+    display: flex;
+    height: 175vh;
+    justify-content: center;
+    left: -100%;
+    position: fixed;
+    transition: left 0.5s ease;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .menu-left.open {
+    left: 0;
+  }
+
+  .menu-open {
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-right-style: solid;
+    border-right-width: 0px;
+    color: #000000;
+    cursor: crosshair;
+    font-size: 20px;
+    margin-left: 0px;
+    margin-right: 34px;
+    margin-top: 16px;
+    margin: 0 5px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: fixed;
+    right: 24px;
+    z-index: 999;
+  }
+}
+
+/*------------------------------------------------------------*/
+/* Menu Left Opening Effekt ENDE                              */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Menu Inside marquee, Lokomotiv Effekt Style START          */
+/*-----------------------------------------------------------*/
+
+.menu-left {
+  align-items: center;
+  background: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 175vh;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  transition: left 0.5s ease;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.menu__item {
+	margin: -50px;
+	padding: 1.6vw 0 0 0;
+	position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+/* Media-Query Tablet */
+@media screen and (max-width: 991px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Media-Query Phone */
+@media screen and (max-width: 771px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+.menu__item-link {
+	-webkit-transition: opacity 0.4s;
+	color: #000000;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Bigilla";
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
+}
+
+.dark-mode .menu__item-link {
+	-webkit-transition: opacity 0.4s;
+	color: #ffffff;
+	cursor: crosshair;
+	display: inline-block;
+	font-family: "Bigilla";
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: opacity 0.4s;
+}
+
+
+.marquee {
+	color: #ffffff;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+  width: 100%;
+}
+
+.dark-mode .marquee {
+	color: #ff0000;
+	left: 0;
+	mix-blend-mode: difference;
+	overflow: hidden;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+}
+
+
+.menu__item-link:hover {
+	-webkit-transition-duration: 0.1s;
+	opacity: 0;
+	transition-duration: 0.1s;
+}
+
+.menu__item-link::before {
+	all: initial;
+	bottom: 60%;
+	counter-increment: menu;
+	left: 0;
+	pointer-events: none;
+	position: absolute;
+	text-transform: uppercase;
+}
+
+
+
+.menu {
+	--move-final: calc(-50% + var(--offset));
+	--move-initial: calc(-25% + var(--offset));
+	--offset: 20vw;
+	font-size: 8px;
+	padding: 0vh 0 0 0vh;
+  padding-bottom: 390px;
+}
+
+
+.marquee__inner {
+	-webkit-animation-play-state: paused;
+	-webkit-animation: marquee 5s linear infinite;
+	-webkit-transition: opacity 0.1s;
+	animation-play-state: paused;
+	animation: marquee 5s linear infinite;
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	opacity: 0;
+	padding: 2vw 0;
+	position: relative;
+	transition: opacity 0.1s;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+	-webkit-animation-play-state: running;
+	-webkit-transition-duration: 0.4s;
+	animation-play-state: running;
+	opacity: 1;
+	transition-duration: 0.4s;
+}
+
+.menu__item-link,
+.marquee span {
+	font-size: 8vw;
+	font-weight: 900;
+	padding: 1.6vw 1vw;
+	white-space: nowrap;
+}
+
+
+
+@media screen and (max-width: 771px) {
+  .menu__item-link,
+  .marquee span {
+    font-size: 12vw;
+    font-weight: 900;
+    padding: 1.6vw 1vw;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+  }
+}
+
+.marquee span {
+	font-family: "Bigilla" !important;
+	text-transform: uppercase;
+}
+
+@-webkit-keyframes marquee {
+	0% {
+		-webkit-transform: translate3d(var(--move-initial), 0, 0);
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(var(--move-final), 0, 0);
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+@keyframes marquee {
+	0% {
+		-webkit-transform: translate3d(var(--move-initial), 0, 0);
+		transform: translate3d(var(--move-initial), 0, 0);
+	}
+	100% {
+		-webkit-transform: translate3d(var(--move-final), 0, 0);
+		transform: translate3d(var(--move-final), 0, 0);
+	}
+}
+
+
+/*------------------------------------------------------------*/
+/* Menu Inside marquee, Lokomotiv Effekt Style ENDE          */
+/*-----------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------------*/
+/* Hamburger Icon START                                       */
+/*-----------------------------------------------------------*/
+
+/* Dark mode state for Hamburger */
+.dark-mode .hamburger {
+  color: #ffffff;
+}
+/* Dark mode state for Hamburger Balken*/
+.dark-mode .spanmenu {
+  background-color: #ffffff;
+}
+
+.hamburger {
+  border-radius: 2px;
+  color: #000000;
+  position: absolute;
+  right: 10px; /* Abstand vom rechten Rand des Headers */
+  top: 50%; /* Platziere den Hamburger vertikal in der Mitte */
+  transform: translate(50%, -50%);
+  transition: transform 0.3s; /* Füge die Transition hier hinzu */
+  z-index: 999;
+}
+
+.btn {
+  cursor: crosshair;
+  position: absolute;
+  right: 35px;
+  top: 50%; /* Platziere den Button vertikal in der Mitte */
+  transform: translate(50%, -50%);
+  width: 40px;
+}
+
+@media screen and (max-width: 771px) {
+  .btn {
+    right: 30px;
+  }
+}
+
+.spanmenu {
+  background-color: #000000;
+  border-radius: 3px;
+  display: block;
+  height: 3px;
+  position: relative;
+  transition: all 0.3s;
+  width: 85%;
+}
+
+.spanmenu + .spanmenu {
+  margin-top: 3px;
+}
+
+/* Hamburger Animation Setting */
+.active .spanmenu:nth-child(1) {
+  animation: top 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(1) {
+  animation: top-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(2) {
+  animation: scaled 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(2) {
+  animation: scaled-2 0.7s ease forwards;
+}
+
+.active .spanmenu:nth-child(3) {
+  animation: bottom 0.7s ease forwards;
+}
+
+.not-active .spanmenu:nth-child(3) {
+  animation: bottom-2 0.7s ease forwards;
+}
+
+/* Hamburger Animation Keyframes Setting */
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+  100% {
+    top: 5px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(45deg);
+  }
+  50% {
+    top: -4px; /* Adjusted value for smoother animation */
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+  100% {
+    bottom: 8px;
+    transform: rotate(135deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 1px; /* Adjusted value for smoother animation */
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*------------------------------------------------------------*/
+/* Hamburger Icon ENDE                                       */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------?????-----  Projects Style Grid-System / Portfolio Showcase Start ------------- */
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+    z-index: 1; /* Lowered z-index value */
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+    z-index: 3; /* Lowered z-index value */
+  }
+}
+
+
+
+/* Heading-2 Portfolio Text in Portfolio Area */
+.heading-2 {
+  font-family: 'Bebas_Neue', sans-serif;
+  font-size: 101px;
+ /* -webkit-text-stroke: 2px rgb(0, 0, 0); apply a white stroke around the text */
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 50px;
+  padding-top: 336px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 771px) {
+  .heading-2 {
+    font-family: 'Bebas_Neue', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: center;
+  }
+}
+
+
+
+
+/* Responsive Container */
+.container-cards {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Tablet view */
+@media screen and (max-width: 991px) {
+  .container-cards {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .container-cards {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    width: 95%;
+    z-index: 1;
+  }
+}
+
+
+
+
+/*---------------------- Project Poster Card Grids Style ----------------------------------*/
+.projects_project_menu_poster {
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  cursor: crosshair;
+  height: 100%;
+  margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Grid system for content container (4x1 row/col) */
+.projects_menu_container {
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-top: 24px;
+  height: 1250px;
+}
+
+
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .projects_menu_container {
+    align-items: center;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+
+/* Project Menu Container */
+.container.project-menu {
+  margin-bottom: 16px;
+}
+
+/* Project Menu Section */
+.projects_menu_section {
+  margin-bottom: 35px;
+  padding-top: 105px;
+  position: relative;
+}
+
+
+/* Project Poster Image */
+.poster_image {
+  border-radius: 7px;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transform: none;
+  width: 100%;
+}
+
+/* Project Hover Block TEXT VIEW PROJECT */
+.project-hover-block {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: Quicksand, sans-serif;
+  font-size: 13px; /* Default font size */
+  font-weight: 500;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 14px;
+  opacity: 0;
+  padding-bottom: 24px;
+  pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Pseudo-Element for Hover Effect */
+.project-hover-block::before {
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  top: 0;
+  transition: opacity 0.13s ease;
+  width: 100%;
+}
+
+/* Hover effect for Project Hover Block */
+.projects_project_menu_poster:hover .project-hover-block {
+  opacity: 1;
+}
+
+/* Hover effect for Pseudo-Element */
+.projects_project_menu_poster:hover .project-hover-block::before {
+  opacity: 1;
+}
+/*---------------------- Project Poster Card Grids Style ENDE----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------*/
+/* Card.html Portfolio Einzel page settings START             */
+/*-----------------------------------------------------------*/
+
+/* Section Project Header */
+.section_project_header {
+  margin-bottom: 38px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .section_project_header {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section_project_header {
+    margin-bottom: 20px;
+  }
+}
+
+/* Project Hero Background Card Hintergrund */
+.project-hero1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #ffffff), url("/assets/img/poster/poster_7.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Project Hero Background Card Hintergrund Dark-Mode State*/
+.dark-mode .project-hero1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
+}
+
+
+/* Project Hero Container */
+.project-hero_container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  min-height: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12vw;
+  perspective: 1500px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+@media screen and (max-width: 991px) {
+  .project-hero_container {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project-hero_container {
+    padding-top: 30vw;
+  }
+}
+
+/* Project Hero Poster */
+.project_hero_poster {
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  height: auto;
+  margin-right: 33px;
+  max-width: 452px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  .project_hero_poster {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+}
+
+/* Project Hero Blurb Container */
+.project_hero_blurb_container {
+  width: 100%;
+  margin-left: 10px;
+  text-align: left;
+}
+
+@media screen and (max-width: 991px) {
+  .project_hero_blurb_container {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .project_hero_blurb_container {
+    width: 87%;
+  }
+}
+
+.heading-4 {
+  margin-top: 14px;
+  margin-bottom: 31px;
+}
+
+
+@media screen and (max-width: 479px) {
+  .heading-1 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+
+
+/* Text Links */
+.text-link {
+  color: #fff;
+  cursor: crosshair;
+  display: inline-block;
+  font-family: 'Bebas_Neue';
+  font-weight: 600;
+  line-height: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+
+
+/* ---------Card.html Portfolio Einzel page settings START---------- */
+/* Single Card Projects Poster Image (EinzelBild beim öffnen vom Portfolio) */
+.poster_single {
+  border-radius: 8px;
+  cursor: crosshair;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transform: none;
+  width: 100%;
+}
+
+
+
+.section_project_cast {
+  margin-bottom: 40px;
+  padding-top: 12px;
+}
+
+.cast_includes_div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.cast_block {
+  border-radius: 8px;
+  flex: 0 0 auto;
+  margin: 10px;
+  padding: 10px;
+}
+
+.smalldescription {
+  border-radius: 8px;
+  flex: 1 1 100%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.Cast-Names {
+  font-weight: 600;
+}
+
+
+.Descriptioncontainer {
+  display: block;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px;
+  min-height: 50px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .cast_includes_div {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cast_block {
+    margin-right: 41px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 771px) {
+  .cast_block {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .cast_includes_div {
+    flex-direction: column;
+  }
+}
+
+/*------------------------------------------------------------*/
+/* Card.html Portfolio Einzel page settings ENDE             */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Skills.html Page START                                    */
+/*-----------------------------------------------------------*/
+
+/* Skills section */
+.skills {
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  gap: 3rem;
+  margin-top: 105px;
+  max-width: 1500px;
+  padding-left: 7rem;
+  padding: 0 3rem;
+  width: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 771px) {
+  .skills {
+    font-size: 24px;
+    margin-top: 105px;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding: 0 1.5rem;
+    width: auto;
+  }
+}
+
+/* Skill category */
+.category h3 {
+  color: #000;
+  font-family: 'Quicksand';
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+.dark-mode .category h3 {
+  color: #ffffff;
+}
+
+/* Skills container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Quicksand';
+  gap: 10px;
+}
+
+/* Individual skill */
+.skill {
+  align-items: center;
+  background-color: var(--primary-light);
+  border-radius: 5px;
+  color: #FFF;
+  cursor: crosshair;
+  display: flex;
+  font-size: 1em;
+  gap: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.skill i {
+  font-size: 1.2em;
+}
+
+.skill:hover {
+  background-color: var(--card-text);
+}
+
+/*------------------------------------------------------------*/
+/* Skills.html Page ENDE                                     */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* About.html Page START                                     */
+/*-----------------------------------------------------------*/
+
+/* Home section styling */
+.home {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background: url("/assets/img/about-me.png") no-repeat;
+  font-family: 'Ubuntu', sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Home content */
+.home .home-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  width: 90%;
+}
+
+/* Home text styles */
+.home .text-one {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.home .text-two {
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 600;
+  margin-left: -3px;
+}
+
+.home .text-three {
+  font-size: 40px;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+.home .text-four {
+  font-size: 23px;
+  margin: 5px 0;
+  color: #ffffff;
+}
+
+/* Home button styles */
+.home .button {
+  margin: 14px 0;
+  margin-top: 28px;
+}
+
+.home .button button {
+  background: #ffffff;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  color: #000000;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 16px;
+  transition: all 0.4s ease;
+}
+
+.home .button button:hover {
+  border-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*------------------------------------------------------------*/
+/* About.html Page ENDE                                      */
+/*-----------------------------------------------------------*/
+
+
+
+
+
+/*-------------------- About Section Styling BEGIN----------------- */
+
+/* Section styling */
+section {
+  padding-top: 40px;
+  background-color: #000000;
+}
+
+/* Section content */
+section .content {
+  width: 75%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* About section */
+.about .about-details {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Section title */
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 59px;
+}
+
+section .title span {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+section .title span::before {
+  background: #ffffff;
+  bottom: 0;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* About details */
+.about .about-details .left {
+  width: 45%;
+}
+
+.about .left img {
+  border-radius: 12px;
+  height: 400px;
+  object-fit: cover;
+  width: 400px;
+}
+
+.about-details .right {
+  width: 55%;
+  margin-bottom: 80px;
+}
+
+/* Section topic */
+section .topic {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: #ffffff;
+}
+
+/* Section button */
+section .button {
+  margin: 16px 0;
+}
+
+section .button button {
+  background: #ffffff;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  color: #000000;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  outline: none;
+  padding: 8px 16px;
+  transition: all 0.4s ease;
+}
+
+section .button button:hover {
+  background-color: #000000;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/*------------------------------------------------------------*/
+/* About Section Styling END                                 */
+/*-----------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------*/
+/* Responsive About.html Page BEGIN                          */
+/*-----------------------------------------------------------*/
+
+/* Responsive section content */
+@media (max-width: 1190px) {
+  section .content {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .about .about-details {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about .about-details .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-details .right {
+    width: 90%;
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .about .left img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  .home .text-two {
+    font-size: 65px;
+  }
+
+  .home .text-three {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home .text-two {
+    font-size: 55px;
+  }
+
+  .home .text-three {
+    font-size: 33px;
+  }
+}
+
+/*------------------------------------------------------------*/
+/* Responsive About.html Page END                            */
+/*----------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------*/
+/* Social Icons About.html Page BEGIN                        */
+/*----------------------------------------------------------*/
+
+/* Social icons container */
+.media-icons {
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 40px;
+}
+
+/* Social icon links */
+.media-icons a {
+  color: #e2e2e2be;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 8px;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.media-icons a:hover {
+  opacity: 1;
+}
+
+/*------------------------------------------------------------*/
+/* Social Icons About Me Page END                            */
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Loading Animation Logo Effekt Start                       */
+/*-----------------------------------------------------------*/
+
+/* Loading animation container */
+.loading-page {
+  align-items: center;
+  background: linear-gradient(to right, #000000, #000000, #000000);
+  color: #191654;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: opacity 1.5s ease, visibility 1.5s ease;
+}
+
+/* Klasse, um die Ladeanimation zu verbergen */
+.loading-page.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Die Animation des SVG und des Namens bleibt unverändert */
+
+
+/* Loading animation SVG */
+#svg {
+  animation: draw 10s ease;
+  fill-opacity: 0;
+  height: 450px;
+  stroke-dasharray: 4500;
+  stroke-width: 3px;
+  stroke: white;
+  width: 450px;
+}
+
+@media (max-width: 771px) {
+  #svg {
+    animation: draw 10s ease;
+    fill-opacity: 0;
+    height: 250px;
+    stroke-dasharray: 4500;
+    stroke-width: 3px;
+    stroke: white;
+    width: 250px;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Loading animation name container */
+.name-container {
+  height: 30px;
+  overflow: hidden;
+  margin-top: -100px;
+}
+
+/* Loading animation logo name */
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 12px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+/*------------------------------------------------------------*/
+/* Loading Animation Logo Effekt Ende                        */
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------Lightbox cdn self-try ------------------ */
+
+/* Stil für die Galerie */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Galerie horizontal */
+  align-items: center; /* Zentriert die Galerie vertikal */
+  gap: 15px; /* Abstand zwischen den Bildern */
+  margin: 0 auto; /* Zentriert die Galerie in Bezug auf den übergeordneten Container */
+  max-width: 90%; /* Maximale Breite der Galerie */
+  padding: 20px; /* Innenabstand um die Galerie herum */
+  box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+}
+
+/* Stil für die Bilder in der Galerie, Größe der Bilder */
+.gallery a {
+  display: block;
+  width: 300px; /* Neue Breite der Thumbnails */
+  height: 300px; /* Neue Höhe der Thumbnails */
+  overflow: hidden;
+}
+
+@media (max-width: 771px) {
+  .gallery {
+    gap: 10px; /* Optional: Reduziere den Abstand zwischen den Bildern */
+    align-items: unset; /* Zentriert die Galerie vertikal */
+    max-width: 100%;
+  padding: 10px;
+  }
+
+  .gallery a {
+    width: calc(50% - 10px); /* Breite der Thumbnails auf 50% der Containerbreite minus Abstand */
+    height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto; /* Höhe automatisch anpassen */
+  }
+}
+
+.gallery img {
+  display: block; /* Ändert die Anzeige von flex zu block */
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+.fancybox-image {
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: contain;
+  user-select: none;
+  filter: blur(0px);
+  border: 91px black;
+  border-radius: 15px;
+}
+
+.fancybox__thumbs.is-modern {
+  --f-thumb-gap: 3px;
+  --f-thumb-extra-gap: 0px;
+  --f-thumb-clip-width: 46px;
+  --f-thumb-opacity: 1;
+  --f-thumb-hover-opacity: 1;
+}
+
+.fancybox__thumbs {
+  --f-thumb-width: 97px;
+  --f-thumb-height: 68px;
+  --f-thumb-border-radius: 15px;
+}
+
+
+.fancybox__container {
+  --fancybox-bg: rgb(255, 255, 255);
+}
+
+.dark-mode .fancybox__container {
+  --fancybox-bg: rgb(0, 0, 0);
+}
+
+/* Button Lightbox */
+.fancybox__nav {
+  --f-button-width: 50px;
+  --f-button-height: 50px;
+  --f-button-border: 0;
+  --f-button-border-radius: 50%;
+  --f-button-color: var(--fancybox-color);
+  --f-button-hover-color: var(--fancybox-hover-color);
+  --f-button-bg: rgba(24, 24, 27, 0.65);
+  --f-button-hover-bg: #464649a6;
+  --f-button-active-bg: rgba(24, 24, 27, 0.5);
+  --f-button-shadow: none;
+  --f-button-transition: all 0.15s ease;
+  --f-button-transform: none;
+  --f-button-svg-width: 26px;
+  --f-button-svg-height: 26px;
+  --f-button-svg-stroke-width: 2.5;
+  --f-button-svg-fill: none;
+  --f-button-svg-filter: drop-shadow(1px 1px 1px rgba(24, 24, 27, 0.5));
+  --f-button-svg-disabled-opacity: 0.65;
+  --f-button-next-pos: 1rem;
+  --f-button-prev-pos: 1rem;
+}
+
+/* Toolbar Lightbox */
+.fancybox__toolbar {
+  --f-progress-color: var(--fancybox-color, rgba(255, 255, 255, 0.94));
+  --f-button-width: 46px;
+  --f-button-height: 46px;
+  --f-button-color: var(--fancybox-color);
+  --f-button-hover-color: var(--fancybox-hover-color);
+  --f-button-bg: rgba(24, 24, 27, 0.65);
+  --f-button-hover-bg: #464649a6;
+  --f-button-active-bg: rgba(90, 90, 93, 0.65);
+  --f-button-border-radius: 0;
+  --f-button-svg-width: 24px;
+  --f-button-svg-height: 24px;
+  --f-button-svg-stroke-width: 1.5;
+  --f-button-svg-filter: drop-shadow(1px 1px 1px rgba(24, 24, 27, 0.15));
+  --f-button-svg-fill: none;
+  --f-button-svg-disabled-opacity: 0.65;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI Adjusted","Segoe UI","Liberation Sans",sans-serif;
+  color: #000000;
+  text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(0, 0, 0, 0.171));
+  pointer-events: none;
+}
+
+
+.dark-mode .fancybox__toolbar {
+  color: #ffffff;
+  text-shadow: var(--fancybox-toolbar-text-shadow, 1px 1px 1px rgba(255, 255, 255, 0.192));
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------Wohlmöglich altes CSS für den alten Menu Links START----------- */
+
+
+/* Menu */
+.menu_nav_links {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_nav_links a {
+  color: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu_nav_links a::after {
+  background-color: transparent;
+  bottom: -2px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.menu_nav_links a:hover {
+  color: #000000;
+}
+
+.menu_nav_links a:hover::after {
+  background-color: #000000;
+}
+
+/* Hamburger Icon */
+.menu_control {
+  cursor: crosshair;
+  position: relative;
+  top: 0;
+}
+
+.menu_control::before {
+  color: rgb(0, 0, 0);
+  content: "\2630"; /* Unicode for hamburger icon */
+  font-size: 30px;
+}
+
+/* Dark Mode Styles for Hamburger Icon */
+.dark-mode .menu_control::before {
+  color: rgb(255, 255, 255);
+}
+
+/* Animation */
+.fade-zoom {
+  animation: fadeZoom 0.4s ease-in-out;
+}
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+
+/* Dark Mode Styles for Menu */
+.dark-mode .menu-left {
+  background: #000000; /* Dark mode background */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Open Menu Styles */
+.menu-left.open {
+  left: 0;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+
+/* Menu Links Font PC */
+.menu-link a {
+  color: #000000;
+  cursor: crosshair;
+  font-family: 'Montserrat';
+  font-size: 60px;
+  position: relative;
+  text-decoration: none;
+  z-index: 999;
+}
+
+/* Hover effect for menu-links */
+.menu-link a::after {
+  background-color: currentColor;
+  bottom: -2px;
+  content: '';
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  right: 50%;
+  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+  width: 0;
+}
+
+.menu-link a:hover::after {
+  width: 60%; /* Adjust the width to be shorter */
+  left: 15%;  /* Center the shorter line */
+  right: 15%; /* Center the shorter line */
+}
+
+/* Dark mode state for menu-links */
+.dark-mode .menu-link a {
+  color: #ffffff;
+}
+
+.menu-link a span {
+  font-family: 'Montserrat';
+  font-size: 24px;
+}
+
+/* Menu text size for mobile responsiveness */
+@media screen and (max-width: 901px) {
+  .menu-link a {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    line-height: 34px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+  }
+  
+  .menu-link a span {
+    font-family: 'Montserrat';
+    font-size: 12px;
+  }
+}
+
+/* Menu text size for tablet responsiveness */
+@media screen and (max-width: 701px) {
+  .menu-link a {
+    font-family: 'Montserrat';
+    font-size: 38px;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  .menu-link a span {
+    font-family: 'Montserrat';
+    font-size: 14px;
+  }
+}
+
+/*------------------------------------Wohlmöglich altes CSS für den alten Menu Links ENDE----------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Global Custom Cursor                                       */
+/*------------------------------------------------------------*/
+@media (hover: none) or (pointer: coarse) {
+  .cursor, .cursor-follower {
+      display: none;
+  }
+}
+
+.cursor {
+  position: fixed;
+  background-color: #000;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+              0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.dark-mode .cursor {
+  background-color: #fff;
+}
+
+.cursor.active {
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.cursor.hovered {
+  opacity: 0.08;
+}
+
+.cursor-follower {
+  position: fixed;
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 10000;
+  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+              0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
+              0.1s ease width, 0.1s ease height;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.dark-mode .cursor-follower {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.cursor-follower.active {
+  opacity: 0.7;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.cursor-follower.hovered {
+  opacity: 0.08;
+}
+
+
+
+/*------------------------------------------------------------*/
+/* Global Custom Cursor Ende                                  */
+/*------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider Start                                  */
+/*------------------------------------------------------------*/
+
+
+
+/* Slide Container */
+.carousel-wrapper {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Styles for each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1; /* Sichtbar */
+  z-index: 1; /* Sicherstellen, dass die aktive Slide oben ist */
+}
+
+/* Slide content */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.text-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Overlay */
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%); /* Höhe des Gradient-Overlays bis zur Mitte des Sliders */
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+  pointer-events: none; /* Damit es keine Interaktionen blockiert */
+}
+
+
+
+
+.dark-mode .text-overlay::after {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Text content */
+.text-content-slider {
+  text-align: left;
+  width: 68%;
+  padding: 191px;
+  position: relative;
+  color: var(--white);
+  z-index: 5;
+  top: -85px;
+}
+
+@media screen and (max-width: 771px) {
+  .title-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+.dark-mode .text-content-slider {
+  color: var(--black);
+}
+
+@media screen and (max-width: 771px) {
+  .dark-mode .text-content-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+/* Positionierung der Textinhalte */
+.subtitle-slider {
+  font-size: 12px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--black);
+  z-index: 5;
+}
+
+.dark-mode .subtitle-slider {
+  color: var(--white);
+}
+
+.title-slider {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: var(--black);
+  z-index: 5;
+}
+
+@media screen and (max-width: 901px) {
+  .title-slider {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--black);
+    z-index: 5;
+    line-height: 62.5px;
+  }
+}
+
+.dark-mode .title-slider {
+  color: var(--white);
+}
+
+.description-slider {
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 28.6px;
+  z-index: 5;
+}
+
+.dark-mode .description-slider {
+  color: var(--white);
+}
+
+.background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Apply a white stroke around the text */
+}
+
+
+.dark-mode .background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px white; /* Apply a white stroke around the text */
+}
+
+/* Navigation styling */
+.navigation {
+  align-items: center;
+  bottom: 678px; /* Abstand vom unteren Rand des Containers */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+  left: 50%; /* Horizontale Zentrierung */
+  position: absolute;
+  transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+  z-index: 5;
+}
+
+@media screen and (max-width: 771px) {
+  .navigation {
+    align-items: center;
+    bottom: 496px; /* Abstand vom unteren Rand des Containers */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+    left: 50%; /* Horizontale Zentrierung */
+    position: absolute;
+    transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+    z-index: 5;
+  }
+}
+
+.nav-dot {
+  background: #ffffff80;
+  border-radius: 0.25rem;
+  cursor: crosshair;
+  display: block;
+  height: 8px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  text-indent: -9999px;
+  transition: width 0.3s ease, opacity 1s ease;
+  width: 24px;
+  will-change: transform;
+}
+
+.nav-dot.active {
+  background: #ffffff80;
+  width: 100px;
+}
+
+.nav-dot.loading::before {
+  animation: progressBar 10s linear forwards;
+  background: var(--Red);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  width: 100%;
+  will-change: transform;
+}
+
+@keyframes progressBar {
+  0% {
+      transform: scaleX(0) translateZ(0);
+  }
+  100% {
+      transform: scaleX(1) translateZ(0);
+  }
+}
+
+.nav-dot:hover {
+  background: var(--Red);
+}
+
+
+
+
+
+

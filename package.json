@@ -4,7 +4,9 @@
   "description": "Portfolio Website",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "sass": "sass --watch src/scss:dist/css",
+  "build": "npm run sass && echo 'Build complete!'"
   },
   "repository": {
     "type": "git",
@@ -19,5 +21,9 @@
   "dependencies": {
     "gsap": "^3.12.5",
     "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
   }
 }
+

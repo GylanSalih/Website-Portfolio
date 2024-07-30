@@ -1,0 +1,10 @@
+// src/scss/main.scss
+
+// Importiere globale Stile
+@import 'globals';
+@import 'fonts';
+
+// Importiere andere Partials
+@import 'portfolio-page';
+@import 'contact';
+@import 'skills';

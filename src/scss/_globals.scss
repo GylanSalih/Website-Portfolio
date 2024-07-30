@@ -1,0 +1,35 @@
+// src/scss/globals.scss
+
+
+// SCSS-Variablen
+$purple: #6a0dad; // SCSS-Variable für Lila
+$red: #ff0800;    // SCSS-Variable für Rot
+
+
+/* Globale Schriftarten und Schriftgrößen */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Globale Farben */
+  :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+  }
+  
+  
+  /* Globale Layout-Eigenschaften */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Weitere globale Stile */
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
