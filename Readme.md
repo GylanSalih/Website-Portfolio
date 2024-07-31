@@ -120,7 +120,7 @@ Here are the key technologies, languages, and tools used in this project:
 * <img alt="Static Badge" src="https://img.shields.io/badge/-CSS3-brightgreen?style=for-the-badge&logo=css3&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-JavaScript-brightgreen?style=for-the-badge&logo=javascript&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-Node.js-brightgreen?style=for-the-badge&logo=nodedotjs&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
-* <img alt="Static Badge" src="https://img.shields.io/badge/-sass-brightgreen?style=for-the-badge&logo=nodedotjs&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
+* <img alt="Static Badge" src="https://img.shields.io/badge/-sass-brightgreen?style=for-the-badge&logo=sass&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 
 <p align="right">
   <a href="#readme-top">
