@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <meta name="description" content="Made by Gylan">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
+    <meta name="author" content="Gylan Salih">
+    <meta property="og:title" content="Portfolio">
+    <meta property="og:description" content="Portfolio and more">
+    <link rel="icon" href="/public/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+ </head>
+ <body>   
+
+
+<!-- Hey If you can Read this, dont forget to Follow me on Github -->
+<div id="ascii-art">
+
+</div>
+
+
+
+    <!-- Menu Design -->
+    <nav class="top_navigation_container">
+    <div class="container">
+        <span class="special_span"></span> <!--Light Effect Header-->
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/src/assets/img/logo/logo_black.png" alt="Light Logo" id="logoLight" class="logo-img">
+                <img src="/src/assets/img/logo/logo_white.png" alt="Dark Logo" id="logoDark" class="logo-img">
+            </a>
+        </div>
+
+
+        <div class="menu">
+            <div class="menu-left">
+                <nav class="menu">
+					<div class="menu__item">
+						<a class="menu__item-link" href="/public/portfolio.html">Portfolio</a>
+						<div class="marquee">
+							<div class="marquee__inner">
+								<span>Portfolio</span>
+								<span>Portfolio</span>
+								<span>Portfolio</span>
+								<span>Portfolio</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="menu__item">
+						<a class="menu__item-link" href="/public/Pages/skills.html">Skills</a>
+						<div class="marquee">
+							<div class="marquee__inner">
+								<span>Skills</span>
+								<span>Skills</span>
+								<span>Skills</span>
+								<span>Skills</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="menu__item">
+						<a class="menu__item-link" href="/public/Pages/about.html">About</a>
+						<div class="marquee">
+							<div class="marquee__inner">
+								<span>About</span>
+								<span>About</span>
+								<span>About</span>
+								<span>About</span>
+							</div>
+						</div>
+					</div>
+				
+					<div class="menu__item">
+						<a class="menu__item-link" href="/public/Pages/about.html">Contact</a>
+						<div class="marquee">
+							<div class="marquee__inner">
+								<span>Contact</span>
+								<span>Contact</span>
+								<span>Contact</span>
+								<span>Contact</span>
+							</div>
+						</div>
+					</div>
+				</nav>
+                
+            </div>
+        </div>
+
+
+        
+        <div class="hamburger">
+            <div class="btn not-active">
+                <span class="spanmenu"></span>
+                <span class="spanmenu"></span>
+                <span class="spanmenu"></span>
+            </div>
+        </div>
+
+
+        
+        <div class="dark-mode-toggle" id="darkModeToggle">
+            <div id="lottieLight" style="display: none;"></div>
+            <div id="lottieDark" style="display: block;"></div>
+        </div>
+    
+        
+    </div>
+    </nav>
+
+
+
+ <!-- Landing Page Slider -->
+ <div class="carousel-wrapper">
+    <div class="slide active" data-slide="1">
+        <div class="slide-content">
+            <img class="slide-image" src="/src/assets/img/slider-landing-page/Slider-Image1.png" alt="Image 1" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider" href="ww.">ONI</h1>
+                    <p class="description-slider">Curious about how AI can transform your content strategy? Discover our innovative project that uses artificial intelligence to deliver highly personalized user experiences. Uncover the details here.</p>
+                </div>
+                <p class="background-text-slider">ONI</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="2">
+        <div class="slide-content">
+            <img class="slide-image" src="" alt="Image 2" />
+            <video class="slide-video" src="/src/assets/videos/mylivewallpapers-com-Inosuke-Blade-4K.mp4" alt="Image 2" autoplay muted loop></video>
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">NEW</h1>
+                    <p class="description-slider">Ever wondered how interactive storytelling can elevate user engagement? Explore our latest project that blends narrative with cutting-edge web technology to create immersive experiences. Click to dive deeper.</p>
+                </div>
+                <p class="background-text-slider">NEW</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="3">
+        <div class="slide-content">
+            <img class="slide-image" src="/src/assets/img/slider-landing-page/Slider-Image3.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Struggling with outdated e-commerce platforms? Check out our groundbreaking solution that redefines online shopping with intuitive design and seamless functionality. Learn more about our approach.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="4">
+        <div class="slide-content">
+            <img class="slide-image" src="/src/assets/img/slider-landing-page/Slider-Image2.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Need better ways to collaborate online? Explore our latest tool designed for real-time, interactive teamwork, making remote projects smoother than ever. Find out how it works.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" data-slide="5">
+        <div class="slide-content">
+            <img class="slide-image" src="/src/assets/img/slider-landing-page/Slider-Image1.png" alt="Image 3" />
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">GYLAN SALIH</p>
+                    <h1 class="title-slider">LIMITED EDITION</h1>
+                    <p class="description-slider">Want your website to be more sustainable? Discover our eco-friendly web design project focused on reducing carbon footprints and optimizing performance. See how we're making a difference.</p>
+                </div>
+                <p class="background-text-slider">LIMITED</p>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat similar structure for other slides -->
+
+    <div class="navigation">
+        <a href="#" class="nav-dot active" data-slide="1"></a>
+        <a href="#" class="nav-dot" data-slide="2"></a>
+        <a href="#" class="nav-dot" data-slide="3"></a>
+        <a href="#" class="nav-dot" data-slide="4"></a>
+        <a href="#" class="nav-dot" data-slide="5"></a>
+        <!-- Add more navigation dots as needed -->
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Resetbutton">
+    <a href="/" class="home-link">
+        <i class="fa-solid fa-power-off"></i>
+    </a>
+</div>
+
+
+
+<!-- Sort by Filter -->
+    <div class="filtering">
+        <label for="category-filter">Sort By</label>
+        <select id="category-filter">
+            <option value="all">Show All</option>
+            <option value="Normal">Normal</option>
+            <option value="Selten">Selten</option>
+            <option value="Super Selten">Super Selten</option>
+        </select>
+    </div>
+
+
+<!-- Change Foils Filter -->
+<div class="PNL_options">
+<select onchange='adaptCardType(this);'>
+    <option>normal</option>
+    <option>rare ultra</option>
+    <option>miaw</option>
+    <option>rare holo v1</option>
+    <option>rare holo vstar</option>
+    <option>rare holo galaxy</option>
+    <option>rare holo galaxyFullshine</option>
+    <option>radiant</option>
+    <option>rare holo</option>
+    <option>rare holo vmax</option>
+    <option>rare rainbow</option>
+    <option>rare secret</option>
+    <option>rare holo cosmos</option>
+</select>
+<br/>
+<input
+    type="radio"
+    id='mouseMove'
+    checked="checked"
+    name='GRP_CardMove'
+    onchange='ChangeCardMove(this);'>
+<label for='mouseMove' id="mouseMoveLabel">Mouse move</label>
+</div>
+
+
+<!-- Grid Layout Changer Filter  gg-->
+<div id="grid-wrapper">
+<div id="view-section" class="grid-section">
+    <label>Filter</label>
+    <button type="button" class="example-button short active">
+        <img src="img/icons/_grid_icon1.png" alt="Grid 1">
+    </button>
+    <button type="button" class="example-button short">
+        <img src="img/icons/_grid_icon2.png" alt="Grid 2">
+    </button>
+    <button type="button" class="example-button short">
+        <img src="img/icons/_grid_icon3.png" alt="Grid 3">
+    </button>
+    <button type="button" class="example-button">
+        <img src="/img/icons/heart_icon.png" alt="heart icon">
+    </button>
+    <button type="button" class="example-button">
+        <img src="/img/icons/refresh_icon.png" alt="refresh icon">
+    </button>
+    </div>
+</div>
+
+
+        <!-- Choose Card Filter -->
+        <div class="PNL_Infos"></div>
+        <div class="PNL_ChooseCard">
+            <select onchange='changeCard(this)'>
+                <option value="/Cards/greenscreen.jpg">Green Screen</option>
+                <option value="Cards/blackbg.webp">Black Background</option>
+                <option value="gif/anime-girl.gif">Girl with Horns</option>
+                <option value="Cards/5.jpeg">Girl with Red Background</option>
+                <option value="Cards/3.jpg">Anime Red Static</option>
+                <option value="gif/anime2.gif">Anime-Demon-Slayer</option>
+                <option value="gif/anime-red-eyes-girl.gif">Anime-Red-Face</option>
+            </select>
+        </div>
+
+
+
+         <!-- Cards Grid -->
+          <div class="main-grid">
+            <div class="card-grid">
+
+
+                <div class="holographic__section">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Selten">
+                                <div class="card__effects">
+                                    <img src="/src/assets/img/Cards/1.jpg" class="card_images">
+                                    <div class="card__shine"></div>
+                                    <div class="card__glare"></div>
+                                </div>
+                                <div class="project-hover-block">
+                                    <div>YOUR TEXT BY HOVER</div>
+                                </div>
+                    </div>
+                </div>
+
+
+
+                <div class="holographic__section">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Normal">
+                                <div class="card__effects">
+                                    <img src="/src/assets/img/Cards/1.jpg"  class="card_images">
+                                    <div class="card__shine"></div>
+                                    <div class="card__glare"></div>
+                                </div>
+                    </div>
+                </div>
+
+
+                <div class="holographic__section">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                                <div class="card__effects">
+                                    <img src="/src/assets/img/Cards/1.jpg"  class="card_images">
+                                    <div class="card__shine"></div>
+                                    <div class="card__glare"></div>
+                                </div>
+                    </div>
+                </div>
+
+                <div class="holographic__section">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                                <div class="card__effects">
+                                    <img src="/src/assets/img/Cards/1.jpg"  class="card_images">
+                                    <div class="card__shine"></div>
+                                    <div class="card__glare"></div>
+                                </div>
+                    </div>
+                </div>
+
+
+                <!-- Add more cards as needed -->
+                 
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Start -->      
+    <footer>
+        <div class="text">
+            <span>Designed & built by Gylan Salih with ❤️ 
+                <a href="https://github.com/gylansalih" target="_blank">
+                    <i class="fa-brands fa-github custom-github-icon"></i>
+                </a>
+            </span>
+        </div>
+    </footer>
+    
+  
+
+
+     <!-- Custom Cursor -->
+     <div class="Custom-Cursor">
+        <div class="cursor"></div>
+        <div class="cursor-follower"></div>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- GSAP CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>   
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,512 @@
+/*-----------------------------------------------------------*/
+// src/scss/_portfolio-page.scss
+/*-----------------------------------------------------------*/
+
+
+/* --------?????-----  Projects Style Grid-System / Portfolio Showcase Start ------------- */
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+    z-index: 1; /* Lowered z-index value */
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .projects_menu_container,
+  .container-cards.project-menu,
+  .projects_menu_section {
+    z-index: 3; /* Lowered z-index value */
+  }
+}
+
+
+
+/* Heading-2 Portfolio Text in Portfolio Area */
+.heading-2 {
+  font-family: 'Bebas_Neue', sans-serif;
+  font-size: 101px;
+ /* -webkit-text-stroke: 2px rgb(0, 0, 0); apply a white stroke around the text */
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 50px;
+  padding-top: 336px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (max-width: 771px) {
+  .heading-2 {
+    font-family: 'Bebas_Neue', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    padding-bottom: 24px;
+    padding-top: 24px;
+    text-align: center;
+  }
+}
+
+
+
+
+/* Responsive Container */
+.container-cards {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Tablet view */
+@media screen and (max-width: 991px) {
+  .container-cards {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .container-cards {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    width: 95%;
+    z-index: 1;
+  }
+}
+
+
+
+
+/*---------------------- Project Poster Card Grids Style ----------------------------------*/
+.projects_project_menu_poster {
+  background-color: #000000;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  cursor: crosshair;
+  height: 100%;
+  margin-bottom: 24px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Grid system for content container (4x1 row/col) */
+.projects_menu_container {
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin-top: 24px;
+  height: 1250px;
+}
+
+
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+  .projects_menu_container {
+    align-items: center;
+    grid-auto-rows: auto;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+  }
+}
+
+/* Project Menu Container */
+.container.project-menu {
+  margin-bottom: 16px;
+}
+
+/* Project Menu Section */
+.projects_menu_section {
+  margin-bottom: 35px;
+  padding-top: 105px;
+  position: relative;
+}
+
+
+/* Project Poster Image */
+.poster_image {
+  border-radius: 7px;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transform: none;
+  width: 100%;
+}
+
+/* Project Hover Block TEXT VIEW PROJECT */
+.project-hover-block {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: Quicksand, sans-serif;
+  font-size: 13px; /* Default font size */
+  font-weight: 500;
+  justify-content: center;
+  left: 0;
+  letter-spacing: 5px;
+  line-height: 14px;
+  opacity: 0;
+  padding-bottom: 24px;
+  pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Pseudo-Element for Hover Effect */
+.project-hover-block::before {
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  top: 0;
+  transition: opacity 0.13s ease;
+  width: 100%;
+}
+
+/* Hover effect for Project Hover Block */
+.projects_project_menu_poster:hover .project-hover-block {
+  opacity: 1;
+}
+
+/* Hover effect for Pseudo-Element */
+.projects_project_menu_poster:hover .project-hover-block::before {
+  opacity: 1;
+}
+/*---------------------- Project Poster Card Grids Style ENDE----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider Start                                  */
+/*------------------------------------------------------------*/
+
+
+
+/* Slide Container */
+.carousel-wrapper {
+  width: 100%;
+  height: 85vh;
+  position: absolute;
+  overflow: hidden;
+  background-color: black;
+}
+
+/* Styles for each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1; /* Sichtbar */
+  z-index: 1; /* Sicherstellen, dass die aktive Slide oben ist */
+}
+
+/* Slide content */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.text-overlay {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Overlay */
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%); /* Höhe des Gradient-Overlays bis zur Mitte des Sliders */
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+  pointer-events: none; /* Damit es keine Interaktionen blockiert */
+}
+
+
+
+
+.dark-mode .text-overlay::after {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
+  color: #ffffff; /* Dark mode text color */
+}
+
+/* Text content */
+.text-content-slider {
+  text-align: left;
+  width: 68%;
+  padding: 191px;
+  position: relative;
+  color: var(--white);
+  z-index: 5;
+  top: -85px;
+}
+
+@media screen and (max-width: 771px) {
+  .title-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+.dark-mode .text-content-slider {
+  color: var(--black);
+}
+
+@media screen and (max-width: 771px) {
+  .dark-mode .text-content-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+/* Positionierung der Textinhalte */
+.subtitle-slider {
+  font-size: 12px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--black);
+  z-index: 5;
+}
+
+.dark-mode .subtitle-slider {
+  color: var(--white);
+}
+
+.title-slider {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: var(--black);
+  z-index: 5;
+}
+
+@media screen and (max-width: 901px) {
+  .title-slider {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--black);
+    z-index: 5;
+    line-height: 62.5px;
+  }
+}
+
+.dark-mode .title-slider {
+  color: var(--white);
+}
+
+.description-slider {
+  font-size: 1rem;
+  color: var(--black);
+  line-height: 28.6px;
+  z-index: 5;
+}
+
+.dark-mode .description-slider {
+  color: var(--white);
+}
+
+.background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Apply a white stroke around the text */
+}
+
+
+.dark-mode .background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px white; /* Apply a white stroke around the text */
+}
+
+/* Navigation styling */
+.navigation {
+  align-items: center;
+  bottom: 678px; /* Abstand vom unteren Rand des Containers */
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+  left: 50%; /* Horizontale Zentrierung */
+  position: absolute;
+  transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+  z-index: 5;
+}
+
+@media screen and (max-width: 771px) {
+  .navigation {
+    align-items: center;
+    bottom: 496px; /* Abstand vom unteren Rand des Containers */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+    left: 50%; /* Horizontale Zentrierung */
+    position: absolute;
+    transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
+    z-index: 5;
+  }
+}
+
+.nav-dot {
+  background: #ffffff80;
+  border-radius: 0.25rem;
+  cursor: crosshair;
+  display: block;
+  height: 8px;
+  margin: 0 5px;
+  overflow: hidden;
+  padding: 3px;
+  position: relative;
+  text-indent: -9999px;
+  transition: width 0.3s ease, opacity 1s ease;
+  width: 24px;
+  will-change: transform;
+}
+
+.nav-dot.active {
+  background: #ffffff80;
+  width: 100px;
+}
+
+.nav-dot.loading::before {
+  animation: progressBar 10s linear forwards;
+  background: var(--Red);
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-origin: left;
+  transform: scaleX(0);
+  width: 100%;
+  will-change: transform;
+}
+
+@keyframes progressBar {
+  0% {
+      transform: scaleX(0) translateZ(0);
+  }
+  100% {
+      transform: scaleX(1) translateZ(0);
+  }
+}
+
+.nav-dot:hover {
+  background: var(--Red);
+}
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider ENDE                                   */
+/*------------------------------------------------------------*/

@@ -1,7 +1,7 @@
 <!-- ROADMAP -->
 ## Achievements
 
-- [x] Understood the Pokémon repository from simeydotme
+- [x] Understood and implemented the Pokémon repository from simeydotme
 - [x] implementation of sass 
 - [ ] 
 - [ ] 
@@ -13,9 +13,26 @@
 
 - [x] Looking to install a Pokémon holo effect instead of the normal glare but need more experience.
 - [ ] Too static—needs more effects and ambiance.
-- [ ] 
+- [ ] Extrem Laggy portfolio -> Perfomance Update needed
     - [ ] 
     - [ ] 
+
+
+<!--
+Notes for myself:
+
+- PC View ab 1024px
+Ohne @media screen attribute
+
+- Tablet View bis 1024px
+@media screen and (max-width: 1024 px)
+
+- /* Handy View bis 480px */
+@media screen and (max-width: 480px)
+
+Body mit  min-width: 360px attribute.
+
+-->
 
 
 <!-- Changelog -->
@@ -27,13 +44,16 @@ Lookbook:
 
 ### Updates / Fixes:
 
-**0.0.12 - Latest Updates**
+**0.0.15 - Latest Updates**
+- Portfolio holo update
+- filter with diffrent possibilities
+
+**0.0.14 - Previous Updates**
 - File management for better / cleaner Organisation
 - Style.css in multiple Parts
 - implementation of sass (learned something new #Newbie)
-- transition to another page
 
-**0.0.12 - Previous Updates**
+**0.0.13 - Previous Updates**
 - Cursor Update / Clicking, Following, Circle Function
 - Dark-Mode Json Lottie file by switching
 - working currently on holographic cards / updating soon
