@@ -13,7 +13,7 @@
 <!-- Badges Shields -->
 [contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/Website-Portfolio?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
 [forks-shield]: https://custom-icon-badges.demolab.com/github/forks/GylanSalih/Website-Portfolio?color=FF0000&logo=repo-forked&label=Forks&logoColor=white&style=for-the-badge&labelColor=000000
-[stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/Website-Portfolio?color=FF0000&logo=star&label=Stars&logoColor=white&style=for-the-badge&labelColor=000000
+[stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/Website-Portfolio?color=FF0000&label=Stars&logo=star&logoColor=white&style=for-the-badge&labelColor=000000
 [issues-shield]: https://custom-icon-badges.demolab.com/github/issues/GylanSalih/Website-Portfolio?color=FF0000&logo=issue-opened&label=Issues&logoColor=white&labelColor=000000&style=for-the-badge&
 [license-shield]: https://custom-icon-badges.demolab.com/github/license/GylanSalih/Website-Portfolio?color=FF0000&logo=law&label=License&logoColor=white&style=for-the-badge&labelColor=000000
 
@@ -99,7 +99,7 @@ Here are some images showcasing the project:
 
 
 
-| Landing Page                                                 | In Progress                                                  | In Progress                                                  |
+| In Progress                                                  | In Progress                                                  | In Progress                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/About_Me.jpeg) |
 
@@ -120,6 +120,7 @@ Here are the key technologies, languages, and tools used in this project:
 * <img alt="Static Badge" src="https://img.shields.io/badge/-CSS3-brightgreen?style=for-the-badge&logo=css3&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-JavaScript-brightgreen?style=for-the-badge&logo=javascript&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 * <img alt="Static Badge" src="https://img.shields.io/badge/-Node.js-brightgreen?style=for-the-badge&logo=nodedotjs&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
+* <img alt="Static Badge" src="https://img.shields.io/badge/-sass-brightgreen?style=for-the-badge&logo=sass&logoColor=white&logoSize=auto&labelColor=%2371100f%20&color=black">
 
 <p align="right">
   <a href="#readme-top">
