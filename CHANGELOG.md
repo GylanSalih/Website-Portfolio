@@ -14,7 +14,7 @@
 - [x] Looking to install a Pokémon holo effect instead of the normal glare but need more experience.
 - [ ] Too static—needs more effects and ambiance.
 - [ ] Extrem Laggy portfolio -> Perfomance Update needed
-    - [ ] 
+    - [ ] Organize img files -> Reduce Size
     - [ ] 
 
 
@@ -49,7 +49,7 @@ Lookbook:
 - filter with diffrent possibilities
 
 **0.0.14 - Previous Updates**
-- File management for better / cleaner Organisation
+- Project File management for better / cleaner Organisation
 - Style.css in multiple Parts
 - implementation of sass (learned something new #Newbie)
 
