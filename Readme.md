@@ -34,7 +34,7 @@
   </a>
 
 
-  <h3 align="center">Website Portfolio, Gallery & More</h3>
+  <h3 align="center">Website Portfolio, Gallery & More -> WORK IN PROGRESS <3 </h3>
 
   <p align="center">
    Welcome! i Would appreciate if you Star my Repository <3
@@ -99,9 +99,9 @@ Here are some images showcasing the project:
 
 
 
-| In Progress                                                  | In Progress                                                  | In Progress                                                  |
+| Animated & Beautiful Grid                                    | Filters                                                      | Dark-Mode                                                    |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase_Landing_Page.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Single_Card%20-%20Kopie.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/About_Me.jpeg) |
+| ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase1.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase2.png) | ![Showcase](https://github.com/GylanSalih/Website-Portfolio/blob/main/src/assets/img/Github_showcasee/Showcase4.png) |
 
 <p align="right">
   <a href="#readme-top">
