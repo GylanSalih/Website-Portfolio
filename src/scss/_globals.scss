@@ -34,8 +34,9 @@ $red: #ff0800;    // SCSS-Variable für Rot
 
 html,
 body {
-  width: 100%;
-  font-family: "Bridge Head Con Medium", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
   cursor: none;
 }
 
@@ -248,8 +249,7 @@ a {
   height: 6px;
   border-radius: 100%;
   z-index: 10000;
-  transition: 0.3s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-              0.2s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity;
+  transition: transform 0.1s ease, opacity 0.1s ease;
   user-select: none;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -275,9 +275,7 @@ a {
   height: 50px;
   border-radius: 100%;
   z-index: 10000;
-  transition: 0.1s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
-              0.1s cubic-bezier(0.75, -0.27, 0.3, 1.33) opacity,
-              0.1s ease width, 0.1s ease height;
+  transition: transform 0.1s ease, opacity 0.1s ease, width 0.1s ease, height 0.1s ease;
   user-select: none;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -295,6 +293,7 @@ a {
 .cursor-follower.hovered {
   opacity: 0.08;
 }
+
 
 
 

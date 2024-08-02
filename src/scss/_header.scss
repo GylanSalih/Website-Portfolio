@@ -135,33 +135,29 @@
 /*------------------------------------------------------------*/
 /* Menu Left Opening Effekt START                             */
 /*-----------------------------------------------------------*/
-
-/* Default state for menu-open (light mode) */
+/* Standardzustand für das Menü (Light Mode) */
 .menu-open {
-    color: #000000;
-    cursor: crosshair;
-    font-size: 20px;
-    margin-left: 0px;
-    margin-right: 61px;
-    margin-top: 18px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    padding: 2rem;
-    position: fixed;
-    right: 30px;
-    top: 0;
-    z-index: 999;
-  }
-  
-  
-  /* Dark mode Function for menu-open */
-  .dark-mode .menu-open {
-    color: #ffffff;
-  }
-  
-  
+  color: #000000; /* Textfarbe für Light Mode */
+  cursor: crosshair;
+  font-size: 20px;
+  margin: 0 5px; /* Vereinheitlichung der Margin-Werte */
+  padding: 2rem; /* Einheitliches Padding */
+  position: fixed;
+  right: 30px;
+  top: 0;
+  z-index: 999;
+  border-left-style: solid; /* Einheitliches Styling */
+  border-left-width: 0;
+  border-right-style: solid;
+  border-right-width: 0;
+}
+
+/* Dark Mode für das Menü */
+.dark-mode .menu-open {
+  color: #ffffff; /* Textfarbe für Dark Mode */
+}
+
+/* Media-Query für Responsive Menü (max-width: 991px) */
   /* Media-Query for Responsive Menu left opening effect */
   @media screen and (max-width: 991px) {
     .menu-left {
@@ -251,54 +247,54 @@
 
 
 
-  /*------------------------------------------------------------*/
+/*------------------------------------------------------------*/
 /* Menu Inside marquee, Lokomotiv Effekt Style START          */
 /*-----------------------------------------------------------*/
 
 .menu-left {
-    align-items: center;
-    background: #ffffff; /* Light mode background */
-    color: #000000; /* Light mode text color */
-    display: flex;
-    height: 175vh;
-    justify-content: center;
-    left: -100%;
-    position: fixed;
-    transition: left 0.5s ease;
-    width: 100%;
-    z-index: 999;
-  }
+  align-items: center;
+  background: #ffffff; /* Light mode background */
+  color: #000000; /* Light mode text color */
+  display: flex;
+  height: 175vh;
+  justify-content: center;
+  left: -100%;
+  position: fixed;
+  transition: left 0.5s ease;
+  width: 100%;
+  z-index: 999;
+}
   
   
+.menu__item {
+  margin: -50px;
+  padding: 1.6vw 0 0 0;
+  position: relative;
+text-align: center;
+width: 100%;
+}
+  
+ /* Media-Query Tablet */
+ @media screen and (max-width: 991px) {
   .menu__item {
-      margin: -50px;
-      padding: 1.6vw 0 0 0;
-      position: relative;
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
     text-align: center;
     width: 100%;
   }
-  
-  /* Media-Query Tablet */
-  @media screen and (max-width: 991px) {
-    .menu__item {
-      margin: 0px;
-      padding: 1.6vw 0 0 0;
-      position: relative;
-      text-align: center;
-      width: 100%;
-    }
+}
+
+/* Media-Query Phone */
+@media screen and (max-width: 771px) {
+  .menu__item {
+    margin: 0px;
+    padding: 1.6vw 0 0 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
   }
-  
-  /* Media-Query Phone */
-  @media screen and (max-width: 771px) {
-    .menu__item {
-      margin: 0px;
-      padding: 1.6vw 0 0 0;
-      position: relative;
-      text-align: center;
-      width: 100%;
-    }
-  }
+}
   
   
   .menu__item-link {
@@ -578,12 +574,10 @@
     50% {
       bottom: 1px; /* Adjusted value for smoother animation */
       transform: rotate(0);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
     }
     100% {
       bottom: 8px;
       transform: rotate(135deg);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Glowing effect */
     }
   }
   

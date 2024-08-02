@@ -47,7 +47,7 @@ function OrientCard(e) {
     "--posy": `${50 + Xdeg / 2 + Ydeg / 2}%`,
     "--hyp": `${Math.min(Math.max(Math.sqrt((mvX * mvX) + (mvY * mvY)) / 50, 0), 1)}`,
     ease: "power4.out",
-    overwrite: true // Overwrite previous GSAP animations
+    
   });
 }
 
@@ -67,7 +67,7 @@ function handleMouseLeave(e) {
       "--hyp": initial.hyp,
       "--scale": initial.s,
       ease: "power4.inOut",
-      overwrite: true // Overwrite previous GSAP animations
+      
     });
   }
 }
@@ -78,11 +78,9 @@ function clamp(value, min = -20, max = 20) {
 
 document.addEventListener("DOMContentLoaded", () => {
   if (window.DeviceOrientationEvent && 'ontouchstart' in window) {
-    document.getElementById('mouseMoveLabel').innerHTML = 'Phone move';
+
     window.addEventListener('deviceorientation', orientationhandler, false);
     window.addEventListener('MozOrientation', orientationhandler, false);
-  } else {
-    document.getElementById('mouseMoveLabel').innerHTML = 'Mouse move';
   }
 
   document.querySelectorAll(".card").forEach(card => {
@@ -141,14 +139,7 @@ function orientationhandler(event) {
 //
 //
 
-// Filter for PNL_ChooseCard -> Change all cards to X Image
-// Update the image source for all cards based on input value
-function changeCard(e) {
-  var cards = document.querySelectorAll(".card img");
-  Array.from(cards).forEach(card => {
-    card.setAttribute('src', e.value);
-  });
-}
+
 
 // Filter for PNL_options -> Which Holo do you want?
 // Update the Holographic source for all cards based on input value
@@ -376,46 +367,51 @@ $(document).ready(function() {
 
 
 // --------------------------------- //
-// Custom Cursor Dot+ Follower START //
+// Custom Cursor Dot+ Follower START + //
 // --------------------------------- //
 
+// 1. Variablen und Initialisierungen
 var cursor = $(".cursor"),
     follower = $(".cursor-follower");
 
+// Positionen
 var posX = 0,
     posY = 0;
 
 var mouseX = 0,
     mouseY = 0;
 
-// Funktion zur Aktualisierung der Cursorposition mit GSAP-Animation
+// 2. Cursor-Bewegungsfunktion
 function moveCursor() {
   // Berechnung der neuen Cursor-Position (posX, posY) für sanfte Bewegung
   posX += (mouseX - posX) / 9;
   posY += (mouseY - posY) / 9;
-  
+
   // Setzen der Positionen für Cursor und Cursor-Follower
   follower.css({
-    left: posX - 1,
-    top: posY - 1
+    left: `${posX - 1}px`,
+    top: `${posY - 1}px`
   });
   
   cursor.css({
-    left: mouseX,
-    top: mouseY
+    left: `${mouseX}px`,
+    top: `${mouseY}px`
   });
 
   // Anforderung einer neuen Animationsschleife
   requestAnimationFrame(moveCursor);
 }
 
-// Eventlistener für Mausbewegung, um Cursor zu bewegen
+// Starten der Animationsschleife
+requestAnimationFrame(moveCursor);
+
+// 3. Mausbewegung Event-Listener
 $(document).on("mousemove", function(e) {
   mouseX = e.clientX;
   mouseY = e.clientY;
 });
 
-// Event listener for click to enlarge the cursor
+// 4. Mausklick-Ereignisse
 $(document).on("mousedown", function() {
   cursor.addClass("active");
   follower.addClass("active");
@@ -426,54 +422,7 @@ $(document).on("mouseup", function() {
   follower.removeClass("active");
 });
 
-// Event listener for hover effects on links
-$(".link").on("mouseenter", function() {
-  cursor.addClass("hover");
-  follower.addClass("hover");
-});
-
-$(".link").on("mouseleave", function() {
-  cursor.removeClass("hover");
-  follower.removeClass("hover");
-});
-
-
-// Starten der Animationsschleife
-requestAnimationFrame(moveCursor);
-
-// Event listener for hover effects on links, or specific classes
-$(".link, .logo, #darkModeToggle, .hamburger, .close").on("mouseenter", function() {
-  cursor.addClass("hover");
-  follower.addClass("hover");
-  var rect = this.getBoundingClientRect();
-  follower.css({
-    width: rect.width + 60,
-    height: rect.height + 60,
-    transition: 'width 0.1s ease, height 0.1s ease'
-  });
-});
-
-$(".link, .logo, #darkModeToggle, .hamburger").on("mouseleave", function() {
-  cursor.removeClass("hover");
-  follower.removeClass("hover");
-  follower.css({
-    width: '50px',
-    height: '50px',
-    transition: 'width 0.1s ease, height 0.1s ease'
-  });
-
-  
-    function handleCursorVisibility() {
-      const cursor = document.getElementById('cursor');
-      if (window.innerWidth <= 991) {
-        cursor.style.display = 'none';
-      } else {
-        cursor.style.display = 'block';
-      }
-    }
-});
-
-// Function to handle cursor visibility based on window width / Everything under 991px destroy cursor
+// 5. Cursor-Sichtbarkeit basierend auf Fenstergröße
 function handleCursorVisibility() {
   if (window.innerWidth <= 991) {
     cursor.hide();
@@ -484,14 +433,11 @@ function handleCursorVisibility() {
   }
 }
 
-// Event listeners for window resize and load to handle cursor visibility
+// Event-Listener für Fenstergrößenänderung und Laden der Seite
 $(window).on("resize", handleCursorVisibility);
 $(window).on("load", handleCursorVisibility);
 
-// Start the animation loop
-requestAnimationFrame(moveCursor);
-
-// Initial check for cursor visibility
+// Initiale Überprüfung der Cursor-Sichtbarkeit
 handleCursorVisibility();
 
 
@@ -513,7 +459,7 @@ handleCursorVisibility();
 // DarkMode Toggle JS Script Start //
 // ------------------------------ //
 
-
+// 1. Initial Setup and Variables
 document.addEventListener('DOMContentLoaded', () => {
   const darkModeToggle = document.getElementById('darkModeToggle');
   const body = document.querySelector('body');
@@ -523,71 +469,89 @@ document.addEventListener('DOMContentLoaded', () => {
   const logoDark = document.getElementById('logoDark');
 
   let lottieLight, lottieDark;
-  let direction = 1;
   let directionLight = -1;
   let directionDark = -1;
-  
 
-  function loadLottieAnimations() {
-      lottieLight = lottie.loadAnimation({
-          container: lottieLightContainer,
-          renderer: 'svg',
-          loop: false,
-          autoplay: false,
-          path: '/src/assets/Animations/lottiewhite.json' // Your JSON file for light mode
-      });
+// 2. Load Lottie Animations
+function loadLottieAnimations() {
+  lottieLight = lottie.loadAnimation({
+    container: lottieLightContainer,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: '/src/assets/Animations/lottiewhite.json'
+  });
 
-      lottieDark = lottie.loadAnimation({
-          container: lottieDarkContainer,
-          renderer: 'svg',
-          loop: false,
-          autoplay: false,
-          path: '/src/assets/Animations/lottieblack.json' // Your JSON file for dark mode
-      });
+  lottieDark = lottie.loadAnimation({
+    container: lottieDarkContainer,
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: '/src/assets/Animations/lottieblack.json'
+  });
 
-      // Set the initial frame to the last frame for lottieLight
-      lottieLight.addEventListener('DOMLoaded', () => {
-          lottieLight.goToAndStop(lottieLight.totalFrames - 1, true);
-      });
+  // EventListener nur einmal hinzufügen
+  const onDOMLoaded = (animation) => {
+    animation.goToAndStop(animation.totalFrames - 1, true);
+  };
 
-      // Set the initial frame to the last frame for lottieDark
-      lottieDark.addEventListener('DOMLoaded', () => {
-          lottieDark.goToAndStop(lottieDark.totalFrames - 1, true);
-      });
-  }
-
-  function toggleDarkMode() {
-    if (body.classList.contains('dark-mode')) {
-        lottieLightContainer.style.display = 'none';
-        lottieDarkContainer.style.display = 'block';
-        logoLight.style.display = 'block';
-        logoDark.style.display = 'none';
-        lottieDark.setDirection(directionDark);
-        lottieDark.play();
-        directionDark = -directionDark; // Reverse the direction for the next click
-    } else {
-        lottieDarkContainer.style.display = 'none';
-        lottieLightContainer.style.display = 'block';
-        logoLight.style.display = 'none';
-        logoDark.style.display = 'block';
-        lottieLight.setDirection(directionLight);
-        lottieLight.play();
-        directionLight = -directionLight; // Reverse the direction for the next click
-    }
-    body.classList.toggle('dark-mode');
+  lottieLight.addEventListener('DOMLoaded', () => onDOMLoaded(lottieLight));
+  lottieDark.addEventListener('DOMLoaded', () => onDOMLoaded(lottieDark));
 }
 
-lottieLightContainer.addEventListener('click', () => {
-    lottieLight.setDirection(directionLight);
-    lottieLight.play();
-    directionLight = -directionLight; // Reverse the direction for the next click
-});
 
-lottieDarkContainer.addEventListener('click', () => {
+// 3. Toggle Dark Mode Function
+function toggleDarkMode() {
+  if (body.classList.contains('dark-mode')) {
+    // Switch to light mode
+    lottieLightContainer.style.display = 'none';
+    lottieDarkContainer.style.display = 'block';
+    logoLight.style.display = 'block';
+    logoDark.style.display = 'none';
     lottieDark.setDirection(directionDark);
     lottieDark.play();
     directionDark = -directionDark; // Reverse the direction for the next click
-});
+  } else {
+    // Switch to dark mode
+    lottieDarkContainer.style.display = 'none';
+    lottieLightContainer.style.display = 'block';
+    logoLight.style.display = 'none';
+    logoDark.style.display = 'block';
+    lottieLight.setDirection(directionLight);
+    lottieLight.play();
+    directionLight = -directionLight; // Reverse the direction for the next click
+  }
+  body.classList.toggle('dark-mode'); // Toggle the dark-mode class
+}
+
+// 4. Event Listeners for Lottie Containers
+
+  // Verwende debounced Funktion für Clicks
+  const debounce = (func, wait) => {
+    let timeout;
+    return (...args) => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+    };
+  };
+
+  const handleLottieLightClick = debounce(() => {
+    lottieLight.setDirection(directionLight);
+    lottieLight.play();
+    directionLight = -directionLight;
+  }, 200);
+
+  const handleLottieDarkClick = debounce(() => {
+    lottieDark.setDirection(directionDark);
+    lottieDark.play();
+    directionDark = -directionDark;
+  }, 200);
+
+  lottieLightContainer.addEventListener('click', handleLottieLightClick);
+  lottieDarkContainer.addEventListener('click', handleLottieDarkClick);
+
+
+// 5. Initial Display State
 
 if (lottieDark) {
   logoLight.style.display = 'block';
@@ -597,36 +561,38 @@ if (lottieDark) {
   logoDark.style.display = 'block';
 }
 
+// Set up dark mode toggle event listener
+darkModeToggle.addEventListener('click', toggleDarkMode);
 
-  darkModeToggle.addEventListener('click', toggleDarkMode);
+// Load Lottie animations
+loadLottieAnimations();
 
-  loadLottieAnimations();
-
-  // Set initial state to dark mode // zu beginn des dark-modes statement
-  body.classList.add('dark-mode');
-  lottieLightContainer.style.display = 'block';
-  lottieDarkContainer.style.display = 'none';
-  logoLight.style.display = 'none';
-  logoDark.style.display = 'black';
+// Set initial state to dark mode
+body.classList.add('dark-mode');
+lottieLightContainer.style.display = 'block';
+lottieDarkContainer.style.display = 'none';
+logoLight.style.display = 'none';
+logoDark.style.display = 'block'; // Corrected typo from 'black' to 'block'
 });
 
 
-
-
-  // Scroll Behaviour by Scrolling down with container/header
+// 6. Scroll Behavior for Header
 document.addEventListener('DOMContentLoaded', () => {
-  const header = document.querySelector('.top_navigation_container'); // Assuming your header has the class "header"
+  const header = document.querySelector('.top_navigation_container');
 
-  // Scroll event to change header background
-  window.addEventListener('scroll', () => {
+  const handleScroll = () => {
     if (window.scrollY > 35) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
+  };
+
+  // Verwende requestAnimationFrame für bessere Scroll-Performance
+  window.addEventListener('scroll', () => {
+    requestAnimationFrame(handleScroll);
   });
 });
-
 
 
 
@@ -645,35 +611,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // -----------------------------------//
-// Menu Slide effect JS Script START //
+// Menu Slide effect + Menu Items (Text) JS Script START //
 // ---------------------------------//
 
+// Warten, bis der DOM vollständig geladen ist
 document.addEventListener("DOMContentLoaded", function() {
+  // Erstellen einer neuen GSAP-Zeitleiste, die zunächst pausiert ist
   var tl = gsap.timeline({ paused: true });
 
+  // Definieren der Animationen auf der Zeitleiste
   tl.to(".menu-left", {
-      duration: 0.8,
-      left: 0,
-      ease: "power4.out",
+      duration: 0.8, // Dauer der Animation für die Verschiebung
+      left: 0, // Endposition des Elements (sichtbar machen)
+      ease: "power4.out", // Typ der Ease-Funktion für die Animation
   })
+  // Menu Text Animation
   .staggerFrom(
-      ".menu__item",
-      0.6,
+      ".menu__item", // Auswahl der Elemente für die gestaffelte Animation
+      0.6, // Dauer der Animation für jedes einzelne Element
       {
-          y: 30,
-          opacity: 0,
-          ease: "power4.out",
+          y: 50, // Ausgangsposition der Animation (Bewegung nach unten)
+          opacity: 0, // Anfangs-Transparenz des Elements
+          ease: "power4.out", // Typ der Ease-Funktion für die Animation
       },
-      0.1,
-      "-=0.5"
+      0.1, // Zeitabstand zwischen den Animationen der einzelnen Elemente
+      "-=0.5" // Offset für die Startzeit der gestafferten Animation
   );
 
+  // Setzt die Animation auf den umgekehrten Zustand, so dass sie rückwärts abläuft
   tl.reverse();
 
+  // Hinzufügen eines Click-Event-Listeners auf das Hamburger-Menü
   document.querySelector(".hamburger").addEventListener("click", function() {
+      // Umschalten des Reversed-Status der Zeitleiste bei jedem Klick
       tl.reversed(!tl.reversed());
   });
 });
+
 // ----------------------------------//
 // Menu Slide effect JS Script ENDE //
 // --------------------------------//
@@ -695,8 +669,14 @@ document.addEventListener("DOMContentLoaded", function() {
 var btn = $('.btn');
 
 btn.on('click', function() {
-  $(this).toggleClass('active not-active');
+  var $this = $(this);
+  if ($this.hasClass('active')) {
+    $this.removeClass('active').addClass('not-active');
+  } else {
+    $this.removeClass('not-active').addClass('active');
+  }
 });
+
 
 // -----------------------//
 // Hamburger Effect ENDE //
@@ -716,17 +696,17 @@ btn.on('click', function() {
 // Loading Animation LOGO + Landing START //
 // ---------------------------------------//
 
-// Function to disable scrolling
+// 1. Funktion zum Deaktivieren des Scrollens
 function disableScroll() {
   document.documentElement.style.overflow = 'hidden';
 }
 
-// Function to enable scrolling
+// 2. Funktion zum Aktivieren des Scrollens
 function enableScroll() {
   document.documentElement.style.overflow = 'auto';
 }
 
-// Check if the current page is the home page
+// 3. Funktion zur Überprüfung der Startseite
 function isHomePage() {
   // Get the current path and the filename of the current URL
   const path = window.location.pathname;
@@ -736,39 +716,45 @@ function isHomePage() {
   return fileName === 'index.html' || fileName === '';
 }
 
-// Run the loading animation if on the home page
-if (isHomePage()) {
-  disableScroll();
+// 4. Funktion zum Starten der Ladeanimation
+function startLoadingAnimation() {
+  disableScroll(); // Scrollen deaktivieren
 
-  // Start the loading animation with a delay
-  setTimeout(function() {
-    gsap.fromTo(
-      ".loading-page",
-      { opacity: 1 },
-      {
-        opacity: 0,
-        display: "none",
-        duration: 1.5,
-        delay: 2.5,
-        onComplete: enableScroll // Enable scrolling after the animation completes
-      }
-    );
+  // Ladeanimation starten
+  gsap.fromTo(
+    ".loading-page",
+    { opacity: 1, visibility: 'visible' },
+    {
+      opacity: 0,
+      visibility: 'hidden',
+      duration: 1.5,
+      delay: 2.5,
+      ease: 'power2.out',
+      onComplete: enableScroll // Scrollen nach Abschluss der Animation aktivieren
+    }
+  );
 
-    gsap.fromTo(
-      ".logo-name",
-      {
-        y: 50,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 2,
-        delay: 0.5,
-      }
-    );
-  }, 0); // Delay in milliseconds before starting the animation
+  gsap.fromTo(
+    ".logo-name",
+    { y: 50, opacity: 0 },
+    {
+      y: 0,
+      opacity: 1,
+      duration: 2,
+      delay: 0.5,
+      ease: 'back.out(1.7)', // Verzögert und verleiht dem Logo eine zusätzliche Bewegung
+    }
+  );
 }
+
+// Hauptlogik zur Überprüfung und Ausführung der Animation
+if (isHomePage()) {
+  setTimeout(function() {
+    document.querySelector(".loading-page").classList.add("hidden");
+    startLoadingAnimation();
+  }, 0); // Verzögerung vor dem Start der Animation
+}
+
 
 // --------------------------------------//
 // Loading Animation LOGO + Landing ENDE //
@@ -812,68 +798,4 @@ if (isHomePage()) {
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

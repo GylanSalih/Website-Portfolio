@@ -13,9 +13,9 @@
 
 - [x] Looking to install a Pokémon holo effect instead of the normal glare but need more experience.
 - [ ] Too static—needs more effects and ambiance.
-- [ ] Extrem Laggy portfolio -> Perfomance Update needed
+- [ ] Extrem Laggy portfolio -> Perfomance Update needed!!
     - [ ] Organize img files -> Reduce Size
-    - [ ] 
+    - [x] chrome grid not working -> reason = Dark-mode / Custom cursor script // SOLVED
 
 
 <!--
@@ -47,6 +47,13 @@ Lookbook:
 **0.0.15 - Latest Updates**
 - Portfolio holo update
 - filter with diffrent possibilities
+- js in smaller segments -> for more understanding 
+- css deleted some unnecessary codes
+- custom cursor, Dark-mode script perfomance
+- hamburger js/css perfomance
+- Filter bar for the portfolio page
+- footer
+- improved the whole code
 
 **0.0.14 - Previous Updates**
 - Project File management for better / cleaner Organisation

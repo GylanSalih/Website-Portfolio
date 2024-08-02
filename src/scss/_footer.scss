@@ -1,42 +1,103 @@
-/*------------------------------------------------------------*/
-// src/scss/_footer.scss
-/*-----------------------------------------------------------*/
+
+
+button {
+  background-color: #000;
+  font-size: calc(0.4 * 4rem);
+  border: none;
+  color: #e5e5e5;
+  font-family: "Poppins";
+  font-weight: 400;
+  padding: calc(0.35 * 4rem) calc(0.8 * 4rem);
+  border-radius: calc(0.3 * 4rem);
+}
 
 footer {
-    background: #00000000;
-    font-family: 'Poppins', sans-serif;
-    padding-bottom: 30px;
-    padding-top: 15px;
-    padding: 15px 0;
-    text-align: center;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  padding-bottom: 25px;
+  position: relative; /* Ensure footer can position pseudo-element */
+}
+
+.link {
+  width: calc(0.8 * 4rem);
+  height: calc(0.8 * 4rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(0.3 * 4rem) calc(0.8 * 4rem);
+  width: 28%;
+}
+
+footer a {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 50px;
+  font-family: 'Poppins';
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: 'Poppins';
+}
+
+footer img {
+color: #ffffff;
+}
+
+.social {
+  display: flex; /* Aktiviert Flexbox auf dem Container */
+  justify-content: flex-start; /* Richtet die Icons nach links aus */
+  align-items: center; /* Optional: Zentriert die Icons vertikal */
+  gap: 15px;
+  padding: 5px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.social svg {
+  width: 24px; /* Setzt die Breite der Icons */
+  height: 24px; /* Setzt die Höhe der Icons */
+  fill: #fff;   /* Setzt die Farbe der Icons auf Weiß */
+}
+
+.social svg.bi-behance {
+  width: 32px; /* Größeres Icon speziell für Behance */
+  height: 32px; /* Größeres Icon speziell für Behance */
+}
+
+.social svg.bi-github {
+  width: 32px; /* Größeres Icon speziell für GitHub */
+  height: 32px; /* Größeres Icon speziell für GitHub */
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    font-size: calc(0.3 * 4rem);
   }
-  
-  /* Footer text */
-  footer .text span {
-    font-size: 14px;
-    font-weight: 400;
+}
+
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 5rem 20vw;
   }
-  
-  .dark-mode .footer .text span {
-    background: #000000; /* Dark mode background */
-    color: #ffffff; /* Dark mode text color */
+  .col {
+    width: 100%;
   }
-  
-  footer .text span a {
-    font-weight: 500;
-    color: #FFF;
-  }
-  
-  footer .text span a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Custom GitHub icon */
-  .custom-github-icon {
-    font-size: 1.05rem; /* GitHub Icon */
-    color: #000000;
-  }
-  
-  .dark-mode .custom-github-icon {
-    color: #ffffff;
-  }
+}

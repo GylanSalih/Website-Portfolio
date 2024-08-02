@@ -43,322 +43,282 @@
 
 
 
-#grid-wrapper {
-    width: 100%; /* Vollbreite */
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  .grid-section {
-    background-color: rgba(50, 50, 50, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.3rem;
-    padding: 0.5rem;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    z-index: 66;
-    margin-top: 412px;
-    margin-bottom: -273px;
-  }
-  
-  label {
-    color: #ffffff;
-    font-size: 1em;
-  }
-  
-  .example-button {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid transparent;
-    border-radius: 0.3rem;
-    color: #b16d00;
-    padding: 0.3rem 1rem; /* Angepasste Polsterung */
-    cursor: pointer;
-    display: flex; /* Für zentrierte Inhalte */
-    align-items: center;
-  }
-  
-  .example-button.active {
-    border: 1px solid #b16d00;
-  }
-  
-  .example-button:hover,
-  .example-button:focus {
-    border: 1px solid #b16d00;
-  }
-  
-  .example-button > img {
-    height: 1.25rem;
-    width: 1.25rem;
-  }
-  
-  /* -------------------- Grid layout filter END ------------------------*/
   
   /*-------------------------------FILTER START------------------------------- */
   
-  /* For the Mouse Tracker */
   /* For the Folie Choose */
-  /* For the Image Choose */
-  
-  /* Styling für die Auswahlkarten */
-  .PNL_ChooseCard {
-    position: fixed;
-    z-index: 66;
-    bottom: 60px;
-    left: 20px;
-    background: #1e1e1e; /* Tiefes Dunkelgrau für einen modernen Look */
-    border-radius: 12px; /* Größere abgerundete Ecken */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Tieferer, weicherer Schatten */
-    padding: 12px 24px;
-    border-radius: 8px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leichterer Schatten */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .PNL_ChooseCard select {
-    background: #2a2a2a; /* Dunkleres Grau für das Dropdown */
-    color: #e0e0e0; /* Hellerer Text */
-    border: 1px solid #555; /* Dunklere Border */
-    border-radius: 6px; /* Abgerundete Ecken */
-    padding: 8px 12px; /* Innenabstand */
-    width: 100%; /* Volle Breite */
-    transition: background 0.3s ease, border-color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  
-  /* Hover-Effekte für die Auswahlkarten */
-  .PNL_ChooseCard:hover {
-    background: #0e0e0e; /* Etwas hellerer Hintergrund beim Hover */
-    transform: translateY(-4px); /* Leichtes Anheben */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Intensivierter Schatten beim Hover */
-  }
-  
-  /* Allgemeine Styles für das Optionsfeld */
+ 
+ /* Adjusting PNL_options to fit inside the grid layout */
+.PNL_options {
+  margin-left: auto;
+}
+
+
+/* Hover effects to maintain consistency */
+.PNL_options:hover {
+  background: #0e0e0e; 
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+
+/* Display the options panel normally */
+.PNL_options.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styling for the dropdown menu within the panel */
+.PNL_options select {
+  background: #333;
+  color: #e0e0e0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: "Poppins", sans-serif;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Styling for dropdown options */
+.PNL_options option {
+  background: #1e1e1e; 
+  color: #e0e0e0;
+}
+
+/* Focus styling for the dropdown */
+.PNL_options select:focus {
+  outline: none; 
+  background: #333; 
+  border-color: #777;
+}
+
+/* Responsive adjustments if necessary */
+@media screen and (max-width: 1024px) {
   .PNL_options {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    margin: 30px;
-    background: #1e1e1e; /* Tiefes Dunkelgrau für einen modernen Look */
-    border-radius: 12px; /* Größere abgerundete Ecken */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Tieferer, weicherer Schatten */
-    z-index: 1000; /* Über anderen Elementen */
-    color: #e0e0e0; /* Sehr helles Grau für den Text */
-    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    transform: translateY(-10px); /* Ausgangsposition für sanfte Animation */
-    font-family: 'Poppins', sans-serif;
-    margin-top: 134px;
+    width: 100%; /* Make the options panel take full width on smaller screens */
+    margin-top: 8px;
   }
-  
-  
-  /* Hover-Effekte für die Auswahlkarten */
-  .PNL_options:hover {
-    background: #0e0e0e; /* Etwas hellerer Hintergrund beim Hover */
-    transform: translateY(-4px); /* Leichtes Anheben */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Intensivierter Schatten beim Hover */
+}
+
+@media screen and (max-width: 480px) {
+  .PNL_options {
+    width: 100%;
   }
+}
+
+
   
-  /* Sichtbar machen des Optionsfeldes */
-  .PNL_options.show {
-    opacity: 1;
-    transform: translateY(0);
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Grid layout filter START ------------------------*/
+
+#grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.grid-section {
+  background-color: rgba(50, 50, 50, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  z-index: 66;
+  justify-content: space-between;
+}
+
+
+.example-button {
+  background-color: #33333300; /* Matte black background */
+  border: 1px solid #444; /* Darker border to match the background */
+  border-radius: 0.3rem;
+  color: #b16d00; /* Button text color */
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.example-button.active {
+  border-color: #b16d00; /* Highlight color for active state */
+}
+
+.example-button:hover,
+.example-button:focus {
+  background-color: #444; /* Darker shade on hover */
+  border-color: #b16d00; /* Highlight color on hover */
+}
+
+.example-button > img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+/*------------------------- FILTERING DROPDOWN STYLES -------------------------*/
+
+.filtering {
+  margin-left: auto; /* Align dropdown to the right */
+}
+
+.filtering label {
+  color: #ffffff; /* White text for labels */
+  font-size: 1em;
+  margin-right: 8px; /* Spacing between label and dropdown */
+}
+
+.filtering select {
+  background: #333; /* Matte black background */
+  color: #e0e0e0; /* Light text color for contrast */
+  border: 1px solid #444; /* Darker border to match the background */
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-family: 'Poppins', sans-serif;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.filtering select:focus {
+  outline: none;
+  border-color: #b16d00; /* Highlight color on focus */
+  background: #222; /* Slightly darker background on focus */
+}
+
+/*------------------------- MEDIA QUERIES -------------------------*/
+
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .grid-section {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-  
-  
-  /* Styling für das Dropdown-Menü */
-  .PNL_options select {
-    background: #2a2a2a; /* Dunkleres Grau für das Dropdown */
-    color: #e0e0e0; /* Hellerer Text */
-    border: 1px solid #555; /* Dunklere Border */
-    border-radius: 6px; /* Abgerundete Ecken */
-    padding: 8px 12px; /* Innenabstand */
-    width: 100%; /* Volle Breite */
-    margin-bottom: 12px; /* Abstand zwischen Dropdown und anderen Elementen */
-    transition: background 0.3s ease, border-color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
+
+  .filtering {
+    margin-left: 0;
+    margin-top: 8px; /* Margin for mobile view */
+    width: 100%; /* Full width */
+    text-align: center; /* Center align */
   }
-  
-  /* Styling für die Radio-Buttons */
-  .PNL_options input[type="radio"] {
-    margin-right: 8px; /* Abstand zwischen Radio-Button und Text */
-    accent-color: #f39c12; /* Modernere Farbe für den Radio-Button */
+}
+
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .filtering {
+    margin-top: 8px;
+    width: 100%;
+    text-align: center;
   }
-  
-  /* Styling für die Labels der Radio-Buttons */
-  .PNL_options span {
-    margin-right: 20px; /* Abstand zwischen den Radio-Buttons */
-    font-size: 16px; /* Größere Schriftgröße für bessere Lesbarkeit */
-  }
-  
-  /* Styling für das Label im Radio-Button */
-  .PNL_options input[type="radio"] + span {
-    color: #b0b0b0; /* Hellerer Text für die Labels */
-    cursor: pointer; /* Zeigt an, dass die Labels klickbar sind */
-    transition: color 0.3s ease; /* Sanfter Übergang für die Textfarbe */
-  }
-  
-  /* Hover-Effekte für die Radio-Button-Labels */
-  .PNL_options input[type="radio"]:checked + span {
-    color: #f39c12; /* Farbe des ausgewählten Labels */
-  }
-  
-  /* Styling für die Optionen im Dropdown-Menü */
-  .PNL_options option {
-    background: #1e1e1e; /* Hintergrundfarbe der Optionen */
-    color: #e0e0e0; /* Textfarbe der Optionen */
-  }
-  
-  /* Styling für das Dropdown-Menü im Optionsfeld */
-  .PNL_options select:focus {
-    outline: none; /* Entfernt die Standard-Fokussierungslinie */
-    background: #333; /* Hintergrundfarbe beim Fokussieren */
-    border-color: #777; /* Hellerer Rand beim Fokussieren */
-  }
-  
-  /* Styling für die Infos */
-  .PNL_Infos {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 40px 30px; /* Etwas mehr Abstand oben und rechts */
-    color: #e0e0e0; /* Hellerer Text für bessere Lesbarkeit */
-  }
-  
-  
-  
-  /*--------------------------------FILTER ENDE------------------------------- */
-  /*-------------------------RESET BUTTON Start --------------------------- */
-  
-  .Resetbutton {
+  .grid-section {
+    width: 100%;
+    text-align: center;
     position: relative;
   }
-  
-  .home-link {
-    position: fixed;
-    top: 20px;
-    left: 300px;
-    text-decoration: none;
-  }
-  
-  .home-link i {
-    font-size: 24px;
-    color: #f39c12; /* Customize the color */
-    transition: color 0.3s ease;
-  }
-  
-  .home-link:hover i {
-    color: #b16d00; /* Customize hover color */
-  }
-  
-  /*-------------------------RESET BUTTON END --------------------------- */
-  
-  /*--------------------------------Sort by Filter START ------------------------------- */
+}
+
+/* -------------------- Grid layout filter END ------------------------*/
+
+
   
   
-  .filtering {
-    position: fixed;
-    z-index: 999;
-    bottom: 60px;
-    right: 20px;
-    background: #1e1e1e; /* Tiefes Dunkelgrau für einen modernen Look */
-    border-radius: 12px; /* Größere abgerundete Ecken */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Tieferer, weicherer Schatten */
-    padding: 12px 24px;
-    border-radius: 8px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Leichterer Schatten */
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  .filtering select {
-    background: #2a2a2a; /* Dunkleres Grau für das Dropdown */
-    color: #e0e0e0; /* Hellerer Text */
-    border: 1px solid #555; /* Dunklere Border */
-    border-radius: 6px; /* Abgerundete Ecken */
-    padding: 8px 12px; /* Innenabstand */
-    width: 100%; /* Volle Breite */
-    transition: background 0.3s ease, border-color 0.3s ease;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  
-  /* Hover-Effekte für die Auswahlkarten */
-  .filtering:hover {
-    background: #0e0e0e; /* Etwas hellerer Hintergrund beim Hover */
-    transform: translateY(-4px); /* Leichtes Anheben */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Intensivierter Schatten beim Hover */
-  }
-  
-  
-  /* Styling for the label */
-  .filtering label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: 600; /* Bold for the label */
-    font-family: 'Poppins', sans-serif;
-    color: white;
-  }
-  
-  
-  /* Optional: Styling for the options in the select */
-  .filtering option {
-    background: #1e1e1e; /* Tiefes Dunkelgrau für einen modernen Look */
-    border-radius: 12px; /* Größere abgerundete Ecken */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Tieferer, weicherer Schatten */
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  /*--------------------------------Sort by Filter START ------------------------------- */
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /* ----------------------------------- */
-  /* ----------------------------------- */
-  /* ---- Holo CSS BUILD START---------- */
-  /* ----------------------------------- */
-  /* ----------------------------------- */
+
+/* -------------------- Grid layout filter END ------------------------*/
+/* -------------------- Grid layout filter END ------------------------*/
+/* -------------------- Grid layout filter END ------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   /* -------------------- CARDS GRID CSS BEGINNT AB HIER ----------- */
   .main-grid {
-    height: 710px;
-    margin-top: 270px;
     max-width: 100%;
     padding: 29px;
     z-index: 6;
-    position: absolute;
-  }
-  
-  
-  /* Tablet View (max-width: 1024px) */
-  @media screen and (max-width: 1024px) {
-    .main-grid {
-      height: 710px;
-      margin-top: -53px;
-      max-width: 100%;
-      padding: 0px;
-    }
+    position: relative;
   }
   
   
   /* Mobile View (max-width: 480px) */
   @media screen and (max-width: 480px) {
     .main-grid {
-      height: 710px;
-      margin-top: -53px;
       max-width: 100%;
       padding: 0px;
     }
@@ -367,14 +327,9 @@
   /* Card-grid container */
   .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Default to 2 columns */
   grid-column-gap: 14px;
   grid-row-gap: 14px;
-  transform-style: preserve-3d;
-  height: 100%;
   margin: auto;
-  position: relative;
-  min-width: 260px;
   transition: transform 0.2s ease;
   }
   
@@ -383,9 +338,8 @@
   /* Standard Layout (PC View, ab 1024px und aufwärts) */
   .card-grid.layout-1 {
     grid-template-columns: repeat(4, 1fr);
-    width: 84%;
-    height: 99%;
-    padding: 35px;
+    width: 80%;
+    height: 100%;
   }
   
   .card-grid.layout-2 {
@@ -404,20 +358,18 @@
   @media screen and (max-width: 1024px) {
     .card-grid.layout-1 {
       grid-template-columns: repeat(3, 1fr);
+      padding: 25px;
     }
   
     .card-grid.layout-2 {
       grid-template-columns: repeat(6, 1fr);
-      height: 30%;
-      padding: 39px;
+      padding: 25px;
     }
   
     .card-grid.layout-3 {
       grid-template-columns: repeat(4, 1fr);
-      height: 244px;
-      margin-top: -40px;
       max-width: 85%;
-      padding: 0px;
+      padding: 25px;
     }
   }
   
@@ -425,26 +377,88 @@
   @media screen and (max-width: 480px)  {
     .card-grid.layout-1 {
       grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+      min-width: 320px;
+      max-width: 100%;
+      position: relative;
     }
   
     .card-grid.layout-2 {
-      grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
-      height: 780px;
-      margin-top: 4px;
+      grid-template-columns: repeat(2, 1fr);
       max-width: 100%;
-      padding: 29px;
+      position: relative;
     }
   
     .card-grid.layout-3 {
       grid-template-columns: repeat(1, 1fr); /* 1 Spalte */
-      height: 554px;
-      margin-top: 31px;
       max-width: 100%;
-      padding: 64px;
     }
   }
   
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+  /* ---- Portfolio Grid---------- */
+  /* ----------------------------------- */
+  /* ----------------------------------- */
   
   /*-- class = card holographic  START --*/
   
@@ -481,21 +495,12 @@
   
   
   .holographic__section {
-    height: 100%;
-    max-width: none;
-    object-fit: cover;
-    position: relative;
     transform: none;
-    width: 100%;
   }
   
   .card__effects {
-    background-color: #000000;
     cursor: crosshair;
     height: 100%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
   }
   
   .card_images {
@@ -506,12 +511,10 @@
     transform: none;
     width: 100%;
   }
+
+
   
-  
-  
-  
-  
-  /* Projekt Hover Block TEXT by hover on Cards */
+  /*------------- Projekt Hover Block TEXT by hover on Cards START--------- */
   .project-hover-block {
     align-items: center;
     bottom: 0;
@@ -521,14 +524,11 @@
     font-size: 13px; /* Default font size */
     font-weight: 500;
     justify-content: center;
-    left: 0;
     letter-spacing: 5px;
     line-height: 14px;
     opacity: 0;
     padding-bottom: 24px;
-    pointer-events: none; /* Ensures hover events pass through */
     position: absolute;
-    right: 0;
     text-align: center;
     text-transform: uppercase;
     top: 0;
@@ -558,6 +558,7 @@
   .holographic__section:hover .project-hover-block::before {
     opacity: 1;
   }
+   /*------------- Projekt Hover Block TEXT by hover on Cards ENDE --------- */
   
 
 
@@ -579,10 +580,11 @@
 .carousel-wrapper {
     width: 100%;
     height: 85vh;
-    position: absolute;
+    position: relative;
     overflow: hidden;
     background-color: black;
   }
+
   
   /* Styles for each slide */
   .slide {
@@ -597,6 +599,15 @@
     opacity: 1; /* Sichtbar */
     z-index: 1; /* Sicherstellen, dass die aktive Slide oben ist */
   }
+
+.dark-mode .carousel-wrapper {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
+}
   
   /* Slide content */
   .slide-content {
@@ -627,17 +638,26 @@
   
   .text-overlay {
     align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Hintergrundfarbe der Overlay */
     display: flex;
     height: 100%;
     justify-content: center;
-    left: 0;
     overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
     position: absolute;
-    top: 0;
     width: 100%;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
   }
   
+  .dark-mode .text-overlay {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+  }
+
   .text-overlay::after {
     content: "";
     position: absolute;
@@ -645,16 +665,11 @@
     left: 0;
     width: 100%;
     height: calc(100%); /* Höhe des Gradient-Overlays bis zur Mitte des Sliders */
-    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
     pointer-events: none; /* Damit es keine Interaktionen blockiert */
   }
   
-  
-  
-  
   .dark-mode .text-overlay::after {
-    background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
-    color: #ffffff; /* Dark mode text color */
+  color: #ffffff; /* Dark mode text color */
   }
   
   /* Text content */
@@ -663,7 +678,6 @@
     width: 68%;
     padding: 191px;
     position: relative;
-    color: var(--white);
     z-index: 5;
     top: -85px;
   }
@@ -681,7 +695,7 @@
   }
   
   .dark-mode .text-content-slider {
-    color: var(--black);
+    color: #000;
   }
   
   @media screen and (max-width: 771px) {
@@ -710,18 +724,21 @@
     color: var(--white);
   }
   
+
+
   .title-slider {
-    font-family: 'Poppins', sans-serif;
-    font-size: 4em;
-    font-weight: 700;
-    margin: 0 0 20px;
-    color: var(--black);
-    z-index: 5;
+    font-family: "Bebas_Neue", sans-serif; /* Font Family */
+    font-size: 9em; /* Schriftgröße */
+    font-weight: 700; /* Schriftstärke */
+    margin: 0 0 20px; /* Margen */
+    color: var(--black); /* Textfarbe */
   }
   
+
+
   @media screen and (max-width: 901px) {
     .title-slider {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Bebas_Neue";
       font-size: 4em;
       font-weight: 700;
       margin: 0 0 20px;
@@ -736,11 +753,25 @@
   }
   
   .description-slider {
-    font-size: 1rem;
+    font-size: 18px;
     color: var(--black);
     line-height: 28.6px;
-    z-index: 5;
+    position: absolute;
+    right: 15%;
+    left: 15%;
   }
+
+  @media screen and (max-width:771px) {
+    .description-slider {
+      font-size: 1rem;
+      line-height: 26.6px;
+      position: absolute;
+      right: 10%;
+      left: 15%;
+      margin-top: -259px;
+    }
+  }
+
   
   .dark-mode .description-slider {
     color: var(--white);
@@ -775,82 +806,89 @@
     -webkit-text-stroke: 2px white; /* Apply a white stroke around the text */
   }
   
-  /* Navigation styling */
+
+
+/* Navigation Styling */
+.navigation {
+  align-items: center;
+  top: 50%; /* Zentriert die Navigation vertikal innerhalb des Containers */
+  display: flex;
+  flex-direction: column; /* Vertikale Ausrichtung der Navigation */
+  justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+  left: 50px; /* Abstand vom linken Rand des Containers */
+  position: absolute;
+  transform: translateY(-50%); /* Korrektur der vertikalen Verschiebung */
+  z-index: 5;
+}
+
+@media screen and (max-width: 771px) {
   .navigation {
-    align-items: center;
-    bottom: 678px; /* Abstand vom unteren Rand des Containers */
-    display: flex;
-    flex-direction: row;
-    justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
-    left: 50%; /* Horizontale Zentrierung */
-    position: absolute;
-    transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
-    z-index: 5;
+      left: 20px; /* Anpassung des Abstands für kleinere Bildschirme */
+      top: 50%;
   }
-  
-  @media screen and (max-width: 771px) {
-    .navigation {
-      align-items: center;
-      bottom: 496px; /* Abstand vom unteren Rand des Containers */
-      display: flex;
-      flex-direction: row;
-      justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
-      left: 50%; /* Horizontale Zentrierung */
-      position: absolute;
-      transform: translateX(-50%); /* Korrektur der horizontalen Verschiebung */
-      z-index: 5;
-    }
+}
+
+/* Navigation Dots */
+.nav-dot {
+  background: rgb(0, 0, 0);
+  border-radius: 50%; /* Runde Form */
+  cursor: pointer;
+  display: block;
+  width: 12px; /* Größere Dots, da vertikal */
+  height: 12px; 
+  margin: 10px 0; /* Vertikaler Abstand zwischen den Dots */
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transition: all 0.3s ease;
+  will-change: transform;
+}
+
+.dark-mode .nav-dot {
+  background: rgb(255, 255, 255);
+}
+/* Aktive Dot */
+.nav-dot.active {
+  background: #ffffff; /* Helleres Weiß für die aktiven Dots */
+  width: 14px; /* Etwas größer bei Aktivierung */
+  height: 65px; /* Länglicher Balken für aktiven Zustand */
+  border-radius: 20px; /* Abgerundete Ecken */
+ }
+
+/* Ladeeffekt */
+.nav-dot.loading::before {
+  animation: progressBar 10s linear forwards;
+  background: #000;
+  content: '';
+  display: block;
+  width: 100%; /* Passt zur vertikalen Ausrichtung */
+  height: 100%;
+  top: 0;
+  position: absolute;
+  left: 0;
+  transform-origin: top; /* Ausrichtung für vertikale Ladeanimation */
+  transform: scaleY(0);
+  will-change: transform;
+  border-radius: 20px; /* Anpassung für die Form des aktiven Dot */
+}
+
+/* Hover-Effekt */
+.nav-dot:hover {
+  background: #000;
+  transform: scale(1.2); /* Leichtes Vergrößern bei Hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Weicher roter Schein */
+}
+
+/* Keyframes für Ladeanimation */
+@keyframes progressBar {
+  0% {
+      transform: scaleY(0) translateZ(0);
   }
-  
-  .nav-dot {
-    background: #ffffff80;
-    border-radius: 0.25rem;
-    cursor: crosshair;
-    display: block;
-    height: 8px;
-    margin: 0 5px;
-    overflow: hidden;
-    padding: 3px;
-    position: relative;
-    text-indent: -9999px;
-    transition: width 0.3s ease, opacity 1s ease;
-    width: 24px;
-    will-change: transform;
+  100% {
+      transform: scaleY(1) translateZ(0);
   }
-  
-  .nav-dot.active {
-    background: #ffffff80;
-    width: 100px;
-  }
-  
-  .nav-dot.loading::before {
-    animation: progressBar 10s linear forwards;
-    background: var(--Red);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transform-origin: left;
-    transform: scaleX(0);
-    width: 100%;
-    will-change: transform;
-  }
-  
-  @keyframes progressBar {
-    0% {
-        transform: scaleX(0) translateZ(0);
-    }
-    100% {
-        transform: scaleX(1) translateZ(0);
-    }
-  }
-  
-  .nav-dot:hover {
-    background: var(--Red);
-  }
-  
+}
+
   
   
   /*------------------------------------------------------------*/
