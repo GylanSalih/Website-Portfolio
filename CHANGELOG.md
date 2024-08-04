@@ -13,8 +13,8 @@
 
 - [x] Looking to install a Pokémon holo effect instead of the normal glare but need more experience.
 - [ ] Too static—needs more effects and ambiance.
-- [ ] Extrem Laggy portfolio -> Perfomance Update needed!!
-    - [ ] Organize img files -> Reduce Size
+- [x] Extrem Laggy portfolio -> Perfomance Update needed!!
+    - [x] Organize img files -> Reduce Size
     - [x] chrome grid not working -> reason = Dark-mode / Custom cursor script // SOLVED
 
 
@@ -44,33 +44,39 @@ Lookbook:
 
 ### Updates / Fixes:
 
+Natürlich, hier sind die korrigierten Texte für die Update-Logs:
+
 **0.0.15 - Latest Updates**
-- Portfolio holo update
-- filter with diffrent possibilities
-- js in smaller segments -> for more understanding 
-- css deleted some unnecessary codes
-- custom cursor, Dark-mode script perfomance
-- hamburger js/css perfomance
-- Filter bar for the portfolio page
-- footer
-- improved the whole code
+
+- Updated portfolio holographic effect
+- Added filter with various options
+- JavaScript code refactored into smaller segments for better readability
+- Cleaned up unnecessary CSS code
+- Enhanced custom cursor and dark-mode script performance
+- Improved performance of hamburger menu (JS/CSS)
+- Added filter bar to the portfolio page
+- Added footer
+- Overall code improvements
 
 **0.0.14 - Previous Updates**
-- Project File management for better / cleaner Organisation
-- Style.css in multiple Parts
-- implementation of sass (learned something new #Newbie)
+
+- Improved project file management for cleaner organization
+- Split style.css into multiple parts
+- Implemented SASS (learned something new #Newbie)
 
 **0.0.13 - Previous Updates**
-- Cursor Update / Clicking, Following, Circle Function
-- Dark-Mode Json Lottie file by switching
-- working currently on holographic cards / updating soon
-- transparent header with smooth transition
+
+- Updated cursor functionality: clicking, following, and circle effect
+- Added dark-mode JSON Lottie file with switching functionality
+- Working on updating holographic cards (coming soon)
+- Implemented transparent header with smooth transition
 
 **0.0.12 - Previous Updates**
-- Improved CSS commentary.
-- New landing page slider with dark mode, responsive design, and dots functionality.
-- Custom cursor implementation (cursor hide feature).
-- New GIFs for the landing page.
+
+- Improved CSS documentation
+- New landing page slider with dark mode, responsive design, and dot navigation
+- Implemented custom cursor with hide feature
+- Added new GIFs to the landing page
 
 **0.0.11 - Previous Updates**
 - Integrated Quicksand font locally.

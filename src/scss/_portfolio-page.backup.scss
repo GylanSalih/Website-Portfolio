@@ -1,0 +1,2124 @@
+:root {
+  --primary: rgb(66, 219, 240);
+  --link-hover: rgb(224, 241, 255);
+  --galaxy: url("/img/galaxy.jpg");
+  --trainerbg: url("/img/trainerbg.jpg");
+  --Vmaxbg: url("/img/vmaxbg.jpg");
+  --Vstar: url("/img/stylish.png");
+  --rainbow: url("/img/rainbow.jpg");
+  --illusion: url("/img/illusion.png");
+  --glitter: url("img/glitter.png");
+  --metal: url("/img/metal.png");
+  --illusion2: url("/img/illusion2.png");
+  --birthday1: url("/img/151/birthday-holo.webp");
+  --birthday2: url("/img/151/birthday-holo-dank.webp");
+  --birthday3: url("/img/151/birthday-holo-dank-2.webp");
+  --iri1: url("/img/151/iri-1.webp");
+  --cosmosbg: url("/img/cosmos.png");
+}
+
+.card__shine {
+  --grain: url("/img/grain.webp");
+  --space: 6%;
+  --angle: 133deg;
+  --imgsize: 500px;
+  --red: #f80e7b;
+  --yel: #eedf10;
+  --gre: #21e985;
+  --blu: #0dbde9;
+  --vio: #c929f1;
+}
+
+.card {
+  --mx: 50%;
+  --my: 50%;
+  --s: 1;
+  --o: 1;
+  --pos: 50% 50%;
+  --posx: 50%;
+  --posy: 50%;
+  --hyp: 0;
+  --galaxybg: center 740px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------FILTER START------------------------------- */
+
+/* For the Folie Choose */
+
+/* Adjusting PNL_options to fit inside the grid layout */
+.PNL_options {
+margin-left: auto;
+}
+
+
+/* Hover effects to maintain consistency */
+.PNL_options:hover {
+background: #0e0e0e; 
+transform: translateY(-2px); /* Slight lift on hover */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); 
+}
+
+/* Display the options panel normally */
+.PNL_options.show {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* Styling for the dropdown menu within the panel */
+.PNL_options select {
+background: #333;
+color: #e0e0e0;
+border: 1px solid #444;
+border-radius: 6px;
+padding: 8px 12px;
+font-family: "Poppins", sans-serif;
+transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+/* Styling for dropdown options */
+.PNL_options option {
+background: #1e1e1e; 
+color: #e0e0e0;
+}
+
+/* Focus styling for the dropdown */
+.PNL_options select:focus {
+outline: none; 
+background: #333; 
+border-color: #777;
+}
+
+/* Responsive adjustments if necessary */
+@media screen and (max-width: 1024px) {
+.PNL_options {
+  width: 100%; /* Make the options panel take full width on smaller screens */
+  margin-top: 8px;
+}
+}
+
+@media screen and (max-width: 480px) {
+.PNL_options {
+  width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Grid layout filter START ------------------------*/
+
+#grid-wrapper {
+width: 100%;
+display: flex;
+justify-content: center;
+position: relative;
+background-color: #ffffff;
+z-index: 2;
+}
+
+.dark-mode #grid-wrapper {
+width: 100%;
+display: flex;
+justify-content: center;
+position: relative;
+background-color: #000000;
+z-index: 2;
+}
+
+.grid-section {
+background-color: rgba(50, 50, 50, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 0.3rem;
+padding: 0.5rem;
+display: flex;
+gap: 0.5rem;
+align-items: center;
+flex-wrap: nowrap;
+overflow-x: auto;
+z-index: 66;
+justify-content: space-between;
+}
+
+
+.example-button {
+background-color: #33333300; /* Matte black background */
+border: 1px solid #444; /* Darker border to match the background */
+border-radius: 0.3rem;
+color: #b16d00; /* Button text color */
+padding: 0.4rem 1.2rem;
+cursor: pointer;
+display: flex;
+align-items: center;
+transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.example-button.active {
+border-color: #b16d00; /* Highlight color for active state */
+}
+
+.example-button:hover,
+.example-button:focus {
+background-color: #444; /* Darker shade on hover */
+border-color: #b16d00; /* Highlight color on hover */
+}
+
+.example-button > img {
+height: 1.25rem;
+width: 1.25rem;
+}
+
+/*------------------------- FILTERING DROPDOWN STYLES -------------------------*/
+
+.filtering {
+margin-left: auto; /* Align dropdown to the right */
+}
+
+.filtering label {
+color: #ffffff; /* White text for labels */
+font-size: 1em;
+margin-right: 8px; /* Spacing between label and dropdown */
+}
+
+.filtering select {
+background: #333; /* Matte black background */
+color: #e0e0e0; /* Light text color for contrast */
+border: 1px solid #444; /* Darker border to match the background */
+border-radius: 6px;
+padding: 8px 12px;
+font-family: 'Poppins', sans-serif;
+transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.filtering select:focus {
+outline: none;
+border-color: #b16d00; /* Highlight color on focus */
+background: #222; /* Slightly darker background on focus */
+}
+
+/*------------------------- MEDIA QUERIES -------------------------*/
+
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+.grid-section {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filtering {
+  margin-left: 0;
+  margin-top: 8px; /* Margin for mobile view */
+  width: 100%; /* Full width */
+  text-align: center; /* Center align */
+}
+}
+
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+.filtering {
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+.grid-section {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+}
+
+/* -------------------- Grid layout filter END ------------------------*/
+
+
+
+
+
+/* -------------------- Grid layout filter END ------------------------*/
+/* -------------------- Grid layout filter END ------------------------*/
+/* -------------------- Grid layout filter END ------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- CARDS GRID CSS BEGINNT AB HIER ----------- */
+.main-grid {
+  max-width: 100%;
+  padding: 29px;
+  z-index: 6;
+  position: relative;
+  margin: 0px 0 450px;
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .main-grid{
+  max-width: 100%;
+  padding: 29px;
+  z-index: 6;
+  position: relative;
+  margin: 0px 0 450px;
+  background-color: rgb(0, 0, 0);
+}
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .main-grid {
+    max-width: 100%;
+    padding: 0px;
+  }
+}
+
+/* Card-grid container */
+.card-grid {
+display: grid;
+grid-column-gap: 14px;
+grid-row-gap: 14px;
+margin: auto;
+transition: transform 0.2s ease;
+}
+
+
+
+/* Standard Layout (PC View, ab 1024px und aufwärts) */
+.card-grid.layout-1 {
+  grid-template-columns: repeat(4, 1fr);
+  width: 80%;
+  height: 100%;
+}
+
+.card-grid.layout-2 {
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  height: 30%;
+}
+
+.card-grid.layout-3 {
+  grid-template-columns: repeat(8, 1fr);
+  width: 100%;
+  height: 30%;
+}
+
+/* Tablet View (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .card-grid.layout-1 {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px;
+  }
+
+  .card-grid.layout-2 {
+    grid-template-columns: repeat(6, 1fr);
+    padding: 25px;
+  }
+
+  .card-grid.layout-3 {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 85%;
+    padding: 25px;
+  }
+}
+
+/* Handy View (max-width: 480px) */
+@media screen and (max-width: 480px)  {
+  .card-grid.layout-1 {
+    grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
+    min-width: 320px;
+    max-width: 100%;
+    position: relative;
+  }
+
+  .card-grid.layout-2 {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    position: relative;
+  }
+
+  .card-grid.layout-3 {
+    grid-template-columns: repeat(1, 1fr); /* 1 Spalte */
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* ---- Portfolio Grid---------- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+/*-- class = card holographic  START --*/
+
+/* ohne das funktioniert holo nicht */
+.holographic * {
+  width: 100%;
+  display: grid;
+  grid-area: 1 / 1;
+  border-radius: var(--radius);
+  image-rendering: optimizeQuality;
+  appearance: none;
+  border: none;
+  padding: 0;
+}
+
+/* Glow Border At the Card */
+.card.holographic {
+  --radius: 4.55% / 3.5%;
+  z-index: calc(var(--s) * 100);
+  transform: translateZ(.1px);
+  will-change: transform, visibility;
+  position: relative; /* Ensure positioning context for child elements */
+  overflow: hidden; /* Hide overflow from child elements */
+  cursor: crosshair;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.card.interacting.holographic {
+  z-index: calc(var(--s) * 120);
+}
+
+
+.holographic__section {
+  transform: none;
+}
+
+.card__effects {
+  cursor: crosshair;
+  height: 100%;
+}
+
+.card_images {
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  position: relative;
+  transform: none;
+  width: 100%;
+}
+
+
+
+/*------------- Projekt Hover Block TEXT by hover on Cards START--------- */
+.project-hover-block {
+  align-items: center;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  font-family: Quicksand, sans-serif;
+  font-size: 13px; /* Default font size */
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 5px;
+  line-height: 14px;
+  opacity: 0;
+  padding-bottom: 24px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Pseudo-Element für Hover-Effekt */
+.project-hover-block::before {
+  content: '';
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none; /* Ensures hover events pass through */
+  position: absolute;
+  top: 0;
+  transition: opacity 0.13s ease;
+  width: 100%;
+}
+
+/* Hover-Effekt für Project Hover Block */
+.holographic__section:hover .project-hover-block {
+  opacity: 1;
+}
+
+/* Hover-Effekt für Pseudo-Element */
+.holographic__section:hover .project-hover-block::before {
+  opacity: 1;
+}
+ /*------------- Projekt Hover Block TEXT by hover on Cards ENDE --------- */
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider Start                                  */
+/*------------------------------------------------------------*/
+
+
+
+/* Slide Container */
+.carousel-wrapper {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+
+/* Styles for each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Active slide */
+.slide.active {
+  opacity: 1; /* Sichtbar */
+  z-index: 1; /* Sicherstellen, dass die aktive Slide oben ist */
+}
+
+.dark-mode .carousel-wrapper {
+width: 100%;
+height: 85vh;
+position: relative;
+overflow: hidden;
+background-color: black;
+background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.096)); /* Intensiverer Gradient */
+}
+
+/* Slide content */
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Slide image */
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.text-overlay {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+}
+
+.dark-mode .text-overlay {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden; /* Verhindert, dass der Gradient über den Container hinaus sichtbar ist */
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0)); /* Intensiverer Gradient */
+}
+
+.text-overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100%); /* Höhe des Gradient-Overlays bis zur Mitte des Sliders */
+  pointer-events: none; /* Damit es keine Interaktionen blockiert */
+}
+
+.dark-mode .text-overlay::after {
+color: #ffffff; /* Dark mode text color */
+}
+
+/* Text content */
+.text-content-slider {
+  text-align: left;
+  width: 68%;
+  padding: 191px;
+  position: relative;
+  z-index: 5;
+  top: -85px;
+}
+
+@media screen and (max-width: 771px) {
+  .title-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+.dark-mode .text-content-slider {
+  color: #000;
+}
+
+@media screen and (max-width: 771px) {
+  .dark-mode .text-content-slider {
+    text-align: left;
+    width: 68%;
+    padding: 191px;
+    position: relative;
+    color: var(--white);
+    z-index: 5;
+    top: -85px;
+  }
+}
+
+/* Positionierung der Textinhalte */
+.subtitle-slider {
+  font-size: 12px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  color: var(--black);
+  z-index: 5;
+}
+
+.dark-mode .subtitle-slider {
+  color: var(--white);
+}
+
+
+
+.title-slider {
+  font-family: "Bebas_Neue", sans-serif; /* Font Family */
+  font-size: 9em; /* Schriftgröße */
+  font-weight: 700; /* Schriftstärke */
+  margin: 0 0 20px; /* Margen */
+  color: var(--black); /* Textfarbe */
+}
+
+
+
+@media screen and (max-width: 901px) {
+  .title-slider {
+    font-family: "Bebas_Neue";
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: var(--black);
+    z-index: 5;
+    line-height: 62.5px;
+  }
+}
+
+.dark-mode .title-slider {
+  color: var(--white);
+}
+
+.description-slider {
+  font-size: 18px;
+  color: var(--black);
+  line-height: 28.6px;
+  position: absolute;
+  right: 15%;
+  left: 15%;
+}
+
+@media screen and (max-width:771px) {
+  .description-slider {
+    font-size: 1rem;
+    line-height: 26.6px;
+    position: absolute;
+    right: 10%;
+    left: 15%;
+    margin-top: -259px;
+  }
+}
+
+
+.dark-mode .description-slider {
+  color: var(--white);
+}
+
+.background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px rgb(0, 0, 0); /* Apply a white stroke around the text */
+}
+
+
+.dark-mode .background-text-slider {
+  bottom: 122px;
+  color: transparent; /* Make the inside of the text transparent */
+  font-family: 'Poppins', sans-serif;
+  font-size: 195px;
+  font-weight: 700;
+  left: 80%; /* Center the text horizontally */
+  font-family: 'Poppins';
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+  -webkit-text-stroke: 2px white; /* Apply a white stroke around the text */
+}
+
+
+
+/* Navigation Styling */
+.navigation {
+align-items: center;
+top: 50%; /* Zentriert die Navigation vertikal innerhalb des Containers */
+display: flex;
+flex-direction: column; /* Vertikale Ausrichtung der Navigation */
+justify-content: center; /* Zentriert die Navigation innerhalb des Containers */
+left: 50px; /* Abstand vom linken Rand des Containers */
+position: absolute;
+transform: translateY(-50%); /* Korrektur der vertikalen Verschiebung */
+z-index: 5;
+}
+
+@media screen and (max-width: 771px) {
+.navigation {
+    left: 20px; /* Anpassung des Abstands für kleinere Bildschirme */
+    top: 50%;
+}
+}
+
+/* Navigation Dots */
+.nav-dot {
+background: rgb(0, 0, 0);
+border-radius: 50%; /* Runde Form */
+cursor: pointer;
+display: block;
+width: 12px; /* Größere Dots, da vertikal */
+height: 12px; 
+margin: 10px 0; /* Vertikaler Abstand zwischen den Dots */
+overflow: hidden;
+padding: 0;
+position: relative;
+transition: all 0.3s ease;
+will-change: transform;
+}
+
+.dark-mode .nav-dot {
+background: rgb(255, 255, 255);
+}
+/* Aktive Dot */
+.nav-dot.active {
+background: #ffffff; /* Helleres Weiß für die aktiven Dots */
+width: 14px; /* Etwas größer bei Aktivierung */
+height: 65px; /* Länglicher Balken für aktiven Zustand */
+border-radius: 20px; /* Abgerundete Ecken */
+}
+
+/* Ladeeffekt */
+.nav-dot.loading::before {
+animation: progressBar 10s linear forwards;
+background: #000;
+content: '';
+display: block;
+width: 100%; /* Passt zur vertikalen Ausrichtung */
+height: 100%;
+top: 0;
+position: absolute;
+left: 0;
+transform-origin: top; /* Ausrichtung für vertikale Ladeanimation */
+transform: scaleY(0);
+will-change: transform;
+border-radius: 20px; /* Anpassung für die Form des aktiven Dot */
+}
+
+/* Hover-Effekt */
+.nav-dot:hover {
+background: #000;
+transform: scale(1.2); /* Leichtes Vergrößern bei Hover */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Weicher roter Schein */
+}
+
+/* Keyframes für Ladeanimation */
+@keyframes progressBar {
+0% {
+    transform: scaleY(0) translateZ(0);
+}
+100% {
+    transform: scaleY(1) translateZ(0);
+}
+}
+
+
+
+/*------------------------------------------------------------*/
+/* Landing Page Slider ENDE                                   */
+/*------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------- */
+/* ----------------------------------- */
+/* -- FOIL SETTINGS BEGINS HERE !----- */
+/* ----------------------------------- */
+/* ----------------------------------- */
+
+
+/* -------------------- CSS FÜR ALLE Effekte START ------------------------*/
+
+
+.card__shine {
+  display: grid;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateZ(1px);
+  background: transparent;
+  mix-blend-mode: color-dodge;
+  filter: brightness(.85) contrast(2.75) saturate(.65);
+  background-size: cover;
+  background-position: center;
+  opacity: var(--o);
+}
+
+.card__shine:before {
+  grid-area: 1 / 1;
+  transform: translateZ(1px);
+}
+
+.card__shine:after {
+  grid-area: 1 / 1;
+  transform: translateZ(1.2px);
+  border-radius: var(--radius);
+}
+
+
+.card__shine,
+.card__glare {
+  
+  will-change: transform, opacity, background-image, background-size,
+    background-position, background-blend-mode, filter;
+ 
+}
+
+
+.card__glare {
+  transform: translateZ(1.4px);
+  background: radial-gradient(farthest-corner circle at var(--mx) var(--my),
+      rgba(255, 255, 255, .8) 10%, rgba(255, 255, 255, .65) 20%, rgba(0, 0, 0, .5) 90%);
+  mix-blend-mode: overlay;
+  opacity: var(--o);
+}
+
+
+.card__glare.vmax {
+  background: radial-gradient(farthest-corner circle at var(--mx) var(--my),
+      rgba(255, 255, 255, .75) 0%, rgba(99, 99, 99, .35) 45%, rgba(0, 0, 0, 1) 120%);
+}
+
+
+
+
+.card__shine {
+  display: grid;
+  overflow: hidden;
+  z-index: 3;
+  transform: translateZ(1px);
+  background: transparent;
+  mix-blend-mode: color-dodge;
+  filter: brightness(.85) contrast(2.75) saturate(.65);
+  background-size: cover;
+  background-position: center;
+  opacity: var(--o);
+}
+
+.card__shine:before {
+  grid-area: 1 / 1;
+  transform: translateZ(1px);
+}
+
+.card__shine:after {
+  grid-area: 1 / 1;
+  transform: translateZ(1.2px);
+  border-radius: var(--radius);
+}
+/* -------------------- CSS FÜR ALLE Effekte ENDE ------------------------*/
+
+
+
+
+  
+  /* -------------------- rare holo ------------------------*/
+  
+  .card[data-rarity="rare holo"] .card__shine {
+  
+    --space: 1.5%;
+    --h: 21;
+    --s: 70%;
+    --l: 50%;
+    --bars: 4%;
+    --bar-color: rgba(255, 255, 255, 0.6);
+    --bar-bg: rgb(10, 10, 10);
+  
+    clip-path: inset(-5.34% 0% -5.32% -12.59%);
+  
+    background-image:
+      repeating-linear-gradient( 90deg, 
+        hsl(calc(var(--h)*0), var(--s), var(--l)) calc(var(--space)*0), hsl(calc(var(--h)*0), var(--s), var(--l)) calc(var(--space)*1), 
+        black calc(var(--space)*1.001), black calc(var(--space)*1.999),
+        hsl(calc(var(--h)*1), var(--s), var(--l)) calc(var(--space)*2), hsl(calc(var(--h)*1), var(--s), var(--l)) calc(var(--space)*3), 
+        black calc(var(--space)*3.001), black calc(var(--space)*3.999),
+        hsl(calc(var(--h)*2), var(--s), var(--l)) calc(var(--space)*4), hsl(calc(var(--h)*2), var(--s), var(--l)) calc(var(--space)*5), 
+        black calc(var(--space)*5.001), black calc(var(--space)*5.999),
+        hsl(calc(var(--h)*3), var(--s), var(--l)) calc(var(--space)*6), hsl(calc(var(--h)*3), var(--s), var(--l)) calc(var(--space)*7), 
+        black calc(var(--space)*7.001), black calc(var(--space)*7.999),
+        hsl(calc(var(--h)*4), var(--s), var(--l)) calc(var(--space)*8), hsl(calc(var(--h)*4), var(--s), var(--l)) calc(var(--space)*9), 
+        black calc(var(--space)*9.001), black calc(var(--space)*9.999),
+        hsl(calc(var(--h)*5), var(--s), var(--l)) calc(var(--space)*10), hsl(calc(var(--h)*5), var(--s), var(--l)) calc(var(--space)*11), 
+        black calc(var(--space)*11.001), black calc(var(--space)*11.999),
+        hsl(calc(var(--h)*6), var(--s), var(--l)) calc(var(--space)*12), hsl(calc(var(--h)*6), var(--s), var(--l)) calc(var(--space)*13), 
+        black calc(var(--space)*13.001), black calc(var(--space)*13.999),
+        hsl(calc(var(--h)*7), var(--s), var(--l)) calc(var(--space)*14), hsl(calc(var(--h)*7), var(--s), var(--l)) calc(var(--space)*15), 
+        black calc(var(--space)*15.001), black calc(var(--space)*15.999),
+        hsl(calc(var(--h)*8), var(--s), var(--l)) calc(var(--space)*16), hsl(calc(var(--h)*8), var(--s), var(--l)) calc(var(--space)*17), 
+        black calc(var(--space)*17.001), black calc(var(--space)*17.999),
+        hsl(calc(var(--h)*9), var(--s), var(--l)) calc(var(--space)*18), hsl(calc(var(--h)*9), var(--s), var(--l)) calc(var(--space)*19), 
+        black calc(var(--space)*19.001), black calc(var(--space)*19.999),
+        hsl(calc(var(--h)*10), var(--s), var(--l)) calc(var(--space)*20), hsl(calc(var(--h)*10), var(--s), var(--l)) calc(var(--space)*21), 
+        black calc(var(--space)*21.001), black calc(var(--space)*21.999),
+        hsl(calc(var(--h)*11), var(--s), var(--l)) calc(var(--space)*22), hsl(calc(var(--h)*11), var(--s), var(--l)) calc(var(--space)*23), 
+        black calc(var(--space)*23.001), black calc(var(--space)*23.999),
+        hsl(calc(var(--h)*12), var(--s), var(--l)) calc(var(--space)*24), hsl(calc(var(--h)*12), var(--s), var(--l)) calc(var(--space)*25), 
+        black calc(var(--space)*25.001), black calc(var(--space)*25.999),
+        hsl(calc(var(--h)*13), var(--s), var(--l)) calc(var(--space)*26), hsl(calc(var(--h)*13), var(--s), var(--l)) calc(var(--space)*27), 
+        black calc(var(--space)*27.001), black calc(var(--space)*27.999),
+        hsl(calc(var(--h)*14), var(--s), var(--l)) calc(var(--space)*28), hsl(calc(var(--h)*14), var(--s), var(--l)) calc(var(--space)*29), 
+        black calc(var(--space)*29.001), black calc(var(--space)*29.999),
+        hsl(calc(var(--h)*15), var(--s), var(--l)) calc(var(--space)*30), hsl(calc(var(--h)*15), var(--s), var(--l)) calc(var(--space)*31), 
+        black calc(var(--space)*31.001), black calc(var(--space)*31.999)
+      ),
+      repeating-linear-gradient( 90deg, 
+        var(--vio), var(--blu), var(--gre), var(--yel), var(--red), var(--vio)
+      ),
+      repeating-linear-gradient( 90deg, 
+        var(--bar-bg) calc(var(--bars)*2), var(--bar-color) calc(var(--bars)*3), var(--bar-bg) calc(var(--bars)*3.5), var(--bar-color) calc(var(--bars)*4), var(--bar-bg) calc(var(--bars)*5), var(--bar-bg) calc(var(--bars)*12)
+      ),
+      repeating-linear-gradient( 90deg, 
+        var(--bar-bg) calc(var(--bars)*2), var(--bar-color) calc(var(--bars)*3), var(--bar-bg) calc(var(--bars)*3.5), var(--bar-color) calc(var(--bars)*4), var(--bar-bg) calc(var(--bars)*5), var(--bar-bg) calc(var(--bars)*9)
+      ),
+      radial-gradient(
+        farthest-corner circle 
+          at var(--mx) var(--my), 
+          rgba(230, 230, 230, 0.85) 0%, 
+          rgba(200, 200, 200, .1) 25%, 
+          rgb(0, 0, 0) 90%
+        );
+  
+    background-blend-mode: soft-light, soft-light, screen, overlay;
+    background-position: center, calc(((50% - var(--posx)) * 25) + 50%) center, calc(var(--posx)*-1.2) var(--posy), var(--pos), center;
+    background-size: 100px 100px, 200% 200%, 237% 237%, 195% 195%, 120% 120%;
+  
+    filter: brightness(calc((var(--hyp) + 0.7)*0.7)) contrast(3) saturate(.35);
+  
+  }
+  
+  .card[data-rarity="rare holo"] .card__glare.svelte-y0attf {
+
+    background: radial-gradient(
+        farthest-corner circle at var(--mx) var(--my),
+        rgba(255, 255, 255, 0.8) 10%, 
+        rgba(255, 255, 255, 0.6) 35%, 
+        rgba(0, 0, 0, 1) 85%
+    );
+  }
+
+  /* -------------------- rare holo galaxy ------------------------*/
+  
+  .card[data-rarity="rare holo galaxy"] .card__glare {
+    
+    background-image:
+    radial-gradient( 
+      farthest-corner circle 
+      at var(--mx) var(--my), 
+      rgba(222, 245, 250, 0.7) 10%, 
+      rgba(255, 255, 255, 0.5) 20%, 
+      rgba(0, 0, 0, 0.5) 90% 
+      );
+      
+  }
+  
+  .card[data-rarity="rare holo"]:not([data-gallery="true"]) .card__glare:after,
+  .card[data-rarity="rare holo galaxy"] .card__glare:after {
+
+    content: "";
+   /* clip-path: inset(11.5% 8.5% 44.5% 8.5%); */
+    inset: -14.97% -6.17% -2.65% -13.62%;
+    
+    background-image: radial-gradient(
+      rgb(60, 60, 60) 5%,
+      rgba(0, 0, 0, 0.73) 35%,
+      rgba(0, 0, 0) 100%
+    );
+  }
+  
+  
+  .card[data-rarity="rare holo galaxyFullshine"] .card__shine {
+  
+    --space: 4%;
+  
+    /* clip-path: inset( 11.5% 8.5% 44.5% 8.5% ); */
+  
+    background-image: 
+      var(--galaxy),
+      url(''),
+      url(''), 
+      repeating-linear-gradient(
+        82deg, 
+        rgb(219, 204, 86) calc(var(--space)*1), 
+        rgb(121, 199, 58) calc(var(--space)*2), 
+        rgb(58, 192, 183) calc(var(--space)*3), 
+        rgb(71, 98, 207) calc(var(--space)*4), 
+        rgb(170, 69, 209) calc(var(--space)*5), 
+        rgb(255, 90, 180) calc(var(--space)*6), 
+        rgb(255, 90, 180) calc(var(--space)*7), 
+        rgb(170, 69, 209) calc(var(--space)*8), 
+        rgb(71, 98, 207) calc(var(--space)*9), 
+        rgb(58, 192, 183) calc(var(--space)*10), 
+        rgb(121, 199, 58) calc(var(--space)*11), 
+        rgb(219, 204, 86) calc(var(--space)*12) 
+      ), 
+      radial-gradient( 
+        farthest-corner circle 
+        at var(--mx) var(--my), 
+        rgba(255, 255, 255, 0.6) 5%, 
+        rgba(150, 150, 150, .3) 40%, 
+        rgb(0, 0, 0) 100% 
+    );
+  
+    background-blend-mode: color-dodge, color-burn, saturation, screen;
+    background-position: var(--galaxybg, cover), var(--galaxybg, cover), var(--galaxybg, cover), calc(((50% - var(--posx)) * 2.5) + 50%) calc(((50% - var(--posy)) * 2.5) + 50%), center;
+    background-size: cover, cover, cover, 400% 900%, cover;
+  
+    filter: brightness(.75) contrast(1.2) saturate(1.5);
+    mix-blend-mode: color-dodge;
+  
+  }
+  
+  .card[data-rarity="rare holo galaxy"] .card__shine {
+  
+    --space: 4%;
+  
+    clip-path: inset(-4.59% -3.53% -1.76% -6.48%);
+  
+    background-image: 
+    var(--birthday2),
+    var(--galaxy),
+    var(--cosmosbg),
+    repeating-linear-gradient(
+      82deg, 
+      rgb(208, 208, 208) calc(var(--space)*1), 
+      rgb(190, 204, 179) calc(var(--space)*2), 
+      rgb(195, 213, 211) calc(var(--space)*3), 
+      rgb(71, 98, 207) calc(var(--space)*4), 
+      rgb(0, 0, 0) calc(var(--space)*5), 
+      rgb(0, 0, 0) calc(var(--space)*6), 
+      rgb(255, 90, 180) calc(var(--space)*7), 
+      rgb(170, 69, 209) calc(var(--space)*8), 
+      rgb(71, 98, 207) calc(var(--space)*9), 
+      rgb(226, 240, 239) calc(var(--space)*10), 
+      rgb(121, 199, 58) calc(var(--space)*11), 
+      rgb(255, 226, 1) calc(var(--space)*12) 
+    ), 
+    radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my), 
+      rgba(255, 255, 255, 0.6) 5%, 
+      rgba(150, 150, 150, .3) 40%, 
+      rgb(0, 0, 0) 100%
+    );
+  
+  
+    background-blend-mode: color-dodge, color-burn, saturation, screen;
+    background-position: var(--galaxybg, cover), var(--galaxybg, cover), var(--galaxybg, cover), calc(((50% - var(--posx)) * 2.5) + 50%) calc(((50% - var(--posy)) * 2.5) + 50%), center;
+    background-size: cover, cover, cover, 400% 900%, cover;
+  
+    filter: brightness(.75) contrast(1.2) saturate(1.5);
+    mix-blend-mode: color-dodge;
+  
+  }
+  
+
+  
+
+
+
+
+
+
+
+   /* -------------------- rare holo v check------------------------*/
+  
+  .card[data-rarity*="rare holo v1"] .card__shine,
+  .card[data-rarity*="rare holo v1"] .card__shine:after {
+  
+    --space: 5%;
+    --angle: 133deg;
+    --imgsize: 500px;
+  
+    background-image:
+      var(--grain),
+      repeating-linear-gradient( 0deg, 
+        rgb(255, 119, 115) calc(var(--space)*1), 
+        rgba(255,237,95,1) calc(var(--space)*2), 
+        rgba(168,255,95,1) calc(var(--space)*3), 
+        rgba(131,255,247,1) calc(var(--space)*4), 
+        rgba(120,148,255,1) calc(var(--space)*5), 
+        rgb(216, 117, 255) calc(var(--space)*6), 
+        rgb(255, 119, 115) calc(var(--space)*7)
+      ),
+      repeating-linear-gradient( 
+        var(--angle), 
+        #0e152e 0%, 
+        hsl(180, 10%, 60%) 3.8%, 
+        hsl(180, 29%, 66%) 4.5%, 
+        hsl(180, 10%, 60%) 5.2%, 
+        #0e152e 10% , 
+        #0e152e 12% 
+        ),
+      radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(0, 0, 0, .1) 12%, 
+        rgba(0, 0, 0, .15) 20%, 
+        rgba(0, 0, 0, .25) 120%
+      );
+  
+    background-blend-mode: screen, hue, hard-light;
+    background-size: var(--imgsize) 100%, 200% 700%, 300% 100%, 200% 100%;
+    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+    
+    filter: brightness(.8) contrast(2.95) saturate(.5);
+  
+  }
+  
+  .card[data-rarity="rare holo v1"] .card__shine:after {
+  
+    content: "";
+  
+   /* background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
+    background-size: var(--imgsize) 100%, 200% 400%, 195% 100%, 200% 100%;
+  
+    filter: brightness(1) contrast(2.5) saturate(1.75);
+    mix-blend-mode: soft-light;
+  
+  }
+  
+  .card[data-rarity="rare holo v1"] .card__glare {
+    
+    filter: brightness(0.9) contrast(1.75);
+    
+    background: radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgb(255, 255, 255) 0%,
+      rgba(133, 137, 141, .33) 45%, 
+      rgba(100, 100, 100, .65) 120%
+    );
+  
+    opacity: calc(var(--o) * .66);
+  }
+
+
+
+  /* -------------------- rare holo vmax check ------------------------*/
+  
+  .card[data-rarity="rare holo vmax"] .card__shine {
+    --space: 6%;
+    --angle: 133deg;
+    --imgsize: 60% 30%;
+    background-image:
+      var(--Vmaxbg),
+      repeating-linear-gradient( -33deg, 
+        rgb(206, 42, 36) calc(var(--space)*1),  
+        rgb(157, 170, 223) calc(var(--space)*2), 
+        rgb(45, 153, 146) calc(var(--space)*3), 
+        rgb(29, 151, 36) calc(var(--space)*4), 
+        rgb(181, 64, 228) calc(var(--space)*5), 
+        rgb(206, 42, 36) calc(var(--space)*6)
+      ),
+      repeating-linear-gradient( 
+        var(--angle), 
+        rgba(14, 21, 46, 0.5) 0%, 
+        hsl(180, 10%, 50%) 2.5%, 
+        hsl(83, 50%, 35%) 5%, 
+        hsl(180, 10%, 50%) 7.5%, 
+        rgba(14, 21, 46, 0.5) 10% , 
+        rgba(14, 21, 46, 0.5) 15% 
+        ),
+      radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(6, 218, 255, 0.6) 0%, 
+        rgba(38, 235, 127, 0.6) 25%, 
+        rgba(155, 78, 228, 0.6) 50%, 
+        rgba(228, 78, 90, 0.6) 75%
+      );
+  
+    background-blend-mode: color-burn, screen, soft-light;
+    background-size: var(--imgsize), 1100% 1100%, 600% 600%, 200% 200%;
+    background-position: 
+      center, 
+      0% var(--posy), 
+      var(--posx) var(--posy), 
+      var(--posx) var(--posy);
+  
+    filter: brightness(calc((var(--hyp)*0.3) + 0.5)) contrast(2.5) saturate(.6);
+  
+  }
+  
+  
+  .card[data-rarity="rare holo vmax"] .card__glare {
+    
+    filter: brightness(0.9) contrast(1.75);
+    
+    background: radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgb(255, 255, 255) 0%,
+      rgba(133, 137, 141, .33) 45%, 
+      rgba(100, 100, 100, .65) 120%
+    );
+  
+    opacity: calc(var(--o) * .66);
+  }
+
+
+
+
+  /* -------------------- rare holo vstar ------------------------*/
+  
+  .card[data-rarity="rare holo vstar"] .card__shine,
+  .card[data-rarity="rare holo vstar"] .card__shine:after {
+  
+    --space: 5%;
+    --angle: 133deg;
+    --imgsize: 18% 15%;
+  
+    background-image:
+      var(--Vstar),
+      repeating-linear-gradient( 0deg, 
+        rgb(255, 119, 115) calc(var(--space)*1), 
+        rgba(255,237,95,1) calc(var(--space)*2), 
+        rgba(168,255,95,1) calc(var(--space)*3), 
+        rgba(131,255,247,1) calc(var(--space)*4), 
+        rgba(120,148,255,1) calc(var(--space)*5), 
+        rgb(216, 117, 255) calc(var(--space)*6), 
+        rgb(255, 119, 115) calc(var(--space)*7)
+      ),
+      repeating-linear-gradient( 
+        var(--angle), 
+        #0e152e 0%, 
+        hsl(180, 10%, 60%) 3.8%, 
+        hsl(180, 29%, 66%) 4.5%, 
+        hsl(180, 10%, 60%) 5.2%, 
+        #0e152e 10% , 
+        #0e152e 12% 
+        ),
+      radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(0, 0, 0, .1) 12%, 
+        rgba(0, 0, 0, .15) 20%, 
+        rgba(0, 0, 0, .25) 120%
+      );
+  
+    background-blend-mode: soft-light, hue, hard-light;
+    background-size: var(--imgsize), 200% 700%, 300% 100%, 200% 100%;
+    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+    
+    filter: brightness(calc((var(--hyp) * .5) + 0.5)) contrast(2) saturate(.75);
+  
+  }
+  
+  .card[data-rarity="rare holo vstar"] .card__shine:after {
+  
+    content: "";
+  
+    background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
+   /* background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
+  
+    filter: brightness(calc((var(--hyp) * .5) + 0.8)) contrast(1.5) saturate(1.75);
+    mix-blend-mode: exclusion;
+  
+  }
+  
+  
+  .card[data-rarity="rare holo vstar"] .card__glare {
+    
+    filter: brightness(0.9) contrast(1.75);
+    
+    background: radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgb(255, 255, 255) 0%,
+      rgba(133, 137, 141, .33) 45%, 
+      rgba(100, 100, 100, .65) 120%
+    );
+  
+    opacity: calc(var(--o) * .66);
+  }
+  
+
+
+  
+  /* -------------------- rare ultra ------------------------*/
+  
+  
+  
+  .card[data-rarity="rare ultra"] .card__shine,
+  .card[data-rarity="rare ultra"] .card__shine:after {
+  
+    --space: 5%;
+    --angle: 133deg;
+    --imgsize: 50% 42%;
+  
+    background-image:
+      var(--illusion),
+      repeating-linear-gradient( 0deg, 
+        rgb(255, 119, 115) calc(var(--space)*1), 
+        rgba(255,237,95,1) calc(var(--space)*2), 
+        rgba(168,255,95,1) calc(var(--space)*3), 
+        rgba(131,255,247,1) calc(var(--space)*4), 
+        rgba(120,148,255,1) calc(var(--space)*5), 
+        rgb(216, 117, 255) calc(var(--space)*6), 
+        rgb(255, 119, 115) calc(var(--space)*7)
+      ),
+      repeating-linear-gradient( 
+        var(--angle), 
+        #0e152e 0%, 
+        hsl(180, 10%, 60%) 3.8%, 
+        hsl(180, 29%, 66%) 4.5%, 
+        hsl(180, 10%, 60%) 5.2%, 
+        #0e152e 10% , 
+        #0e152e 12% 
+        ),
+      radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(0, 0, 0, .1) 12%, 
+        rgba(0, 0, 0, .15) 20%, 
+        rgba(0, 0, 0, .25) 120%
+      );
+  
+    background-blend-mode: exclusion, hue, hard-light;
+    background-size: var(--imgsize), 200% 700%, 300% 100%, 200% 100%;
+    background-position: center center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+  
+    filter: brightness(calc((var(--hyp)*0.3) + 0.5)) contrast(2) saturate(1.5);
+  
+  }
+  
+  .card[data-rarity="rare ultra"] .card__shine:after {
+  
+    content: "";
+  
+    background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
+  /*  background-position: center center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
+  
+    filter: brightness(calc((var(--hyp)*0.5) + .8)) contrast(1.6) saturate(1.4);
+    mix-blend-mode: exclusion;
+  
+  }
+  
+  
+  
+
+
+  .card[data-rarity="rare ultra"] .card__glare {
+    
+    filter: brightness(0.9) contrast(1.75);
+    
+    background: radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgb(255, 255, 255) 0%,
+      rgba(133, 137, 141, .33) 45%, 
+      rgba(100, 100, 100, .65) 120%
+    );
+  
+    opacity: calc(var(--o) * .66);
+  }
+
+
+
+
+  /* -------------------- miaw ------------------------*/
+  
+
+  
+  
+  
+  .card[data-rarity="miaw"] .card__shine,
+  .card[data-rarity="miaw"] .card__shine:after {
+  
+    --space: 5%;
+    --angle: 133deg;
+    --imgsize: 25% 20%;
+  
+    background-image:
+    var(--trainerbg),
+      repeating-linear-gradient( 0deg, 
+        rgb(255, 119, 115) calc(var(--space)*1), 
+        rgba(255,237,95,1) calc(var(--space)*2), 
+        rgba(168,255,95,1) calc(var(--space)*3), 
+        rgba(131,255,247,1) calc(var(--space)*4), 
+        rgba(120,148,255,1) calc(var(--space)*5), 
+        rgb(216, 117, 255) calc(var(--space)*6), 
+        rgb(255, 119, 115) calc(var(--space)*7)
+      ),
+      repeating-linear-gradient( 
+        var(--angle), 
+        #0e152e 0%, 
+        hsl(180, 10%, 60%) 3.8%, 
+        hsl(180, 29%, 66%) 4.5%, 
+        hsl(180, 10%, 60%) 5.2%, 
+        #0e152e 10% , 
+        #0e152e 12% 
+        ),
+      radial-gradient(
+        farthest-corner circle 
+        at var(--mx) var(--my),
+        rgba(0, 0, 0, .1) 12%, 
+        rgba(0, 0, 0, .15) 20%, 
+        rgba(0, 0, 0, .25) 120%
+      );
+  
+    background-blend-mode: difference, hue, hard-light;
+    background-size: var(--imgsize), 200% 700%, 300% 100%, 200% 100%;
+    background-position: center, 0% var(--posy), var(--posx) var(--posy), var(--posx) var(--posy);
+  
+    filter: brightness(0.75) contrast(2.5) saturate(.75);
+    
+  }
+  
+  .card[data-rarity="miaw"] .card__shine:after {
+  
+    content: "";
+  
+    background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
+     
+    filter: brightness(1.2) contrast(1) saturate(1.75);
+    mix-blend-mode: exclusion;
+  
+  }
+  
+  
+  .card[data-rarity="miaw"] .card__glare {
+    
+    filter: brightness(0.9) contrast(1.75);
+    
+    background: radial-gradient(
+      farthest-corner circle 
+      at var(--mx) var(--my),
+      rgb(255, 255, 255) 0%,
+      rgba(133, 137, 141, .33) 45%, 
+      rgba(100, 100, 100, .65) 120%
+    );
+  
+    opacity: calc(var(--o) * .66);
+  }
+
+  
+
+
+
+
+ /* -------------------- rare rainbow ------------------------*/
+  
+
+
+  
+  .card[data-rarity^="rare rainbow"] .card__shine,
+  .card[data-rarity^="rare rainbow"] .card__shine:after {
+  
+    --rainbowspace: 9%;
+    --overlayspace: 12%;
+    --angle: -20deg;
+    --angle2: 130deg;
+    --imgsize: 130% 180%;
+  
+    background-image:
+      var(--rainbow),
+      repeating-linear-gradient( var(--angle), 
+        rgb(253, 71, 65) calc(var(--rainbowspace)*1), 
+        rgb(255, 243, 151) calc(var(--rainbowspace)*2), 
+        rgb(95, 255, 180) calc(var(--rainbowspace)*3), 
+        rgba(131,255,247,1) calc(var(--rainbowspace)*4), 
+        rgb(75, 198, 255) calc(var(--rainbowspace)*5), 
+        rgb(255, 73, 246) calc(var(--rainbowspace)*6), 
+        rgb(255, 56, 49) calc(var(--rainbowspace)*7)
+      ),
+      repeating-linear-gradient( var(--angle2), 
+        rgba(89, 46, 80, 0.5) calc(var(--overlayspace)*1), 
+        hsl(263, 43%, 76%) calc(var(--overlayspace)*2), 
+        rgb(223, 96, 202) calc(var(--overlayspace)*3), 
+        hsl(180, 57%, 56%) calc(var(--overlayspace)*4), 
+        rgba(14, 21, 46, 0.5) calc(var(--overlayspace)*5) , 
+        rgba(14, 21, 46, 0.5) calc(var(--overlayspace)*6) 
+      ),
+      var(--illusion2);
+  
+    background-size: 20% 15%, 500% 500%, 1000% 1000%, var(--imgsize);
+    background-position: center, calc( var(--posx) * 1.5 ) calc( var(--posy) * 1.5 ), calc( var(--posx) * 1.5 ) var(--posy), bottom left;
+    background-blend-mode: color-burn, soft-light, normal;
+  
+    filter: brightness(calc((var(--hyp)*0.25) + 0.66)) contrast(2.2) saturate(.9);
+  
+  }
+  
+  .card[data-rarity^="rare rainbow"] .card__shine:after {
+  
+    content: "";
+  
+    background-position: center, 0% calc( var(--posy) * -1.75 ), calc( var(--posx) * -1.75 ) calc( var(--posy) * -1 ) , bottom left;
+    mix-blend-mode: exclusion;
+  
+  }
+  
+
+
+
+   /* -------------------- rare secret ------------------------*/
+  
+
+  
+  .card[data-rarity="rare secret"] .card__shine,
+  .card[data-rarity="rare secret"] .card__shine:after {
+  
+    --angle: 110deg;
+    --imgsize: 28% 23%;
+  
+    background-image:
+      var(--glitter),
+      repeating-linear-gradient( var(--angle), 
+        rgba(89, 46, 80, 0.5) 0%, 
+        hsl(39, 37%, 60%) 2.5%, 
+        rgb(216, 183, 92) 5%, 
+        hsl(39, 37%, 60%) 7.5%, 
+        rgba(14, 21, 46, 0.5) 10% , 
+        rgba(14, 21, 46, 0.5) 15% 
+      ), 
+      var(--metal);
+  
+    background-size: 25% 25%, 600% 100%, var(--imgsize);
+    background-position: center, var(--posx) var(--posy), center;
+    background-blend-mode: color-burn, darken;
+  
+    filter: brightness(calc((var(--hyp)*0.4) + 0.7)) contrast(3) saturate(.66);
+  
+  
+  }
+  
+  .card[data-rarity="rare secret"] .card__shine:after {
+  
+    content: "";
+  
+    background-image:
+      var(--glitter),
+      repeating-linear-gradient( var(--angle), 
+        rgba(89, 46, 80, 0.5) 0%, 
+        hsl(39, 37%, 60%) 2.5%, 
+        rgb(216, 183, 92) 5%, 
+        hsl(39, 37%, 60%) 7.5%, 
+        rgba(14, 21, 46, 0.5) 10% , 
+        rgba(14, 21, 46, 0.5) 15% 
+      );
+  
+    background-position: center, calc( var(--posx) * -1 ) calc( var(--posy) * -1 ), center;
+  
+    filter: brightness(calc((var(--hyp)*0.3) + 0.7)) contrast(2.5) saturate(.66);
+    mix-blend-mode: exclusion;
+  
+  }
+  
+  
+  
+
+
+
+   /* -------------------- RADIANTT ------------------------*/
+  
+
+  
+  
+  .card[data-rarity*="radiant"] .card__shine {
+  
+    --barwidth: 1.2%;
+    --space: 200px;
+  
+  
+    background-image: 
+      repeating-linear-gradient( 0deg, 
+        hsl(180, 70%, 50%) calc(var(--space)*1), 
+        hsl(110, 80%, 50%) calc(var(--space)*2), 
+        hsl(80, 90%, 50%) calc(var(--space)*3), 
+        hsl(50, 90%, 50%) calc(var(--space)*4), 
+        hsl(80, 90%, 50%) calc(var(--space)*5), 
+        hsl(110, 80%, 50%) calc(var(--space)*6), 
+        hsl(180, 70%, 50%) calc(var(--space)*7) 
+      ),
+      repeating-linear-gradient( 
+        45deg, 
+        hsl(0,0%,10%) 0% ,  
+        hsl(0,0%,10%) 1% , 
+        hsl(0,0%,10%) var(--barwidth),
+        hsl(0,0%,20%) calc( var(--barwidth) + 0.01% ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 2 ),
+        hsl(0,0%,35%) calc( var(--barwidth) * 2 + 0.01% ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 3 ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 3 + 0.01% ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 4 ) ,
+        hsl(0,0%,50%) calc( var(--barwidth) * 4 + 0.01% ) ,
+        hsl(0,0%,50%) calc( var(--barwidth) * 5 ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 5 + 0.01% ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 6 ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 6 + 0.01% ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 7 ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 7 + 0.01% ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 8 )  ,
+        hsl(0,0%,10%) calc( var(--barwidth) * 8 + 0.01% ) ,
+        hsl(0,0%,10%) calc( var(--barwidth) * 9 )  ,
+        hsl(0,0%,0%) calc( var(--barwidth) * 9 + 0.01% ) ,
+        hsl(0,0%,0%) calc( var(--barwidth) * 10 ) 
+      ),
+      repeating-linear-gradient( 
+        -45deg, 
+        hsl(0,0%,10%) 0% ,  
+        hsl(0,0%,10%) 1% , 
+        hsl(0,0%,10%) var(--barwidth),
+        hsl(0,0%,20%) calc( var(--barwidth) + 0.01% ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 2 ),
+        hsl(0,0%,35%) calc( var(--barwidth) * 2 + 0.01% ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 3 ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 3 + 0.01% ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 4 ) ,
+        hsl(0,0%,50%) calc( var(--barwidth) * 4 + 0.01% ) ,
+        hsl(0,0%,50%) calc( var(--barwidth) * 5 ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 5 + 0.01% ) ,
+        hsl(0,0%,42.5%) calc( var(--barwidth) * 6 ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 6 + 0.01% ) ,
+        hsl(0,0%,35%) calc( var(--barwidth) * 7 ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 7 + 0.01% ) ,
+        hsl(0,0%,20%) calc( var(--barwidth) * 8 )  ,
+        hsl(0,0%,10%) calc( var(--barwidth) * 8 + 0.01% ) ,
+        hsl(0,0%,10%) calc( var(--barwidth) * 9 )  ,
+        hsl(0,0%,0%) calc( var(--barwidth) * 9 + 0.01% ) ,
+        hsl(0,0%,0%) calc( var(--barwidth) * 10 ) 
+      );
+  
+    background-size: 400% 400%, 210% 210%, 210% 210%;
+    background-position: 
+      calc( ((var(--posx) - 50%) * -2.5) + 50% ) calc( ((var(--posy) - 50%) * -2.5) + 50% ), 
+      calc( ((var(--posx) - 50%) * 1.5) + 50% ) calc( ((var(--posy) - 50%) * 1.5) + 50% ), 
+      calc( ((var(--posx) - 50%) * 1.5) + 50% ) calc( ((var(--posy) - 50%) * 1.5) + 50% );
+  
+    background-blend-mode: exclusion, darken, color-dodge;
+  
+    filter: brightness(.95) contrast(4) saturate(0.75);
+    mix-blend-mode: color-dodge;
+  
+  }
+  
+  .card[data-rarity*="radiant"] .card__shine:after {
+  
+    content: "";
+  
+    background-image: 
+      var(--glitter), 
+      repeating-linear-gradient( 55deg, 
+      rgb(255, 161, 158) calc(var(--space)*1), 
+      rgb(85, 178, 255) calc(var(--space)*2), 
+      rgb(255, 199, 146) calc(var(--space)*3), 
+      rgb(130, 255, 213) calc(var(--space)*4), 
+      rgb(253, 170, 240) calc(var(--space)*5), 
+      rgb(148, 241, 255) calc(var(--space)*6), 
+      rgb(255, 161, 158) calc(var(--space)*7) 
+    );
+  
+    background-size: 25% 25%, 400% 100%;
+    background-position: center, calc( ((var(--posx) - 50%) * -2.5) + 50% ) calc( ((var(--posy) - 50%) * -2.5) + 50% );
+    
+    filter: brightness(1) contrast(1) saturate(0);
+    mix-blend-mode: soft-light;
+  
+    background-blend-mode: multiply;
+    
+  }
+  
+  .card[data-rarity*="radiant"] .card__shine:before {
+    
+    content: "";
+    z-index: 7;
+    grid-area: 1/1;
+  
+    background-image:
+      radial-gradient(
+        farthest-corner ellipse 
+        at calc( ((var(--mx)) * 0.5) + 25% ) calc( ((var(--my)) * 0.5) + 25% ),
+        rgba(100, 100, 100, .5) 5%, 
+        rgba(50, 50, 50, .4) 15%, 
+        rgba(0, 0, 0, .6) 30%
+      );
+  
+    background-image:
+      radial-gradient( farthest-corner ellipse at calc( ((var(--mx)) * 0.5) + 25% ) calc( ((var(--my)) * 0.5) + 25% ), rgba(100, 100, 100, .8) 10%, rgba(50, 50, 50, .34) 20%, rgba(0, 0, 0, 1) 50% );
+  
+    background-position: center;
+    background-size: 350% 350%;
+  
+    mix-blend-mode: multiply;
+  
+  }
+  
+  .card[data-rarity="radiant"] .card__glare {
+    background-image: radial-gradient(farthest-corner circle at var(--mx) var(--my),
+        rgba(255, 255, 255, .9) 10%, rgba(255, 255, 255, .6) 30%, rgba(0, 0, 0, .8) 80%);
+  }
+  
+
+
+
+
+
+
+
+ /* -------------------- rare holo ------------------------*/
+  
+
+  
+  
+  .card[data-rarity="rare holo"][data-gallery="true"] .card__shine {
+  
+    --space: 5%;
+    --angle: -22deg;
+    --imgsize: 200% 400%;
+  
+    clip-path: inset(2.8% 4% round 2.55% / 1.5%);
+  
+    background-image:
+      repeating-linear-gradient( var(--angle),  
+        rgba(174, 102, 202, 0.75) calc(var(--space)*1),
+        rgba(228, 77, 72, 0.75) calc(var(--space)*2), 
+        rgba(216, 197, 55, 0.75) calc(var(--space)*3),  
+        rgba(124, 201, 62, 0.75) calc(var(--space)*4),  
+        rgba(80, 177, 170, 0.75) calc(var(--space)*5),  
+        rgba(136, 160, 255, 0.75) calc(var(--space)*6), 
+        rgba(176, 105, 204, 0.75) calc(var(--space)*7)
+      );
+      
+      background-blend-mode: color-dodge;
+      background-size: var(--imgsize);
+      background-position: 0% calc(var(--posy) * 1), var(--posx) var(--posy);
+      
+      filter: brightness(calc((var(--hyp)*0.3) + 0.6)) contrast(2.3) saturate(1.1);
+  
+  }
+  
+  .card[data-rarity="rare holo"][data-gallery="true"] .card__shine:after {
+    
+    content: "";
+  
+    background-image: 
+      radial-gradient( 
+        farthest-corner ellipse 
+        at calc( ((var(--mx)) * 0.5) + 25% ) calc( ((var(--my)) * 0.5) + 25% ), 
+        rgb(255, 255, 255) 5%, 
+        rgba(55, 0, 55, .6) 25%, 
+        rgb(55, 55, 55) 90% 
+      );
+  
+    background-position: center;
+    background-size: 200% 200%;
+  
+    filter: brightness(calc((var(--hyp)*0.2) + 0.4)) contrast(.85) saturate(1.1);
+    mix-blend-mode: hard-light;
+  
+  }
+  
+  
+  
+
+
+
+
+/*--------------------- rare holo cosmos --------------------------*/
+/*--------------------- border visible bug --------------------------*/
+
+
+
+.card[data-rarity="rare holo cosmos"] .card__shine {
+
+  --space: 4%;
+
+  clip-path: var(--clip);
+
+  background-image: 
+    url("/img/cosmos-bottom.png"), 
+    repeating-linear-gradient(
+      82deg, 
+      hsl(53, 65%, 60%) calc(var(--space)*1), 
+      hsl(93, 56%, 50%) calc(var(--space)*2), 
+      hsl(176, 54%, 49%) calc(var(--space)*3), 
+      hsl(228, 59%, 55%) calc(var(--space)*4), 
+      hsl(283, 60%, 55%) calc(var(--space)*5), 
+      hsl(326, 59%, 51%) calc(var(--space)*6), 
+      hsl(326, 59%, 51%) calc(var(--space)*7), 
+      hsl(283, 60%, 55%) calc(var(--space)*8), 
+      hsl(228, 59%, 55%) calc(var(--space)*9), 
+      hsl(176, 54%, 49%) calc(var(--space)*10), 
+      hsl(93, 56%, 50%) calc(var(--space)*11), 
+      hsl(53, 65%, 60%) calc(var(--space)*12) 
+    ), 
+    radial-gradient(
+      farthest-corner circle at 25% 10%, 
+      hsla(180, 100%, 89%, 0.5) 5%, 
+      hsla(180, 14%, 57%, 0.3) 40%, 
+      hsl(0, 0%, 0%) 130%
+  );
+  background-blend-mode: 
+    color-burn, 
+    multiply;
+
+  background-position: 
+    var(--cosmosbg, center center),
+    calc( 10% + ( var(--pointer-from-left) * 80% ) ) calc( 10% + ( var(--pointer-from-top) * 80% ) ), 
+    center center;
+
+  background-size: cover, 400% 900%, cover;
+
+  filter: brightness(41) contrast(41) saturate(.0);
+  mix-blend-mode: color-dodge;
+
+  border-radius: 10px;
+  border: 2px solid #000;
+
+}
+
+
+
+.card[data-rarity="rare holo cosmos"] .card__shine:before {
+
+  content: "";
+  z-index: 2;
+
+  background-image: 
+    url("/img/cosmos-middle.gif"), 
+    repeating-linear-gradient(
+      82deg, 
+      hsl(53, 65%, 60%) calc(var(--space)*1), 
+      hsl(93, 56%, 50%) calc(var(--space)*2), 
+      hsl(176, 54%, 49%) calc(var(--space)*3), 
+      hsl(228, 59%, 55%) calc(var(--space)*4), 
+      hsl(283, 60%, 55%) calc(var(--space)*5), 
+      hsl(326, 59%, 51%) calc(var(--space)*6), 
+      hsl(326, 59%, 51%) calc(var(--space)*7), 
+      hsl(283, 60%, 55%) calc(var(--space)*8), 
+      hsl(228, 59%, 55%) calc(var(--space)*9), 
+      hsl(176, 54%, 49%) calc(var(--space)*10), 
+      hsl(93, 56%, 50%) calc(var(--space)*11), 
+      hsl(53, 65%, 60%) calc(var(--space)*12) 
+    );
+
+  background-blend-mode: 
+    lighten, 
+    multiply;
+
+  background-position: 
+    var(--cosmosbg, center center), 
+    calc( 15% + ( var(--pointer-from-left) * 70% ) ) calc( 15% + ( var(--pointer-from-top) * 70% ) ), 
+    center center;
+
+  background-size: cover, 400% 900%, cover;
+
+  filter: brightness(1.25) contrast(1.75) saturate(.8);
+  mix-blend-mode: overlay;
+
+  border-radius: 14px;
+  border: 1px solid #000;
+}
+
+
+.card[data-rarity="rare holo cosmos"] .card__shine:after {
+  
+  content: "";
+  z-index: 3;
+
+  background-image: 
+    url("/img/cosmos-top-trans.png"), 
+    repeating-linear-gradient(
+      82deg, 
+      hsl(53, 65%, 60%) calc(var(--space)*1), 
+      hsl(93, 56%, 50%) calc(var(--space)*2), 
+      hsl(176, 54%, 49%) calc(var(--space)*3), 
+      hsl(228, 59%, 55%) calc(var(--space)*4), 
+      hsl(283, 60%, 55%) calc(var(--space)*5), 
+      hsl(326, 59%, 51%) calc(var(--space)*6), 
+      hsl(326, 59%, 51%) calc(var(--space)*7), 
+      hsl(283, 60%, 55%) calc(var(--space)*8), 
+      hsl(228, 59%, 55%) calc(var(--space)*9), 
+      hsl(176, 54%, 49%) calc(var(--space)*10), 
+      hsl(93, 56%, 50%) calc(var(--space)*11), 
+      hsl(53, 65%, 60%) calc(var(--space)*12) 
+    );
+
+  background-blend-mode: 
+    multiply, 
+    multiply;
+
+  background-position: 
+    var(--cosmosbg, center center), 
+    calc( 20% + ( var(--pointer-from-left) * 60% ) ) calc( 20% + ( var(--pointer-from-top) * 60% ) ), 
+    center center;
+
+  background-size: cover, 400% 900%, cover;
+
+  filter: brightness(1.25) contrast(1.75) saturate(.8);
+  mix-blend-mode: multiply;
+
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+
+
+.card[data-rarity="rare holo cosmos"] .card__glare {
+  background-image: 
+    radial-gradient(
+      farthest-corner circle at 25% 10%, 
+      hsla(204, 100%, 95%, 0.8) 5%, 
+      hsla(250, 15%, 20%, 1) 150%
+    );
+  filter: brightness(0.75) contrast(2) saturate(2);
+  mix-blend-mode: overlay;
+  opacity: calc(1 * (0.25 + var(--pointer-from-center)));
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.card[data-rarity="rare holo cosmos"] .card__glare:after {
+
+  content: "";
+
+  background-image: 
+  radial-gradient(farthest-corner circle at 25% 10%, 
+    hsl(280, 100%, 96%) 5%, 
+    hsl(0, 0%, 10%) 60%
+  );
+
+  filter: brightness(.75) contrast(2.5) saturate(2);
+  mix-blend-mode: soft-light;
+  opacity: calc( 1 - var(--pointer-from-top) * .75 );
+
+  border-radius: 10px;
+  border: 1px solid #000;
+
+}

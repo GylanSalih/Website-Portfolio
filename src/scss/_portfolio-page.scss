@@ -7,7 +7,7 @@
     --Vstar: url("/img/stylish.png");
     --rainbow: url("/img/rainbow.jpg");
     --illusion: url("/img/illusion.png");
-    --glitter: url("img/glitter.png");
+    --glitter: url("/img/glitter.png");
     --metal: url("/img/metal.png");
     --illusion2: url("/img/illusion2.png");
     --birthday1: url("/img/151/birthday-holo.webp");
@@ -179,6 +179,17 @@
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.dark-mode #grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #000000;
+  z-index: 2;
 }
 
 .grid-section {
@@ -298,14 +309,6 @@
 
 
 
-
-
-
-
-
-
-
-
   
   /* -------------------- CARDS GRID CSS BEGINNT AB HIER ----------- */
   .main-grid {
@@ -313,9 +316,18 @@
     padding: 29px;
     z-index: 6;
     position: relative;
+    margin: 0px 0 450px;
+    background-color: rgb(255, 255, 255);
   }
   
-  
+  .dark-mode .main-grid{
+    max-width: 100%;
+    padding: 29px;
+    z-index: 6;
+    position: relative;
+    margin: 0px 0 450px;
+    background-color: rgb(0, 0, 0);
+  }
   /* Mobile View (max-width: 480px) */
   @media screen and (max-width: 480px) {
     .main-grid {
@@ -476,7 +488,6 @@
   
   /* Glow Border At the Card */
   .card.holographic {
-    --radius: 4.55% / 3.5%;
     z-index: calc(var(--s) * 100);
     transform: translateZ(.1px);
     will-change: transform, visibility;
@@ -485,6 +496,7 @@
     cursor: crosshair;
     height: 100%;
     width: 100%;
+    border-radius: 14px;
   }
   
   
@@ -2103,3 +2115,15 @@
   
   }
   
+
+
+
+  
+
+
+
+
+
+
+
+

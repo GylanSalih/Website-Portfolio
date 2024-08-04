@@ -1365,6 +1365,17 @@ body.menu-open {
   display: flex;
   justify-content: center;
   position: relative;
+  background-color: #ffffff;
+  z-index: 2;
+}
+
+.dark-mode #grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #000000;
+  z-index: 2;
 }
 
 .grid-section {
@@ -1472,6 +1483,17 @@ body.menu-open {
   padding: 29px;
   z-index: 6;
   position: relative;
+  margin: 0px 0 450px;
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .main-grid {
+  max-width: 100%;
+  padding: 29px;
+  z-index: 6;
+  position: relative;
+  margin: 0px 0 450px;
+  background-color: rgb(0, 0, 0);
 }
 
 /* Mobile View (max-width: 480px) */
@@ -3043,104 +3065,156 @@ section .button button:hover {
 /*------------------------------------------------------------*/
 /* Social Icons About Me Page END                            */
 /*----------------------------------------------------------*/
-button {
-  background-color: #000;
-  font-size: 1.6rem;
-  border: none;
-  color: #e5e5e5;
-  font-family: "Poppins";
-  font-weight: 400;
-  padding: 1.4rem 3.2rem;
-  border-radius: 1.2rem;
-}
-
-footer {
-  z-index: 5;
+/* Footer-Bereich (Allgemein) */
+.fixed_footer {
   width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 665px;
+  background-position: 50% 50%;
+  background-color: rgba(0, 0, 0, 0.98);
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  padding-bottom: 25px;
-  position: relative; /* Ensure footer can position pseudo-element */
+  justify-content: center;
+  align-content: center;
 }
 
-.link {
-  width: 3.2rem;
-  height: 3.2rem;
+.footer-wrapper {
+  height: 614px;
+  position: relative;
+  top: 210px;
+  bottom: 5px;
+}
+
+/* Footer-Layout */
+.footer-menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  max-width: 688px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-column {
+  width: 337px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-column p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Footer-Links und Hover-Effekte */
+.footer-link {
+  display: block;
+  padding: 14px;
+  position: relative;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.hover-line {
+  position: relative;
+  overflow: auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1019607843); /* Graue Farbe */
+  margin: 25px 0 -14px 0;
+}
+
+.hover-line-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px; /* Höhe der Underline */
+  background-color: #ffffff; /* Farbe der Underline */
+  width: 0; /* Startbreite der Underline */
+  transform: scaleX(0); /* Anfangs auf 0% Skalierung */
+  transform-origin: bottom left; /* Skalierung von links nach rechts */
+  transition: none; /* Deaktiviert Übergänge, die von CSS durchgeführt werden */
+}
+
+.footer-link.current-page {
+  font-weight: bold;
+}
+
+/* Footer Socials */
+.footer-credits {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.col {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 1.2rem 3.2rem;
-  width: 28%;
-}
-
-footer a {
-  color: #ffffff;
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 50px;
-  font-family: "Poppins";
-  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  opacity: 0.5;
 }
 
-footer p {
-  margin-bottom: 12px;
-  font-size: 16px;
-  line-height: 26px;
-  font-family: "Poppins";
+/* Social Icons */
+.social-icon-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  width: 100%;
+  max-width: 243px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-footer img {
+.socialicons {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  padding: 14px;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  will-change: transform;
+  backface-visibility: hidden; /* Verhindert Rendering-Probleme */
+}
+
+.social-icon svg {
+  width: 224px; /* Oder die gewünschte Größe */
+  height: 224px;
+  fill: currentColor; /* Vererbt die Textfarbe des Elternteils */
+}
+
+/* Footer-Credit */
+.footer-credit-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: auto;
+}
+
+.footer-credit-link {
+  color: rgba(255, 255, 255, 0.7803921569);
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  padding: 0 0 20px;
+  text-decoration: none;
+}
+
+/* Trennlinie footer credits */
+.section-separator {
+  border: none;
+  height: 1px;
+  background-color: #2e2e27;
+  width: 1096px;
+  margin: 15px auto;
+  margin-top: 40px;
+}
+
+.footerh4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 400px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4px;
   color: #ffffff;
-}
-
-.social {
-  display: flex; /* Aktiviert Flexbox auf dem Container */
-  justify-content: flex-start; /* Richtet die Icons nach links aus */
-  align-items: center; /* Optional: Zentriert die Icons vertikal */
-  gap: 15px;
-  padding: 5px;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-.social svg {
-  width: 24px; /* Setzt die Breite der Icons */
-  height: 24px; /* Setzt die Höhe der Icons */
-  fill: #fff; /* Setzt die Farbe der Icons auf Weiß */
-}
-
-.social svg.bi-behance {
-  width: 32px; /* Größeres Icon speziell für Behance */
-  height: 32px; /* Größeres Icon speziell für Behance */
-}
-
-.social svg.bi-github {
-  width: 32px; /* Größeres Icon speziell für GitHub */
-  height: 32px; /* Größeres Icon speziell für GitHub */
-}
-
-@media screen and (max-width: 1000px) {
-  body {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 700px) {
-  footer {
-    flex-direction: column;
-    padding: 5rem 20vw;
-  }
-  .col {
-    width: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

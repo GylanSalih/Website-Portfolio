@@ -1,4 +1,6 @@
 
+
+
 //
 //
 // Holo script for movement and everything START
@@ -770,9 +772,72 @@ if (isHomePage()) {
 //
 
 
+// -------------------------------------------//
+// Footer gsap                               //
+// -----------------------------------------//
+
+
+// hover footer bar fill
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.registerPlugin();
+
+  // Holen Sie sich alle Footer-Link-Elemente
+  const footerLinks = document.querySelectorAll(".footer-link");
+
+  footerLinks.forEach(link => {
+    const fill = link.querySelector(".hover-line-fill");
+
+    // GSAP-Animation für Hover-Effekte
+    link.addEventListener("mouseenter", () => {
+      gsap.to(fill, {
+        scaleX: 1,
+        width: "100%",
+        duration: 0.4,
+        ease: "power3.out"
+      });
+    });
+
+    link.addEventListener("mouseleave", () => {
+      gsap.to(fill, {
+        scaleX: 0,
+        width: "0%",
+        duration: 0.4,
+        ease: "power3.in"
+      });
+    });
+  });
+});
 
 
 
+
+
+
+
+
+
+
+// hover footer social popup
+
+gsap.fromTo(".socialicons", 
+{ scale: 1 }, 
+{ 
+    scale: 1.2, 
+    duration: 0.2, 
+    ease: "power1.out", 
+    paused: true 
+}
+);
+
+document.querySelectorAll('.socialicons').forEach(icon => {
+icon.addEventListener('mouseenter', () => {
+    gsap.to(icon, { scale: 1.2, duration: 0.1, ease: "power2.out" });
+});
+
+icon.addEventListener('mouseleave', () => {
+    gsap.to(icon, { scale: 1, duration: 0.1, ease: "power2.in" });
+});
+});
 //
 //
 //
