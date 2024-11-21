@@ -44,9 +44,12 @@ Lookbook:
 
 ### Updates / Fixes:
 
-Natürlich, hier sind die korrigierten Texte für die Update-Logs:
+**0.0.16 - Latest Updates**
 
-**0.0.15 - Latest Updates**
+- Started Again to work on the Portfolio :)
+- Cleaning some css and Grouping with #regio and #endregio learned from C#
+
+**0.0.15 - Previous Updates**
 
 - Updated portfolio holographic effect
 - Added filter with various options

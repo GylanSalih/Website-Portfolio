@@ -892,28 +892,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 
 /* ----------------------------------- */
@@ -1005,7 +983,7 @@
   
   
   
-    
+  //#region rare holo 
     /* -------------------- rare holo ------------------------*/
     
     .card[data-rarity="rare holo"] .card__shine {
@@ -1089,7 +1067,10 @@
           rgba(0, 0, 0, 1) 85%
       );
     }
+
+    //#endregion
   
+  //#region rare holo galaxy
     /* -------------------- rare holo galaxy ------------------------*/
     
     .card[data-rarity="rare holo galaxy"] .card__glare {
@@ -1204,16 +1185,9 @@
       mix-blend-mode: color-dodge;
     
     }
-    
+    //#endregion
   
-    
-  
-  
-  
-  
-  
-  
-  
+  //#region rare holo v check
      /* -------------------- rare holo v check------------------------*/
     
     .card[data-rarity*="rare holo v1"] .card__shine,
@@ -1285,10 +1259,11 @@
     
       opacity: calc(var(--o) * .66);
     }
+    
+    //#endregion
   
-  
-  
-    /* -------------------- rare holo vmax check ------------------------*/
+  //#region rare holo vmax
+    /* -------------------- rare holo vmax ------------------------*/
     
     .card[data-rarity="rare holo vmax"] .card__shine {
       --space: 6%;
@@ -1354,10 +1329,9 @@
     
       opacity: calc(var(--o) * .66);
     }
+    //#endregion
   
-  
-  
-  
+  //#region rare holo vsta
     /* -------------------- rare holo vstar ------------------------*/
     
     .card[data-rarity="rare holo vstar"] .card__shine,
@@ -1430,11 +1404,10 @@
     
       opacity: calc(var(--o) * .66);
     }
-    
+    //#endregion
   
-  
-    
-    /* -------------------- rare ultra ------------------------*/
+  //#region rare ultra
+    /* --------------------rare ultra  ------------------------*/
     
     
     
@@ -1511,10 +1484,9 @@
     
       opacity: calc(var(--o) * .66);
     }
-  
-  
-  
-  
+    //#endregion
+
+  //#region miaw
     /* -------------------- miaw ------------------------*/
     
   
@@ -1590,12 +1562,9 @@
     
       opacity: calc(var(--o) * .66);
     }
-  
+    //#endregion
     
-  
-  
-  
-  
+  //#region rare rainbow
    /* -------------------- rare rainbow ------------------------*/
     
   
@@ -1647,10 +1616,9 @@
       mix-blend-mode: exclusion;
     
     }
-    
+    //#endregion
   
-  
-  
+  //#region rare secret
      /* -------------------- rare secret ------------------------*/
     
   
@@ -1703,12 +1671,9 @@
       mix-blend-mode: exclusion;
     
     }
+    //#endregion
     
-    
-    
-  
-  
-  
+  //#region RADIANTT
      /* -------------------- RADIANTT ------------------------*/
     
   
@@ -1847,14 +1812,9 @@
       background-image: radial-gradient(farthest-corner circle at var(--mx) var(--my),
           rgba(255, 255, 255, .9) 10%, rgba(255, 255, 255, .6) 30%, rgba(0, 0, 0, .8) 80%);
     }
-    
+    //#endregion
   
-  
-  
-  
-  
-  
-  
+  //#region rare holo
    /* -------------------- rare holo ------------------------*/
     
   
@@ -1907,12 +1867,9 @@
       mix-blend-mode: hard-light;
     
     }
+    //#endregion
     
-    
-    
-  
-  
-  
+  //#region rare holo cosmos
   
   /*--------------------- rare holo cosmos --------------------------*/
   /*--------------------- border visible bug --------------------------*/
@@ -2086,7 +2043,7 @@
     border: 1px solid #000;
   
   }
-  
+  //#endregion
 
 
 
