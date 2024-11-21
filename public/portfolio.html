@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Portfolio</title>
     <meta name="description" content="Made by Gylan">
     <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio">
     <meta name="author" content="Gylan Salih">
@@ -139,9 +139,48 @@
         </div>
     </div>
 
+    <div class="slide" data-slide="3">
+        <div class="slide-content">
+            <img class="slide-video" src="/src/assets/img/reduced_images/5.jpeg" alt="Image 1"></img>
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">Gylan Salih</p>
+                    <h1 class="title-slider" href="www.gylansalih.com">Portfolio</h1>
+                    <p class="description-slider">Explore my journey through code and creativity. Here, I showcase my projects, each Projec made with passion, dedication & Love.</p>
+                </div>
+                <p class="background-text-slider">ONI</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="slide" data-slide="4">
+        <div class="slide-content">
+            <img class="slide-video" src="/src/assets/img/reduced_images/7.jpg" alt="Image 1"></img>
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">Gylan Salih</p>
+                    <h1 class="title-slider" href="www.gylansalih.com">Portfolio</h1>
+                    <p class="description-slider">Explore my journey through code and creativity. Here, I showcase my projects, each Projec made with passion, dedication & Love.</p>
+                </div>
+                <p class="background-text-slider">ONI</p>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="slide" data-slide="5">
+        <div class="slide-content">
+            <img class="slide-video" src="/src/assets/img/reduced_images/6.jpg" alt="Image 1"></img>
+            <div class="text-overlay">
+                <div class="text-content-slider">
+                    <p class="subtitle-slider">Gylan Salih</p>
+                    <h1 class="title-slider" href="www.gylansalih.com">Portfolio</h1>
+                    <p class="description-slider">Explore my journey through code and creativity. Here, I showcase my projects, each Projec made with passion, dedication & Love.</p>
+                </div>
+                <p class="background-text-slider">ONI</p>
+            </div>
+        </div>
+    </div>
+    
     <!-- Repeat similar structure for other slides -->
     <!-- Use navigation data in classes for working js dots -->
     <div class="navigation">
@@ -190,9 +229,9 @@
             <label for="category-filter">Sort By</label>
             <select id="category-filter">
                 <option value="all">Show All</option>
-                <option value="Normal">Normal</option>
-                <option value="Selten">Selten</option>
-                <option value="Super Selten">Super Selten</option>
+                <option value="Design">Design</option>
+                <option value="Coding">Coding</option>
+                <option value="Marketing">Marketing</option>
             </select>
         </div>
 
@@ -201,17 +240,16 @@
     <select onchange='adaptCardType(this);'>
         <option>normal</option>
         <option>rare ultra</option>
-        <option>miaw</option>
-        <option>rare holo v1</option>
-        <option>rare holo vstar</option>
-        <option>rare holo galaxy</option>
-        <option>rare holo galaxyFullshine</option>
+        <option>ShineBlitz</option>
         <option>radiant</option>
         <option>rare holo</option>
+        <option>rare holo galaxy</option>
         <option>rare holo vmax</option>
         <option>rare rainbow</option>
         <option>rare secret</option>
-        <option>rare holo cosmos</option>
+        <option>rare holo v1</option>
+        <option>rare holo vstar</option>
+        <option>rare holo galaxyFullshine</option>
     </select>
     </div>
     </div>
@@ -225,7 +263,7 @@
 
                 <div class="holographic__section">
                     <a href="/public/Card1.html" class="transition-link">
-                        <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                        <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Coding">
                             <div class="card__back"></div>
                             <div class="card__effects">
                                 <img src="/src/assets/img/reduced_images/New3.jpeg" class="card_images" loading="lazy">
@@ -243,9 +281,9 @@
 
                 <div class="holographic__section">
                     <a href="/public/Card1.html">
-                        <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                        <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Coding">
                             <div class="card__effects">
-                                <img src="/src/assets/img/reduced_images/New3.jpeg" class="card_images" loading="lazy">
+                                <img src="/src/assets/gifs/RedSamurai.gif" class="card_images" loading="lazy">
                                 <div class="card__shine"></div>
                                 <div class="card__glare"></div>
                             </div>
@@ -258,9 +296,9 @@
                 
 
                 <div class="holographic__section">
-                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Design">
                                 <div class="card__effects">
-                                    <img src="/src/assets/img/reduced_images/redsword-img.png" class="card_images" loading="lazy">
+                                    <img src="/src/assets/gifs/Dragon.gif" class="card_images" loading="lazy">
                                     <div class="card__shine"></div>
                                     <div class="card__glare"></div>
                                 </div>
@@ -272,9 +310,9 @@
 
 
                 <div class="holographic__section">
-                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Selten">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Coding">
                                 <div class="card__effects">
-                                    <img src="/src/assets/img/reduced_images/New4.jpg" class="card_images" loading="lazy">
+                                    <img src="/src/assets/gifs/natureworld.gif" class="card_images" loading="lazy">
                                     <div class="card__shine"></div>
                                     <div class="card__glare"></div>
                                 </div>
@@ -287,7 +325,7 @@
 
 
                 <div class="holographic__section">
-                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Normal">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Design">
                                 <div class="card__effects">
                                     <img src="/src/assets/img/reduced_images/New5.jpeg" class="card_images" loading="lazy">
                                     <div class="card__shine"></div>
@@ -301,7 +339,7 @@
 
 
                 <div class="holographic__section">
-                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Super Selten">
+                    <div id="acard2" class="card holographic" data-rarity="rare holo v" data-category="Marketing">
                                 <div class="card__effects">
                                     <img src="/src/assets/img/reduced_images/New6.jpeg"  class="card_images" loading="lazy">
                                     <div class="card__shine"></div>

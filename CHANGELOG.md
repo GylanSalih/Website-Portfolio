@@ -47,7 +47,9 @@ Lookbook:
 **0.0.16 - Latest Updates**
 
 - Started Again to work on the Portfolio :)
-- Cleaning some css and Grouping with #regio and #endregio learned from C#
+- Cleaning some css and Grouping with #regio and #endregio learned from C##
+- filter changed name to design, coding, marketing 
+- slider transition, nav dots
 
 **0.0.15 - Previous Updates**
 
