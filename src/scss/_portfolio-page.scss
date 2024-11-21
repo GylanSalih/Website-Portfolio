@@ -49,39 +49,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
   
   /*-------------------------------FILTER START------------------------------- */
@@ -1327,8 +1294,13 @@
       --space: 6%;
       --angle: 133deg;
       --imgsize: 60% 30%;
+
+
       background-image:
+       /* Vmax Hintergrund */
         var(--Vmaxbg),
+
+        /* Schicht für den Regenbogen-Glanz */
         repeating-linear-gradient( -33deg, 
           rgb(206, 42, 36) calc(var(--space)*1),  
           rgb(157, 170, 223) calc(var(--space)*2), 
@@ -1337,15 +1309,15 @@
           rgb(181, 64, 228) calc(var(--space)*5), 
           rgb(206, 42, 36) calc(var(--space)*6)
         ),
-        repeating-linear-gradient( 
-          var(--angle), 
-          rgba(14, 21, 46, 0.5) 0%, 
-          hsl(180, 10%, 50%) 2.5%, 
-          hsl(83, 50%, 35%) 5%, 
-          hsl(180, 10%, 50%) 7.5%, 
-          rgba(14, 21, 46, 0.5) 10% , 
-          rgba(14, 21, 46, 0.5) 15% 
-          ),
+          repeating-linear-gradient(
+        var(--angle), 
+        rgba(14, 21, 46, 0.5) 0%, 
+        hsl(180, 10%, 50%) 2.5%, 
+        hsl(83, 50%, 35%) 5%, 
+        hsl(180, 10%, 50%) 7.5%, 
+        rgba(14, 21, 46, 0.5) 10%, 
+        rgba(14, 21, 46, 0.5) 15%
+      ),
         radial-gradient(
           farthest-corner circle 
           at var(--mx) var(--my),

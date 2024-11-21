@@ -1,11 +1,9 @@
 
+//#region Holo script for movement and everything START
+// -----------------------------------------------------------------//
+// Holo script for movement and everything START                    //
+// ---------------------------------------------------------------//
 
-
-//
-//
-// Holo script for movement and everything START
-//
-//
 
 const initialStyles = new WeakMap();
 
@@ -111,37 +109,24 @@ function orientationhandler(event) {
 
 
 
-//
-//
-// Holo script for movement and everything ENDE
-//
-//
+// -----------------------------------------------------------------//
+// Holo script for movement and everything ENDE                    //
+// ---------------------------------------------------------------//
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//#endregion
 
 //
 //
-// FILTER JAVASCRIPT START
+//
+//
 //
 //
 
 
+//#region FILTER JAVASCRIPT START
+// -----------------------------------------------------------------//
+// FILTER JAVASCRIPT START                                         //
+// ---------------------------------------------------------------//
 
 // Filter for PNL_options -> Which Holo do you want?
 // Update the Holographic source for all cards based on input value
@@ -176,8 +161,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 });
-
-
 
 // Filter for Grid-Layout Changer
 
@@ -222,14 +205,22 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
+// -----------------------------------------------------------------//
+// Filter ENDE                                                     //
+// ---------------------------------------------------------------//
+//#endregion
 
 
+
 //
 //
-// FILTER JAVASCRIPT ENDE
+//
+//
 //
 //
 
+
+//#region Lightbox Funktion Start Gallery vom Single card portfolio START
 // -----------------------------------------------------------------//
 // Lightbox Funktion Start Gallery vom Single card portfolio START //
 // ---------------------------------------------------------------//
@@ -247,8 +238,19 @@ document.addEventListener('DOMContentLoaded', function() {
 // ----------------------------------------------------------------//
 // Lightbox Funktion Start Gallery vom Single card portfolio ENDE //
 // --------------------------------------------------------------//
+//#endregion
 
 
+
+//
+//
+//
+//
+//
+//
+
+
+//#region Landing Page Slider / Carousel  
 // -------------------------------------------//
 // Landing Page Slider / Carousel            //
 // -----------------------------------------//
@@ -355,6 +357,7 @@ $(document).ready(function() {
   startAutoplay();
 });
 
+//#endregion
 
 
 
@@ -367,6 +370,7 @@ $(document).ready(function() {
 //
 
 
+//#region Custom Cursor Dot+ Follower START +
 
 // --------------------------------- //
 // Custom Cursor Dot+ Follower START + //
@@ -376,7 +380,6 @@ $(document).ready(function() {
 var cursor = $(".cursor"),
     follower = $(".cursor-follower");
 
-// Positionen
 var posX = 0,
     posY = 0;
 
@@ -385,11 +388,15 @@ var mouseX = 0,
 
 // 2. Cursor-Bewegungsfunktion
 function moveCursor() {
-  // Berechnung der neuen Cursor-Position (posX, posY) für sanfte Bewegung
+  updateCursorPosition();
+  requestAnimationFrame(moveCursor);
+}
+
+// Aktualisiere die Cursor-Position
+function updateCursorPosition() {
   posX += (mouseX - posX) / 9;
   posY += (mouseY - posY) / 9;
 
-  // Setzen der Positionen für Cursor und Cursor-Follower
   follower.css({
     left: `${posX - 1}px`,
     top: `${posY - 1}px`
@@ -399,32 +406,30 @@ function moveCursor() {
     left: `${mouseX}px`,
     top: `${mouseY}px`
   });
-
-  // Anforderung einer neuen Animationsschleife
-  requestAnimationFrame(moveCursor);
 }
 
-// Starten der Animationsschleife
-requestAnimationFrame(moveCursor);
-
 // 3. Mausbewegung Event-Listener
-$(document).on("mousemove", function(e) {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-});
+function initMouseMoveListener() {
+  $(document).on("mousemove", function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+}
 
 // 4. Mausklick-Ereignisse
-$(document).on("mousedown", function() {
-  cursor.addClass("active");
-  follower.addClass("active");
-});
+function initMouseClickListeners() {
+  $(document).on("mousedown", function() {
+    cursor.addClass("active");
+    follower.addClass("active");
+  });
 
-$(document).on("mouseup", function() {
-  cursor.removeClass("active");
-  follower.removeClass("active");
-});
+  $(document).on("mouseup", function() {
+    cursor.removeClass("active");
+    follower.removeClass("active");
+  });
+}
 
-// 5. Cursor-Sichtbarkeit basierend auf Fenstergröße
+// 5. Cursor-Sichtbarkeit
 function handleCursorVisibility() {
   if (window.innerWidth <= 991) {
     cursor.hide();
@@ -436,19 +441,27 @@ function handleCursorVisibility() {
 }
 
 // Event-Listener für Fenstergrößenänderung und Laden der Seite
-$(window).on("resize", handleCursorVisibility);
-$(window).on("load", handleCursorVisibility);
+function initResizeListener() {
+  $(window).on("resize", handleCursorVisibility);
+  $(window).on("load", handleCursorVisibility);
+}
 
-// Initiale Überprüfung der Cursor-Sichtbarkeit
-handleCursorVisibility();
+// Initialisierung
+function init() {
+  requestAnimationFrame(moveCursor);
+  initMouseMoveListener();
+  initMouseClickListeners();
+  initResizeListener();
+  handleCursorVisibility();
+}
 
+init();
 
 // --------------------------------- //
 // Custom Cursor Dot+ Follower ENDE //
 // --------------------------------- //
+//#endregion
 
-
-
 //
 //
 //
@@ -456,6 +469,7 @@ handleCursorVisibility();
 //
 //
 
+//#region DarkMode Toggle JS Script Start
 
 // -------------------------------- //
 // DarkMode Toggle JS Script Start //
@@ -601,9 +615,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // --------------------------------//
 // DarkMode Toggle JS Script ENDE //
 // ------------------------------//
+//#endregion
 
 
-
 //
 //
 //
@@ -611,7 +625,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //
 //
 
-
+//#region Menu Slide effect + Menu Items (Text) JS Script START //
 // -----------------------------------//
 // Menu Slide effect + Menu Items (Text) JS Script START //
 // ---------------------------------//
@@ -653,9 +667,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // ----------------------------------//
 // Menu Slide effect JS Script ENDE //
 // --------------------------------//
+//#endregion
 
 
-
 //
 //
 //
@@ -663,7 +677,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //
 //
 
-
+//#region Hamburger Effect START 
 // ------------------------//
 // Hamburger Effect START //
 // ----------------------//
@@ -683,9 +697,9 @@ btn.on('click', function() {
 // -----------------------//
 // Hamburger Effect ENDE //
 // ---------------------//
+//#endregion
 
 
-
 //
 //
 //
@@ -693,7 +707,7 @@ btn.on('click', function() {
 //
 //
 
-
+//#region Loading Animation LOGO + Landing START
 // ----------------------------------------//
 // Loading Animation LOGO + Landing START //
 // ---------------------------------------//
@@ -761,9 +775,9 @@ if (isHomePage()) {
 // --------------------------------------//
 // Loading Animation LOGO + Landing ENDE //
 // -------------------------------------//
+//#endregion
 
 
-
 //
 //
 //
@@ -771,7 +785,7 @@ if (isHomePage()) {
 //
 //
 
-
+//#region Footer gsap  
 // -------------------------------------------//
 // Footer gsap                               //
 // -----------------------------------------//
@@ -844,23 +858,4 @@ icon.addEventListener('mouseleave', () => {
 //
 //
 //
-
-
-// -------------------------------------------//
-// Lokomotiv text scroll in Menu Text effekt //
-// -----------------------------------------//
-// keine ahnung für was? lösch wenn nichts verdächtiges ist
- /* const scroll = new LocomotiveScroll({
-    el: document.querySelector("#js-scroll"),
-    smooth: true,
-    smoothMobile: true,
-    inertia: 0.75,
-  });
-
-*/
-
-
-
-
- 
-
+//#endregion

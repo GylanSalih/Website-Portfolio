@@ -1,0 +1,5 @@
+npm run sass:build
+npm run sass:minify
+npm run sass:watch
+
+npm run build

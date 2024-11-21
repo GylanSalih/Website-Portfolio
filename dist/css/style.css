@@ -54,17 +54,6 @@ h4 {
   margin-top: 10px;
 }
 
-h2 {
-  font-family: Quicksand, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 7px;
-  line-height: 14px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  text-transform: uppercase;
-}
-
 h1 {
   font-family: "Bebas_Neue";
   font-size: 45px;
@@ -110,19 +99,6 @@ a {
     line-height: 24px;
   }
 }
-/*------------------------------------------------------------*/
-/* Funktionen Easter-Eggs Start                              */
-/*-----------------------------------------------------------*/
-/* Easter-Egg / Nicht Sichtbar auf der Website*/
-#ascii-art {
-  display: none;
-  white-space: pre;
-  font-family: monospace;
-}
-
-/*------------------------------------------------------------*/
-/* Funktionen Easter-Eggs ENDE                               */
-/*-----------------------------------------------------------*/
 /*------------------------------------------------------------*/
 /* Loading Animation Logo Effekt Start                       */
 /*-----------------------------------------------------------*/
@@ -1269,7 +1245,7 @@ body.menu-open {
   --Vstar: url("/img/stylish.png");
   --rainbow: url("/img/rainbow.jpg");
   --illusion: url("/img/illusion.png");
-  --glitter: url("img/glitter.png");
+  --glitter: url("/img/glitter.png");
   --metal: url("/img/metal.png");
   --illusion2: url("/img/illusion2.png");
   --birthday1: url("/img/151/birthday-holo.webp");
@@ -1585,7 +1561,6 @@ body.menu-open {
 
 /* Glow Border At the Card */
 .card.holographic {
-  --radius: 4.55% / 3.5%;
   z-index: calc(var(--s) * 100);
   transform: translateZ(0.1px);
   will-change: transform, visibility;
@@ -1594,6 +1569,7 @@ body.menu-open {
   cursor: crosshair;
   height: 100%;
   width: 100%;
+  border-radius: 14px;
 }
 
 .card.interacting.holographic {
@@ -2387,34 +2363,47 @@ body.menu-open {
 /*-----------------------------------------------------------*/
 /* Section Project Header */
 .section_project_header {
-  margin-bottom: 38px;
+  padding-bottom: 38px;
   position: relative;
+  background-color: #ffffff;
 }
 
-@media screen and (max-width: 767px) {
-  .section_project_header {
-    margin-bottom: 30px;
-  }
+.dark-mode .section_project_header {
+  position: relative;
+  background-color: #000000;
 }
-@media screen and (max-width: 479px) {
-  .section_project_header {
-    margin-bottom: 20px;
-  }
-}
-/* Project Hero Background Card Hintergrund */
+
 .project-hero1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #ffffff), url("/assets/img/poster/poster_7.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
   position: absolute;
   width: 100%;
+  height: 500px;
+  overflow: hidden;
+  /* Verhindert, dass das Bild außerhalb des Containers sichtbar wird */
   z-index: 1;
 }
 
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.3) 30%, #ffffff);
+  pointer-events: none;
+}
+
 /* Project Hero Background Card Hintergrund Dark-Mode State*/
-.dark-mode .project-hero1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000), url("/assets/img/poster/poster_7.jpg");
+.dark-mode .overlay {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3) 30%, #000000);
 }
 
 /* Project Hero Container */
@@ -2428,7 +2417,6 @@ body.menu-open {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 12vw;
-  perspective: 1500px;
   position: relative;
   width: 100%;
   z-index: 2;
@@ -2468,7 +2456,7 @@ body.menu-open {
 /* Project Hero Blurb Container */
 .project_hero_blurb_container {
   width: 100%;
-  margin-left: 10px;
+  padding-left: 70px;
   text-align: left;
 }
 
@@ -2493,6 +2481,18 @@ body.menu-open {
     line-height: 30px;
   }
 }
+.heading-2 {
+  font-family: Quicksand, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 7px;
+  line-height: 55px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Text Links */
 .text-link {
   color: #fff;
@@ -2519,8 +2519,17 @@ body.menu-open {
 }
 
 .section_project_cast {
-  margin-bottom: 40px;
   padding-top: 12px;
+  z-index: 2;
+  position: relative;
+  background: #fff;
+}
+
+.dark-mode .section_project_cast {
+  padding-top: 12px;
+  z-index: 2;
+  position: relative;
+  background: #000000;
 }
 
 .cast_includes_div {
@@ -2550,7 +2559,7 @@ body.menu-open {
 
 .Descriptioncontainer {
   display: block;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1080px;
@@ -2596,9 +2605,21 @@ body.menu-open {
   align-items: center; /* Zentriert die Galerie vertikal */
   gap: 15px; /* Abstand zwischen den Bildern */
   margin: 0 auto; /* Zentriert die Galerie in Bezug auf den übergeordneten Container */
-  max-width: 90%; /* Maximale Breite der Galerie */
   padding: 20px; /* Innenabstand um die Galerie herum */
   box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+  background-color: #fff;
+}
+
+.dark-mode .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Zentriert die Galerie horizontal */
+  align-items: center; /* Zentriert die Galerie vertikal */
+  gap: 15px; /* Abstand zwischen den Bildern */
+  margin: 0 auto; /* Zentriert die Galerie in Bezug auf den übergeordneten Container */
+  padding: 20px; /* Innenabstand um die Galerie herum */
+  box-sizing: border-box; /* Berücksichtigt Padding und Border in der Gesamtbreite */
+  background-color: #000000;
 }
 
 /* Stil für die Bilder in der Galerie, Größe der Bilder */
@@ -2644,21 +2665,23 @@ body.menu-open {
   user-select: none;
   filter: blur(0px);
   border: 91px black;
-  border-radius: 15px;
+  border-radius: 14px;
 }
 
 .fancybox__thumbs.is-modern {
-  --f-thumb-gap: 3px;
-  --f-thumb-extra-gap: 0px;
-  --f-thumb-clip-width: 46px;
+  --f-thumb-gap: 3px !important;
+  --f-thumb-extra-gap: 0px !important;
+  --f-thumb-clip-width: 46px !important;
   --f-thumb-opacity: 1;
   --f-thumb-hover-opacity: 1;
 }
 
 .fancybox__thumbs {
-  --f-thumb-width: 97px;
-  --f-thumb-height: 68px;
-  --f-thumb-border-radius: 15px;
+  --f-thumb-width: 96px;
+  --f-thumb-height: 72px;
+  --f-thumb-border-radius: 14px !important;
+  --f-thumb-outline: 2px;
+  --f-thumb-outline-color: #ededed;
 }
 
 .fancybox__container {
@@ -2725,6 +2748,14 @@ body.menu-open {
 /*------------------------------------------------------------*/
 /* Lightbox Fancybox2 Settings      ENDE                     */
 /*----------------------------------------------------------*/
+/* Einzelne Karte */
+.card-grid2 {
+  display: flex;
+  width: 55%;
+  height: 550px;
+  border-radius: var(--radius);
+}
+
 /*-----------------------------------------------------------*/
 /*-----------------------------------------------------------*/
 /*------------------------------------------------------------*/
@@ -3077,6 +3108,7 @@ section .button button:hover {
   display: flex;
   justify-content: center;
   align-content: center;
+  z-index: -1;
 }
 
 .footer-wrapper {
