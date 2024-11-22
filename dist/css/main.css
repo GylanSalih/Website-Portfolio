@@ -1867,37 +1867,37 @@ body.menu-open {
 }
 /* Navigation Dots */
 .carousel-wrapper .nav-dot {
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255); /* Default light mode color */
   border-radius: 50%;
+  border: 2px solid #000000; /* Dark border for light mode */
   cursor: pointer;
   display: block;
-  width: 25px;
-  height: 25px;
+  width: 14px;
+  height: 14px;
   transition: all 0.3s ease;
-  margin: 0 10px;
+  margin: 0 4px;
   overflow: hidden;
 }
 
 /* Dark Mode Navigation Dots */
 .dark-mode .carousel-wrapper .nav-dot {
-  background: rgb(0, 0, 0);
-  border: 2px solid #ffffff; /* Dark border for dark mode */
+  background: rgb(0, 0, 0); /* Black background for dark mode */
+  border: 2px solid #ffffff; /* White border for dark mode */
 }
 
 /* Active Navigation Dot */
 .carousel-wrapper .nav-dot.active {
-  background: #ffffff;
+  background: #000000; /* Black background for active dots */
   width: 100px;
-  height: 30px;
-  border-radius: 0;
+  height: 14px;
+  border-radius: 24px;
   transform: scale(1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Navigation Dot Loading Effect */
+/* Fortschrittsbalken-Animation nur einmal abspielen */
 .carousel-wrapper .nav-dot.loading::before {
-  animation: progressBar 10s linear forwards;
-  background: #000;
+  animation: progressBar 5s linear forwards;
+  background: #ffffff;
   content: "";
   display: block;
   width: 100%;
@@ -1906,22 +1906,40 @@ body.menu-open {
   left: 0;
   top: 0;
   transform-origin: left;
-  transform: scaleX(0);
+  transform: scaleX(0); /* Start mit 0 */
   border-radius: 0;
+  pointer-events: none; /* Keine Mausinteraktionen */
+  animation-iteration-count: 1; /* Animation nur einmal */
+  animation-play-state: running; /* Animation wird sofort gestartet */
 }
 
-/* Hover Effect for Inactive Dots */
+/* Verhindert Interaktionen auf dem Container während des Ladeprozesses */
+.carousel-wrapper .nav-dot.loading {
+  pointer-events: none; /* Keine Interaktionen während der Ladeanimation */
+}
+
+/* Hover Effect for Inactive Round Dots */
 .carousel-wrapper .nav-dot:hover {
-  background: #ffffff;
+  background: #000000; /* Inactive dots turn black on hover */
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover Effect for Inactive Round Dots */
+.dark-mode .carousel-wrapper .nav-dot:hover {
+  background: #ffffff; /* Inactive dots turn black on hover */
+  transform: scale(1.1);
 }
 
 /* Hover Effect for Active Dot */
 .carousel-wrapper .nav-dot.active:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-  background: #ffffff;
+  transform: scale(1.2); /* Active dot only scales, no color change */
+  background: #000000; /* Keep the black background for active dot */
+}
+
+/* Hover Effect for Active Dot in Dark Mode */
+.dark-mode .carousel-wrapper .nav-dot.active:hover {
+  transform: scale(1.2); /* Active dot only scales, no color change */
+  background: #000000; /* Keep the black background for active dot in dark mode */
 }
 
 /* Keyframes for Loading Animation */
@@ -1933,6 +1951,18 @@ body.menu-open {
     transform: scaleX(1) translateZ(0);
   }
 }
+/* Innerer Fortschrittsbalken */
+.carousel-wrapper .nav-dot .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%; /* Anfangszustand */
+  height: 100%;
+  background-color: #ffffff;
+  transition: width 0.1s ease-out; /* Übergang für sanfte Animation */
+  pointer-events: none; /* Verhindert alle Mausinteraktionen auf dem Fortschrittsbalken */
+}
+
 /*------------------------------------------------------------*/
 /* Landing Page Slider ENDE                                   */
 /*------------------------------------------------------------*/
@@ -2008,6 +2038,13 @@ body.menu-open {
 
 /* -------------------- CSS FÜR ALLE Effekte ENDE ------------------------*/
 /* -------------------- rare holo ------------------------*/
+.card[data-rarity="rare holo"]:not([data-gallery=true]) .card__glare:after {
+  content: "";
+  /* clip-path: inset(11.5% 8.5% 44.5% 8.5%); */
+  inset: -14.97% -6.17% -2.65% -13.62%;
+  background-image: radial-gradient(rgb(60, 60, 60) 100%, rgba(0, 0, 0, 0.73) 100%, rgb(0, 0, 0) 100%);
+}
+
 .card[data-rarity="rare holo"] .card__shine {
   --space: 1.5%;
   --h: 21;
@@ -2028,44 +2065,17 @@ body.menu-open {
   background: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(255, 255, 255, 0.8) 10%, rgba(255, 255, 255, 0.6) 35%, rgb(0, 0, 0) 85%);
 }
 
-/* -------------------- rare holo galaxy ------------------------*/
-.card[data-rarity="rare holo galaxy"] .card__glare {
-  background-image: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(222, 245, 250, 0.7) 10%, rgba(255, 255, 255, 0.5) 20%, rgba(0, 0, 0, 0.5) 90%);
-}
-
-.card[data-rarity="rare holo"]:not([data-gallery=true]) .card__glare:after,
-.card[data-rarity="rare holo galaxy"] .card__glare:after {
-  content: "";
-  /* clip-path: inset(11.5% 8.5% 44.5% 8.5%); */
-  inset: -14.97% -6.17% -2.65% -13.62%;
-  background-image: radial-gradient(rgb(60, 60, 60) 5%, rgba(0, 0, 0, 0.73) 35%, rgb(0, 0, 0) 100%);
-}
-
-.card[data-rarity="rare holo galaxyFullshine"] .card__shine {
-  --space: 4%;
-  /* clip-path: inset( 11.5% 8.5% 44.5% 8.5% ); */
-  background-image: var(--galaxy), url(""), url(""), repeating-linear-gradient(82deg, rgb(219, 204, 86) calc(var(--space) * 1), rgb(121, 199, 58) calc(var(--space) * 2), rgb(58, 192, 183) calc(var(--space) * 3), rgb(71, 98, 207) calc(var(--space) * 4), rgb(170, 69, 209) calc(var(--space) * 5), rgb(255, 90, 180) calc(var(--space) * 6), rgb(255, 90, 180) calc(var(--space) * 7), rgb(170, 69, 209) calc(var(--space) * 8), rgb(71, 98, 207) calc(var(--space) * 9), rgb(58, 192, 183) calc(var(--space) * 10), rgb(121, 199, 58) calc(var(--space) * 11), rgb(219, 204, 86) calc(var(--space) * 12)), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(255, 255, 255, 0.6) 5%, rgba(150, 150, 150, 0.3) 40%, rgb(0, 0, 0) 100%);
-  background-blend-mode: color-dodge, color-burn, saturation, screen;
-  background-position: var(--galaxybg, cover), var(--galaxybg, cover), var(--galaxybg, cover), calc((50% - var(--posx)) * 2.5 + 50%) calc((50% - var(--posy)) * 2.5 + 50%), center;
-  background-size: cover, cover, cover, 400% 900%, cover;
-  filter: brightness(0.75) contrast(1.2) saturate(1.5);
-  mix-blend-mode: color-dodge;
-}
-
-.card[data-rarity="rare holo galaxy"] .card__shine {
-  --space: 4%;
-  clip-path: inset(-4.59% -3.53% -1.76% -6.48%);
-  background-image: var(--birthday2), var(--galaxy), var(--cosmosbg), repeating-linear-gradient(82deg, rgb(208, 208, 208) calc(var(--space) * 1), rgb(190, 204, 179) calc(var(--space) * 2), rgb(195, 213, 211) calc(var(--space) * 3), rgb(71, 98, 207) calc(var(--space) * 4), rgb(0, 0, 0) calc(var(--space) * 5), rgb(0, 0, 0) calc(var(--space) * 6), rgb(255, 90, 180) calc(var(--space) * 7), rgb(170, 69, 209) calc(var(--space) * 8), rgb(71, 98, 207) calc(var(--space) * 9), rgb(226, 240, 239) calc(var(--space) * 10), rgb(121, 199, 58) calc(var(--space) * 11), rgb(255, 226, 1) calc(var(--space) * 12)), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(255, 255, 255, 0.6) 5%, rgba(150, 150, 150, 0.3) 40%, rgb(0, 0, 0) 100%);
-  background-blend-mode: color-dodge, color-burn, saturation, screen;
-  background-position: var(--galaxybg, cover), var(--galaxybg, cover), var(--galaxybg, cover), calc((50% - var(--posx)) * 2.5 + 50%) calc((50% - var(--posy)) * 2.5 + 50%), center;
-  background-size: cover, cover, cover, 400% 900%, cover;
-  filter: brightness(0.75) contrast(1.2) saturate(1.5);
-  mix-blend-mode: color-dodge;
-}
-
-/* -------------------- rare holo v check------------------------*/
+/* -------------------- rare holo v check ------------------------*/
 .card[data-rarity*="rare holo v1"] .card__shine,
 .card[data-rarity*="rare holo v1"] .card__shine:after {
+  background-image: none;
+  filter: none;
+  background-blend-mode: normal;
+}
+
+/* rare holo v1 bei Hover */
+.card[data-rarity*="rare holo v1"]:hover .card__shine,
+.card[data-rarity*="rare holo v1"]:hover .card__shine:after {
   --space: 5%;
   --angle: 133deg;
   --imgsize: 500px;
@@ -2076,15 +2086,14 @@ body.menu-open {
   filter: brightness(0.8) contrast(2.95) saturate(0.5);
 }
 
-.card[data-rarity="rare holo v1"] .card__shine:after {
+.card[data-rarity="rare holo v1"]:hover .card__shine:after {
   content: "";
-  /* background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
   background-size: var(--imgsize) 100%, 200% 400%, 195% 100%, 200% 100%;
   filter: brightness(1) contrast(2.5) saturate(1.75);
   mix-blend-mode: soft-light;
 }
 
-.card[data-rarity="rare holo v1"] .card__glare {
+.card[data-rarity="rare holo v1"]:hover .card__glare {
   filter: brightness(0.9) contrast(1.75);
   background: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgb(255, 255, 255) 0%, rgba(133, 137, 141, 0.33) 45%, rgba(100, 100, 100, 0.65) 120%);
   opacity: calc(var(--o) * 0.66);
@@ -2092,6 +2101,13 @@ body.menu-open {
 
 /* -------------------- rare holo vmax ------------------------*/
 .card[data-rarity="rare holo vmax"] .card__shine {
+  background-image: none;
+  filter: none;
+  background-blend-mode: normal;
+}
+
+/* rare holo vmax bei Hover */
+.card[data-rarity="rare holo vmax"]:hover .card__shine {
   --space: 6%;
   --angle: 133deg;
   --imgsize: 60% 30%;
@@ -2102,7 +2118,7 @@ body.menu-open {
   filter: brightness(calc(var(--hyp) * 0.3 + 0.5)) contrast(2.5) saturate(0.6);
 }
 
-.card[data-rarity="rare holo vmax"] .card__glare {
+.card[data-rarity="rare holo vmax"]:hover .card__glare {
   filter: brightness(0.9) contrast(1.75);
   background: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgb(255, 255, 255) 0%, rgba(133, 137, 141, 0.33) 45%, rgba(100, 100, 100, 0.65) 120%);
   opacity: calc(var(--o) * 0.66);
@@ -2114,6 +2130,9 @@ body.menu-open {
   --space: 5%;
   --angle: 133deg;
   --imgsize: 18% 15%;
+  /* Standard: Kein sichtbarer Effekt beim Laden der Seite */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   background-image: var(--Vstar), repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space) * 1), rgb(255, 237, 95) calc(var(--space) * 2), rgb(168, 255, 95) calc(var(--space) * 3), rgb(131, 255, 247) calc(var(--space) * 4), rgb(120, 148, 255) calc(var(--space) * 5), rgb(216, 117, 255) calc(var(--space) * 6), rgb(255, 119, 115) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, 0.1) 12%, rgba(0, 0, 0, 0.15) 20%, rgba(0, 0, 0, 0.25) 120%);
   background-blend-mode: soft-light, hue, hard-light;
   background-size: var(--imgsize), 200% 700%, 300% 100%, 200% 100%;
@@ -2123,10 +2142,18 @@ body.menu-open {
 
 .card[data-rarity="rare holo vstar"] .card__shine:after {
   content: "";
+  /* Standard: Kein sichtbarer Effekt beim Laden der Seite */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
-  /* background-position: center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
   filter: brightness(calc(var(--hyp) * 0.5 + 0.8)) contrast(1.5) saturate(1.75);
   mix-blend-mode: exclusion;
+}
+
+.card[data-rarity="rare holo vstar"]:hover .card__shine,
+.card[data-rarity="rare holo vstar"]:hover .card__shine:after {
+  /* Effekt sichtbar bei Hover */
+  opacity: 1;
 }
 
 .card[data-rarity="rare holo vstar"] .card__glare {
@@ -2141,6 +2168,9 @@ body.menu-open {
   --space: 5%;
   --angle: 133deg;
   --imgsize: 50% 42%;
+  /* Standard: Kein sichtbarer Effekt beim Laden der Seite */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   background-image: var(--illusion), repeating-linear-gradient(0deg, rgb(255, 119, 115) calc(var(--space) * 1), rgb(255, 237, 95) calc(var(--space) * 2), rgb(168, 255, 95) calc(var(--space) * 3), rgb(131, 255, 247) calc(var(--space) * 4), rgb(120, 148, 255) calc(var(--space) * 5), rgb(216, 117, 255) calc(var(--space) * 6), rgb(255, 119, 115) calc(var(--space) * 7)), repeating-linear-gradient(var(--angle), #0e152e 0%, hsl(180, 10%, 60%) 3.8%, hsl(180, 29%, 66%) 4.5%, hsl(180, 10%, 60%) 5.2%, #0e152e 10%, #0e152e 12%), radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(0, 0, 0, 0.1) 12%, rgba(0, 0, 0, 0.15) 20%, rgba(0, 0, 0, 0.25) 120%);
   background-blend-mode: exclusion, hue, hard-light;
   background-size: var(--imgsize), 200% 700%, 300% 100%, 200% 100%;
@@ -2150,10 +2180,18 @@ body.menu-open {
 
 .card[data-rarity="rare ultra"] .card__shine:after {
   content: "";
+  /* Standard: Kein sichtbarer Effekt beim Laden der Seite */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
-  /*  background-position: center center, 0% var(--posy), calc( var(--posx) * -1) calc( var(--posy) * -1), var(--posx) var(--posy); */
   filter: brightness(calc(var(--hyp) * 0.5 + 0.8)) contrast(1.6) saturate(1.4);
   mix-blend-mode: exclusion;
+}
+
+.card[data-rarity="rare ultra"]:hover .card__shine,
+.card[data-rarity="rare ultra"]:hover .card__shine:after {
+  /* Effekt sichtbar bei Hover */
+  opacity: 1;
 }
 
 .card[data-rarity="rare ultra"] .card__glare {
@@ -2162,9 +2200,17 @@ body.menu-open {
   opacity: calc(var(--o) * 0.66);
 }
 
-/* -------------------- ShineBlitz ------------------------*/
+/* ShineBlitz im Normalzustand - unsichtbar, keine Effekte */
 .card[data-rarity=ShineBlitz] .card__shine,
 .card[data-rarity=ShineBlitz] .card__shine:after {
+  background-image: none;
+  filter: none;
+  background-blend-mode: normal;
+}
+
+/* ShineBlitz bei Hover - der Effekt wird sichtbar */
+.card[data-rarity=ShineBlitz]:hover .card__shine,
+.card[data-rarity=ShineBlitz]:hover .card__shine:after {
   --space: 5%;
   --angle: 133deg;
   --imgsize: 25% 20%;
@@ -2175,22 +2221,33 @@ body.menu-open {
   filter: brightness(0.75) contrast(2.5) saturate(0.75);
 }
 
-.card[data-rarity=ShineBlitz] .card__shine:after {
+/* Weiterer Effekt mit Zusatz bei Hover */
+.card[data-rarity=ShineBlitz]:hover .card__shine:after {
   content: "";
   background-size: var(--imgsize), 200% 400%, 195% 100%, 200% 100%;
   filter: brightness(1.2) contrast(1) saturate(1.75);
   mix-blend-mode: exclusion;
 }
 
-.card[data-rarity=ShineBlitz] .card__glare {
+/* Glare-Effekt bei Hover */
+.card[data-rarity=ShineBlitz]:hover .card__glare {
   filter: brightness(0.9) contrast(1.75);
   background: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgb(255, 255, 255) 0%, rgba(133, 137, 141, 0.33) 45%, rgba(100, 100, 100, 0.65) 120%);
   opacity: calc(var(--o) * 0.66);
 }
 
 /* -------------------- rare rainbow ------------------------*/
+/* Rare Rainbow im Normalzustand - unsichtbar, keine Effekte */
 .card[data-rarity^="rare rainbow"] .card__shine,
 .card[data-rarity^="rare rainbow"] .card__shine:after {
+  background-image: none;
+  filter: none;
+  background-blend-mode: normal;
+}
+
+/* Rare Rainbow bei Hover - der Effekt wird sichtbar */
+.card[data-rarity^="rare rainbow"]:hover .card__shine,
+.card[data-rarity^="rare rainbow"]:hover .card__shine:after {
   --rainbowspace: 9%;
   --overlayspace: 12%;
   --angle: -20deg;
@@ -2203,7 +2260,8 @@ body.menu-open {
   filter: brightness(calc(var(--hyp) * 0.25 + 0.66)) contrast(2.2) saturate(0.9);
 }
 
-.card[data-rarity^="rare rainbow"] .card__shine:after {
+/* Weiterer Effekt mit Zusatz bei Hover */
+.card[data-rarity^="rare rainbow"]:hover .card__shine:after {
   content: "";
   background-position: center, 0% calc(var(--posy) * -1.75), calc(var(--posx) * -1.75) calc(var(--posy) * -1), bottom left;
   mix-blend-mode: exclusion;
@@ -2229,8 +2287,16 @@ body.menu-open {
   mix-blend-mode: exclusion;
 }
 
-/* -------------------- RADIANTT ------------------------*/
+/* Standardzustand - Karte ohne den Radiant-Effekt */
 .card[data-rarity*=radiant] .card__shine {
+  /* Standard Hintergründe (keine Strahleneffekte) */
+  background-image: none;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+/* Wenn man über die Karte hovert, wird der Radiant-Effekt sichtbar */
+.card[data-rarity*=radiant]:hover .card__shine {
   --barwidth: 1.2%;
   --space: 200px;
   background-image: repeating-linear-gradient(0deg, hsl(180, 70%, 50%) calc(var(--space) * 1), hsl(110, 80%, 50%) calc(var(--space) * 2), hsl(80, 90%, 50%) calc(var(--space) * 3), hsl(50, 90%, 50%) calc(var(--space) * 4), hsl(80, 90%, 50%) calc(var(--space) * 5), hsl(110, 80%, 50%) calc(var(--space) * 6), hsl(180, 70%, 50%) calc(var(--space) * 7)), repeating-linear-gradient(45deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 10%) 1%, hsl(0, 0%, 10%) var(--barwidth), hsl(0, 0%, 20%) calc(var(--barwidth) + 0.01%), hsl(0, 0%, 20%) calc(var(--barwidth) * 2), hsl(0, 0%, 35%) calc(var(--barwidth) * 2 + 0.01%), hsl(0, 0%, 35%) calc(var(--barwidth) * 3), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 3 + 0.01%), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 4), hsl(0, 0%, 50%) calc(var(--barwidth) * 4 + 0.01%), hsl(0, 0%, 50%) calc(var(--barwidth) * 5), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 5 + 0.01%), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 6), hsl(0, 0%, 35%) calc(var(--barwidth) * 6 + 0.01%), hsl(0, 0%, 35%) calc(var(--barwidth) * 7), hsl(0, 0%, 20%) calc(var(--barwidth) * 7 + 0.01%), hsl(0, 0%, 20%) calc(var(--barwidth) * 8), hsl(0, 0%, 10%) calc(var(--barwidth) * 8 + 0.01%), hsl(0, 0%, 10%) calc(var(--barwidth) * 9), hsl(0, 0%, 0%) calc(var(--barwidth) * 9 + 0.01%), hsl(0, 0%, 0%) calc(var(--barwidth) * 10)), repeating-linear-gradient(-45deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 10%) 1%, hsl(0, 0%, 10%) var(--barwidth), hsl(0, 0%, 20%) calc(var(--barwidth) + 0.01%), hsl(0, 0%, 20%) calc(var(--barwidth) * 2), hsl(0, 0%, 35%) calc(var(--barwidth) * 2 + 0.01%), hsl(0, 0%, 35%) calc(var(--barwidth) * 3), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 3 + 0.01%), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 4), hsl(0, 0%, 50%) calc(var(--barwidth) * 4 + 0.01%), hsl(0, 0%, 50%) calc(var(--barwidth) * 5), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 5 + 0.01%), hsl(0, 0%, 42.5%) calc(var(--barwidth) * 6), hsl(0, 0%, 35%) calc(var(--barwidth) * 6 + 0.01%), hsl(0, 0%, 35%) calc(var(--barwidth) * 7), hsl(0, 0%, 20%) calc(var(--barwidth) * 7 + 0.01%), hsl(0, 0%, 20%) calc(var(--barwidth) * 8), hsl(0, 0%, 10%) calc(var(--barwidth) * 8 + 0.01%), hsl(0, 0%, 10%) calc(var(--barwidth) * 9), hsl(0, 0%, 0%) calc(var(--barwidth) * 9 + 0.01%), hsl(0, 0%, 0%) calc(var(--barwidth) * 10));
@@ -2241,7 +2307,8 @@ body.menu-open {
   mix-blend-mode: color-dodge;
 }
 
-.card[data-rarity*=radiant] .card__shine:after {
+/* Glitter-Effekt bei Hover */
+.card[data-rarity*=radiant]:hover .card__shine:after {
   content: "";
   background-image: var(--glitter), repeating-linear-gradient(55deg, rgb(255, 161, 158) calc(var(--space) * 1), rgb(85, 178, 255) calc(var(--space) * 2), rgb(255, 199, 146) calc(var(--space) * 3), rgb(130, 255, 213) calc(var(--space) * 4), rgb(253, 170, 240) calc(var(--space) * 5), rgb(148, 241, 255) calc(var(--space) * 6), rgb(255, 161, 158) calc(var(--space) * 7));
   background-size: 25% 25%, 400% 100%;
@@ -2251,7 +2318,8 @@ body.menu-open {
   background-blend-mode: multiply;
 }
 
-.card[data-rarity*=radiant] .card__shine:before {
+/* Halo und Glare bei Hover */
+.card[data-rarity*=radiant]:hover .card__shine:before {
   content: "";
   z-index: 7;
   grid-area: 1/1;
@@ -2262,7 +2330,8 @@ body.menu-open {
   mix-blend-mode: multiply;
 }
 
-.card[data-rarity=radiant] .card__glare {
+/* Glare bei Hover */
+.card[data-rarity=radiant]:hover .card__glare {
   background-image: radial-gradient(farthest-corner circle at var(--mx) var(--my), rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0.6) 30%, rgba(0, 0, 0, 0.8) 80%);
 }
 

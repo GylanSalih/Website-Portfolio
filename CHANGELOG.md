@@ -46,10 +46,13 @@ Lookbook:
 
 **0.0.16 - Latest Updates**
 
-- Started Again to work on the Portfolio :)
-- Cleaning some css and Grouping with #regio and #endregio learned from C##
-- filter changed name to design, coding, marketing 
-- slider transition, nav dots
+- Started working on the portfolio again :)
+- Cleaning up some CSS and grouping using #regio and #endregio (learned from C#).
+- Renamed the filter to "design," "coding," and "marketing."
+- Added slider transitions and navigation dots.
+- Disabled the previous visibility of Holo Effects.
+- Deleted the html acard2 ID.
+- Made the progress bar clickable, and the timer functionality has been updated.
 
 **0.0.15 - Previous Updates**
 

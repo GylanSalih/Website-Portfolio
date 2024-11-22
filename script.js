@@ -255,53 +255,213 @@ document.addEventListener('DOMContentLoaded', function() {
 // Landing Page Slider / Carousel            //
 // -----------------------------------------//
 
+// $(document).ready(function() {
+//   var autoplayInterval = 7000; // Time in milliseconds between slides
+//   var autoplayTimer;
+//   var startX, startY, endX, endY;
+
+//   function changeSlide(next) {
+//       var $current = $('.slide.active');
+//       var current = $current.data('slide');
+      
+//       if (current === next) {
+//           return;
+//       }
+      
+//       $('.slide').removeClass('active');
+//       $('.slide[data-slide=' + next + ']').addClass('active');
+      
+//       $('.nav-dot').removeClass('active loading');
+//       $('.nav-dot[data-slide=' + next + ']').addClass('active loading');
+//   }
+
+//   function startAutoplay() {
+//       autoplayTimer = setInterval(function() {
+//           var $current = $('.slide.active');
+//           var current = $current.data('slide');
+//           var next = $current.next('.slide').length ? 
+//                       $current.next('.slide').data('slide') : 
+//                       $('.slide').first().data('slide');
+          
+//           changeSlide(next);
+//       }, autoplayInterval);
+//   }
+
+//   function stopAutoplay() {
+//       clearInterval(autoplayTimer);
+//   }
+
+//   $('.nav-dot').on('click', function(e) {
+//       e.preventDefault();
+      
+//       var next = $(this).data('slide');
+//       changeSlide(next);
+      
+//       stopAutoplay();  // Stop autoplay on manual change
+//       startAutoplay(); // Restart autoplay
+//   });
+
+//   // Swipe event handling
+//   $('.carousel-wrapper').on('touchstart mousedown', function(e) {
+//       if(e.type === 'touchstart') {
+//           startX = e.originalEvent.touches[0].pageX;
+//           startY = e.originalEvent.touches[0].pageY;
+//       } else {
+//           startX = e.pageX;
+//           startY = e.pageY;
+//           e.preventDefault();
+//       }
+//       stopAutoplay();  // Stop autoplay on swipe start
+//   });
+
+//   $('.carousel-wrapper').on('touchend mouseup', function(e) {
+//       if(e.type === 'touchend') {
+//           endX = e.originalEvent.changedTouches[0].pageX;
+//           endY = e.originalEvent.changedTouches[0].pageY;
+//       } else {
+//           endX = e.pageX;
+//           endY = e.pageY;
+//       }
+      
+//       var diffX = endX - startX;
+//       var diffY = endY - startY;
+
+//       if(Math.abs(diffX) > Math.abs(diffY)) {
+//           if(diffX > 50) {
+//               // Swipe right
+//               var $current = $('.slide.active');
+//               var prev = $current.prev('.slide').length ? 
+//                          $current.prev('.slide').data('slide') : 
+//                          $('.slide').last().data('slide');
+//               changeSlide(prev);
+//           } else if(diffX < -50) {
+//               // Swipe left
+//               var $current = $('.slide.active');
+//               var next = $current.next('.slide').length ? 
+//                          $current.next('.slide').data('slide') : 
+//                          $('.slide').first().data('slide');
+//               changeSlide(next);
+//           }
+//       }
+
+//       startAutoplay(); // Restart autoplay after swipe end
+//   });
+
+//   // Optional: Start with the first slide active
+//   changeSlide($('.nav-dot.active').data('slide'));
+
+//   // Add 'loading' class to the first dot immediately
+//   $('.nav-dot.active').addClass('loading');
+
+//   // Start autoplay when the document is ready
+//   startAutoplay();
+// });
+
 $(document).ready(function() {
-  var autoplayInterval = 10000; // Time in milliseconds between slides
+  var autoplayInterval = 5000; // Gesamtzeit für das Autoplay (jetzt 10 Sekunden)
+  var progressTimer;
   var autoplayTimer;
   var startX, startY, endX, endY;
 
+  // Funktion zum Wechseln der Folien
   function changeSlide(next) {
+    var $current = $('.slide.active');
+    var current = $current.data('slide');
+
+    if (current === next) {
+        return;
+    }
+
+    // Entferne die 'active' Klasse von allen Folien
+    $('.slide').removeClass('active');
+    // Setze die 'active' Klasse auf die nächste Folie
+    $('.slide[data-slide=' + next + ']').addClass('active');
+
+    // Entferne die 'active' und 'loading' Klasse von allen Navigationspunkten
+    $('.nav-dot').removeClass('active loading');
+    // Setze die 'active' und 'loading' Klasse auf den nächsten Navigationspunkt
+    var $nextDot = $('.nav-dot[data-slide=' + next + ']');
+    $nextDot.addClass('active loading');
+
+    // Starte die Fortschritts-Animation
+    startProgressBar($nextDot);
+  }
+
+  // Funktion zum Starten des Fortschrittsbalkens
+  function startProgressBar(dot) {
+    var $dot = $(dot);
+    var $progressBar = $dot.find('.progress-bar');
+
+    // Lösche den aktuellen Fortschritt und starte ihn neu
+    $progressBar.css('width', '0%'); // Setze den Fortschritt auf 0%
+
+    var width = 0;
+    var duration = autoplayInterval; // Die Dauer, die der Fortschrittsbalken benötigt (jetzt dynamisch)
+    var step = 100 / (duration / 100); // Berechne, wie schnell der Balken wachsen muss, abhängig vom Timer
+
+    clearInterval(progressTimer); // Stoppe den vorherigen Timer, falls vorhanden
+    progressTimer = setInterval(function() {
+      width += step;
+      $progressBar.css('width', width + '%');
+      
+      if (width >= 100) {
+        clearInterval(progressTimer); // Stoppe den Timer, wenn der Fortschritt 100% erreicht
+        $dot.removeClass('loading'); // Entferne die 'loading' Klasse
+        changeSlideNext(); // Gehe zur nächsten Folie
+      }
+    }, 100); // Der Timer wird alle 100 Millisekunden aktualisiert
+  }
+
+  // Wechsel zur nächsten Folie, wenn der Fortschritt abgeschlossen ist
+  function changeSlideNext() {
+    var $current = $('.slide.active');
+    var next = $current.next('.slide').length ? 
+              $current.next('.slide').data('slide') : 
+              $('.slide').first().data('slide');
+    
+    changeSlide(next); // Wechsel zur nächsten Folie
+  }
+
+  // Funktion zum Starten des Autoplay
+  function startAutoplay() {
+    autoplayTimer = setInterval(function() {
       var $current = $('.slide.active');
       var current = $current.data('slide');
-      
-      if (current === next) {
-          return;
-      }
-      
-      $('.slide').removeClass('active');
-      $('.slide[data-slide=' + next + ']').addClass('active');
-      
-      $('.nav-dot').removeClass('active loading');
-      $('.nav-dot[data-slide=' + next + ']').addClass('active loading');
+      var next = $current.next('.slide').length ? 
+                $current.next('.slide').data('slide') : 
+                $('.slide').first().data('slide');
+
+      changeSlide(next);
+    }, autoplayInterval);
   }
 
-  function startAutoplay() {
-      autoplayTimer = setInterval(function() {
-          var $current = $('.slide.active');
-          var current = $current.data('slide');
-          var next = $current.next('.slide').length ? 
-                      $current.next('.slide').data('slide') : 
-                      $('.slide').first().data('slide');
-          
-          changeSlide(next);
-      }, autoplayInterval);
-  }
-
+  // Funktion zum Stoppen des Autoplay
   function stopAutoplay() {
-      clearInterval(autoplayTimer);
+    clearInterval(autoplayTimer);
+    clearInterval(progressTimer); // Stoppe auch den Fortschrittstimer
   }
 
+  // Klick-Event für Navigation Dots
   $('.nav-dot').on('click', function(e) {
       e.preventDefault();
       
       var next = $(this).data('slide');
-      changeSlide(next);
       
-      stopAutoplay();  // Stop autoplay on manual change
-      startAutoplay(); // Restart autoplay
+      // Stoppe die aktuelle Ladeanimation und setze sie zurück
+      var $nextDot = $('.nav-dot[data-slide=' + next + ']');
+      $nextDot.removeClass('loading'); // Entferne die 'loading' Klasse
+
+      // Ein kurzer Timeout, um sicherzustellen, dass die Animation zurückgesetzt wird
+      setTimeout(function() {
+        $nextDot.addClass('loading'); // Setze sie zurück
+      }, 10); // Sehr kurzer Timeout (10 ms)
+
+      changeSlide(next);
+      stopAutoplay();  // Stoppe Autoplay bei manuellem Wechsel
+      startAutoplay(); // Starte Autoplay neu
   });
 
-  // Swipe event handling
+  // Touch- und Maus-Eventhandling für Swipe
   $('.carousel-wrapper').on('touchstart mousedown', function(e) {
       if(e.type === 'touchstart') {
           startX = e.originalEvent.touches[0].pageX;
@@ -311,9 +471,10 @@ $(document).ready(function() {
           startY = e.pageY;
           e.preventDefault();
       }
-      stopAutoplay();  // Stop autoplay on swipe start
+      stopAutoplay();  // Stoppe Autoplay beim Start des Swipes
   });
 
+  // Erkenne das Ende des Swipes oder Maus-Events
   $('.carousel-wrapper').on('touchend mouseup', function(e) {
       if(e.type === 'touchend') {
           endX = e.originalEvent.changedTouches[0].pageX;
@@ -328,14 +489,14 @@ $(document).ready(function() {
 
       if(Math.abs(diffX) > Math.abs(diffY)) {
           if(diffX > 50) {
-              // Swipe right
+              // Swipe nach rechts
               var $current = $('.slide.active');
               var prev = $current.prev('.slide').length ? 
                          $current.prev('.slide').data('slide') : 
                          $('.slide').last().data('slide');
               changeSlide(prev);
           } else if(diffX < -50) {
-              // Swipe left
+              // Swipe nach links
               var $current = $('.slide.active');
               var next = $current.next('.slide').length ? 
                          $current.next('.slide').data('slide') : 
@@ -344,18 +505,19 @@ $(document).ready(function() {
           }
       }
 
-      startAutoplay(); // Restart autoplay after swipe end
+      startAutoplay(); // Starte Autoplay nach Beendigung des Swipes neu
   });
 
-  // Optional: Start with the first slide active
+  // Optional: Start mit der ersten Folie als aktiv
   changeSlide($('.nav-dot.active').data('slide'));
 
-  // Add 'loading' class to the first dot immediately
+  // Füge die 'loading' Klasse sofort zum ersten Navigationspunkt hinzu
   $('.nav-dot.active').addClass('loading');
 
-  // Start autoplay when the document is ready
+  // Starte Autoplay beim Laden der Seite
   startAutoplay();
 });
+
 
 //#endregion
 
