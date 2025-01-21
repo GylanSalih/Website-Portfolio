@@ -34,7 +34,10 @@
   </a>
 
 
-  <h3 align="center">Website Portfolio, Gallery & More -> WORK IN PROGRESS <3 </h3>
+<h3 align="center">
+  Check out my other repository showcasing the latest build: 
+  <a href="https://github.com/GylanSalih/Portfolio-NextJs">Portfolio-NextJs</a>
+</h3>
 
   <p align="center">
    Welcome! i Would appreciate if you Star my Repository <3
